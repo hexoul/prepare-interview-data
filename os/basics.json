@@ -53,7 +53,7 @@
         "모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등"
+      "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등",
       "references": [{"Command interpreter" : "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}]
     },
     {
