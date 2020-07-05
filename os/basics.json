@@ -54,7 +54,7 @@
       ],
       "answer": 1,
       "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등"
-    }
+    },
     {
       "question": "운영체제의 자원은 ___ 을 통해 관리되어진다.",
       "choices": [
