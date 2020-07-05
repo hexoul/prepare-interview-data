@@ -25,10 +25,10 @@
     {
       "question": "다음 중 틀린 설명은?",
       "choices": [
-        "커널은 운영체제의 핵심을 구성하는 프로그램이다.",
-        "커널은 부팅하는 동안 메모리를 로드하는 운영체제의 첫 부분이다.",
-        "커널은 운영체제를 실행하는 중에는 읽어들일 수 없는 다양한 모듈로 구성되어 있다.",
-        "커널은 컴퓨터의 전체 세션동안 메모리에 남아있다."
+        "Kernel은 운영체제의 핵심을 구성하는 프로그램이다.",
+        "Kernel은 부팅하는 동안 메모리를 로드하는 운영체제의 첫 부분이다.",
+        "Kernel은 운영체제를 실행하는 중에는 읽어들일 수 없는 다양한 모듈로 구성되어 있다.",
+        "Kernel은 컴퓨터의 전체 세션동안 메모리에 남아있다."
       ],
       "answer": 3,
       "explanation": "-"
@@ -54,6 +54,7 @@
       ],
       "answer": 1,
       "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등"
+      "references": [{"Command interpreter" : "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}]
     },
     {
       "question": "운영체제의 자원은 ___을 통해 관리되어진다.",
@@ -64,7 +65,57 @@
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "시분할 multiplexing 예시 : Single-core processor 상에서의 multiprogramming (CPU scheduling).\n공간 분할 multiplexing 예시 : Process Control Block (PCB)"
+      "explanation": "\n* 시분할 multiplexing 예시 : Single-core processor 상에서의 multiprogramming (CPU scheduling).\n\n* 공간 분할 multiplexing 예시 : Process Control Block (PCB)"
+    },
+    {
+      "question": "프로세스가 실패하면 대부분의 운영체제는 에러 정보를 ___에 쓴다.",
+      "choices": [
+        "로그 파일",
+        "실행중인 다른 프로세스",
+        "새로운 파일",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "프로세스가 실패했을 때 대부분의 운영체제는 에러 정보를 ___에 기록한다.",
+      "choices": [
+        "로그 파일",
+        "새로운 파일",
+        "실행중인 다른 프로세스",
+        "메모리"
+      ],
+      "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "다음 중 실시간 운영체제가 아닌 것은?",
+      "choices": [
+        "VxWorks",
+        "Windwos CE",
+        "RTLinux",
+        "Palm OS"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}]
+    },
+    {
+      "question": "다음 중 Kernel mode의 비중이 제일 큰 kernel은?",
+      "choices": [
+        "Microkernel",
+        "Monolithic kernel",
+        "Hybrid kernel",
+        "Exokernel"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Microkernel" : "https://en.wikipedia.org/wiki/Microkernel"},
+        {"Monolithic kernel" : "https://en.wikipedia.org/wiki/Monolithic_kernel"},
+        {"Hybrid kernel" : "https://en.wikipedia.org/wiki/Hybrid_kernel"}
+      ]
     }
   ]
 }
