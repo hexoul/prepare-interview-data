@@ -68,17 +68,6 @@
       "explanation": "\n* 시분할 multiplexing 예시 : Single-core processor 상에서의 multiprogramming (CPU scheduling).\n\n* 공간 분할 multiplexing 예시 : Process Control Block (PCB)"
     },
     {
-      "question": "프로세스가 실패하면 대부분의 운영체제는 에러 정보를 ___에 쓴다.",
-      "choices": [
-        "로그 파일",
-        "실행중인 다른 프로세스",
-        "새로운 파일",
-        "모두 해당 안됨"
-      ],
-      "answer": 1,
-      "explanation": "-"
-    },
-    {
       "question": "프로세스가 실패했을 때 대부분의 운영체제는 에러 정보를 ___에 기록한다.",
       "choices": [
         "로그 파일",
