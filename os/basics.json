@@ -43,6 +43,28 @@
       ],
       "answer": 4,
       "explanation": "-"
+    },
+    {
+      "question": "Command interpreter의 주요 기능은?",
+      "choices": [
+        "사용자 정의 명령을 해석하고 실행하기 위함",
+        "API와 응용프로그램 간의 인터페이스를 제공하기 위함",
+        "운영체제에서 파일들을 처리하기 위함",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등"
+    }
+    {
+      "question": "운영체제의 자원은 ___ 을 통해 관리되어진다.",
+      "choices": [
+        "시분할 (Time division) multiplexing",
+        "공간 분할 (Space division) multiplexing",
+        "시공간 분할 (Time and space division) multiplexing",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "시분할 예시 - Single-core processor 상에서의 multiprogramming (CPU scheduling).\n공간 분할 예시 - Process Control Block (PCB)"
     }
   ]
 }
