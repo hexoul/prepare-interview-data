@@ -91,7 +91,7 @@
       "references": [{"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}]
     },
     {
-      "question": "다음 중 Kernel mode의 비중이 제일 큰 kernel은?",
+      "question": "다음 중 Kernel mode (Kernel space)의 비중이 제일 큰 kernel은?",
       "choices": [
         "Microkernel",
         "Monolithic kernel",
@@ -99,7 +99,7 @@
         "Exokernel"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "Monolithic kernel > Hybrid kernel > Microkernel > Exokernel",
       "references": [
         {"Microkernel" : "https://en.wikipedia.org/wiki/Microkernel"},
         {"Monolithic kernel" : "https://en.wikipedia.org/wiki/Monolithic_kernel"},
