@@ -10,6 +10,28 @@
       ],
       "answer": 2,
       "explanation": "한 개의 프로세서를 뜻하는 Uniprocessing이 정답입니다. Uniprogramming system은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 Multiprogramming system이라 합니다."
+    },
+    {
+      "question": "운영체제에서 각 프로세스는 자신의 ___를 가진다.",
+      "choices": [
+        "주소 공간 및 전역 변수",
+        "열려 있는 파일들에 대한 정보",
+        "Pending alarms, signals and signal handlers",
+        "위에 언급된 모두 포함"
+      ],
+      "answer": 4,
+      "explanation": "-"
+    },
+    {
+      "question": "Unix에서 새로운 프로세스를 만드는 시스템 콜은 무엇인가?",
+      "choices": [
+        "fork",
+        "create",
+        "new",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "-"
     }
   ]
 }
