@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "question": "Process Control Block (PCB)에 포함되지 않는 것은?",
+      "choices": [
+        "Code",
+        "Stack",
+        "Bootstrap program",
+        "Data"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+    }
+  ]
+}
