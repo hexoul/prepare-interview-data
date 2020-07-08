@@ -91,6 +91,30 @@
       "answer": 4,
       "explanation": "-",
       "references": [{"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}]
+    },
+    {
+      "question": "종료된 자식 프로세스의 정보를 얻어올 수 있는 system call은?",
+      "choices": [
+        "wait",
+        "exit",
+        "fork",
+        "get"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [{"Wait" : "https://en.wikipedia.org/wiki/Wait_(system_call)"}]
+    },
+    {
+      "question": "다음에 실행될 명령어의 주소를 저장하고 있는 곳은?",
+      "choices": [
+        "CPU registers",
+        "Program counter",
+        "Process stack",
+        "Pipe"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}]
     }
   ]
 }
