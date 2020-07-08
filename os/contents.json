@@ -1,5 +1,5 @@
 [
   {"content": "기초", "link": "/os/basics.json", "num": 9},
   {"content": "프로세스", "link": "/os/process.json", "num": 10},
-  {"content": "Process control block", "link": "/os/process_control_block.json", "num": 9}
+  {"content": "Process Control Block (PCB)", "link": "/os/process_control_block.json", "num": 9}
 ]
