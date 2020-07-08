@@ -17,7 +17,7 @@
         "주소 공간 및 전역 변수",
         "열려 있는 파일들에 대한 정보",
         "Pending alarms, signals and signal handlers",
-        "위에 언급된 모두 포함"
+        "위에 언급된 모두 해당"
       ],
       "answer": 4,
       "explanation": "-"
@@ -31,6 +31,17 @@
         "모두 해당 안됨"
       ],
       "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "프로세스는 ___에 의해 종료될 수 있다.",
+      "choices": [
+        "Normal exit",
+        "Fatal error",
+        "다른 프로세스",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
       "explanation": "-"
     }
   ]
