@@ -1,5 +1,5 @@
 [
-  {"content": "운영체제", "link": "/os/contents.json"},
+  {"content": "운영체제", "link": "/os/contents.json", "num": 19},
   {"content": "자료구조", "link": ""},
   {"content": "Python", "link": ""},
   {"content": "Java", "link": ""}
