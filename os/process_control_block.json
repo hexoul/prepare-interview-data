@@ -9,7 +9,56 @@
         "Data"
       ],
       "answer": 3,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+    },
+    {
+      "question": "단위 시간동안 완료된 프로세스의 수를 ___라 한다.",
+      "choices": [
+        "Output",
+        "Throughput",
+        "Efficiency",
+        "Capacity"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Throughput and Capacity": "https://www.weibull.com/hotwire/issue27/relbasics27.htm"}]
+    },
+    {
+      "question": "프로세스의 state는 ___에 의해 정의된다.",
+      "choices": [
+        "프로세스의 최종 활동",
+        "프로세스가 막 실행한 활동",
+        "프로세스가 다음에 실행할 활동",
+        "프로세스의 현재 활동"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+    },
+    {
+      "question": "다음 중 프로세스의 state가 아닌 것은?",
+      "choices": [
+        "New",
+        "Old",
+        "Waiting",
+        "Running"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+    },
+    {
+      "question": "Process Control Block (PCB) 이란?",
+      "choices": [
+        "프로세스 타입의 변수",
+        "자료 구조",
+        "보조 기억장치의 일부",
+        "메모리 블럭"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
     }
   ]
 }
