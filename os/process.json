@@ -43,6 +43,53 @@
       ],
       "answer": 4,
       "explanation": "-"
+    },
+    {
+      "question": "프로세스의 State 중 Ready에 해당하는 것은?",
+      "choices": [
+        "실행 후 다음 실행을 위해 스케줄 된 상태",
+        "어떤 Task가 완료될 때까지 실행할 수 없는 상태",
+        "CPU를 사용하고 있는 상태",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "2는 Blocked에 대한 설명이며 3은 Running에 대한 설명입니다.",
+      "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
+    },
+    {
+      "question": "프로세스 간 통신 (Inter-process communication) 이란?",
+      "choices": [
+        "프로세스 내부의 통신",
+        "두 프로세스 간의 통신",
+        "같은 프로세스에 속하는 두 쓰레드 간의 통신",
+        "모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "-"
+    },
+    {
+      "question": "프로세스들이 교착 상태 (deadlock) 가 되지 않는 경우는?",
+      "choices": [
+        "Mutual exclusion",
+        "Hold and wait",
+        "Preemption",
+        "Circular wait"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}]
+    },
+    {
+      "question": "프로세스의 Stack이 포함하지 않는 것은?",
+      "choices": [
+        "Function parameters",
+        "Local variables",
+        "Return addresses",
+        "PID of child process"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}]
     }
   ]
 }
