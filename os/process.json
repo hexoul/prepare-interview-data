@@ -57,7 +57,7 @@
       "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
     },
     {
-      "question": "프로세스 간 통신 (Inter-process communication) 이란?",
+      "question": "Inter-process communication 이란?",
       "choices": [
         "프로세스 내부의 통신",
         "두 프로세스 간의 통신",
@@ -65,7 +65,8 @@
         "모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"IPC" : "https://en.wikipedia.org/wiki/Inter-process_communication"}]
     },
     {
       "question": "프로세스들이 교착 상태 (deadlock) 가 되지 않는 경우는?",
