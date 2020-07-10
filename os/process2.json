@@ -43,6 +43,41 @@
       ],
       "answer": 4,
       "explanation": "-"
+    },
+    {
+      "question": "각 프로세스는 ___로 식별할 수 있다.",
+      "choices": [
+        "Process Control Block",
+        "Device Queue",
+        "Process Identifier",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "-"
+    },
+    {
+      "question": "UNIX의 'fork' system call은 자식 프로세스에는 ___를 반환하고 부모 프로세스에는 ___를 반환한다.",
+      "choices": [
+        "음수, 0",
+        "0, 음수",
+        "양수, 0",
+        "0, 양수"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}]
+    },
+    {
+      "question": "자식 프로세스가 수행을 마쳤을 때 부모 프로세스가 실행 중이라면 자식 프로세스는 ___가 된다.",
+      "choices": [
+        "고아 프로세스 (Orphan)",
+        "좀비 프로세스 (Zombie)",
+        "부모 프로세스",
+        "죽은 프로세스"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Zombie process": "https://en.wikipedia.org/wiki/Zombie_process"}, {"Orphan process": "https://en.wikipedia.org/wiki/Orphan_process"}]
     }
   ]
 }
