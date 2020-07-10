@@ -1,16 +1,26 @@
 {
   "questions": [
     {
-      "question": "Process Control Block (PCB)에 포함되지 않는 것은?",
+      "question": "자식 프로세스를 부모 자원의 부분 집합으로 제한하는 것은 어떤 프로세스가 ___ 것을 방지하기 위함이다.",
       "choices": [
-        "Code",
-        "Stack",
-        "Bootstrap program",
-        "Data"
+        "많은 보조 기억 장치를 사용함으로써 시스템에 부하를 만드는",
+        "매우 낮은 CPU 활용도로 시스템에 적게 부하를 주는",
+        "많은 서브프로세스를 만듦으로써 시스템에 부하를 주는",
+        "많은 자원을 활용함으로써 시스템에 장애를 주는"
       ],
       "answer": 3,
-      "explanation": "-",
-      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "explanation": "-"
+    },
+    {
+      "question": "___ system call을 부르는 부모 프로세스는 자식 프로세스들이 종료될 때까지 정지된다.",
+      "choices": [
+        "wait",
+        "fork",
+        "exit",
+        "exec"
+      ],
+      "answer": 1,
+      "explanation": "-"
     }
   ]
 }
