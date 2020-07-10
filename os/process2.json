@@ -21,6 +21,28 @@
       ],
       "answer": 1,
       "explanation": "-"
+    },
+    {
+      "question": "모든 자식 프로세스가 종료한 뒤에 부모 프로세스를 종료하는 것을 ___라 한다.",
+      "choices": [
+        "Normal termination",
+        "Abnormal termination",
+        "Cascading termination",
+        "Circular termination"
+      ],
+      "answer": 3,
+      "explanation": "-"
+    },
+    {
+      "question": "___는 한 프로세서에서 다른 모든 프로세스를 대기시키면서 한 번에 오직 하나의 프로세스만 실행시키는 반면, ___는 여러 프로세스를 동시에 다른 프로세서에서 실행시킬 수 있다.",
+      "choices": [
+        "Multiprocessing, Multiprogramming",
+        "Multiprogramming, Uniprocessing",
+        "Multiprogramming, Multiprocessing",
+        "Uniprogramming, Multiprocessing"
+      ],
+      "answer": 4,
+      "explanation": "-"
     }
   ]
 }
