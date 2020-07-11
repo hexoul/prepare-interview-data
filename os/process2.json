@@ -78,6 +78,52 @@
       "answer": 2,
       "explanation": "-",
       "references": [{"Zombie process": "https://en.wikipedia.org/wiki/Zombie_process"}, {"Orphan process": "https://en.wikipedia.org/wiki/Orphan_process"}]
+    },
+    {
+      "question": "다음 중 프로세스를 위한 Queue가 아닌 것은?",
+      "choices": [
+        "Job Queue",
+        "PCB Queue",
+        "Device Queue",
+        "Ready Queue"
+      ],
+      "answer": 2,
+      "explanation": "-"
+    },
+    {
+      "question": "프로세스가 I/O를 요청했을 때, ___에 배치된다.",
+      "choices": [
+        "I/O queue",
+        "Waiting queue",
+        "Ready queue",
+        "Job Queue"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
+    },
+    {
+      "question": "프로세스가 종료될 때 발생하는 일은?",
+      "choices": [
+        "모든 queue에서 삭제된다.",
+        "Job queue를 제외한 queue에서 삭제된다.",
+        "PCB의 할당이 해제된다.",
+        "PCB의 할당이 해제되지않는다."
+      ],
+      "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "Long-term scheduler란?",
+      "choices": [
+        "ready queue에 옮겨질 프로세스를 선택한다.",
+        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
+        "메모리에서 스왑되어 제거될 프로세스를 선택한다."
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [{"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}]
     }
   ]
 }
