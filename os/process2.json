@@ -124,6 +124,18 @@
       "answer": 1,
       "explanation": "-",
       "references": [{"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}]
+    },
+    {
+      "question": "만약 모든 프로세스가 I/O bound라면 ready queue는 거의 항상 ___ short-term scheduler는 할 일이 ___",
+      "choices": [
+        "꽉 차있고, 적다",
+        "꽉 차있고, 많다",
+        "비어있고, 적다",
+        "비어있고, 많다"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
     }
   ]
 }
