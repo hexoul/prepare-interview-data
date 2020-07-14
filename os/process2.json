@@ -160,6 +160,30 @@
       "answer": 3,
       "explanation": "-",
       "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
+    },
+    {
+      "question": "Short-term scheduler와 Long-term scheduler의 주된 차이점은?",
+      "choices": [
+        "queue 길이의 차이",
+        "스케줄되는 프로세스 타입의 차이",
+        "스케줄러의 실행 주기",
+        "스케줄링에 소모되는 시간"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"}]
+    },
+    {
+      "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition)는 ___가 유일하다.",
+      "choices": [
+        "block",
+        "wakeup",
+        "dispatch",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "wakeup과 dispatch는 스케줄러에 의해 행해진다.",
+      "references": [{"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}]
     }
   ]
 }
