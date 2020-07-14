@@ -194,7 +194,8 @@
         "Terminated state"
       ],
       "answer": 2,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"TSOS": "https://en.wikipedia.org/wiki/Time_Sharing_Operating_System"}]
     },
     {
       "question": "Multiprogramming 환경에서는 ___",
@@ -206,6 +207,29 @@
       ],
       "answer": 3,
       "explanation": "-"
+    },
+    {
+      "question": "프로세스가 I/O 서비스를 기다리기위해 blocked state가 되었었다면, I/O 서비스가 완료되었을 때 프로세스는 어떤 state가 되는가?",
+      "choices": [
+        "Running state",
+        "Ready state",
+        "Suspended state",
+        "Terminated state"
+      ],
+      "answer": 2,
+      "explanation": "-"
+    },
+    {
+      "question": "PCB가 포함하지않는 것은?",
+      "choices": [
+        "CPU 레지스터의 값",
+        "Process state",
+        "메모리 관리 정보",
+        "Context switch 시간"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
     }
   ]
 }
