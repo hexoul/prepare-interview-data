@@ -182,8 +182,30 @@
         "모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "wakeup과 dispatch는 스케줄러에 의해 행해진다.",
+      "explanation": "wakeup과 dispatch는 스케줄러에 의해 행해집니다.",
       "references": [{"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}]
+    },
+    {
+      "question": "Time-sharing OS에서는 프로세스에 주어졌던 time slot이 완료되었을 때, 프로세스를 running state에서 ___ state로 전환시킨다.",
+      "choices": [
+        "Blocked state",
+        "Ready state",
+        "Suspended state",
+        "Terminated state"
+      ],
+      "answer": 2,
+      "explanation": "-"
+    },
+    {
+      "question": "Multiprogramming 환경에서는 ___",
+      "choices": [
+        "프로세서가 한 번에 한 개 이상의 프로세스를 실행한다.",
+        "프로그램이 한 명 이상의 사람에 의해 개발된다.",
+        "한 개 이상의 프로세스가 메모리에 존재한다.",
+        "한 명의 유저가 동시에 여러 프로그램을 실행시킬 수 있다."
+      ],
+      "answer": 3,
+      "explanation": "-"
     }
   ]
 }
