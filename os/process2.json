@@ -136,6 +136,30 @@
       "answer": 3,
       "explanation": "-",
       "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
+    },
+    {
+      "question": "Medium-term scheduler란?",
+      "choices": [
+        "ready queue에 옮겨질 프로세스를 선택한다.",
+        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
+        "메모리에서 스왑되어 제거될 프로세스를 선택한다."
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [{"Medium-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Medium-term_scheduling"}]
+    },
+    {
+      "question": "Short-term scheduler란?",
+      "choices": [
+        "ready queue에 옮겨질 프로세스를 선택한다.",
+        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
+        "메모리에서 스왑되어 제거될 프로세스를 선택한다."
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
     }
   ]
 }
