@@ -9,7 +9,8 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"OS": "https://en.wikipedia.org/wiki/Operating_system"}, {"OS(한)": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"}]
     },
     {
       "question": "운영체제의 서비스에 접근하기위한 인터페이스는 ___를 통해 제공된다.",
@@ -20,7 +21,8 @@
         "Assembly instructions"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"System call": "https://en.wikipedia.org/wiki/System_call"}]
     },
     {
       "question": "다음 중 틀린 설명은?",
