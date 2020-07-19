@@ -1,6 +1,6 @@
 [
   {"content": "운영체제", "link": "/os/contents.json", "num": 35},
+  {"content": "네트워크", "link": "/network/contents.json", "num": 1},
   {"content": "자료구조", "link": ""},
-  {"content": "Python", "link": ""},
   {"content": "Java", "link": ""}
 ]
