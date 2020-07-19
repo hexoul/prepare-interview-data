@@ -10,7 +10,7 @@
       ],
       "answer": 4,
       "explanation": "-",
-      "references": [{"OS": "https://en.wikipedia.org/wiki/Operating_system"}, {"OS(한)": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"}]
+      "references": [{"OS": "https://en.wikipedia.org/wiki/Operating_system"}, {"[한]OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"}]
     },
     {
       "question": "운영체제의 서비스에 접근하기위한 인터페이스는 ___를 통해 제공된다.",
