@@ -1,16 +1,28 @@
 {
   "questions": [
     {
-      "question": "WIP 문제1",
+      "question": "IETF 표준 문서는 ___라 불린다.",
       "choices": [
-        "WIP",
-        "응용프로그램들을 위한 System service provider",
-        "하드웨어와 응용프로그램들을 이어주는 연결부",
-        "위에 언급된 모두 해당"
+        "RFC",
+        "RCF",
+        "ID",
+        "DFC"
       ],
-      "answer": 4,
-      "explanation": "-",
-      "references": [{"OS": "https://en.wikipedia.org/wiki/Operating_system"}]
+      "answer": 1,
+      "explanation": "RFC는 Request For Comments로 인터넷에 적용가능한 방법, behavior, 연구 등이 기술된 문서들로 이루어집니다.",
+      "references": [{"IETF": "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force"}, {"RFC": "https://en.wikipedia.org/wiki/Request_for_Comments"}]
+    },
+    {
+      "question": "OSI 모델 계층 구조에서 상위 계층에서 하위 계층으로 갈 때 헤더는 ___",
+      "choices": [
+        "추가된다",
+        "제거된다",
+        "재구성된다",
+        "수정된다"
+      ],
+      "answer": 1,
+      "explanation": "상위 계층에서 하위 계층으로 가는 건 전송의 경우입니다. 전송 시 각 레이어는 이전 레이어에서 받은 헤더에 자신의 헤더를 추가합니다. 예를 들어, Layer 3인 Network layer에서는 Layer 4 Transport layer의 Protocol Data Unit (PDU)에 IP header를 덧붙입니다.",
+      "references": [{"OSI Model": "https://en.wikipedia.org/wiki/OSI_model"}]
     }
   ]
 }
