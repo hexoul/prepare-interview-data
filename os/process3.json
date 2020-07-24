@@ -22,7 +22,19 @@
       ],
       "answer": 1,
       "explanation": "Critical section은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
-      "references": [{"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}]
+      "references": [{"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}, {"[한]Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"}]
+    },
+    {
+      "question": "다음 중 동기화에 쓰이는 자원은?",
+      "choices": [
+        "Thread",
+        "Pipe",
+        "Semaphore",
+        "Socket"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}]
     }
   ]
 }
