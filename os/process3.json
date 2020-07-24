@@ -35,6 +35,17 @@
       "answer": 3,
       "explanation": "-",
       "references": [{"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}]
+    },
+    {
+      "question": "상호 배제 (Mutual exclusion)는 ___을 통해 제공받을 수 있다.",
+      "choices": [
+        "Mutex locks",
+        "Binary semaphore",
+        "Mutex locks와 binary semaphore",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "Binary semaphore는 mutex lock으로도 알려져 있습니다."
     }
   ]
 }
