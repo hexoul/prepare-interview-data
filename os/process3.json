@@ -11,6 +11,18 @@
       "answer": 2,
       "explanation": "-",
       "references": [{"Race condition": "https://en.wikipedia.org/wiki/Race_condition#Software"}]
+    },
+    {
+      "question": "만약 한 프로세스가 critical section을 실행 중이라면, 다른 프로세스들은 자신의 critical section을 실행할 수 없게 된다. 이를 무엇이라 하는가?",
+      "choices": [
+        "Mutual exclusion",
+        "Critical exclusion",
+        "Synchronous exclusion",
+        "Asynchronous exclusion"
+      ],
+      "answer": 1,
+      "explanation": "Critical section은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
+      "references": [{"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}]
     }
   ]
 }
