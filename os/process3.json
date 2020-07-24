@@ -1,15 +1,16 @@
 {
   "questions": [
     {
-      "question": "",
+      "question": "여러 프로세스가 같은 데이터를 동시에 접근할 때 실행 결과가 접근 순서에 의존하는 상황을 무엇이라 하는가?",
       "choices": [
-        "",
-        "Uniprocessing systems",
-        "Unitasking systems",
-        "Universal systems"
+        "Dynamic condition",
+        "Race condition",
+        "Essential condition",
+        "Critical condition"
       ],
       "answer": 2,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Race condition": "https://en.wikipedia.org/wiki/Race_condition#Software"}]
     }
   ]
 }
