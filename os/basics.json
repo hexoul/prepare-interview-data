@@ -89,8 +89,8 @@
         "Palm OS"
       ],
       "answer": 4,
-      "explanation": "-",
-      "references": [{"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}]
+      "explanation": "Palm OS는 96년도에 출시된 PDA 및 모바일용 운영체제로 터치스크린 GUI를 위해 개발되었고 실시간 운영체제는 아닙니다.",
+      "references": [{"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}, {"[한]Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"}]
     },
     {
       "question": "다음 중 Kernel mode (Kernel space)의 비중이 제일 큰 kernel은?",
