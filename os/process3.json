@@ -46,6 +46,30 @@
       ],
       "answer": 3,
       "explanation": "Binary semaphore는 mutex lock으로도 알려져 있습니다."
+    },
+    {
+      "question": "High priority task가 medium priority task에 의해 간접적으로 선점되어질 때 두 task의 상대 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
+      "choices": [
+        "Priority removal",
+        "Priority inversion",
+        "Priority exchange",
+        "Priority modification"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Prirority inversion": "https://en.wikipedia.org/wiki/Priority_inversion"}]
+    },
+    {
+      "question": "프로세스 동기화는 ___에서 이루어진다.",
+      "choices": [
+        "hardware level",
+        "software level",
+        "hardware and software level",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "Critical section을 기반으로 한 프로세스 선점 (preemption) 제어는 hardware와 software에서 모두 이루어질 수 있습니다. Software level은 OS scheduling 기법들로 구현될 수 있습니다. Hardware level의 예로는 interrupt를 일시적으로 disable 시키거나 lock 제어를 위한 compare-and-swap을 hardware instruction level로 제공하는 것이 있습니다.",
+      "references": [{"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}]
     }
   ]
 }
