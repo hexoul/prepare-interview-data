@@ -72,7 +72,7 @@
       "references": [{"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}]
     },
     { 
-      "question": "Inter process communication (IPC) 란?",
+      "question": "Inter-process communication (IPC) 란?",
       "choices": [
         "같은 주소 공간을 사용할 때 프로세스 간에 행해지는 통신과 동기화",
         "같은 주소 공간을 사용하지않는 프로세스 간의 통신과 동기화",
@@ -82,6 +82,18 @@
       "answer": 2,
       "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메세지큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 또한 1의 설명은 critical section을 통해 동기화하는 semaphore 등의 동기화 기법으로는 볼 수 있지만, 통신에 대한 개념 부분이 빠져있습니다.",
       "references": [{"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}]
+    },
+    { 
+      "question": "Message passing 시스템은 프로세스가 ___",
+      "choices": [
+        "",
+        "",
+        "데이터를 공유할 수 있게 해준다.",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}]
     }
   ]
 }
