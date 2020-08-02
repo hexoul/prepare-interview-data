@@ -1,6 +1,11 @@
 [
   {"content": "운영체제", "link": "/os/contents.json", "num": 50},
   {"content": "네트워크", "link": "/network/contents.json", "num": 1},
-  {"content": "자료구조", "link": ""},
-  {"content": "Java", "link": ""}
+  {"content": "자료구조", "link": "", "num": 0},
+  {"content": "Java", "link": "", "num": 0},
+  {"content": "1", "link": "", "num": 0},
+  {"content": "2", "link": "", "num": 0},
+  {"content": "3", "link": "", "num": 0},
+  {"content": "4", "link": "", "num": 0},
+  {"content": "5", "link": "", "num": 0}
 ]
