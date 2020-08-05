@@ -116,6 +116,28 @@
       ],
       "answer": 3,
       "explanation": "-"
+    },
+    {
+      "question": "메세지를 보내고 받기 위한 두 프로세스 간의 링크를 ___라 한다.",
+      "choices": [
+        "Communication link",
+        "Message-passing link",
+        "Synchronization link",
+        "Process link"
+      ],
+      "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "다음 중 direct communication에 대해 맞는 설명은?",
+      "choices": [
+        "하나의 communication link가 N 개의 프로세스와 연결될 수 있다.",
+        "하나의 communication link는 정확히 두 프로세스와만 연결된다.",
+        "N 개의 프로세스가 있을 때 정확히 N/2 개의 communication link가 존재한다.",
+        "연결된 두 프로세스의 쌍(pair)마다 정확히 두 개의 링크를 가진다."
+      ],
+      "answer": 2,
+      "explanation": "한 프로세스가 여러 프로세스와 연결될 수 있고 각 연결에서 한 link가 쓰이므로, N 개의 프로세스가 있다면 조합의 수인 nC2 = N! / 2! * (N - 2)! 개 만큼 link가 존재할 수 있다."
     }
   ]
 }
