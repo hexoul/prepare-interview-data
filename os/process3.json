@@ -83,7 +83,7 @@
       "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메세지큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 critical section을 통해 동기화하는 semaphore 등의 동기화 기법의 설명으로 볼 수 있습니다.",
       "references": [{"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}]
     },
-    { 
+    {
       "question": "Message passing 시스템은 프로세스가 ___ 하는 것을 가능하게 해준다.",
       "choices": [
         "공유 데이터를 사용하지않고 다른 프로세스와 통신",
@@ -94,6 +94,28 @@
       "answer": 1,
       "explanation": "Message passing 시스템은 메세지 큐 또는 채널을 통해 메세지를 전달하는 시스템으로 수신 측에서 가져가는 작업이 있어야만 데이터가 최종적으로 전달됩니다.",
       "references": [{"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}]
+    },
+    {
+      "question": "다음 중 IPC로부터 제공받는 두 operation은?",
+      "choices": [
+        "write & delete message",
+        "delete & receive message",
+        "send & delete message",
+        "receive & send message"
+      ],
+      "answer": 4,
+      "explanation": "-"
+    },
+    {
+      "question": "프로세스로부터 보내지는 메세지의 크기는 ___",
+      "choices": [
+        "고정되어야 한다.",
+        "가변이어야 한다.",
+        "고정일 수도 있고 가변일 수도 있다.",
+        "운영체제마다 다르다."
+      ],
+      "answer": 3,
+      "explanation": "-"
     }
   ]
 }
