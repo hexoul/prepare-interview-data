@@ -163,6 +163,39 @@
       ],
       "answer": 4,
       "explanation": "-"
+    },
+    {
+      "question": "Zero capacity queue에 대해서 올바른 설명은?",
+      "choices": [
+        "Queue가 적어도 하나의 메세지를 저장할 수 있다.",
+        "송신자는 수신자가 메세지를 받아갈 때까지 블록된다.",
+        "송신자는 계속해서 메세지를 보낼 수 있지만 메세지가 queue에 머무르지 않는다.",
+        "송신자는 상황에 따라 블록될 수도 안될 수도 있다."
+      ],
+      "answer": 2,
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메세지 전달을 보장하기 위해서 송신자는 수신자가 메세지를 받아갈 때까지 블록되어야 합니다."
+    },
+    {
+      "question": "Zero capacity queue는 ___라고도 불린다.",
+      "choices": [
+        "No-buffering message system",
+        "Buffering message system",
+        "Process link",
+        "Unbounded link"
+      ],
+      "answer": 1,
+      "explanation": "-"
+    },
+    {
+      "question": "Bounded 또는 unbounded capacity queue는 ___라고 볼 수 있다.",
+      "choices": [
+        "프로그램되어진 버퍼링",
+        "자동 버퍼링",
+        "사용자 정의 버퍼링",
+        "No buffering"
+      ],
+      "answer": 2,
+      "explanation": "Bounded 또는 unbounded capacity queue는 queue의 길이가 제한(bounded)되었거나 무한대(unbounded)인 queue를 의미합니다. 따라서 프로세스를 블록시키도록 프로그래밍 것이 아니라 queue의 특성과 사용 패턴에 따라 자동으로 버퍼링되는 것이므로 automatic 또는 explicit buffering이라고 언급되기도 합니다."
     }
   ]
 }
