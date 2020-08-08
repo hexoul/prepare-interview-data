@@ -152,6 +152,17 @@
       "answer": 3,
       "explanation": "Indirect communication에서 송신자는 메세지를 mailbox에 저장하고 수신자는 메세지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 communication 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 direct냐 indirect냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
       "references": [{"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}]
+    },
+    {
+      "question": "Non-blocking 프로세스는 ___",
+      "choices": [
+        "메세지가 수신될 때까지 계속하여 메세지를 보낸다.",
+        "메세지를 받을 때까지 계속하여 메세지를 보낸다.",
+        "메세지를 보내고 메세지를 받을 때까지 대기한다.",
+        "메세지를 보내고 작업을 재개한다."
+      ],
+      "answer": 4,
+      "explanation": "-"
     }
   ]
 }
