@@ -23,6 +23,18 @@
       "answer": 1,
       "explanation": "상위 계층에서 하위 계층으로 가는 건 전송의 경우입니다. 전송 시 각 레이어는 이전 레이어에서 받은 헤더에 자신의 헤더를 추가합니다. 예를 들어, Layer 3인 Network layer에서는 Layer 4 Transport layer의 Protocol Data Unit (PDU)에 IP header를 덧붙입니다.",
       "references": [{"OSI Model": "https://en.wikipedia.org/wiki/OSI_model"}]
+    },
+    {
+      "question": "키보드와 컴퓨터 사이의 통신은 ___ 전송을 이용한다.",
+      "choices": [
+        "Automatic",
+        "Half-duplex",
+        "Full-duplex",
+        "Simplex"
+      ],
+      "answer": 4,
+      "explanation": "Simplex transmission은 데이터가 단방향 흐르는 전송으로, 키보드같이 컴퓨터로 데이터를 보내기만 하고 받을 필요가 없을 때 사용됩니다.",
+      "references": [{"Duplex": "https://en.wikipedia.org/wiki/Duplex_(telecommunications)"}]
     }
   ]
 }
