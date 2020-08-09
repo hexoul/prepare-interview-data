@@ -33,8 +33,20 @@
         "Simplex"
       ],
       "answer": 4,
-      "explanation": "Simplex transmission은 데이터가 단방향 흐르는 전송으로, 키보드같이 컴퓨터로 데이터를 보내기만 하고 받을 필요가 없을 때 사용됩니다.",
+      "explanation": "Simplex transmission은 데이터가 단방향 흐르는 전송으로, 키보드같이 컴퓨터로 데이터를 보내기만 하고 받을 필요가 없을 때 사용됩니다. 양방향 전송인 duplex는 full-duplex와 half-duplex 또는 semiduplex이 있습니다. full-duplex는 동시에 양방향 전송이 가능한 반면, half-duplex 또는 semiduplex는 한 번에 한 방향의 전송만 가능합니다.",
       "references": [{"Duplex": "https://en.wikipedia.org/wiki/Duplex_(telecommunications)"}]
+    },
+    {
+      "question": "첫 네트워크는 ___이다.",
+      "choices": [
+        "CNNET",
+        "NSFNET",
+        "ASAPNET",
+        "ARPANET"
+      ],
+      "answer": 4,
+      "explanation": "ARPANET은 Advanced Research Projects Agency Networks으로 1969년에 TCP/IP를 구현한 최초의 네트워크입니다.",
+      "references": [{"ARPANET": "https://en.wikipedia.org/wiki/ARPANET"}]
     }
   ]
 }
