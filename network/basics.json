@@ -37,7 +37,7 @@
       "references": [{"Duplex": "https://en.wikipedia.org/wiki/Duplex_(telecommunications)"}]
     },
     {
-      "question": "첫 네트워크는 ___이다.",
+      "question": "최초의 네트워크 이름은 ___이다.",
       "choices": [
         "CNNET",
         "NSFNET",
