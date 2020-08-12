@@ -47,6 +47,17 @@
       "answer": 4,
       "explanation": "ARPANET은 Advanced Research Projects Agency Networks으로 1969년에 TCP/IP를 구현한 최초의 네트워크입니다.",
       "references": [{"ARPANET": "https://en.wikipedia.org/wiki/ARPANET"}]
+    },
+    {
+      "question": "메세지가 전송되는 물리적 경로를 ___라 한다.",
+      "choices": [
+        "Path",
+        "Medium",
+        "Protocol",
+        "Route"
+      ],
+      "answer": 2,
+      "explanation": "송신자로부터 수신자에게 전달되는 메세지는 물리적 경로인 medium을 통해 전달됩니다. medium은 유선일 수도 무선일 수도 있습니다. 이 때 메세지 전송 시에 사용되는 일련의 방법이나 규칙들을 protocol이라 합니다."
     }
   ]
 }
