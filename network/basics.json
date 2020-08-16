@@ -70,6 +70,17 @@
       "answer": 4,
       "explanation": "호스트란 네트워크에 연결되어 참가하는 장치들을 말합니다. 각각이 네트워크 주소를 가지고 OSI 7 layer에서 application의 역할을 할 수 있어야하므로 중간에서 포워딩만하고 능동적으로 참가하지않는 스위치는 호스트가 아닙니다. 스위치는 P2P 등에서는 안쓰일 수도 있기 때문에 네트워크에서 필수요소가 아니기도 합니다.",
       "references": [{"Host": "https://en.wikipedia.org/wiki/Host_(network)"}]
+    },
+    {
+      "question": "어떤 클라이언트에게 다양한 컴퓨터의 집합이 single coherent system으로 보인다면 이것은 ___라 불린다.",
+      "choices": [
+        "Computer network",
+        "Networking system",
+        "Distributed system",
+        "Mail system"
+      ],
+      "answer": 3,
+      "explanation": "Computer network는 연결에 대해 단일 기술을 사용하는 서로 연결된 컴퓨터들의 집합입니다. 나아가 distributed system도 computer network이나 전체 컴퓨터 집합이 사용자에게 single coherent system으로 보인다는 것이 주된 차이점입니다. 예시로 WWW (World Wide Web)이 있습니다."
     }
   ]
 }
