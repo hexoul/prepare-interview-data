@@ -174,7 +174,7 @@
       "references": [{"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"}]
     },
     {
-      "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition)는 ___가 유일하다.",
+      "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition) 는 ___가 유일하다.",
       "choices": [
         "block",
         "wakeup",
@@ -240,7 +240,7 @@
         "Page table"
       ],
       "answer": 2,
-      "explanation": "Translation lookaside buffer, TLB는 페이지 테이블에 빠르게 접근하기위한 캐시로 memory management unit (MMU)에서 하드웨어 레벨로 구현됩니다.",
+      "explanation": "Translation lookaside buffer, TLB는 페이지 테이블에 빠르게 접근하기위한 캐시로 memory management unit (MMU) 에서 하드웨어 레벨로 구현됩니다.",
       "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}, {"Translation Lookaside Buffer": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}]
     },
     {
