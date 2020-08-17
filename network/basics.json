@@ -93,6 +93,17 @@
       "answer": 4,
       "explanation": "Overlay network의 예시로 인터넷이라는 네트워크 위에서 구축되는 Virtual Private Networks (VPN) 와 Peer-to-Peer (P2P) 가 있습니다.",
       "references": [{"Overlay network": "https://en.wikipedia.org/wiki/Overlay_network"}]
+    },
+    {
+      "question": "컴퓨터 네트워크에서 노드는 ___",
+      "choices": [
+        "데이터를 발생시키는 컴퓨터이다.",
+        "데이터를 route하는 컴퓨터이다.",
+        "데이터를 소모하는 컴퓨터이다.",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "컴퓨터 네트워크에서 송신, 수신 또는 라우팅하는 모든 참가자가 노드가 됩니다. 따라서 예로 라우터, 컴퓨터, 스마트폰은 모두 노드가 될 수 있습니다."
     }
   ]
 }
