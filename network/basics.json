@@ -81,6 +81,18 @@
       ],
       "answer": 3,
       "explanation": "Computer network는 연결에 대해 단일 기술을 사용하는 서로 연결된 컴퓨터들의 집합입니다. 나아가 distributed system도 computer network이나 전체 컴퓨터 집합이 사용자에게 single coherent system으로 보인다는 것이 주된 차이점입니다. 예시로 WWW (World Wide Web)이 있습니다."
+    },
+    {
+      "question": "다른 네트워크 위에서 구축되는 컴퓨터 네트워크는?",
+      "choices": [
+        "Prior network",
+        "Chief network",
+        "Prime network",
+        "Overlay network"
+      ],
+      "answer": 4,
+      "explanation": "Overlay network의 예시로 인터넷이라는 네트워크 위에서 구축되는 Virtual Private Networks (VPN) 와 Peer-to-Peer (P2P) 가 있습니다.",
+      "references": [{"Overlay network": "https://en.wikipedia.org/wiki/Overlay_network"}]
     }
   ]
 }
