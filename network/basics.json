@@ -128,6 +128,18 @@
       "answer": 1,
       "explanation": "블루투스는 무선 통신 기술 중의 하나로 보통 10 미터 이내의 범위에서 데이터 전송을 하기위한 PAN 구축에 쓰입니다.",
       "references": [{"Bluetooth": "https://en.wikipedia.org/wiki/Bluetooth"}]
+    },
+    {
+      "question": "네트워크 사이에서 패킷에 포함된 라우팅 정보를 기반으로 패킷을 포워딩하는 장치는?",
+      "choices": [
+        "Bridge",
+        "Firewall",
+        "Router",
+        "Hub"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Router": "https://en.wikipedia.org/wiki/Router_(computing)"}]
     }
   ]
 }
