@@ -140,6 +140,18 @@
       "answer": 3,
       "explanation": "-",
       "references": [{"Router": "https://en.wikipedia.org/wiki/Router_(computing)"}]
+    },
+    {
+      "question": "시스템에서 사용되는 여러 레이어로 구성된 프로토콜 목록을 ___라고 한다.",
+      "choices": [
+        "Protocol architecture",
+        "Protocol stack",
+        "Protocol suite",
+        "Protocol system"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [{"Protocl stack": "https://en.wikipedia.org/wiki/Protocol_stack"}]
     }
   ]
 }
