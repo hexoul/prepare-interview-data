@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "question": "Internet protocol stack (TCP/IP 모델) 에는 몇 개의 레이어가 존재하는가?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
+    }
+  ]
+}
