@@ -23,6 +23,29 @@
       "answer": 3,
       "explanation": "Application, Presentation, Session, Transport, Network, Data link and Physical layer",
       "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}]
+    },
+    {
+      "question": "다음 중 TCP/IP 모델에는 없고 OSI 모델에만 존재하는 레이어는 무엇인가?",
+      "choices": [
+        "Application layer",
+        "Presentation layer",
+        "Session layer",
+        "Presentation과 Session layer"
+      ],
+      "answer": 4,
+      "explanation": "TCP/IP 모델에서는 Presentation layer와 Session layer는 Application layer에 포함됩니다.",
+      "references": [{"모델 비교": "https://en.wikipedia.org/wiki/Internet_protocol_suite#Comparison_of_TCP/IP_and_OSI_layering"}]
+    },
+    {
+      "question": "다음 중 Presentation layer가 포함하는 기능은?",
+      "choices": [
+        "데이터 압축",
+        "데이터 암호화",
+        "데이터 복호화",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "Presentation layer는 application이 네트워크마다 다를 수 있는 데이터 포맷이나 전송 방식 등을 신경쓰지않고 작업할 수 있도록 독립성을 제공하는 레이어입니다. 따라서 송수신 시에 하위 레이어에 따라 application에서 받거나 application에 보낼 데이터를 압축 또는 해제하거나 변환하는 등의 작업을 합니다."
     }
   ]
 }
