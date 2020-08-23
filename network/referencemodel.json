@@ -9,8 +9,20 @@
         "10"
       ],
       "answer": 1,
-      "explanation": "Internet protocol stack은 Internet protocl suite의 구현체로 제안자에 따라 일부 레이어의 이름이 다를 때도 있으나, 일반적으로는 OSI layer를 고려해 physical, link, internet, transport, application의 다섯 레이어로 생각됩니다.",
+      "explanation": "Internet protocol stack은 Internet protocl suite의 구현체로 제안자에 따라 일부 레이어의 이름이 다를 때도 있으나, 일반적으로는 OSI 모델을 고려해 Physical, Data link, Internet (Network), Transport, Application의 다섯 레이어로 생각됩니다.",
       "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
+    },
+    {
+      "question": "ISO OSI 모델에는 몇 개의 레이어가 존재하는가?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "Application, Presentation, Session, Transport, Network, Data link and Physical layer",
+      "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}]
     }
   ]
 }
