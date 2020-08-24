@@ -46,6 +46,17 @@
       ],
       "answer": 4,
       "explanation": "Presentation layer는 application이 네트워크마다 다를 수 있는 데이터 포맷이나 전송 방식 등을 신경쓰지않고 작업할 수 있도록 독립성을 제공하는 레이어입니다. 따라서 송수신 시에 하위 레이어에 따라 application에서 받거나 application에 보낼 데이터를 압축 또는 해제하거나 변환하는 등의 작업을 합니다."
+    },
+    {
+      "question": "다음 중 교환되는 메세지 스트림의 동기화를 제공하는 레이어는?",
+      "choices": [
+        "Application layer",
+        "Session layer",
+        "Transport layer",
+        "Data link layer"
+      ],
+      "answer": 2,
+      "explanation": "Session layer는 종단 프로세스 간에 세션의 확립, 유지 및 중단을 위한 메커니즘을 제공하는 레이어입니다. 세션을 직접 관리함으로써 전이중 (full-duplex) 및 반이중 (half-duplex) 통신 위에서의 동기화를 가능하게 합니다. Session layer의 대표적인 예로는 TCP/IP가 있습니다."
     }
   ]
 }
