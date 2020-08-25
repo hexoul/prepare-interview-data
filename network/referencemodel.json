@@ -61,7 +61,7 @@
       "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}, {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"}]
     },
     {
-      "question": "OSI 모델에서 종단 A에서 종단 B로 데이터를 보낼 때 B에서 데이터가 5번째로 거치는 레이어는?",
+      "question": "OSI 모델에서 종단 A로부터 종단 B로 데이터를 보낼 때, B에서 데이터가 5번째로 거치는 레이어는?",
       "choices": [
         "Application layer",
         "Session layer",
@@ -73,7 +73,7 @@
       "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}, {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"}]
     },
     {
-      "question": "TCP/IP 모델에서 종단 A에서 종단 B로 데이터를 보낼 때 A에서 데이터가 5번째로 거치는 레이어는?",
+      "question": "TCP/IP 모델에서 종단 A로부터 종단 B로 데이터를 보낼 때, A에서 데이터가 5번째로 거치는 레이어는?",
       "choices": [
         "Application layer",
         "Session layer",
