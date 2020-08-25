@@ -59,6 +59,30 @@
       "answer": 2,
       "explanation": "Session layer는 종단 프로세스 간에 세션의 확립, 유지 및 중단을 위한 메커니즘을 제공하는 레이어입니다. 세션을 직접 관리함으로써 전이중 (full-duplex) 및 반이중 (half-duplex) 통신 위에서의 동기화를 가능하게 합니다. Session layer의 대표적인 예로는 TCP/IP가 있습니다.",
       "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}, {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"}]
+    },
+    {
+      "question": "OSI 모델에서 종단 A에서 종단 B로 데이터를 보낼 때 B에서 데이터가 5번째로 거치는 레이어는?",
+      "choices": [
+        "Application layer",
+        "Session layer",
+        "Transport layer",
+        "Network layer"
+      ],
+      "answer": 2,
+      "explanation": "수신 측에서 데이터는 하위 레이어에서 상위 레이어로 가는 흐름이므로, Physical layer부터 시작하여 5번째는 Session layer가 됩니다.",
+      "references": [{"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}, {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"}]
+    },
+    {
+      "question": "TCP/IP 모델에서 종단 A에서 종단 B로 데이터를 보낼 때 A에서 데이터가 5번째로 거치는 레이어는?",
+      "choices": [
+        "Application layer",
+        "Session layer",
+        "Network layer",
+        "Physical layer"
+      ],
+      "answer": 4,
+      "explanation": "송신 측에서 데이터는 상위 레이어에서 하위 레이어로 가는 흐름이므로, Application layer부터 시작하여 5번째는 Physical layer가 됩니다. 만약 OSI 모델에서의 통신이었다면 Network layer가 정답이 되었을 것입니다.",
+      "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
     }
   ]
 }
