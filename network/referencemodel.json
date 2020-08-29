@@ -105,6 +105,18 @@
       ],
       "answer": 2,
       "explanation": "Layer 1, 2, 3인 physical, data link, network layer의 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
+    },
+    {
+      "question": "TCP/IP 프로토콜에서 사용되는 주소는?",
+      "choices": [
+        "Physical address",
+        "Logical address",
+        "Port address",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "TCP/IP 프로토콜은 네트워크 지원 계층뿐만 아니라 application layer까지 포함하므로 물리적 주소 (MAC), 논리적 주소 및 포트 모두 사용됩니다. 포트의 사용 예로 한 public IP에 여러 private IP가 매핑되어있을 때 구별하기위해 사용되기도 합니다.",
+      "references": [{"Network address translation": "https://en.wikipedia.org/wiki/Network_address_translation"}]
     }
   ]
 }
