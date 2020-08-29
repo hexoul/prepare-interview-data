@@ -104,7 +104,7 @@
         "Data link layer"
       ],
       "answer": 2,
-      "explanation": "Layer 1, 2, 3인 physical, data link, network layer가 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer가 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
+      "explanation": "Layer 1, 2, 3인 physical, data link, network layer의 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
     }
   ]
 }
