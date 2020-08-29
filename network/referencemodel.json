@@ -83,6 +83,17 @@
       "answer": 4,
       "explanation": "송신 측에서 데이터는 상위 레이어에서 하위 레이어로 가는 흐름이므로, Application layer부터 시작하여 5번째는 Physical layer가 됩니다. 만약 OSI 모델에서의 통신이었다면 Network layer가 정답이 되었을 것입니다.",
       "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
+    },
+    {
+      "question": "OSI의 뜻으로 맞는 것은?",
+      "choices": [
+        "Open System Interconnection",
+        "Operating System Interfacae",
+        "Optical Service Implementation",
+        "Open Service Internet"
+      ],
+      "answer": 1,
+      "explanation": "-"
     }
   ]
 }
