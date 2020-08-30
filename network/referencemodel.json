@@ -104,7 +104,7 @@
         "Data link layer"
       ],
       "answer": 2,
-      "explanation": "Layer 1, 2, 3인 physical, data link, network layer의 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
+      "explanation": "Layer 1, 2, 3인 physical, data link, network layer의 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer의 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
     },
     {
       "question": "TCP/IP 프로토콜에서 사용되는 주소는?",
@@ -128,6 +128,30 @@
       ],
       "answer": 1,
       "explanation": "TCP/IP 모델은 1978년에서 1983년 사이에 인터넷을 위한 모델로 여러 연구소에서 개발되었습니다. 반면 OSI 모델은 나아가 일반적인 네트워크 모델을 목표로 1984년에 개발되었습니다."
+    },
+    {
+      "question": "다음 중 일반적인 네트워크 모델에서 프로세스 간 데이터 전달을 책임지는 계층은?",
+      "choices": [
+        "Network layer",
+        "Transport layer",
+        "Session layer",
+        "Data link layer"
+      ],
+      "answer": 2,
+      "explanation": "Transport layer (L4)는 네트워크 상에 존재하는 두 시스템 간의 논리적 연결을 생성하고 데이터를 전송하는 역할을 합니다. 대부분의 경우 프로토콜로 TCP 또는 UDP가 구현됩니다.",
+      "references": [{"Transport layer": "https://en.wikipedia.org/wiki/Transport_layer"}]
+    },
+    {
+      "question": "한 호스트 내에서 transport layer가 프로세스를 특정짓기위해 사용하는 주소는?",
+      "choices": [
+        "Physcial address",
+        "Logical address",
+        "Port address",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 3,
+      "explanation": "종단에 패킷이 도착했을 때 어느 프로세스로 보낼지 포트를 통핵 결정할 수 있습니다 (Multiplexing). 몇 가지 예로 20은 FTP, 22는 SSH, 23은 TELNET에 쓰입니다. 참고로 이 기능은 TCP/IP 모델에서는 L4인 transport layer의 역할이나 OSI 모델에서는 L5인 session layer의 역할이기도 니다.",
+      "references": [{"Transport layer": "https://en.wikipedia.org/wiki/Transport_layer"}]
     }
   ]
 }
