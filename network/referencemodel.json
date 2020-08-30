@@ -117,6 +117,17 @@
       "answer": 4,
       "explanation": "TCP/IP 프로토콜은 네트워크 지원 계층뿐만 아니라 application layer까지 포함하므로 물리적 주소 (MAC), 논리적 주소 및 포트 모두 사용됩니다. 포트의 사용 예로 한 public IP에 여러 private IP가 매핑되어있을 때 구별하기위해 사용되기도 합니다.",
       "references": [{"Network address translation": "https://en.wikipedia.org/wiki/Network_address_translation"}]
+    },
+    {
+      "question": "TCP/IP 모델은 OSI 모델 ___",
+      "choices": [
+        "보다 먼저 개발됐다.",
+        "보다 나중에 개발됐다.",
+        "과 동시에 개발됐다.",
+        "과 관계없다."
+      ],
+      "answer": 1,
+      "explanation": "TCP/IP 모델은 1978년에서 1983년 사이에 인터넷을 위한 모델로 여러 연구소에서 개발되었습니다. 반면 OSI 모델은 나아가 일반적인 네트워크 모델을 목표로 1984년에 개발되었습니다."
     }
   ]
 }
