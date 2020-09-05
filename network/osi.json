@@ -1,16 +1,15 @@
 {
   "questions": [
     {
-      "question": "-",
+      "question": "Physical layaer는 ___ 전달이 고려되었다.",
       "choices": [
-        "5",
-        "6",
-        "7",
-        "10"
+        "bit by bit",
+        "process to process",
+        "port to port",
+        "application to application"
       ],
       "answer": 1,
-      "explanation": "Internet protocol stack은 Internet protocl suite의 구현체로 제안자에 따라 일부 계층의 이름이 다를 때도 있으나, 일반적으로는 OSI 모델을 고려해 Physical, Data link, Internet (Network), Transport, Application의 다섯 레이어로 생각됩니다.",
-      "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
+      "explanation": "-"
     }
   ]
 }
