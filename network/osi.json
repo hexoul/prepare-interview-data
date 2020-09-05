@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Physical layaer는 ___ 전달이 고려되었다.",
+      "question": "Physical layer는 ___ 전달이 고려되었다.",
       "choices": [
         "bit by bit",
         "process to process",
@@ -9,7 +9,19 @@
         "application to application"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "Physical layer는 첫 번째 계층으로써 네트워크에서 물리적으로 bit를 보내는 방법을 다룹니다. Process 간 또는 port 간은 transport layer에서 다뤄집니다."
+    },
+    {
+      "question": "다음 중 어느 전송 매체가 제일 빠른 전송 속도를 가지는가?",
+      "choices": [
+        "동축 케이블 (coaxial cable)",
+        "연선 혹은 꼬임 쌍선 (twisted pair cable)",
+        "광학 섬유 (optical fibor)",
+        "전력 케이블 (electrical cable)"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"동축 케이블": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%B6%95_%EC%BC%80%EC%9D%B4%EB%B8%94"}, {"연선": "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%A0"}, {"광섬유": "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%84%AC%EC%9C%A0"}, {"Electrical cable": "https://en.wikipedia.org/wiki/Electrical_cable"}]
     }
   ]
 }
