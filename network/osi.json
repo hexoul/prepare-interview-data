@@ -45,6 +45,18 @@
       ],
       "answer": 1,
       "explanation": "-"
+    },
+    {
+      "question": "비동기 직렬 통신에서 쓰이지 않는 것은?",
+      "choices": [
+        "Start signalling",
+        "Stop signalling",
+        "Clock signalling",
+        "Flow control"
+      ],
+      "answer": 3,
+      "explanation": "동기 직렬 통신은 clock signal의 송수신을 통해 동기화합니다. 반면 비동기 직렬 통신은 start signal을 통해 데이터를 받을 수 있도록 초기화시키고 stop signal을 통해 새로운 시퀀스의 데이터를 받을 수 있도록 state를 reset시킵니다. start와 stop 사이에는 flow control을 통해 비동기를 가능케 합니다.",
+      "references": [{"Asynchoronous serial communication": "https://en.wikipedia.org/wiki/Asynchronous_serial_communication"}]
     }
   ]
 }
