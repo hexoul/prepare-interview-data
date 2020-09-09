@@ -47,7 +47,7 @@
       "explanation": "-"
     },
     {
-      "question": "비동기 직렬 통신에서 쓰이지 않는 것은?",
+      "question": "비동기 직렬 통신 (Asynchoronous serial communication) 에서 쓰이지 않는 것은?",
       "choices": [
         "Start signalling",
         "Stop signalling",
@@ -57,6 +57,17 @@
       "answer": 3,
       "explanation": "동기 직렬 통신은 clock signal의 송수신을 통해 동기화합니다. 반면 비동기 직렬 통신은 start signal을 통해 데이터를 받을 수 있도록 초기화시키고 stop signal을 통해 새로운 시퀀스의 데이터를 받을 수 있도록 state를 reset시킵니다. start와 stop 사이에는 flow control을 통해 비동기를 가능케 합니다.",
       "references": [{"Asynchoronous serial communication": "https://en.wikipedia.org/wiki/Asynchronous_serial_communication"}]
+    },
+    {
+      "question": "다음 중 physical layer의 역할은?",
+      "choices": [
+        "Line coding",
+        "Channel coding",
+        "Modulation",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "Line coding, channel coding 및 modulation 모두 정보 전송에 필요한 기술들로 physcial layer의 역할에 해당합니다. pin이나 커넥터, 전류 등의 물리적 설정도 physical layer에서 취급됩니다.\n참고로 Line coding은 디지털을 아날로그로 표현하기위한 방법으로 digital modulation으로 불리기도 합니다. Channel coding은 error correcting code를 이용해 에러를 제어하고 복구하기위한 기술로 forward error correction (FEC) 라고 부르기도 합니다."
     }
   ]
 }
