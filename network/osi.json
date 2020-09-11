@@ -81,6 +81,18 @@
       "answer": 1,
       "explanation": "data rate가 낮은 여러 신호는 data rate가 높은 신호로 변환되어 전송될 수 있습니다. 수신 측에서는 복합신호를 역다중화 (demultiplexing) 함으로써 신호를 복원할 수 있습니다.",
       "references": [{"Multiplexing": "https://en.wikipedia.org/wiki/Multiplexing"}]
+    },
+    {
+      "question": "무선 통신은 ___을 사용해 이루어질 수 있다.",
+      "choices": [
+        "전파 (Radio wave)",
+        "마이크로파 (Microwave)",
+        "적외선 (Infrared ray)",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "파장의 길이는 적외선, 마이크로파, 전파 순으로 길어 적외선이 제일 짧습니다. 파장은 길이가 짧을 수록 장거리 통신에 불리합니다.",
+      "references": [{"전파": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%8C%8C"}, {"마이크로파": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%8C%8C"}, {"적외선": "https://ko.wikipedia.org/wiki/%EC%A0%81%EC%99%B8%EC%84%A0"}]
     }
   ]
 }
