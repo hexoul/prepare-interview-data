@@ -93,6 +93,18 @@
       "answer": 4,
       "explanation": "파장의 길이는 적외선, 마이크로파, 전파 순으로 길어 적외선이 제일 짧습니다. 파장은 길이가 짧을 수록 장거리 통신에 불리합니다.",
       "references": [{"전파": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%8C%8C"}, {"마이크로파": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%8C%8C"}, {"적외선": "https://ko.wikipedia.org/wiki/%EC%A0%81%EC%99%B8%EC%84%A0"}]
+    },
+    {
+      "question": "Data link layer는 ___로부터 패킷을 받아 전송을 위한 프레임으로 은닉화한다.",
+      "choices": [
+        "Physical layer",
+        "Network layer",
+        "Transport layer",
+        "Application layer"
+      ],
+      "answer": 2,
+      "explanation": "데이터 전송 시 데이터는 application layer에서 transport layer로 보내지고 이는 세그먼트로 변환됩니다. 계속하여 network layer로 보내져 패킷으로 바뀌고 data link layer에서 프레임으로 은닉화한 뒤 physical layer에서 bit로 변환돼 실제 물리적으로 전송됩니다.",
+      "references": [{"Encapsulation": "https://en.wikipedia.org/wiki/Encapsulation_(networking)"}]
     }
   ]
 }
