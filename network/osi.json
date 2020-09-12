@@ -105,6 +105,28 @@
       "answer": 2,
       "explanation": "데이터 전송 시 데이터는 application layer에서 transport layer로 보내지고 이는 세그먼트로 변환됩니다. 계속하여 network layer로 보내져 패킷으로 바뀌고 data link layer에서 프레임으로 은닉화한 뒤 physical layer에서 bit로 변환돼 실제 물리적으로 전송됩니다.",
       "references": [{"Encapsulation": "https://en.wikipedia.org/wiki/Encapsulation_(networking)"}]
+    },
+    {
+      "question": "다음 중 data link layer에서 행해지는 것이 아닌 것은?",
+      "choices": [
+        "Framing",
+        "Error control",
+        "Flow control",
+        "Channel coding"
+      ],
+      "answer": 4,
+      "explanation": "Channel coding은 physical layer의 역할입니다."
+    },
+    {
+      "question": "프레임의 헤더는 일반적으로 ___를 포함한다.",
+      "choices": [
+        "Synchronization bytes",
+        "Addresses",
+        "Frame identifier",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "-"
     }
   ]
 }
