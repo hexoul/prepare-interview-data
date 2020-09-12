@@ -127,6 +127,18 @@
       ],
       "answer": 4,
       "explanation": "-"
+    },
+    {
+      "question": "Automatic repeat request (ARQ) 에러관리 기법은 ___에서 제공된다.",
+      "choices": [
+        "Logical link control sublayer",
+        "Media access control sublayer",
+        "Network interface control sublayer",
+        "Application access control sublayer"
+      ],
+      "answer": 1,
+      "explanation": "ARQ는 에러 컨트롤의 책임을 지고 있는 Logical link control (LLC) sublayer에서 이루어집니다.",
+      "references": [{"ARQ": "https://en.wikipedia.org/wiki/Automatic_repeat_request"}, {"LLC": "https://en.wikipedia.org/wiki/Logical_link_control"}]
     }
   ]
 }
