@@ -197,6 +197,29 @@
       "answer": 1,
       "explanation": "ACK 프레임을 바로 보내지않고 송신할 데이터 프레임에 붙여 보내면 전송 횟수를 줄여 전송 효율을 높이는 효과를 기대할 수 있습니다. 다만 수신 측에서 더 이상 보낼 정보가 없었다면 무의미한 지연이 될 수 있으므로 적절한 timeout이 필요합니다.",
       "references": [{"Piggybacking": "https://en.wikipedia.org/wiki/Piggybacking_(data_transmission)"}, {"Piggybacking [한]": "https://terms.naver.com/entry.nhn?docId=2271875&cid=51207&categoryId=51207"}]
+    },
+    {
+      "question": "Network layer는 ___ 전송에 고려된다.",
+      "choices": [
+        "Bits",
+        "Frames",
+        "Packets",
+        "Segments"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [{"Network layer": "https://en.wikipedia.org/wiki/Network_layer"}]
+    },
+    {
+      "question": "다음 중 network layer의 기능이 아닌 것은?",
+      "choices": [
+        "Routing",
+        "Inter-networking",
+        "Congestion control",
+        "Error control"
+      ],
+      "answer": 4,
+      "explanation": "에러"
     }
   ]
 }
