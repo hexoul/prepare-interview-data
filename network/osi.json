@@ -152,7 +152,7 @@
       "explanation": "1 bit error는 single bit error라 하며 2 bit 이상의 충돌 또는 에러를 burst error라 합니다. 만약 single bit error라면 단순하게 한 bit를 역전시킴으로써 수정할 수 있지만 burst error라면 프레임을 다시 전송받아야 합니다."
     },
     {
-      "question": "다음 중 CRC가 의미하는 것은?",
+      "question": "CRC가 의미하는 것은?",
       "choices": [
         "Code Repeat Check",
         "Code Redundancy Check",
@@ -175,7 +175,7 @@
       "explanation": "Data link protocol에는 synchronous data link protocol (SDLC), high level data link protocol (HDLC), serial line interface protocol (SLIP), PPP 등 다양하게 있습니다."
     },
     {
-      "question": "다음 multiple access protocol 중 성격이 다른 것은?",
+      "question": "보기의 multiple access protocol들 중 성격이 다른 것은?",
       "choices": [
         "CSMA/CD",
         "CSMA/CA",
@@ -185,6 +185,18 @@
       "answer": 3,
       "explanation": "CSMA/CD, CSMA/CA 및 ALOHA는 random access protocol인 반면 TDMA는 channelization protocol입니다.",
       "references": [{"CSMA/CD": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection"}, {"Channelization": "https://en.wikipedia.org/wiki/Channelization_(telecommunications)"}]
+    },
+    {
+      "question": "수신 측에서 acknowledgement (ACK) 컨트롤 프레임을 송신자에게 바로 보내지않고 의도적으로 잠시 지연시키는 기술은?",
+      "choices": [
+        "Piggybacking",
+        "Cyclic redundancy check",
+        "Fletcher's checksum",
+        "Parity check"
+      ],
+      "answer": 1,
+      "explanation": "ACK 프레임을 바로 보내지않고 송신할 데이터 프레임에 붙여 보내면 전송 횟수를 줄여 전송 효율을 높이는 효과를 기대할 수 있습니다. 다만 수신 측에서 더 이상 보낼 정보가 없었다면 무의미한 지연이 될 수 있으므로 적절한 timeout이 필요합니다.",
+      "references": [{"Piggybacking": "https://en.wikipedia.org/wiki/Piggybacking_(data_transmission)"}, {"Piggybacking [한]": "https://terms.naver.com/entry.nhn?docId=2271875&cid=51207&categoryId=51207"}]
     }
   ]
 }
