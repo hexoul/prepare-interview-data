@@ -139,6 +139,17 @@
       "answer": 1,
       "explanation": "ARQ는 에러 컨트롤의 책임을 지고 있는 Logical link control (LLC) sublayer에서 이루어집니다.",
       "references": [{"ARQ": "https://en.wikipedia.org/wiki/Automatic_repeat_request"}, {"LLC": "https://en.wikipedia.org/wiki/Logical_link_control"}]
+    },
+    {
+      "question": "데이터 유닛에서 2 bit 이상이 전송 중에 변경된 오류를 ___라 한다.",
+      "choices": [
+        "Random error",
+        "Burst error",
+        "Inverted error",
+        "Double error"
+      ],
+      "answer": 2,
+      "explanation": "1 bit error는 single bit error라 하며 2 bit 이상의 충돌 또는 에러를 burst error라 합니다. 만약 single bit error라면 단순하게 한 bit를 역전시킴으로써 수정할 수 있지만 burst error라면 프레임을 다시 전송받아야 합니다."
     }
   ]
 }
