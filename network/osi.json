@@ -219,7 +219,19 @@
         "Error control"
       ],
       "answer": 4,
-      "explanation": "에러"
+      "explanation": "에러 제어는 data link layer와 transport layer의 기능입니다."
+    },
+    {
+      "question": "4 바이트의 IP 주소가 포함하는 것은?",
+      "choices": [
+        "Network address",
+        "Host address",
+        "Network address와 host address",
+        "Network address와 MAC address"
+      ],
+      "answer": 3,
+      "explanation": "IPv4에서 주소는 network address (network prefix)와 host address (host number)로 나뉘며 각 크기는 클래스에 의존합니다. 클래스는 A, B 또는 C이며 A에서 C로 갈수록 network prefix에 크기가 많이 할당 되어 나타낼 수 있는 호스트 수가 적어집니다.",
+      "references": [{"IPv4": "https://en.wikipedia.org/wiki/IPv4"}]
     }
   ]
 }
