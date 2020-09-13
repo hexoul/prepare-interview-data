@@ -173,6 +173,18 @@
       ],
       "answer": 4,
       "explanation": "Data link protocol에는 synchronous data link protocol (SDLC), high level data link protocol (HDLC), serial line interface protocol (SLIP), PPP 등 다양하게 있습니다."
+    },
+    {
+      "question": "다음 multiple access protocol 중 성격이 다른 것은?",
+      "choices": [
+        "CSMA/CD",
+        "CSMA/CA",
+        "TDMA",
+        "ALOHA"
+      ],
+      "answer": 3,
+      "explanation": "CSMA/CD, CSMA/CA 및 ALOHA는 random access protocol인 반면 TDMA는 channelization protocol입니다.",
+      "references": [{"CSMA/CD": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection"}, {"Channelization": "https://en.wikipedia.org/wiki/Channelization_(telecommunications)"}]
     }
   ]
 }
