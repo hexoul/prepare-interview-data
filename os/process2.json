@@ -93,12 +93,12 @@
     {
       "question": "프로세스가 I/O를 요청했을 때, ___에 배치된다.",
       "choices": [
-        "I/O queue",
+        "Job queue",
         "Waiting queue",
         "Ready queue",
-        "Job Queue"
+        "Secondary storage"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "-",
       "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
     },
