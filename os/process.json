@@ -71,22 +71,22 @@
     {
       "question": "프로세스들이 교착 상태 (deadlock) 가 되지 않는 경우는?",
       "choices": [
-        "Mutual exclusion",
-        "Hold and wait",
-        "Preemption",
-        "Circular wait"
+        "상호배제 (Mutual exclusion)",
+        "점유대기 (Hold and wait)",
+        "선점 (Preemption)",
+        "순환대기 (Circular wait)"
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}]
+      "references": [{"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}, {"교착 상태": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"}]
     },
     {
       "question": "프로세스의 Stack이 포함하지 않는 것은?",
       "choices": [
-        "Function parameters",
-        "Local variables",
-        "Return addresses",
-        "PID of child process"
+        "함수 매개변수 (Function parameters)",
+        "지역 변수 (Local variables)",
+        "복귀 주소 (Return addresses)",
+        "자식 프로세스의 PID"
       ],
       "answer": 4,
       "explanation": "-",
@@ -153,7 +153,7 @@
       "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
     },
     {
-      "question": "다음 중 프로세스의 state가 아닌 것은?",
+      "question": "다음 중 프로세스의 상태 (state) 가 아닌 것은?",
       "choices": [
         "New",
         "Old",
@@ -161,8 +161,8 @@
         "Running"
       ],
       "answer": 2,
-      "explanation": "-",
-      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+      "explanation": "New 또는 created는 생성 직후의 상태입니다. Running은 실행 중인 상태, waiting은 실행되지않고 I/O 등의 인터럽트를 기다리고 있는 상태입니다. 완료 시 terminated 상태가 되며 old 상태는 없습니다.",
+      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}, {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"}]
     },
     {
       "question": "Process Control Block (PCB) 이란?",
@@ -201,7 +201,7 @@
       "references": [{"Multiprogramming": "https://owd.tcnj.edu/~coburn/os"}]
     },
     {
-      "question": "싱글 쓰레드는 프로세스가 ___ 를 처리할 수 있게 한다.",
+      "question": "싱글 쓰레드는 프로세스가 ___를 처리할 수 있게 한다.",
       "choices": [
         "한 번에 하나의 Task",
         "한 번에 복수의 Task",
@@ -220,7 +220,8 @@
         "모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "단일 프로그램만 수행할 경우 I/O가 있을 때 프로그램 수행을 멈추고 인터럽트를 기다려야해서 대기하는 동안 CPU를 활용하지 못하는 비효율이 발생합니다. 이에 대기하는 시간에 다른 프로그램을 실행시켜 CPU 활용효율을 개선하고자 제안된 것이 multiprogramming 입니다.",
+      "references": [{"Multiprogramming": "https://en.wikipedia.org/wiki/Computer_multitasking"}]
     }
   ]
 }
