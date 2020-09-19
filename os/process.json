@@ -189,7 +189,7 @@
       "references": [{"Process table and PCB": "https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/"}]
     },
     {
-      "question": "멀티프로그래밍의 정도를 판단할 수 있는 요소는?",
+      "question": "멀티프로그래밍의 정도 (the degree of multiprogramming) 를 판단할 수 있는 요소는?",
       "choices": [
         "단위 시간 내에 실행된 프로세스의 수",
         "Ready queue에 존재하는 프로세스의 수",
@@ -212,7 +212,7 @@
       "explanation": "-"
     },
     {
-      "question": "Multiprogramming의 목적은?",
+      "question": "멀티프로그래밍 (Multiprogramming) 의 목적은?",
       "choices": [
         "프로세스들을 항상 실행시키기 위함",
         "Queue에 대기하고있는 복수의 프로그램들을 실행시킬 준비를 하기 위함",
