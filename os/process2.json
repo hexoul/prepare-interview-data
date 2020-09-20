@@ -129,7 +129,7 @@
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 1,
-      "explanation": "-",
+      "explanation": "Long-term scheduler는 실행되는 프로세스들이 I/O bound인지 CPU bound인지 파악하고 적절하게 ready queue에 배치함으로써 the degree of multiprogramming, 즉 병렬도를 향상시키기 위한 스케줄을 합니다.",
       "references": [{"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}]
     },
     {
@@ -141,7 +141,7 @@
         "비어있고, 많다"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "프로세스가 I/O bound라면 I/O에 시간을 많이 쓰는 것이므로 ready보다 waiting queue에 있을 확률이 높다고 생각할 수 있습니다. 따라서 다음에 CPU를 할당받을 프로세스를 선택하는 short-term scheduler 입장에서는 할 일이 적어집니다.",
       "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
     },
     {
@@ -153,7 +153,7 @@
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "Medium-term scheduler는 메모리 효율을 위해 오래동안 사용되지않은 프로세스를 메모리에서 HDD 등 secondary memory에 옮기거나, 빈번하게 page fault를 발생시키는 프로세스를 메인 메모리에 유지시키는 등 프로세스의 메모리 스왑 여부를 결정하는 스케줄러입니다.",
       "references": [{"Medium-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Medium-term_scheduling"}]
     },
     {
@@ -177,7 +177,7 @@
         "스케줄링에 소모되는 시간"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "이름에서 알 수 있듯이 term은 스케줄러의 주기를 나타냅니다. 주기가 짧을수록 빈번하게 실행됩니다.\n실행 주기 : Long-term scheduler > Medium-term scheduler > Short-term scheduler",
       "references": [{"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"}]
     },
     {
