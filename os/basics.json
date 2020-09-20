@@ -10,15 +10,18 @@
       ],
       "answer": 4,
       "explanation": "-",
-      "references": [{"OS": "https://en.wikipedia.org/wiki/Operating_system"}, {"[한]OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"}]
+      "references": [
+        {"[한]OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
+        {"OS": "https://en.wikipedia.org/wiki/Operating_system"}
+      ]
     },
     {
       "question": "운영체제의 서비스에 접근하기위한 인터페이스는 ___를 통해 제공된다.",
       "choices": [
-        "System calls",
+        "시스템 콜 (System call)",
         "API",
         "Library",
-        "Assembly instructions"
+        "어셈블리 명령어 (Assembly instruction)"
       ],
       "answer": 1,
       "explanation": "-",
@@ -33,7 +36,11 @@
         "Kernel은 컴퓨터의 전체 세션동안 메모리에 남아있다."
       ],
       "answer": 3,
-      "explanation": "Kernel은 운영체제의 하위 계층으로써 운영체제를 지원하기위해 상호작용이 되어야하므로 읽어들일 수 있어야 합니다."
+      "explanation": "Kernel은 운영체제의 핵심 부분으로 운영체제에 다양한 서비스를 지원하기위해 상호작용이 되어야하므로 읽어들일 수 있어야 합니다.",
+      "references": [
+        {"커널": "https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
+        {"Kernel": "https://en.wikipedia.org/wiki/Kernel_(operating_system)"}
+      ]
     },
     {
       "question": "다음 중 어떤 것이 운영체제에 의해 처리되는 에러인가?",
@@ -47,7 +54,7 @@
       "explanation": "운영체제가 불러와진 뒤의 모든 환경은 운영체제의 관리 하에 있다고 볼 수 있습니다. 이는 SW뿐만 아니라 HW도 해당합니다."
     },
     {
-      "question": "Command interpreter의 주요 기능은?",
+      "question": "명령 해석기 (Command interpreter) 의 주요 기능은?",
       "choices": [
         "사용자 정의 명령을 해석하고 실행하기 위함",
         "API와 응용프로그램 간의 인터페이스를 제공하기 위함",
@@ -90,7 +97,10 @@
       ],
       "answer": 4,
       "explanation": "Palm OS는 96년도에 출시된 PDA 및 모바일용 운영체제로 터치스크린 GUI를 위해 개발되었고 실시간 운영체제는 아닙니다.",
-      "references": [{"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}, {"[한]Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"}]
+      "references": [
+        {"[한]Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"},
+        {"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}
+      ]
     },
     {
       "question": "다음 중 Kernel mode (Kernel space)의 비중이 제일 큰 kernel은?",
