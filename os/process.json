@@ -22,7 +22,10 @@
       ],
       "answer": 4,
       "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다.",
-      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "references": [
+        {"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}
+      ]
     },
     {
       "question": "Unix에서 새로운 프로세스를 만드는 시스템 콜은 무엇인가?",
@@ -80,7 +83,10 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"교착 상태": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"}, {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}]
+      "references": [
+        {"교착 상태": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
+        {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}
+      ]
     },
     {
       "question": "프로세스의 스택 (Stack) 이 포함하지 않는 것은?",
@@ -128,7 +134,10 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "references": [
+        {"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}
+      ]
     },
     {
       "question": "단위 시간동안 완료된 프로세스의 수를 ___라 한다.",
@@ -164,7 +173,10 @@
       ],
       "answer": 2,
       "explanation": "New 또는 created는 생성 직후의 상태입니다. Running은 실행 중인 상태, waiting은 실행되지않고 I/O 등의 인터럽트를 기다리고 있는 상태입니다. 완료 시 terminated 상태가 되며 old 상태는 없습니다.",
-      "references": [{"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"}, {"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+      "references": [
+        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "Process Control Block (PCB) 이란?",
@@ -176,7 +188,10 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "references": [
+        {"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}
+      ]
     },
     {
       "question": "모든 PCB들은 ___에 속하여 관리되어진다.",
@@ -212,7 +227,10 @@
       ],
       "answer": 1,
       "explanation": "태스크는 작업 단위를 의미합니다.",
-      "references": [{"태스크": "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%8A%A4%ED%81%AC"}]
+      "references": [
+        {"태스크": "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%8A%A4%ED%81%AC"},
+        {"Task": "https://en.wikipedia.org/wiki/Task_(computing)"}
+      ]
     },
     {
       "question": "멀티프로그래밍 (Multiprogramming) 의 목적은?",
