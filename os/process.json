@@ -3,13 +3,14 @@
     {
       "question": "한 번에 하나의 프로세스의 실행만 허용하는 시스템을 ___라 부른다.",
       "choices": [
-        "Uniprogramming systems",
-        "Uniprocessing systems",
-        "Unitasking systems",
-        "Universal systems"
+        "Uniprogramming system",
+        "Uniprocessor system",
+        "Unitasking system",
+        "Universal system"
       ],
       "answer": 2,
-      "explanation": "한 개의 프로세서를 뜻하는 Uniprocessing이 정답입니다. Uniprogramming system은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 Multiprogramming system이라 합니다."
+      "explanation": "한 개의 프로세서를 뜻하는 Uniprocessor가 정답입니다. Uniprogramming system은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 multiprogramming system이라 합니다.",
+      "references": [{"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}]
     },
     {
       "question": "운영체제에서 각 프로세스는 자신의 ___를 가진다.",
@@ -20,7 +21,8 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-"
+      "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다.",
+      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
     },
     {
       "question": "Unix에서 새로운 프로세스를 만드는 시스템 콜은 무엇인가?",
@@ -78,7 +80,7 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}, {"교착 상태": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"}]
+      "references": [{"교착 상태": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"}, {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}]
     },
     {
       "question": "프로세스의 스택 (Stack) 이 포함하지 않는 것은?",
@@ -126,7 +128,7 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
     },
     {
       "question": "단위 시간동안 완료된 프로세스의 수를 ___라 한다.",
@@ -162,7 +164,7 @@
       ],
       "answer": 2,
       "explanation": "New 또는 created는 생성 직후의 상태입니다. Running은 실행 중인 상태, waiting은 실행되지않고 I/O 등의 인터럽트를 기다리고 있는 상태입니다. 완료 시 terminated 상태가 되며 old 상태는 없습니다.",
-      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}, {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"}]
+      "references": [{"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"}, {"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
     },
     {
       "question": "Process Control Block (PCB) 이란?",
@@ -174,7 +176,7 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
+      "references": [{"프로세스 제어 블록": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"}, {"Process Control Block": "https://en.wikipedia.org/wiki/Process_control_block"}]
     },
     {
       "question": "모든 PCB들은 ___에 속하여 관리되어진다.",
@@ -203,13 +205,14 @@
     {
       "question": "싱글 쓰레드는 프로세스가 ___를 처리할 수 있게 한다.",
       "choices": [
-        "한 번에 하나의 Task",
-        "한 번에 복수의 Task",
-        "한 번에 두 Task",
+        "한 번에 하나의 태스크 (task)",
+        "한 번에 복수의 태스크 (task)",
+        "한 번에 두 태스크 (task)",
         "모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "태스크는 작업 단위를 의미합니다.",
+      "references": [{"태스크": "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%8A%A4%ED%81%AC"}]
     },
     {
       "question": "멀티프로그래밍 (Multiprogramming) 의 목적은?",
