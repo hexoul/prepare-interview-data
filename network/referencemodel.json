@@ -85,7 +85,7 @@
       "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
     },
     {
-      "question": "OSI의 뜻으로 맞는 것은?",
+      "question": "OSI는 다음 중 무엇의 약어인가?",
       "choices": [
         "Open System Interconnection",
         "Operating System Interface",
@@ -93,7 +93,8 @@
         "Open Service Internet"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"OSI Model": "https://en.wikipedia.org/wiki/OSI_model"}]
     },
     {
       "question": "OSI 모델에서 네트워크 지원 계층 (network support layer) 와 사용자 지원 계층 (user support layer) 를 잇는 계층은?",
