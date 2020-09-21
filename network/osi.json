@@ -9,7 +9,8 @@
         "application to application"
       ],
       "answer": 1,
-      "explanation": "Physical layer는 첫 번째 계층으로써 네트워크에서 물리적으로 bit를 보내는 방법을 다룹니다. Process 간 또는 port 간은 transport layer에서 다뤄집니다."
+      "explanation": "Physical layer는 첫 번째 계층으로써 네트워크에서 물리적으로 bit를 보내는 방법을 다룹니다. Process 간 또는 port 간은 transport layer에서 다뤄집니다.",
+      "references": [{"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"}]
     },
     {
       "question": "다음 중 어느 전송 매체가 제일 빠른 전송 속도를 가지는가?",
@@ -21,7 +22,12 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"동축 케이블": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%B6%95_%EC%BC%80%EC%9D%B4%EB%B8%94"}, {"연선": "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%A0"}, {"광섬유": "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%84%AC%EC%9C%A0"}, {"Electrical cable": "https://en.wikipedia.org/wiki/Electrical_cable"}]
+      "references": [
+        {"동축 케이블": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%B6%95_%EC%BC%80%EC%9D%B4%EB%B8%94"},
+        {"연선": "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%A0"},
+        {"광섬유": "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%84%AC%EC%9C%A0"},
+        {"Electrical cable": "https://en.wikipedia.org/wiki/Electrical_cable"}
+      ]
     },
     {
       "question": "Bit는 ___에 의해 를 유도 매체 (guided media) 또는 비유도 매체 (unguided media)를 거쳐 아날로그 신호로 보내진다.",
@@ -44,7 +50,8 @@
         "Physical transport sublayer"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Physical signalling sublayer": "https://en.wikipedia.org/wiki/Physical_layer#Physical_signaling_sublayer"}]
     },
     {
       "question": "비동기 직렬 통신 (Asynchoronous serial communication) 에서 쓰이지 않는 것은?",
@@ -92,7 +99,11 @@
       ],
       "answer": 4,
       "explanation": "파장의 길이는 적외선, 마이크로파, 전파 순으로 길어 적외선이 제일 짧습니다. 파장은 길이가 짧을 수록 장거리 통신에 불리합니다.",
-      "references": [{"전파": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%8C%8C"}, {"마이크로파": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%8C%8C"}, {"적외선": "https://ko.wikipedia.org/wiki/%EC%A0%81%EC%99%B8%EC%84%A0"}]
+      "references": [
+        {"전파": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%8C%8C"},
+        {"마이크로파": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%8C%8C"},
+        {"적외선": "https://ko.wikipedia.org/wiki/%EC%A0%81%EC%99%B8%EC%84%A0"}
+      ]
     },
     {
       "question": "Data link layer는 ___로부터 패킷을 받아 전송을 위한 프레임으로 은닉화한다.",
@@ -115,7 +126,11 @@
         "Channel coding"
       ],
       "answer": 4,
-      "explanation": "Channel coding은 physical layer의 역할입니다."
+      "explanation": "Channel coding은 physical layer의 역할입니다.",
+      "references": [
+        {"Data link layer": "https://en.wikipedia.org/wiki/Data_link_layer"},
+        {"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"}
+      ]
     },
     {
       "question": "프레임의 헤더는 일반적으로 ___를 포함한다.",
@@ -126,7 +141,8 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Data link layer": "https://en.wikipedia.org/wiki/Data_link_layer#Function"}]
     },
     {
       "question": "Automatic repeat request (ARQ) 에러관리 기법은 ___에서 제공된다.",
@@ -138,7 +154,10 @@
       ],
       "answer": 1,
       "explanation": "ARQ는 에러 컨트롤의 책임을 지고 있는 Logical link control (LLC) sublayer에서 이루어집니다.",
-      "references": [{"ARQ": "https://en.wikipedia.org/wiki/Automatic_repeat_request"}, {"LLC": "https://en.wikipedia.org/wiki/Logical_link_control"}]
+      "references": [
+        {"ARQ": "https://en.wikipedia.org/wiki/Automatic_repeat_request"},
+        {"LLC": "https://en.wikipedia.org/wiki/Logical_link_control"}
+      ]
     },
     {
       "question": "데이터 유닛에서 2 bit 이상이 전송 중에 변경된 오류를 ___라 한다.",
@@ -161,7 +180,10 @@
       ],
       "answer": 3,
       "explanation": "CRC는 프레임 trailer에 추가돼 에러를 감지하기위해 쓰이는 코드입니다. 에러 수정은 불가능합니다. Redundancy라 불리는 이유는 에러 발견을 위해 정보가 아님에도 추가적으로 붙는 잉여 bit이기 때문입니다. cyclic이 붙는 이유는 redundancy로 붙는 코드가 cyclic code를 기반으로 하기 때문입니다.",
-      "references": [{"CRC": "https://en.wikipedia.org/wiki/Cyclic_redundancy_check"}, {"Cyclic code": "https://en.wikipedia.org/wiki/Cyclic_code"}]
+      "references": [
+        {"CRC": "https://en.wikipedia.org/wiki/Cyclic_redundancy_check"},
+        {"Cyclic code": "https://en.wikipedia.org/wiki/Cyclic_code"}
+      ]
     },
     {
       "question": "다음 중 data link protocol로 알맞은 것은?",
@@ -184,7 +206,10 @@
       ],
       "answer": 3,
       "explanation": "CSMA/CD, CSMA/CA 및 ALOHA는 random access protocol인 반면 TDMA는 channelization protocol입니다.",
-      "references": [{"CSMA/CD": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection"}, {"Channelization": "https://en.wikipedia.org/wiki/Channelization_(telecommunications)"}]
+      "references": [
+        {"CSMA/CD": "https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection"},
+        {"Channelization": "https://en.wikipedia.org/wiki/Channelization_(telecommunications)"}
+      ]
     },
     {
       "question": "수신 측에서 acknowledgement (ACK) 컨트롤 프레임을 송신자에게 바로 보내지않고 의도적으로 잠시 지연시키는 기술은?",
@@ -196,7 +221,10 @@
       ],
       "answer": 1,
       "explanation": "ACK 프레임을 바로 보내지않고 송신할 데이터 프레임에 붙여 보내면 전송 횟수를 줄여 전송 효율을 높이는 효과를 기대할 수 있습니다. 다만 수신 측에서 더 이상 보낼 정보가 없었다면 무의미한 지연이 될 수 있으므로 적절한 timeout이 필요합니다.",
-      "references": [{"Piggybacking": "https://en.wikipedia.org/wiki/Piggybacking_(data_transmission)"}, {"Piggybacking [한]": "https://terms.naver.com/entry.nhn?docId=2271875&cid=51207&categoryId=51207"}]
+      "references": [
+        {"[한] Piggybacking": "https://terms.naver.com/entry.nhn?docId=2271875&cid=51207&categoryId=51207"},
+        {"Piggybacking": "https://en.wikipedia.org/wiki/Piggybacking_(data_transmission)"}
+      ]
     },
     {
       "question": "Network layer는 ___ 전송에 고려된다.",
