@@ -305,6 +305,21 @@
         {"Multicast": "https://en.wikipedia.org/wiki/Multicast"},
         {"Broadcast": "https://en.wikipedia.org/wiki/Broadcasting_(networking)"}
       ]
+    },
+    {
+      "question": "Congestion control에 쓰이지 않는 기법은?",
+      "choices": [
+        "Traffic aware routing",
+        "Network Admission Control (NAC)",
+        "Load shedding",
+        "Routing Information Protocol (RIP)"
+      ],
+      "answer": 4,
+      "explanation": "Congestion control이란 트래픽을 줄이거나 분산시켜 부하를 줄이는 일종의 트래픽 제어입니다. Traffic aware routing은 트래픽을 고려하여 거리가 짧더라도 혼잡한 경로는 우회하는 등 혼잡을 억누르는 라우팅입니다. NAC는 권한이 있는 경우에만 네트워크에 참가하게 하여 의도되지않은 트래픽을 제거하는 방법이며, load shedding은 트래픽이 초과되기전에 패킷들을 사전차단하여 트래픽이 몰리는 것을 방지하는 방법입니다. 반면 RIP는 오래된 distance vector routing protocol 중 하나로 경로 거리만을 고려하고 트래픽은 고려하지않는 알고리즘이기때문에 오답입니다.",
+      "references": [
+        {"NAC": "https://en.wikipedia.org/wiki/Network_Admission_Control"},
+        {"RIP": "https://en.wikipedia.org/wiki/Routing_Information_Protocol"}
+      ]
     }
   ]
 }
