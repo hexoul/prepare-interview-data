@@ -320,6 +320,20 @@
         {"NAC": "https://en.wikipedia.org/wiki/Network_Admission_Control"},
         {"RIP": "https://en.wikipedia.org/wiki/Routing_Information_Protocol"}
       ]
+    },
+    {
+      "question": "ICMP는 주로 ___에 사용된다.",
+      "choices": [
+        "에러 전달 및 네트워크 진단",
+        "Addressing",
+        "Forwarding",
+        "Routing"
+      ],
+      "answer": 1,
+      "explanation": "ICMP는 Internal Control Message Protocol의 약어로, 패킷을 이용해 에러 보고를 포함해 통신 성공 및 실패 여부를 전달함으로써 네트워크를 진단하고 통제하는데 쓰입니다.",
+      "references": [
+        {"ICMP": "https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol"}
+      ]
     }
   ]
 }
