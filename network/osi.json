@@ -398,6 +398,37 @@
         {"Anonymous pipe": "https://en.wikipedia.org/wiki/Anonymous_pipe"},
         {"Named pipe": "https://en.wikipedia.org/wiki/Named_pipe"}
       ]
+    },
+    {
+      "question": "Windows의 socket 기반 API의 이름은?",
+      "choices": [
+        "wins",
+        "wsock",
+        "winsock",
+        "sockw"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Winsock": "https://en.wikipedia.org/wiki/Winsock"}
+      ]
+    },
+    {
+      "question": "다음 중 congenstion control을 고려한 UDP 버전은?",
+      "choices": [
+        "Datagram congestion control protocol (DCCP)",
+        "Stream control transmission protocol (SCTP)",
+        "Structured stream transport (SST)",
+        "User congestion control protocol (UCCP)"
+      ],
+      "answer": 1,
+      "explanation": "SCTP와 SST는 이름에서 알 수 있듯 스트림을 관리하는 프로토콜으로, UDP가 아닌 스트림이 기반이 되는 TCP 위에서 동작하는 프로토콜입니다. UCCP는 없는 프로토콜입니다. Transport layer에서 congestion control은 사용자가 아닌 패킷 단위입니다.",
+      "references": [
+        {"UDP": "https://en.wikipedia.org/wiki/User_Datagram_Protocol"},
+        {"DCCP": "https://en.wikipedia.org/wiki/Datagram_Congestion_Control_Protocol"},
+        {"SCTP": "https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol"},
+        {"SST": "https://en.wikipedia.org/wiki/Structured_Stream_Transport"}
+      ]
     }
   ]
 }
