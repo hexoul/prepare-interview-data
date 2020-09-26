@@ -367,6 +367,37 @@
         {"Connectionless communication": "https://en.wikipedia.org/wiki/Connectionless_communication"},
         {"Datagram": "https://en.wikipedia.org/wiki/Datagram"}
       ]
+    },
+    {
+      "question": "Transmission control protocol은 ",
+      "choices": [
+        "연결 기반 프로토콜이다.",
+        "연결을 구축하기위해 three-way handshake를 사용한다.",
+        "애플리케이션으로부터 데이터를 스트림으로 받는다.",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "Transmission control protocol (TCP) 는 UDP와는 달리 연결 (connection)을 three-way handsake을 통해 만든 뒤 전송하여 에러 제어 또는 중복 제거 등으로 신뢰성있는 통신을 할 수 있습니다. 예를 들어 스트림 내에 빠진 sequence number가 있었다면 재전송받을 수 있고 중복된 패킷을 받았다면 버리게 됩니다.",
+      "references": [
+        {"TCP": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"}
+      ]
+    },
+    {
+      "question": "네트워크를통한 종단 간 IPC를 ___라 부른다.",
+      "choices": [
+        "Pipe",
+        "Socket",
+        "Port",
+        "Machine"
+      ],
+      "answer": 2,
+      "explanation": "Inter-process Communication (IPC)는 여러 접근방식이 있는데 그 중 네트워크를 사용하는 것을 socket이라 합니다. TCP 또는 UDP 모두 socket에 사용가능하며 대부분의 운영체제가 지원합니다. Socket은 양방향 통신이 가능한데 비해 pipe는 단방향이며 네트워크가 아니라 표준입출력 버퍼 또는 파일을 통해 이루어집니다. 버퍼일 경우 anonymous pipe, 파일은 named pipe라 부릅니다.",
+      "references": [
+        {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"},
+        {"Socket": "https://en.wikipedia.org/wiki/Network_socket"},
+        {"Anonymous pipe": "https://en.wikipedia.org/wiki/Anonymous_pipe"},
+        {"Named pipe": "https://en.wikipedia.org/wiki/Named_pipe"}
+      ]
     }
   ]
 }
