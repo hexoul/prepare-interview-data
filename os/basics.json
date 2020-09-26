@@ -127,7 +127,7 @@
         "Bootstrap program"
       ],
       "answer": 4,
-      "explanation": "Booting은 컴퓨터에 전원을 공급하는 절차까지만 해당하기에 완료되었을 때 메인메모리에 불려진 프로세스가 아무것도 없다고 볼 수 있습니다. 반면 bootstrapping은 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 통해 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 상태로 만드는 것까지 해당합니다.",
+      "explanation": "Booting은 컴퓨터에 전원을 공급하는 절차까지만 해당하기에 완료되었을 때 메인메모리에 불려진 프로세스가 아무것도 없다고 볼 수 있습니다. 반면 bootstrapping은 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 상태로 만드는 것까지를 말합니다.",
       "references": [
         {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"}
       ]
