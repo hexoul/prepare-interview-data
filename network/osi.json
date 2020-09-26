@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Physical layer는 ___ 전달이 고려되었다.",
+      "question": "Physical layer는 ___ 전달이 고려되는 계층이다.",
       "choices": [
         "bit by bit",
         "process to process",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "question": "Bit는 ___에 의해 를 유도 매체 (guided media) 또는 비유도 매체 (unguided media)를 거쳐 아날로그 신호로 보내진다.",
+      "question": "Bit는 ___에 의해 유도 매체 (guided media) 또는 비유도 매체 (unguided media)를 거쳐 아날로그 신호로 보내질 수 있다.",
       "choices": [
         "Digital modulation",
         "Amplitude modulation",
