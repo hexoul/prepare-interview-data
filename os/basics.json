@@ -127,7 +127,7 @@
         "Bootstrap program"
       ],
       "answer": 4,
-      "explanation": "전원을 공급받고 초기 설정을 하는 단계를 bootstrapping이라 합니다. 구체적으로 bootstrapping이란 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 최초로 메인메모리로 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 상태로 만드는 것까지를 말합니다. 상태를 만드는 것에는 설정 값과 BIOS를 불러오는 작업 등이 . Bootstrapping을 줄여 booting이라고도 부르지만 bootstrap program은 boot program이라고 줄이지 않습니다.",
+      "explanation": "전원을 공급받고 초기 설정을 하는 단계를 bootstrapping이라 합니다. 구체적으로 bootstrapping이란 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 최초로 메인메모리로 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 준비상태로 만드는 것까지를 말합니다. 준비상태를 만드는 것에는 설정 값과 BIOS를 불러오는 작업 등이 포함됩니다. Bootstrapping을 줄여 booting이라고도 부르지만 bootstrap program은 boot program이라고 줄이지 않습니다.",
       "references": [
         {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"}
       ]
