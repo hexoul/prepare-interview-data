@@ -131,6 +131,50 @@
       "references": [
         {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"}
       ]
+    },
+    {
+      "question": "소프트웨어는 어떻게 인터럽트 (interrupt) 를 촉발 (trigger) 시키는가?",
+      "choices": [
+        "버스를 통해 CPU에 시그널을 보낸다.",
+        "Interrupt triggering instruction을 직접 호출한다.",
+        "시스템 콜을 통해 특별한 명령어를 수행한다.",
+        "시스템 프로그램을 통해 특별한 프로그램을 수행한다."
+      ],
+      "answer": 3,
+      "explanation": "Interrupt는 수행되고 있는 프로세스들에 직접적으로 영향을 줄 수 있어, 운영체제 레벨에서 관리되도록 사용자가 직접 호출할 수 있는 방법은 제공하지않습니다. 시스템 콜을 통해서만 가능하도록 설계되어 있습니다. 시스템 콜을 통해 특정 한 명령어가 실행되는 것으로 명령어들의 집합이 아니기에 프로그램은 잘못된 설명입니다.",
+      "references": [
+        {"Software interrupt" : "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"}
+      ]
+    },
+    {
+      "question": "Trap 또는 exception에 대한 설명은?",
+      "choices": [
+        "에러에 의해 하드웨어로부터 발생된 인터럽트",
+        "에러에 의해 소프트웨어로부터 발생된 인터럽트",
+        "에러에 의해 유저로부터 발생된 인터럽트",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 2,
+      "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 예로 breakpoint, 0으로 나누기 (division by zero) 또는 유효하지않은 메모리에의 접근이 있습니다.",
+      "references": [
+        {"Software interrupt" : "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"},
+        {"Trap": "https://en.wikipedia.org/wiki/Trap_(computing)"},
+        {"Exception": "https://en.wikipedia.org/wiki/Exception_handling"}
+      ]
+    },
+    {
+      "question": "다음 중 interrupt handler라고도 불리는 ISR의 뜻으로 맞는 것은?",
+      "choices": [
+        "Information Service Request",
+        "Interrupt Service Request",
+        "Interrupt Service Routine",
+        "Information Service Routine"
+      ],
+      "answer": 2,
+      "explanation": "Interrupt가 발생했을 때 main routine에서 벗어나 interrupt의 종류에 따른 적절한 처리를 하고 복귀하기에 interrupt service routine이라 합니다.",
+      "references": [
+        {"ISR" : "https://en.wikipedia.org/wiki/Interrupt_handler"}
+      ]
     }
   ]
 }
