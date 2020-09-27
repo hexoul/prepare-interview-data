@@ -22,7 +22,10 @@
       ],
       "answer": 1,
       "explanation": "Critical section은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
-      "references": [{"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}, {"[한]Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"}]
+      "references": [
+        {"[한]Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
+      ]
     },
     {
       "question": "다음 중 동기화에 쓰이는 자원은?",
@@ -69,7 +72,9 @@
       ],
       "answer": 3,
       "explanation": "Critical section을 기반으로 한 프로세스 선점 (preemption) 제어는 hardware와 software에서 모두 이루어질 수 있습니다. Software level은 OS scheduling 기법들로 구현될 수 있습니다. Hardware level의 예로는 interrupt를 일시적으로 disable 시키거나 lock 제어를 위한 compare-and-swap을 hardware instruction level로 제공하는 것이 있습니다.",
-      "references": [{"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}]
+      "references": [
+        {"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}
+      ]
     },
     { 
       "question": "Inter-process communication (IPC) 란?",
@@ -104,7 +109,10 @@
         "receive & send message"
       ],
       "answer": 4,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [
+        {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
+      ]
     },
     {
       "question": "프로세스로부터 보내지는 메세지의 크기는 ___",
@@ -115,7 +123,10 @@
         "운영체제마다 다르다."
       ],
       "answer": 3,
-      "explanation": "-"
+      "explanation": "메세지 크기는 고정과 가변 둘 다 가능하며 각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다. 결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메세지는 고정된 크기의 header와 가변 body를 가집니다. ",
+      "references": [
+        {"Message passing": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
+      ]
     },
     {
       "question": "메세지를 보내고 받기 위한 두 프로세스 간의 링크를 ___라 한다.",
@@ -139,7 +150,10 @@
       ],
       "answer": 2,
       "explanation": "한 프로세스가 여러 프로세스와 연결될 수 있고 각 연결에서 한 link가 쓰이므로, N 개의 프로세스가 있다면 조합의 수인 nC2 = N! / 2! * (N - 2)! 개 만큼 link가 존재할 수 있습니다.",
-      "references": [{"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}, {"Combination": "https://en.wikipedia.org/wiki/Combination"}]
+      "references": [
+        {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"},
+        {"Combination": "https://en.wikipedia.org/wiki/Combination"}
+      ]
     },
     {
       "question": "다음 중 프로세스 P와 Q의 indirect communication에 대해 맞는 설명은?",
