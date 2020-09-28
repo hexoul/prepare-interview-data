@@ -229,6 +229,22 @@
         {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"}
       ]
+    },
+    {
+      "question": "Non-blocking 알고리즘의 freedom level에 따른 설명으로 틀린 것은?",
+      "choices": [
+        "모든 wait-free 알고리즘은 obstruction-free이다.",
+        "모든 lock-free 알고리즘은 obstruction-free이다.",
+        "모든 obstruction-free 알고리즘은 lock-free이다.",
+        "obstruction-free 알고리즘이 가장 약한 수준의 자유도를 보장한다."
+      ],
+      "answer": 3,
+      "explanation": "Wait-free에서 lock-free, obstruction-free로 갈수록 자유도를 덜 보장받습니다. 따라서 lock-free는 obstruction-free를 위한 조건도 충족시키지만, 반대로 obstruction-free는 lock-free의 조건을 충족시킬 수 없습니다.",
+      "references": [
+        {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
+        {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"},
+        {"Obstruction-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom"}
+      ]
     }
   ]
 }
