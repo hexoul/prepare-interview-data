@@ -170,7 +170,7 @@
         "Interrupt Service Routine",
         "Information Service Routine"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "Interrupt가 발생했을 때 main routine에서 벗어나 interrupt의 종류에 따른 적절한 처리를 하고 복귀하기에 interrupt service routine이라 합니다.",
       "references": [
         {"ISR" : "https://en.wikipedia.org/wiki/Interrupt_handler"}
