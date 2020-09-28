@@ -175,6 +175,35 @@
       "references": [
         {"ISR" : "https://en.wikipedia.org/wiki/Interrupt_handler"}
       ]
+    },
+    {
+      "question": "Interrupt vector란?",
+      "choices": [
+        "Interrupt handler를 가리키는 주소",
+        "특정 주소와 연관된 고유 장치 번호",
+        "Interrupt에 할당되는 고유 번호",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "Interrupt vector란 인터럽트가 발생했을 때 수행되어야 할 interrupt handler 주소로 interrupt vector table에 모여 저장 및 관리됩니다.",
+      "references": [
+        {"Interrupt vector table" : "https://en.wikipedia.org/wiki/Interrupt_vector_table"}
+      ]
+    },
+    {
+      "question": "DMA는 ___를 위해 사용된다.",
+      "choices": [
+        "하드디스크",
+        "그래픽카드",
+        "멀티코어 프로세서",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "Direct Memory Access (DMA) 는 CPU와는 독립적인 하드웨어를 통해 메모리에 직접 접근할 수 있도록 지원하는 기법입니다. 데이터 전송에 CPU의 개입이 불필요해 데이터 전송을 위해 읽고 쓰기를 하는 대신 다른 작업의 처리를 할 수 있게 되어 CPU 효율이 증가합니다.",
+      "references": [
+        {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
+        {"DMA" : "https://en.wikipedia.org/wiki/Direct_memory_access"}
+      ]
     }
   ]
 }
