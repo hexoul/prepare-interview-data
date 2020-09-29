@@ -202,7 +202,10 @@
         "Unbounded link"
       ],
       "answer": 1,
-      "explanation": "-"
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미합니다. 따라서 queue에 공간이 없기 때문에 메세지가 쌓여 대기할 수 없고 버퍼링이 존재하지않게 됩니다.",
+      "references": [
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
+      ]
     },
     {
       "question": "Bounded 또는 unbounded capacity queue는 ___라고 볼 수 있다.",
@@ -213,7 +216,10 @@
         "No buffering"
       ],
       "answer": 2,
-      "explanation": "Bounded 또는 unbounded capacity queue는 queue의 길이가 제한(bounded)되었거나 무한대(unbounded)인 queue를 의미합니다. 따라서 프로세스를 블록시키도록 프로그래밍 것이 아니라 queue의 특성과 사용 패턴에 따라 자동으로 버퍼링되는 것이므로 automatic 또는 explicit buffering이라고 언급되기도 합니다."
+      "explanation": "Bounded 또는 unbounded capacity queue는 queue의 길이가 제한 (bounded) 되었거나 무한대 (unbounded) 인 queue를 의미합니다. 따라서 프로세스를 블록시키도록 프로그래밍한 것이 아니라 queue의 특성과 사용 패턴에 따라 자동으로 버퍼링되는 것이므로 automatic 또는 explicit buffering이라고 합니다.",
+      "references": [
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
+      ]
     },
     {
       "question": "Non-blocking 알고리즘의 wait-free와 lock-free에 대한 설명으로 틀린 것은?",
