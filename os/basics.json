@@ -204,6 +204,21 @@
         {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
         {"DMA" : "https://en.wikipedia.org/wiki/Direct_memory_access"}
       ]
+    },
+    {
+      "question": "Memory-mapped I/O (MMIO) 에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "입출력 장치가 데이터를 주고받을 준비되었는지 CPU가 지속적으로 polling하며 확인한다.",
+        "입출력 장치와 메모리가 같은 주소 버스를 사용한다.",
+        "입출력 장치가 데이터를 주고받을 준비가 되었을 때 CPU가 인터럽트를 받는다.",
+        "CPU 외에 입출력 장치로부터 데이터를 읽어오기위한 장치가 있다."
+      ],
+      "answer": 2,
+      "explanation": "MMIO란 메모리 공간 중 일부를 입출력 장치에 할당하여 쓰는 방식으로 일반 데이터를 읽고 쓰는 것처럼 I/O를 할 수 있습니다. 설계 관점에서 단순해지는 반면 I/O가 일반적으로 메모리 접근보다 느리기때문에 같은 주소 버스를 사용하게되는 메모리 접근이 영향을 받아 느려질 수 있습니다.",
+      "references": [
+        {"[한] MMIO" : "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%A7%B5_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"MMIO" : "https://en.wikipedia.org/wiki/Memory-mapped_I/O"}
+      ]
     }
   ]
 }
