@@ -23,7 +23,7 @@
       "answer": 3,
       "explanation": "Application, Presentation, Session, Transport, Network, Data link and Physical layer",
       "references": [
-        {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
       ]
     },
@@ -50,7 +50,7 @@
       "answer": 4,
       "explanation": "Presentation layer는 application이 네트워크마다 다를 수 있는 데이터 포맷이나 전송 방식 등을 신경쓰지않고 작업할 수 있도록 독립성을 제공하는 계층입니다. 따라서 송수신 시에 하위 레이어에 따라 application에서 받거나 application에 보낼 데이터를 압축 또는 해제하거나 변환하는 등의 작업을 합니다.",
       "references": [
-        {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
       ]
     },
@@ -65,7 +65,7 @@
       "answer": 2,
       "explanation": "Session layer는 종단 프로세스 간에 세션의 확립, 유지 및 중단을 위한 메커니즘을 제공하는 계층입니다. 세션을 직접 관리함으로써 전이중 (full-duplex) 및 반이중 (half-duplex) 통신 위에서의 동기화를 가능하게 합니다. Session layer의 대표적인 예로는 TCP/IP가 있습니다.",
       "references": [
-        {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
       ]
     },
@@ -80,7 +80,7 @@
       "answer": 2,
       "explanation": "수신 측에서 데이터는 하위 계층에서 상위 계층으로 가는 흐름이므로, Physical layer부터 시작하여 5번째는 Session layer가 됩니다.",
       "references": [
-        {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
       ]
     },
@@ -107,7 +107,7 @@
       "answer": 1,
       "explanation": "-",
       "references": [
-        {"[한] OSI 모델": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
       ]
     },
