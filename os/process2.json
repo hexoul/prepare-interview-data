@@ -9,7 +9,11 @@
         "많은 자원을 활용함으로써 시스템에 장애를 주는"
       ],
       "answer": 3,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [
+        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
+      ]
     },
     {
       "question": "___ 시스템 콜을 부르는 부모 프로세스는 자식 프로세스들이 종료될 때까지 정지된다.",
@@ -23,11 +27,12 @@
       "explanation": "-",
       "references": [
         {"wait": "https://en.wikipedia.org/wiki/Wait_(system_call)"},
-        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
+        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"},
+        {"exit": "https://en.wikipedia.org/wiki/Exit_(system_call)"}
       ]
     },
     {
-      "question": "모든 자식 프로세스가 종료한 뒤에 부모 프로세스를 종료하는 것을 ___라 한다.",
+      "question": "모든 자식 프로세스가 종료된 뒤에 부모 프로세스를 종료하는 것을 ___라 한다.",
       "choices": [
         "Normal termination",
         "Abnormal termination",
@@ -46,7 +51,11 @@
         "Uniprogramming, Multiprocessing"
       ],
       "answer": 4,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [
+        {"Multitasking": "https://en.wikipedia.org/wiki/Computer_multitasking"},
+        {"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}
+      ]
     },
     {
       "question": "각 프로세스는 ___로 식별할 수 있다.",
@@ -57,7 +66,11 @@
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고 줄여씁니다."
+      "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고 줄여씁니다.",
+      "references": [
+        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
+      ]
     },
     {
       "question": "UNIX의 'fork' system call은 자식 프로세스에는 ___를 반환하고 부모 프로세스에는 ___를 반환한다.",
@@ -95,10 +108,13 @@
         "Ready Queue"
       ],
       "answer": 2,
-      "explanation": "-"
+      "explanation": "PCB는 OS에 의해 pool로 관리되며 queue가 아닙니다.",
+      "references": [
+        {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
+      ]
     },
     {
-      "question": "프로세스가 I/O를 요청했을 때, ___에 배치된다.",
+      "question": "프로세스가 I/O를 요청했을 때 ___에 배치된다.",
       "choices": [
         "Job queue",
         "Waiting queue",
@@ -114,11 +130,15 @@
       "choices": [
         "모든 queue에서 삭제된다.",
         "Job queue를 제외한 queue에서 삭제된다.",
-        "PCB의 할당이 해제된다.",
+        "PCB의 메모리 할당이 해제된다.",
         "자식 프로세스를 강제로 종료시킨다."
       ],
       "answer": 1,
-      "explanation": "PCB는 OS에서 풀 (pool) 을 이용해 관리하는 자원으로, 프로세스 종료 시 풀로 돌아가는 것이고 할당이 해제되는 것은 아닙니다. 자식 프로세스는 강제로 종료되지않기에 고아 프로세스가 발생할 수 있습니다."
+      "explanation": "PCB는 OS에서 풀 (pool) 을 이용해 관리하는 자원으로, 프로세스 종료 시 풀로 돌아가는 것이고 할당이 해제되는 것은 아닙니다. 자식 프로세스는 강제로 종료되지않기에 고아 프로세스가 발생할 수 있습니다.",
+      "references": [
+        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
+      ]
     },
     {
       "question": "Long-term scheduler란?",
@@ -130,7 +150,9 @@
       ],
       "answer": 1,
       "explanation": "Long-term scheduler는 실행되는 프로세스들이 I/O bound인지 CPU bound인지 파악하고 적절하게 ready queue에 배치함으로써 the degree of multiprogramming, 즉 병렬도를 향상시키기 위한 스케줄을 합니다.",
-      "references": [{"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}]
+      "references": [
+        {"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}
+      ]
     },
     {
       "question": "만약 모든 프로세스가 I/O bound라면 ready queue는 거의 항상 ___ short-term scheduler는 할 일이 ___",
@@ -142,7 +164,9 @@
       ],
       "answer": 3,
       "explanation": "프로세스가 I/O bound라면 I/O에 시간을 많이 쓰는 것이므로 ready보다 waiting queue에 있을 확률이 높다고 생각할 수 있습니다. 따라서 다음에 CPU를 할당받을 프로세스를 선택하는 short-term scheduler 입장에서는 할 일이 적어집니다.",
-      "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
+      "references": [
+        {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}
+      ]
     },
     {
       "question": "Medium-term scheduler란?",
@@ -154,7 +178,9 @@
       ],
       "answer": 4,
       "explanation": "Medium-term scheduler는 메모리 효율을 위해 오래동안 사용되지않은 프로세스를 메모리에서 HDD 등 secondary memory에 옮기거나, 빈번하게 page fault를 발생시키는 프로세스를 메인 메모리에 유지시키는 등 프로세스의 메모리 스왑 여부를 결정하는 스케줄러입니다.",
-      "references": [{"Medium-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Medium-term_scheduling"}]
+      "references": [
+        {"Medium-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Medium-term_scheduling"}
+      ]
     },
     {
       "question": "Short-term scheduler란?",
@@ -166,7 +192,9 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}]
+      "references": [
+        {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}
+      ]
     },
     {
       "question": "Short-term scheduler와 Long-term scheduler의 주된 차이점은?",
@@ -178,7 +206,11 @@
       ],
       "answer": 3,
       "explanation": "이름에서 알 수 있듯이 term은 스케줄러의 주기를 나타냅니다. 주기가 짧을수록 빈번하게 실행됩니다.\n실행 주기 : Long-term scheduler > Medium-term scheduler > Short-term scheduler",
-      "references": [{"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"}]
+      "references": [
+        {"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"},
+        {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"},
+        {"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}
+      ]
     },
     {
       "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition) 는 ___가 유일하다.",
@@ -213,7 +245,8 @@
         "한 명의 유저가 동시에 여러 프로그램을 실행시킬 수 있다."
       ],
       "answer": 3,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Multiprogramming": "https://owd.tcnj.edu/~coburn/os"}]
     },
     {
       "question": "프로세스가 I/O 서비스를 기다리기위해 blocked state가 되었었다면, I/O 서비스가 완료되었을 때 프로세스는 어떤 상태가 되는가?",
@@ -224,7 +257,8 @@
         "Terminated state"
       ],
       "answer": 2,
-      "explanation": "-"
+      "explanation": "-",
+      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
     },
     {
       "question": "PCB가 포함하지않는 것은?",
@@ -266,7 +300,11 @@
         "Power failure"
       ],
       "answer": 3,
-      "explanation": "외부 장치와 Power 등 외부 요소는 I/O interrupt를 발생시킵니다. 반면 스케줄러 프로세스는 timer에 의해 trigger되는 프로세스로 다음에 실행될 프로세스를 선택할 뿐 실행 중인 프로세스를 직접적으로 interrupt하지는 않습니다."
+      "explanation": "외부 장치와 Power 등 외부 요소는 I/O interrupt를 발생시킵니다. 반면 스케줄러 프로세스는 timer에 의해 trigger되는 프로세스로 다음에 실행될 프로세스를 선택할 뿐 실행 중인 프로세스를 직접적으로 interrupt하지는 않습니다.",
+      "references": [
+        {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
+        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"}
+      ]
     }
   ]
 }
