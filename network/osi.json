@@ -75,7 +75,10 @@
       ],
       "answer": 4,
       "explanation": "Line coding, channel coding 및 modulation 모두 정보 전송에 필요한 기술들로 physcial layer의 역할에 해당합니다. pin이나 커넥터, 전류 등의 물리적 설정도 physical layer에서 취급됩니다.\n\n참고로 Line coding은 디지털을 아날로그로 표현하기위한 방법으로 digital modulation으로 불리기도 합니다. Channel coding은 error correcting code를 이용해 에러를 제어하고 복구하기위한 기술로 forward error correction (FEC) 라고 부르기도 합니다.",
-      "references": [{"Line code": "https://en.wikipedia.org/wiki/Line_code"}, {"FEC": "https://en.wikipedia.org/wiki/Forward_error_correction"}]
+      "references": [
+        {"Line code": "https://en.wikipedia.org/wiki/Line_code"},
+        {"FEC": "https://en.wikipedia.org/wiki/Forward_error_correction"}
+      ]
     },
     {
       "question": "___를 통해 여러 신호가 한 채널을 공유할 수 있다.",
