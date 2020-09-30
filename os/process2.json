@@ -11,7 +11,7 @@
       "answer": 3,
       "explanation": "-",
       "references": [
-        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
       ]
     },
@@ -68,7 +68,7 @@
       "answer": 3,
       "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고 줄여씁니다.",
       "references": [
-        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
       ]
     },
@@ -136,7 +136,7 @@
       "answer": 1,
       "explanation": "PCB는 OS에서 풀 (pool) 을 이용해 관리하는 자원으로, 프로세스 종료 시 풀로 돌아가는 것이고 할당이 해제되는 것은 아닙니다. 자식 프로세스는 강제로 종료되지않기에 고아 프로세스가 발생할 수 있습니다.",
       "references": [
-        {"프로세스": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
+        {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
       ]
     },
