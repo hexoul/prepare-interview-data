@@ -10,7 +10,10 @@
       ],
       "answer": 1,
       "explanation": "RFC는 Request For Comments로 인터넷에 적용가능한 방법, behavior, 연구 등이 기술된 문서들로 이루어집니다.",
-      "references": [{"IETF": "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force"}, {"RFC": "https://en.wikipedia.org/wiki/Request_for_Comments"}]
+      "references": [
+        {"IETF": "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force"},
+        {"RFC": "https://en.wikipedia.org/wiki/Request_for_Comments"}
+      ]
     },
     {
       "question": "OSI 모델 계층 구조에서 상위 계층에서 하위 계층으로 갈 때 헤더는 ___",
@@ -115,7 +118,10 @@
       ],
       "answer": 1,
       "explanation": "Broadcast는 정보를 네트워크의 모든 station에 전달합니다. 반면 multicast는 특정 station 그룹에 전달하고 unicast는 단일 station에만 전달합니다.",
-      "references": [{"Broadcast network": "https://en.wikipedia.org/wiki/Broadcast_network"}, {"Station": "https://en.wikipedia.org/wiki/Station_(networking)"}]
+      "references": [
+        {"Broadcast network": "https://en.wikipedia.org/wiki/Broadcast_network"},
+        {"Station": "https://en.wikipedia.org/wiki/Station_(networking)"}
+      ]
     },
     {
       "question": "블루투스는 ___의 한 예시이다.",
