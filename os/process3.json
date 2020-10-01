@@ -251,6 +251,37 @@
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"},
         {"Obstruction-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom"}
       ]
+    },
+    {
+      "question": "Remote Procedure Call (RPC) 은 ___ 하기위해 사용된다.",
+      "choices": [
+        "같은 프로그램 내의 프로시저를 호출",
+        "같은 시스템 내의 프로시저를 호출",
+        "시스템 상관없이 프로시저를 호출",
+        "IPC가 지원하지 못하는 부분을 보충"
+      ],
+      "answer": 3,
+      "explanation": "RPC는 별도의 원격 제어를 위한 코딩없이 다른 주소 공간에 있는 프로시저를 실행시키는 기법으로, 프로시저가 로컬에 있든 원격에 있든 상관없이 동일하게 실행할 수 있는 추상화 인터페이스를 프로그래머에 제공합니다. RPC는 IPC의 한 형태이므로 4번도 틀린 설명입니다.",
+      "references": [
+        {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
+        {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"}
+      ]
+    },
+    {
+      "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기위해 ___를 제공한다.",
+      "choices": [
+        "identifier",
+        "stub",
+        "alias",
+        "process"
+      ],
+      "answer": 2,
+      "explanation": "stub은 일반적으로 RPC를 위해 자동생성되어지는 코드입니다. 호출 시 클라이언트 stub에서는 매개변수 (parameter) 를 packing (혹은 marshalling) 하고, 서버 stub에서는 unpacking (혹은 unmarshalling) 하여 매개변수를 전달받습니다. 응답 시에는 위 과정을 반대 순서로 진행합니다.",
+      "references": [
+        {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
+        {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"},
+        {"stub": "https://en.wikipedia.org/wiki/Stub_(distributed_computing)"}
+      ]
     }
   ]
 }
