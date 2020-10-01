@@ -268,7 +268,7 @@
       ]
     },
     {
-      "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기위해 ___를 제공한다.",
+      "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기위해 ___를 제공한다.",
       "choices": [
         "identifier",
         "stub",
@@ -276,11 +276,42 @@
         "process"
       ],
       "answer": 2,
-      "explanation": "stub은 일반적으로 RPC를 위해 자동생성되어지는 코드입니다. 호출 시 클라이언트 stub에서는 매개변수 (parameter) 를 packing (혹은 marshalling) 하고, 서버 stub에서는 unpacking (혹은 unmarshalling) 하여 매개변수를 전달받습니다. 응답 시에는 위 과정을 반대 순서로 진행합니다.",
+      "explanation": "stub은 일반적으로 RPC를 위해 자동생성되어지는 코드입니다. 호출 시 클라이언트 사이드 stub에서는 매개변수 (parameter) 를 packing (혹은 marshalling) 하고, 서버 사이드 stub (혹은 skeleton) 에서는 unpacking (혹은 unmarshalling) 하여 매개변수를 전달받습니다. 응답 시에는 위 과정을 반대 순서로 진행합니다.",
       "references": [
         {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
         {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"},
         {"stub": "https://en.wikipedia.org/wiki/Stub_(distributed_computing)"}
+      ]
+    },
+    {
+      "question": "클라이언트 사이드 stub이 하는 것은?",
+      "choices": [
+        "서버 사이드에 메세지 전달",
+        "전달할 매개변수 marshalling",
+        "전달받은 응답 unmarshalling",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"stub": "https://en.wikipedia.org/wiki/Stub_(distributed_computing)"},
+        {"Marshalling": "https://en.wikipedia.org/wiki/Marshalling_(computer_science)"},
+        {"Unmarshalling": "https://en.wikipedia.org/wiki/Marshalling_(computer_science)#Unmarshalling"}
+      ]
+    },
+    {
+      "question": "RMI란?",
+      "choices": [
+        "Remote Memory Installation",
+        "Remote Memory Invocation",
+        "Remote Method Installation",
+        "Remote Method Invocation"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"RMI": "https://en.wikipedia.org/wiki/Distributed_object_communication"},
+        {"Java RMI": "https://en.wikipedia.org/wiki/Java_remote_method_invocation"}
       ]
     }
   ]
