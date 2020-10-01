@@ -11,7 +11,7 @@
       "answer": 4,
       "explanation": "-",
       "references": [
-        {"[한]OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
+        {"[한] OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
         {"OS": "https://en.wikipedia.org/wiki/Operating_system"}
       ]
     },
@@ -38,7 +38,7 @@
       "answer": 3,
       "explanation": "Kernel은 운영체제의 핵심 부분으로 운영체제에 다양한 서비스를 지원하기위해 상호작용이 되어야하므로 읽어들일 수 있어야 합니다.",
       "references": [
-        {"커널": "https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
+        {"[한] Kernel": "https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Kernel": "https://en.wikipedia.org/wiki/Kernel_(operating_system)"}
       ]
     },
@@ -63,7 +63,9 @@
       ],
       "answer": 1,
       "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등",
-      "references": [{"Command interpreter" : "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}]
+      "references": [
+        {"Command interpreter" : "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}
+      ]
     },
     {
       "question": "운영체제의 자원은 ___을 통해 관리되어진다.",
@@ -98,7 +100,7 @@
       "answer": 4,
       "explanation": "Palm OS는 96년도에 출시된 PDA 및 모바일용 운영체제로 터치스크린 GUI를 위해 개발되었고 실시간 운영체제는 아닙니다.",
       "references": [
-        {"[한]Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"},
+        {"[한] Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"},
         {"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}
       ]
     },
@@ -231,9 +233,9 @@
       "answer": 1,
       "explanation": "Programmed I/O 또는 polled I/O라 불리는 PIO는 입출력 장치와의 매 데이터 전송마다 CPU가 개입합니다.",
       "references": [
-        {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"},
         {"[한] PIO" : "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
-        {"PIO" : "https://en.wikipedia.org/wiki/Programmed_input%E2%80%93output"}
+        {"PIO" : "https://en.wikipedia.org/wiki/Programmed_input%E2%80%93output"},
+        {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"}
       ]
     },
     {
