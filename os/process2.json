@@ -305,6 +305,39 @@
         {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
         {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"}
       ]
+    },
+    {
+      "question": "프로세스가 시작해서 끝날 때까지의 시간을 뜻하는 용어는?",
+      "choices": [
+        "응답 시간 (Response time)",
+        "대기 시간 (Waiting time)",
+        "반환 시간 (Turnaround time)",
+        "처리량 (Throughput)"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Response time": "https://en.wikipedia.org/wiki/Response_time_(technology)"},
+        {"Turnaround time (TAT)": "https://en.wikipedia.org/wiki/Turnaround_time"},
+        {"Throughput": "https://en.wikipedia.org/wiki/Throughput"}
+      ]
+    },
+    {
+      "question": "처음으로 CPU를 요청한 프로세스가 처음으로 CPU를 할당받는 스케줄링 알고리즘은?",
+      "choices": [
+        "First Come First Serve (FCFS) scheduling",
+        "Shortest Job First (SJF) scheduling",
+        "Priority scheduling",
+        "Round-robin scheduling"
+      ],
+      "answer": 1,
+      "explanation": "FCFS (혹은 FIFO) 는 단어 뜻 그대로 요청된 순서대로 처리되는 알고리즘입니다. 보통 queue를 이용해 구현됩니다.",
+      "references": [
+        {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
+        {"SJF": "https://en.wikipedia.org/wiki/Shortest_job_next"},
+        {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"},
+        {"Round-robin (RR)": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
+      ]
     }
   ]
 }
