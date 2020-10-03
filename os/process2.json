@@ -338,6 +338,52 @@
         {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"},
         {"Round-robin (RR)": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
       ]
+    },
+    {
+      "question": "CPU 제어권을 Short-term 스케줄러에 의해 선택된 프로세스에게 넘겨주는 모듈은?",
+      "choices": [
+        "interrupt",
+        "scheduler",
+        "dispatcher",
+        "fetcher"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Dispatcher": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Dispatcher"}
+      ]
+    },
+    {
+      "question": "Priority 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "가장 높은 우선순위를 가진 프로세스에 CPU를 할당한다.",
+        "가장 낮은 우선순위를 가진 프로세스에 CPU를 할당한다.",
+        "동일한 우선순위를 가진 프로세스들은 스케줄될 수 없다.",
+        "Queue에 빨리 들어온 프로세스가 높은 우선순위를 가진다."
+      ],
+      "answer": 1,
+      "explanation": "Priority 스케줄링 알고리즘은 높은 우선순위를 가진 프로세스에 먼저 CPU를 할당하며, 동일한 우선순위를 가진 프로세스가 2개 이상 있다면 임의로 그 중 하나를 선택합니다. 스케줄이 안되는 경우는 없습니다. Priority는 직접 입력을 받기도 하지만 특성에 따라 산정되기도 합니다. 예로 RTOS에서는 데드라인이 짧을수록 우선순위가 높은 EDF 등이 있습니다.",
+      "references": [
+        {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"},
+        {"EDF": "https://en.wikipedia.org/wiki/Earliest_deadline_first_scheduling"}
+      ]
+    },
+    {
+      "question": "다음 중 내부적으로 time quantum을 정의하는 알고리즘은?",
+      "choices": [
+        "Shortest Job First (SJF) scheduling",
+        "Round-robin (RR) scheduling",
+        "Priority scheduling",
+        "Multilevel queue scheduling"
+      ],
+      "answer": 2,
+      "explanation": "Round-robin은 모든 프로세스를 우선순위없이 동등하게 실행시키기위해 time slice (혹은 time quantum) 만큼 각 프로세스에 CPU를 할당하는 알고리즘입니다. 이러한 특성상 순환 실행 (cyclic executive) 이라고도 불립니다. 우선순위가 없기때문에 starvation-free를 구현하기 쉬워집니다.",
+      "references": [
+        {"SJF": "https://en.wikipedia.org/wiki/Shortest_job_next"},
+        {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"},
+        {"Round-robin (RR)": "https://en.wikipedia.org/wiki/Round-robin_scheduling"},
+        {"Multilevel queue": "https://en.wikipedia.org/wiki/Multilevel_queue"}
+      ]
     }
   ]
 }
