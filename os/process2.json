@@ -443,6 +443,36 @@
         {"Dispatcher": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Dispatcher"},
         {"Dispatch latency": "https://docs.oracle.com/cd/E19455-01/806-4750/chap7rt-21297/index.html"}
       ]
+    },
+    {
+      "question": "Round-robin 스케줄링은 ___이다.",
+      "choices": [
+        "Non-preemptive",
+        "Preemtpvie",
+        "위에 언급된 모두 해당",
+        "모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "Round-robin 스케줄링에서는 time slice (혹은 time quantum) 마다 CPU 할당이 바뀌어야하므로, 실행 중인 프로세스가 있었더라도 다음 프로세스에 선점되어야합니다.",
+      "references": [
+        {"Round-robin": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
+      ]
+    },
+    {
+      "question": "Round-robin 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "Time slice가 매우 크다면 FCFS로 변환될 수 있다.",
+        "Time slice가 매우 작다면 FCFS로 변환될 수 있다.",
+        "Time slice가 매우 작다면 성능을 향상시킬 수 있다.",
+        "Time slice가 매우 작다면 SJF로 변환될 수 있다."
+      ],
+      "answer": 1,
+      "explanation": "Time slice가 매우 크다면 선점되는 일 없이 queue에 들어온 순서대로 처리될 것이므로 FCFS로 변환될 수 있습니다. Time slice가 작다면 불필요하게 빈번한 컨텍스트 스위치가 발생해 오버헤드가 커집니다.",
+      "references": [
+        {"Round-robin": "https://en.wikipedia.org/wiki/Round-robin_scheduling"},
+        {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
+        {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"}
+      ]
     }
   ]
 }
