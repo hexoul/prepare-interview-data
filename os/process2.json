@@ -413,6 +413,36 @@
         {"[한] Thread": "https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Thread": "https://en.wikipedia.org/wiki/Thread_(computing)"}
       ]
+    },
+    {
+      "question": "Non-preemptive scheduling이 발생하는 경우는?",
+      "choices": [
+        "프로세스가 running state에서 ready state로 전이될 때",
+        "프로세스가 running state에서 waiting state로 전이될 때",
+        "프로세스가 waiting state에서 ready state로 전이될 때",
+        "모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "비선점 (non-preemtpvie) 으로 스케줄링이 발생하려면 간섭이 없어야하므로 프로세스가 스스로 자원을 놓는 상태 전이가 있어야 합니다. 즉 I/O 요청 등으로 인해 block되어 waiting state로 전이될 때가 이에 해당합니다.",
+      "references": [
+        {"Preemption": "https://en.wikipedia.org/wiki/Preemption_(computing)"},
+        {"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}
+      ]
+    },
+    {
+      "question": "Dispatch latency란?",
+      "choices": [
+        "프로세스를 running state에서 ready state로 dispatching 하는 시간",
+        "프로세스를 running state에서 ready state로 dispatching 하는 동안 CPU가 idle 이었던 시간",
+        "Running state였던 프로세스를 멈추고 다른 프로세스를 running state로 만들 때까지 걸린 시간",
+        "Dispatch 될 프로세스를 선택하는데 걸린 시간"
+      ],
+      "answer": 3,
+      "explanation": "Dispatch latency는 우선순위가 더 높은 프로세스 (혹은 태스크 또는 쓰레드) 를 실행시키기위해 reschedule하는 시간이라고도 볼 수 있습니다.",
+      "references": [
+        {"Dispatcher": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Dispatcher"},
+        {"Dispatch latency": "https://docs.oracle.com/cd/E19455-01/806-4750/chap7rt-21297/index.html"}
+      ]
     }
   ]
 }
