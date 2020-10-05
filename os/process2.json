@@ -473,6 +473,35 @@
         {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
+    },
+    {
+      "question": "Idle time에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "CPU가 busy가 아니었던 시간",
+        "CPU가 idle task를 실행시킨 시간",
+        "Kernel space에서 코드를 실행한 시간은 idle에 포함되지 않는다.",
+        "Idle task는 외부에서 관측되지 않는다."
+      ],
+      "answer": 4,
+      "explanation": "Kernel space나 user space 상관없이 idle task가 아닌 코드를 실행하고 있었다면 busy라고 보아야 합니다. Idle task는 OS 구현에 따라서 하드코딩되어있다면 관측되지 않을 수도 있지만 최하위 우선순위의 프로세스로 작성될 경우 관측 가능합니다.",
+      "references": [
+        {"Idle": "https://en.wikipedia.org/wiki/Idle_(CPU)"},
+        {"CPU time": "https://en.wikipedia.org/wiki/CPU_time"}
+      ]
+    },
+    {
+      "question": "CPU time에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "CPU time 중 user time은 사용자에 의해 CPU가 busy였던 시간이다.",
+        "CPU time 중 system time은 kernel space에서 CPU가 busy였던 시간이다.",
+        "CPU time은 user time과 system time의 합이다.",
+        "멀티프로세서 시스템에서 CPU time은 각 코어의 CPU time을 합한 값이다."
+      ],
+      "answer": 1,
+      "explanation": "User time은 user space에서 CPU가 busy였던 시간입니다. 사용자에 의해 실행된 프로세스는 user space에서 시작하지만, 시스템 콜을 호출하는 경우 kernel space에서 실행되는 부분도 생기기때문에 온전히 user space에서만 실행된다고 볼 수 없습니다.",
+      "references": [
+        {"CPU time": "https://en.wikipedia.org/wiki/CPU_time"}
+      ]
     }
   ]
 }
