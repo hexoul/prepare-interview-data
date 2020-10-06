@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "여러 프로세스가 같은 데이터를 동시에 접근할 때 실행 결과가 접근 순서에 의존하는 상황을 무엇이라 하는가?",
+      "question": "여러 프로세스가 같은 데이터를 동시에 접근할 때 실행 결과가 접근 순서에 의존하는 상황을 ___이라 한다.",
       "choices": [
         "Dynamic condition",
         "Race condition",
@@ -42,13 +42,14 @@
     {
       "question": "상호 배제 (Mutual exclusion)는 ___을 통해 제공받을 수 있다.",
       "choices": [
-        "Mutex locks",
+        "Mutex lock",
         "Binary semaphore",
-        "Mutex locks와 binary semaphore",
+        "Mutex lock과 binary semaphore",
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Binary semaphore는 mutex lock으로도 알려져 있습니다."
+      "explanation": "Binary semaphore는 mutex lock으로도 알려져 있습니다.",
+      "references": [{"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}]
     },
     {
       "question": "High priority task가 medium priority task에 의해 간접적으로 선점되어질 때 두 task의 상대 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
@@ -165,7 +166,9 @@
       ],
       "answer": 3,
       "explanation": "Indirect communication에서 송신자는 메세지를 mailbox에 저장하고 수신자는 메세지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 communication 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 direct냐 indirect냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
-      "references": [{"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}]
+      "references": [
+        {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
+      ]
     },
     {
       "question": "Non-blocking 프로세스는 ___",
@@ -191,7 +194,10 @@
         "송신자는 상황에 따라 블록될 수도 안될 수도 있다."
       ],
       "answer": 2,
-      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메세지 전달을 보장하기 위해서 송신자는 수신자가 메세지를 받아갈 때까지 블록되어야 합니다."
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메세지 전달을 보장하기 위해서 송신자는 수신자가 메세지를 받아갈 때까지 블록되어야 합니다.",
+      "references": [
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
+      ]
     },
     {
       "question": "Zero capacity queue는 ___라고도 불린다.",
