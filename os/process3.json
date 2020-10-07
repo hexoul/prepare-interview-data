@@ -329,7 +329,7 @@
         "Data breach"
       ],
       "answer": 2,
-      "explanation": "데이터를 읽고 쓰는 순서와 시간이 보장되지 않는다면, 부적절한 시점의 데이터가 읽히거나 덮어 써지는 등 데이터 일관성을 해치는 문제가 발생합니다.",
+      "explanation": "데이터를 읽고 쓰는 순서와 시간이 보장되지 않는다면, 부적절한 시점의 데이터가 읽히거나 덮어써지는 등 데이터 일관성을 해치는 문제가 발생합니다.",
       "references": [
         {"Data consistency": "https://en.wikipedia.org/wiki/Data_consistency"}
       ]
