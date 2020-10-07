@@ -319,6 +319,35 @@
         {"RMI": "https://en.wikipedia.org/wiki/Distributed_object_communication"},
         {"Java RMI": "https://en.wikipedia.org/wiki/Java_remote_method_invocation"}
       ]
+    },
+    {
+      "question": "동기화없이 공유 데이터를 동시 접근하는 것은 ___를 야기한다.",
+      "choices": [
+        "Data consistency",
+        "Data inconsistency",
+        "Data insecurity",
+        "Data breach"
+      ],
+      "answer": 2,
+      "explanation": "데이터를 읽고 쓰는 순서와 시간이 보장되지 않는다면, 부적절한 시점의 데이터가 읽히거나 덮어 써지는 등 데이터 일관성을 해치는 문제가 발생합니다.",
+      "references": [
+        {"Data consistency": "https://en.wikipedia.org/wiki/Data_consistency"}
+      ]
+    },
+    {
+      "question": "공유 자원에 동시접근했을 때 의도치 않은 동작이 발생할 수 있기 때문에, 동시접근을 막기위해 다른 프로세스 들로부터 보호받는 코드 구간을 무엇이라 하는가?",
+      "choices": [
+        "Secure section",
+        "Critical section",
+        "Non-critical section",
+        "Synchorinzed section"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
+      ]
     }
   ]
 }
