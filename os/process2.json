@@ -502,6 +502,34 @@
       "references": [
         {"CPU time": "https://en.wikipedia.org/wiki/CPU_time"}
       ]
+    },
+    {
+      "question": "Priority 스케줄링 알고리즘의 단점은?",
+      "choices": [
+        "매우 복잡한 방법으로 스케줄한다.",
+        "스케줄링에 많은 시간이 요구된다.",
+        "낮은 우선순위의 프로세스는 CPU를 할당받지 못하고 무한하게 대기할 수도 있다.",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"}
+      ]
+    },
+    {
+      "question": "Aging이란?",
+      "choices": [
+        "캐시가 만료되지 않도록 유지하는 것",
+        "페이지가 메모리에서 스왑되지 않도록 유지하는 것",
+        "최근 실행된 프로세스의 우선순위를 낮추는 것",
+        "오랫동안 수행되지 못하고 대기한 task의 우선순위를 높이는 것"
+      ],
+      "answer": 4,
+      "explanation": "Priority 스케줄링 알고리즘에서는 낮은 우선순위를 가진 프로세스의 경우 기아가 발생해 무한히 대기할 수도 있습니다. 이러한 문제점을 해결하고자, 프로세스가 유한한 시간 내에 끝날 수 있도록 CPU 대기시간이 긴 task에 대해서 일시적으로 우선순위를 높이는 기법이 제안되었습니다. 이를 aging이라 합니다.",
+      "references": [
+        {"Aging": "https://en.wikipedia.org/wiki/Aging_(scheduling)"}
+      ]
     }
   ]
 }
