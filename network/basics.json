@@ -174,14 +174,51 @@
     {
       "question": "다음 중 private network를 public network로 확장시킨 네트워크는?",
       "choices": [
-        "Local area network",
-        "Virtual private network",
-        "Enterprise private network",
-        "Storage area network"
+        "Local Area Network (LAN)",
+        "Virtual Private Network (VPN)",
+        "Enterprise Private Network (EPN)",
+        "Storage Area Network (SAN)"
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Virtual private network": "https://en.wikipedia.org/wiki/Virtual_private_network"}]
+      "references": [
+        {"LAN": "https://en.wikipedia.org/wiki/Local_area_network"},
+        {"VPN": "https://en.wikipedia.org/wiki/Virtual_private_network"},
+        {"EPN": "https://en.wikipedia.org/wiki/Intranet"},
+        {"SAN": "https://en.wikipedia.org/wiki/Storage_area_network"}
+      ]
+    },
+    {
+      "question": "네트워크에서 물리적 또는 논리적으로 연결된 방식을 뜻하는 용어는?",
+      "choices": [
+        "Routing",
+        "Networking",
+        "Topology",
+        "Node"
+      ],
+      "answer": 3,
+      "explanation": "네트워크의 요소인 링크나 노드 등이 그래프 이론을 기반으로 물리적이나 논리적으로 연결된 것으로 다양한 종류가 있습니다.",
+      "references": [
+        {"[한] Topology": "https://ko.wikipedia.org/wiki/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%86%A0%ED%8F%B4%EB%A1%9C%EC%A7%80"},
+        {"Topology": "https://en.wikipedia.org/wiki/Network_topology"}
+      ]
+    },
+    {
+      "question": "중앙 제어장치 또는 허브가 요구되는 네트워크 토폴로지는?",
+      "choices": [
+        "Star",
+        "Mesh",
+        "Ring",
+        "Bus"
+      ],
+      "answer": 1,
+      "explanation": "Star 토폴로지에서는 다른 노드와 직접 연결을 맺지 않고 중앙 허브를 통해 통신을 합니다. 따라서 모든 메세지는 허브를 거치게 됩니다.",
+      "references": [
+        {"Star": "https://en.wikipedia.org/wiki/Star_network"},
+        {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
+        {"Ring": "https://en.wikipedia.org/wiki/Ring_network"},
+        {"Bus": "https://en.wikipedia.org/wiki/Bus_network"}
+      ]
     }
   ]
 }
