@@ -335,8 +335,8 @@
       "answer": 2,
       "explanation": "전송률 (transmission rate) 은 'frame rate * 각 frame의 데이터 크기'로 계산되므로, 4000 frame * 8 bits = 32000bps (bits per seoncd) = 32Kbps가 됩니다. 만약 bps를 bytes per second로 보셨다 하더라도 8bits = 1byte이기에 4000 frame * 1byte = 4Kbps가 되므로 보기 중에서는 존재하지 않습니다.",
       "references": [
-        {"[한] Multiplexing": "https://terms.naver.com/entry.nhn?docId=796402&cid=42347&categoryId=42347"},
-        {"Multiplexing": "https://en.wikipedia.org/wiki/Multiplexing"}
+        {"[한] TDM": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B6%84%ED%95%A0_%EB%8B%A4%EC%A4%91%ED%99%94"},
+        {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"}
       ]
     }
   ]
