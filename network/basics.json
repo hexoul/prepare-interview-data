@@ -133,7 +133,13 @@
       ],
       "answer": 1,
       "explanation": "블루투스는 무선 통신 기술 중의 하나로 보통 10 미터 이내의 범위에서 데이터 전송을 하기위한 PAN 구축에 쓰입니다.",
-      "references": [{"Bluetooth": "https://en.wikipedia.org/wiki/Bluetooth"}]
+      "references": [
+        {"Bluetooth": "https://en.wikipedia.org/wiki/Bluetooth"},
+        {"PAN": "https://en.wikipedia.org/wiki/Personal_area_network"},
+        {"LAN": "https://en.wikipedia.org/wiki/Local_area_network"},
+        {"VPN": "https://en.wikipedia.org/wiki/Virtual_private_network"},
+        {"WAN": "https://en.wikipedia.org/wiki/Wide_area_network"}
+      ]
     },
     {
       "question": "네트워크 사이에서 패킷에 포함된 라우팅 정보를 기반으로 패킷을 포워딩하는 장치는?",
@@ -212,12 +218,63 @@
         "Bus"
       ],
       "answer": 1,
-      "explanation": "Star 토폴로지에서는 다른 노드와 직접 연결을 맺지 않고 중앙 허브를 통해 통신을 합니다. 따라서 모든 메세지는 허브를 거치게 됩니다.",
+      "explanation": "Star 네트워크에서는 다른 노드와 직접 연결을 맺지 않고 중앙 허브를 통해 통신을 합니다. 따라서 모든 트래픽은 허브를 거치게 됩니다.",
       "references": [
         {"Star": "https://en.wikipedia.org/wiki/Star_network"},
         {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
         {"Ring": "https://en.wikipedia.org/wiki/Ring_network"},
         {"Bus": "https://en.wikipedia.org/wiki/Bus_network"}
+      ]
+    },
+    {
+      "question": "___ 네트워크 토폴로지는 모든 노드가 공통된 채널을 사용한다.",
+      "choices": [
+        "Star",
+        "Mesh",
+        "Ring",
+        "Bus"
+      ],
+      "answer": 4,
+      "explanation": "Bus 네트워크에서는 bus라 불리는 half-duplex 링크를 공유하여 전송이 있을 때 모든 노드가 트래픽을 받습니다. 노드를 추가 연결시키기 쉬운 반면 보안에 취약할 수 있고 fault를 격리 또는 전파를 막기 어렵습니다. 매체를 공유하기 때문에 매체에 문제가 생기면 전체 장애가 될 수 있습니다.",
+      "references": [
+        {"Star": "https://en.wikipedia.org/wiki/Star_network"},
+        {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
+        {"Ring": "https://en.wikipedia.org/wiki/Ring_network"},
+        {"Bus": "https://en.wikipedia.org/wiki/Bus_network"}
+      ]
+    },
+    {
+      "question": "네트워크에 노드를 추가하거나 변경하려고 할 때 전체 네트워크에 영향을 줄 수 있는 네트워크 토폴로지는?",
+      "choices": [
+        "Star",
+        "Mesh",
+        "Ring",
+        "Bus"
+      ],
+      "answer": 3,
+      "explanation": "Ring 네트워크는 경로가 원형으로 형성되도록 각 노드가 두 노드와 연결이 되어있기 때문에 변경할 때 연결이 끊어져야하는 부분이 생기기 때문에 네트워크에 영향을 줄 수 있습니다. 네트워크 중 한 노드가 비정상 동작을 할 때도 유사한 영향이 있을 수 있기 때문에 dual ring 등의 보완하는 방법들이 있습니다.",
+      "references": [
+        {"Star": "https://en.wikipedia.org/wiki/Star_network"},
+        {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
+        {"Ring": "https://en.wikipedia.org/wiki/Ring_network"},
+        {"Bus": "https://en.wikipedia.org/wiki/Bus_network"}
+      ]
+    },
+    {
+      "question": "한 건물이나 대학 캠퍼스와 같이 한정된 영역을 잇는 네트워크를 지칭하는 용어로 알맞은 것은?",
+      "choices": [
+        "LAN",
+        "WAN",
+        "MAN",
+        "PAN"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [
+        {"LAN": "https://en.wikipedia.org/wiki/Local_area_network"},
+        {"WAN": "https://en.wikipedia.org/wiki/Wide_area_network"},
+        {"MAN": "https://en.wikipedia.org/wiki/Metropolitan_area_network"},
+        {"PAN": "https://en.wikipedia.org/wiki/Personal_area_network"}
       ]
     }
   ]
