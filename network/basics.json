@@ -235,7 +235,7 @@
         "Bus"
       ],
       "answer": 4,
-      "explanation": "Bus 네트워크에서는 bus라 불리는 half-duplex 링크를 공유하여 전송이 있을 때 모든 노드가 트래픽을 받습니다. 노드를 추가 연결시키기 쉬운 반면 보안에 취약할 수 있고 fault를 격리 또는 전파를 막기 어렵습니다. 매체를 공유하기 때문에 매체에 문제가 생기면 전체 장애가 될 수 있습니다.",
+      "explanation": "Bus 네트워크에서는 bus라 불리는 half-duplex 링크를 공유하여 전송이 있을 때 모든 노드가 트래픽을 받습니다. 노드를 추가 연결시키기 쉬운 반면 보안에 취약할 수 있고 fault를 격리 또는 전파를 막기 어렵습니다. 채널을 공유하기 때문에 채널에 문제가 생기면 전체 장애가 될 수 있습니다.",
       "references": [
         {"Star": "https://en.wikipedia.org/wiki/Star_network"},
         {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "question": "TDM은 슬롯을 ___으로 나눈다.",
+      "question": "TDM은 채널을 ___으로 나누어 사용한다.",
       "choices": [
         "Seconds",
         "Frames",
@@ -286,7 +286,7 @@
         "Bits"
       ],
       "answer": 2,
-      "explanation": "TDM은 Time-division multiplexing의 약어로 2개 이상의 신호를 결합해 하나의 채널로 보내는 기술입니다. 디지털 또는 아날로그 신호에 의존적이기 때문에 슬롯은 고정된 시간으로 나뉘어지나 초 단위가 아니고 frame이라 불립니다. 각 frame은 bandwidth에 따라 포함하는 bit의 크기가 달라집니다.",
+      "explanation": "TDM은 Time-division multiplexing의 약어로 2개 이상의 신호를 결합해 공통된 채널에 시간축 기반으로 보내는 기술입니다. 시간축은 고정된 시간으로 나뉘어지지만 디지털 또는 아날로그 신호에 의존적이기 때문에 초 단위가 아닙니다. 나뉘어진 단위는 time slot 또는 frame이라 불립니다. 각 frame은 bandwidth에 따라 포함하는 데이터 크기가 달라집니다.",
       "references": [
         {"[한] TDM": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B6%84%ED%95%A0_%EB%8B%A4%EC%A4%91%ED%99%94"},
         {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"}
@@ -307,6 +307,36 @@
         {"FDM": "https://en.wikipedia.org/wiki/Frequency-division_multiplexing"},
         {"WDM": "https://en.wikipedia.org/wiki/Wavelength-division_multiplexing"},
         {"QAM": "https://en.wikipedia.org/wiki/Quadrature_amplitude_modulation"}
+      ]
+    },
+    {
+      "question": "하나의 공유되는 채널에 두 개 이상의 신호를 결합하여 전송하는 방식을 ___라 한다.",
+      "choices": [
+        "Duplexing",
+        "Fully duplexing",
+        "Multiplexing",
+        "Switching"
+      ],
+      "answer": 3,
+      "explanation": "Multiplexing을 muxing이라고도 부르며, multiplexing을 수행하는 장치를 multiplexer (MUX) 라 합니다.",
+      "references": [
+        {"[한] Multiplexing": "https://terms.naver.com/entry.nhn?docId=796402&cid=42347&categoryId=42347"},
+        {"Multiplexing": "https://en.wikipedia.org/wiki/Multiplexing"}
+      ]
+    },
+    {
+      "question": "TDM에서 초당 4000 frame을 보내고 각 frame은 8 bits를 표현한다면 전송률은 어떻게 되는가?",
+      "choices": [
+        "32bps",
+        "32Kbps",
+        "40bps",
+        "40Kbps"
+      ],
+      "answer": 2,
+      "explanation": "전송률 (transmission rate) 은 'frame rate * 각 frame의 데이터 크기'로 계산되므로, 4000 frame * 8 bits = 32000bps (bits per seoncd) = 32Kbps가 됩니다. 만약 bps를 bytes per second로 보셨다 하더라도 8bits = 1byte이기에 4000 frame * 1byte = 4Kbps가 되므로 보기 중에서는 존재하지 않습니다.",
+      "references": [
+        {"[한] Multiplexing": "https://terms.naver.com/entry.nhn?docId=796402&cid=42347&categoryId=42347"},
+        {"Multiplexing": "https://en.wikipedia.org/wiki/Multiplexing"}
       ]
     }
   ]
