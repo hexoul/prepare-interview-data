@@ -276,6 +276,38 @@
         {"MAN": "https://en.wikipedia.org/wiki/Metropolitan_area_network"},
         {"PAN": "https://en.wikipedia.org/wiki/Personal_area_network"}
       ]
+    },
+    {
+      "question": "TDM은 슬롯을 ___으로 나눈다.",
+      "choices": [
+        "Seconds",
+        "Frames",
+        "Packets",
+        "Bits"
+      ],
+      "answer": 2,
+      "explanation": "TDM은 Time-division multiplexing의 약어로 2개 이상의 신호를 결합해 하나의 채널로 보내는 기술입니다. 디지털 또는 아날로그 신호에 의존적이기 때문에 슬롯은 고정된 시간으로 나뉘어지나 초 단위가 아니고 frame이라 불립니다. 각 frame은 bandwidth에 따라 포함하는 bit의 크기가 달라집니다.",
+      "references": [
+        {"[한] TDM": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B6%84%ED%95%A0_%EB%8B%A4%EC%A4%91%ED%99%94"},
+        {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"}
+      ]
+    },
+    {
+      "question": "다음 중 성격이 다른 하나는?",
+      "choices": [
+        "TDM",
+        "FDM",
+        "WDM",
+        "QAM"
+      ],
+      "answer": 4,
+      "explanation": "QAM은 Quadrature amplitude modulation의 약어로 modulation 방법 중 하나입니다. 반면 TDM, FDM, WDM은 multiplexing 방법들 입니다.",
+      "references": [
+        {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"},
+        {"FDM": "https://en.wikipedia.org/wiki/Frequency-division_multiplexing"},
+        {"WDM": "https://en.wikipedia.org/wiki/Wavelength-division_multiplexing"},
+        {"QAM": "https://en.wikipedia.org/wiki/Quadrature_amplitude_modulation"}
+      ]
     }
   ]
 }
