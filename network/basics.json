@@ -338,6 +338,35 @@
         {"[한] TDM": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B6%84%ED%95%A0_%EB%8B%A4%EC%A4%91%ED%99%94"},
         {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"}
       ]
+    },
+    {
+      "question": "L = 평균 패킷 길이, a = 평균 패킷 도착률, R = 전송률이라 할 때, 네트워크의 traffic intensity는 어떻게 계산되는가?",
+      "choices": [
+        "aL/R",
+        "LR/a",
+        "R/La",
+        "aR/L"
+      ],
+      "answer": 1,
+      "explanation": "Traffic intensity는 평균적으로 서버 또는 자원이 점유됐던 시간으로 busy였던 시간으로도 볼 수 있습니다. 따라서 평균 전송 크기는 패킷 길이와 패킷 도착률의 곱으로 표현되고, 이를 보내기 위한 시간을 구하기위해 전송률은 시간 당 bit 수 이므로 역수가 취해집니다. (bit 당 시간)",
+      "references": [
+        {"Traffic intensity": "https://en.wikipedia.org/wiki/Traffic_intensity"}
+      ]
+    },
+    {
+      "question": "서버와 클라이언트 간 파일 전송 시 둘을 잇는 경로의 전송률이 각각 10Mbps, 20Mbps, 30Mbps였다면 throughput은 보통 어떻게 되는가?",
+      "choices": [
+        "10Mbps",
+        "20Mbps",
+        "30Mbps",
+        "60Mbps"
+      ],
+      "answer": 1,
+      "explanation": "Throughput은 일반적으로 bottleneck이 되는 링크의 전송률이 됩니다. 문제에서는 제일 느린 10Mbps 구간이 bottleneck이 됩니다.",
+      "references": [
+        {"Throughput": "https://en.wikipedia.org/wiki/Throughput"},
+        {"Bottleneck": "https://en.wikipedia.org/wiki/Bottleneck_(software)"}
+      ]
     }
   ]
 }
