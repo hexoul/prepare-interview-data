@@ -179,7 +179,45 @@
       ],
       "answer": 2,
       "explanation": "Physical layer는 첫 번째 계층으로써 네트워크 케이블 등 물리적인 전송매체를 통해 raw bit를 전송합니다. 이를 위해 회로를 통한 전송 기술들이 이 계층에서 정의되므로 데이터 전송율 (transmission data rate) 또는 전송 속도는 physical layer에 의해 결정된다고 볼 수 있습니다. 물리 계층인만큼 이는 직접 연결된 두 노드 간에서의 전송이고 네트워크 상에서 여러 노드를 걸치는 E2E 전송 속도는 라우팅 알고리즘 등 다른 계층과도 연관이 있습니다.",
-      "references": [{"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"}]
+      "references": [
+        {"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"}
+      ]
+    },
+    {
+      "question": "패킷이 종단에서 종단으로 (End-to-end) 전송될 때 직면할 수 있는 지연은?",
+      "choices": [
+        "Propagation delay",
+        "Queuing delay",
+        "Transmission delay",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "종단 간 지연 (E2E delay) 에는 processing, propagation, queuing, transmission delay가 포함됩니다.",
+      "references": [
+        {"E2E delay": "https://en.wikipedia.org/wiki/End-to-end_delay"},
+        {"Processing delay": "https://en.wikipedia.org/wiki/Processing_delay"},
+        {"Propagation delay": "https://en.wikipedia.org/wiki/Propagation_delay"},
+        {"Queuing delay": "https://en.wikipedia.org/wiki/Queuing_delay"},
+        {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
+      ]
+    },
+    {
+      "question": "종단에서 유선으로 패킷 송신 시 발생할 수 있는 지연 중에서 시간상 두 번째로 겪는 지연은?",
+      "choices": [
+        "Processing delay",
+        "Propagation delay",
+        "Queuing delay",
+        "Transmission delay"
+      ],
+      "answer": 4,
+      "explanation": "Queuing, transmission, propagation, processing 순으로 지연이 발생합니다. 우선 전송이 시작되기 전 packet queue에 쌓이는 queuing delay가 있을 수 있습니다. 다음으로 패킷의 모든 bit를 wire에 담는 transmission delay가 발생합니다. 이어서 실제 송신에서부터 수신까지 걸린 지연을 propagation delay라 합니다. 마지막으로 processing delay는 네트워크 내에서 라우터가 패킷 헤더를 보고 에러 확인이나 경로 결정 등에 쓰이는 시간을 말합니다.",
+      "references": [
+        {"E2E delay": "https://en.wikipedia.org/wiki/End-to-end_delay"},
+        {"Processing delay": "https://en.wikipedia.org/wiki/Processing_delay"},
+        {"Propagation delay": "https://en.wikipedia.org/wiki/Propagation_delay"},
+        {"Queuing delay": "https://en.wikipedia.org/wiki/Queuing_delay"},
+        {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
+      ]
     }
   ]
 }
