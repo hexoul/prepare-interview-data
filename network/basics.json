@@ -370,6 +370,82 @@
         {"Throughput": "https://en.wikipedia.org/wiki/Throughput"},
         {"Bottleneck": "https://en.wikipedia.org/wiki/Bottleneck_(software)"}
       ]
+    },
+    {
+      "question": "다음 중 DoS에 해당하는 것은?",
+      "choices": [
+        "Vulnerability attack",
+        "Bandwidth flooding",
+        "Connection flooding",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 1,
+      "explanation": "DoS는 Deinal of Service의 약어로, 서비스를 불가능하게 만드는 행위들을 통틀어 DoS라 합니다.",
+      "references": [
+        {"DoS": "https://en.wikipedia.org/wiki/Denial-of-service_attack"}
+      ]
+    },
+    {
+      "question": "특정 호스트를 대상으로 다량의 TCP 연결을 half-open 또는 fully open하여 다른 요청을 받지못하게 하는 공격은?",
+      "choices": [
+        "Vulnerability attack",
+        "Bandwidth flooding",
+        "Connection flooding",
+        "UDP flooding"
+      ],
+      "answer": 3,
+      "explanation": "Connection flooding은 연결을 과도하게 맺어 고갈시키는 공격 방법입니다. TCP 연결에서 three-way handshaking을 완료한 경우 fully open, 도중에 비정상적으로 중단된 경우 half-open이라 합니다. Half-open의 경우 연결 수가 제한되어 있어도 의도적으로 ACK 프레임을 보내지않아 완료시키지 않음으로써, 제한 수 이상의 연결을 서버가 자원을 소모해 계속 확인하게 만들어 더 치명적인 결과를 낳을 수 있습니다. 기술 구현 방법이 달라 SYN flood라 따로 불리기도 합니다.",
+      "references": [
+        {"DoS": "https://en.wikipedia.org/wiki/Denial-of-service_attack"},
+        {"TCP half-open": "https://en.wikipedia.org/wiki/TCP_half-open"},
+        {"SYN flood": "https://en.wikipedia.org/wiki/SYN_flood"}
+      ]
+    },
+    {
+      "question": "공격자가 대상 호스트로 향하는 경로에 과도한 패킷의 흐름을 만들어 다른 곳으로부터 오는 요청을 지연 또는 유실시키는 공격을 ___라 한다.",
+      "choices": [
+        "Vulnerability attack",
+        "Bandwidth flooding",
+        "Connection flooding",
+        "SACK panic"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"DoS": "https://en.wikipedia.org/wiki/Denial-of-service_attack"},
+        {"Bandwidth": "https://en.wikipedia.org/wiki/Bandwidth_(computing)"},
+        {"SACK panic": "https://en.wikipedia.org/wiki/Denial-of-service_attack#SACK_Panic"}
+      ]
+    },
+    {
+      "question": "네트워크에 전송되는 데이터를 가로채 암호화되지 않은 패킷으로부터 정보를 훔치는 행위를 ___라 한다.",
+      "choices": [
+        "Spoofing",
+        "Sniffing",
+        "Stealing",
+        "Hacking"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Spoofing": "https://en.wikipedia.org/wiki/Spoofing_attack"},
+        {"Sniffing": "https://en.wikipedia.org/wiki/Sniffing_attack"}
+      ]
+    },
+    {
+      "question": "허가가 필요한 시스템에서 승인받지 않은 사용자가 승인받은 것처럼 속여 무단으로 정보를 얻는 행위를 ___라 한다.",
+      "choices": [
+        "Spoofing",
+        "Sniffing",
+        "Stealing",
+        "Hacking"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [
+        {"Spoofing": "https://en.wikipedia.org/wiki/Spoofing_attack"},
+        {"Sniffing": "https://en.wikipedia.org/wiki/Sniffing_attack"}
+      ]
     }
   ]
 }
