@@ -174,8 +174,11 @@
         "전송 실패할 때"
       ],
       "answer": 1,
-      "explanation": "네트워크 체증은 네트워크가 감당가능한 양 이상의 트래픽을 처리하려할 때 발생합니다. 이를 회피하기위해 open loop 또는 close loop congestion control 등의 기법이 사용됩니다.",
-      "references": [{"Network congestion": "https://en.wikipedia.org/wiki/Network_congestion"}]
+      "explanation": "네트워크 체증은 네트워크가 감당가능한 양 이상의 트래픽을 처리하려할 때 발생합니다. 이를 회피하기위해 open loop 또는 closed loop congestion control 등의 기법이 사용됩니다.",
+      "references": [
+        {"Network congestion": "https://en.wikipedia.org/wiki/Network_congestion"},
+        {"TCP congestion control": "https://en.wikipedia.org/wiki/TCP_congestion_control"}
+      ]
     },
     {
       "question": "다음 중 private network를 public network로 확장시킨 네트워크는?",
