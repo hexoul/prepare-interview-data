@@ -218,6 +218,39 @@
         {"Queuing delay": "https://en.wikipedia.org/wiki/Queuing_delay"},
         {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
       ]
+    },
+    {
+      "question": "데이터 전송 시 source 노드에서 처음으로 보내는 패킷이라면 ___ 지연은 0 (zero) 이다.",
+      "choices": [
+        "Processing delay",
+        "Propagation delay",
+        "Queuing delay",
+        "Transmission delay"
+      ],
+      "answer": 3,
+      "explanation": "첫 패킷이므로 queue의 길이가 0이었을 것이므로 지연도 0이 됩니다.",
+      "references": [
+        {"Processing delay": "https://en.wikipedia.org/wiki/Processing_delay"},
+        {"Propagation delay": "https://en.wikipedia.org/wiki/Propagation_delay"},
+        {"Queuing delay": "https://en.wikipedia.org/wiki/Queuing_delay"},
+        {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
+      ]
+    },
+    {
+      "question": "Transmission delay는 ___에 의존적이지 않다.",
+      "choices": [
+        "패킷 길이",
+        "라우터 간 거리",
+        "전송률",
+        "Medium의 bandwidth"
+      ],
+      "answer": 2,
+      "explanation": "Transmission delay = 패킷 길이 / 전송률 이고 전송률은 bandwidth에 의존적입니다. 라우터 간 거리는 transmission delay와는 상관없고 propagation delay와 관계있습니다.",
+      "references": [
+        {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"},
+        {"Propagation delay": "https://en.wikipedia.org/wiki/Propagation_delay"},
+        {"Bandwidth": "https://en.wikipedia.org/wiki/Bandwidth_(computing)"}
+      ]
     }
   ]
 }
