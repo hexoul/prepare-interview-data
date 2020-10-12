@@ -379,7 +379,7 @@
         "Connection flooding",
         "위에 언급된 모두 해당"
       ],
-      "answer": 1,
+      "answer": 4,
       "explanation": "DoS는 Deinal of Service의 약어로, 서비스를 불가능하게 만드는 행위들을 통틀어 DoS라 합니다.",
       "references": [
         {"DoS": "https://en.wikipedia.org/wiki/Denial-of-service_attack"}
