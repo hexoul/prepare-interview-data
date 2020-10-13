@@ -448,7 +448,7 @@
       "question": "Round-robin 스케줄링은 ___이다.",
       "choices": [
         "Non-preemptive",
-        "Preemtpvie",
+        "Preemptive",
         "위에 언급된 모두 해당",
         "모두 해당 안됨"
       ],
