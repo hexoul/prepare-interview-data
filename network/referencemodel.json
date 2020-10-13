@@ -228,7 +228,7 @@
         "Transmission delay"
       ],
       "answer": 3,
-      "explanation": "첫 패킷이므로 queue의 길이가 0이었을 것이므로 지연도 0이 됩니다.",
+      "explanation": "첫 패킷이면 송신 queue의 길이가 0이었을 것이므로 기다려야하는 앞선 요소들이 없어 지연도 0이 됩니다.",
       "references": [
         {"Processing delay": "https://en.wikipedia.org/wiki/Processing_delay"},
         {"Propagation delay": "https://en.wikipedia.org/wiki/Propagation_delay"},
