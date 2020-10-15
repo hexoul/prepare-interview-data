@@ -277,7 +277,7 @@
         "2*L/R"
       ],
       "answer": 3,
-      "explanation": "우선 종단 간에 N 개의 라우터가 있다면 subpath는 N+1 개가 됩니다. 라우터가 한 개일 때부터 생각해보면 이해하기 쉽습니다. 예를 들어, 종단 A, B 간에 라우터 Z가 있었다면 경로는 'A-Z-B'가 됩니다.\n이후 전송 크기를 계산하기위해 L을 곱하고 전송 시간을 반영하기 위해 전송률의 역수를 취한 1/R을 곱해주면 됩니다.",
+      "explanation": "우선 종단 간에 N 개의 라우터가 있다면 subpath는 N+1 개가 됩니다. 라우터가 한 개일 때부터 생각해보면 이해하기 쉽습니다. 예를 들어, 종단 A, B 간에 라우터 Z가 있었다면 경로는 'A-Z-B'가 됩니다.\n이후 전송 크기를 계산하기 위해 L을 곱한 뒤, 전송 시간을 반영하기 위해 전송률에 역수를 취한 1/R을 곱합니다.",
       "references": [
         {"E2E delay": "https://en.wikipedia.org/wiki/End-to-end_delay"},
         {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
