@@ -267,6 +267,38 @@
         {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"},
         {"Store and forward": "https://en.wikipedia.org/wiki/Store_and_forward"}
       ]
+    },
+    {
+      "question": "만약 출발지와 목적지 사이에 N 개의 라우터가 있다면, 패킷 P를 보내기 위한 end-to-end (E2E) delay는 어떻게 되는가? L = 패킷 P의 bit의 수, R = 전송률 (transmission rate)",
+      "choices": [
+        "N+L/R",
+        "N*L/R",
+        "(N+1)*L/R",
+        "2*L/R"
+      ],
+      "answer": 3,
+      "explanation": "우선 종단 간에 N 개의 라우터가 있다면 subpath는 N+1 개가 됩니다. 라우터가 1개일 때부터 생각해보면 이해하기 쉽습니다. 예를 들어, 종단 A, B 간에 라우터 Z가 있었다면 경로는 'A-Z-B'가 됩니다.\n이후 전송 크기를 계산하기위해 L을 곱하고 전송 시간을 반영하기 위해 전송률의 역수를 취한 1/R을 곱해주면 됩니다.",
+      "references": [
+        {"E2E delay": "https://en.wikipedia.org/wiki/End-to-end_delay"},
+        {"Transmission delay": "https://en.wikipedia.org/wiki/Transmission_delay"}
+      ]
+    },
+    {
+      "question": "다음 중 목적이 다른 하나는?",
+      "choices": [
+        "Packet switching",
+        "Message switching",
+        "Circuit switching",
+        "Context switching"
+      ],
+      "answer": 4,
+      "explanation": "앞선 세 개는 모두 네트워크 통신에서 여러 노드를 걸쳐 어떻게 경로를 설정하고 어떻게 데이터를 보낼 것인지에 대한 방법론들입니다. 반면, context switching은 OS에서 프로세스 또는 쓰레드의 상태를 관리하기 위한 방법론입니다.",
+      "references": [
+        {"Packet switching": "https://en.wikipedia.org/wiki/Packet_switching"},
+        {"Message switching": "https://en.wikipedia.org/wiki/Message_switching"},
+        {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"},
+        {"Context switching": "https://en.wikipedia.org/wiki/Context_switch"}
+      ]
     }
   ]
 }
