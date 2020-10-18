@@ -348,6 +348,68 @@
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
       ]
+    },
+    {
+      "question": "다음 중 critical section 문제를 풀기 위해 만족되어야 하는 상태는?",
+      "choices": [
+        "Mutual exclusion",
+        "Progress",
+        "Bounded waiting",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
+        {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"},
+        {"Bounded waiting": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm#Bounded_waiting"}
+      ]
+    },
+    {
+      "question": "상호 배제 (Mutual exclusion) 하에서는 만약 한 프로세스가 자신의 critical section을 실행하고 있다면 ___",
+      "choices": [
+        "다른 프로세스들은 critical section을 실행하고 있으면 안된다.",
+        "다른 프로세스들도 critical section을 실행하고 있어야 한다.",
+        "수행이 끝날 때까지 모든 시스템 자원은 블록되어야 한다.",
+        "모두 해당 안됨"
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
+        {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"}
+      ]
+    },
+    {
+      "question": "Bounded waiting이란 어떤 프로세스가 ___ critical section에 진입할 때까지의 시간이 유한한 것을 말한다.",
+      "choices": [
+        "critical section을 수행 중이던 프로세스의 종료 후",
+        "critical section 요청 진입 후",
+        "한 번 critical section 수행을 마친 후 다시",
+        "모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
+        {"Bounded waiting": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm#Bounded_waiting"}
+      ]
+    },
+    {
+      "question": "Critical section problem을 해결하기 위해서는 최소 ___ 개의 변수가 공유되어야 한다.",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Critical section problem을 단순화시키기 위해 두 프로세스만 있다고 가정했을 때의 풀이들을 보면 답을 이해하는데에 도움이 됩니다. e.g. Dekker's algorithm 또는 Peterson's algorithm",
+      "references": [
+        {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
+        {"Dekker's algorithm": "https://en.wikipedia.org/wiki/Dekker%27s_algorithm"}
+        {"Peterson's algorithm": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm"}
+      ]
     }
   ]
 }
