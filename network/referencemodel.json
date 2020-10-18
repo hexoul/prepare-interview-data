@@ -299,6 +299,53 @@
         {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"},
         {"Context switching": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
+    },
+    {
+      "question": "Circuit switching에서는 통신을 위한 자원들이 예약되므로 ___을 얻을 수 있다.",
+      "choices": [
+        "인증 (Authentication) 기능",
+        "보장된 전송률",
+        "신뢰성 (Reliability)",
+        "재사용성 (Reusability)"
+      ],
+      "answer": 2,
+      "explanation": "Circuit switching은 physical layer에서 자원 간 경쟁이 없도록 고정된 물리적 경로를 구현하므로 보장된 전송률을 보장할 수 있습니다.",
+      "references": [
+        {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"}
+      ]
+    },
+    {
+      "question": "___ 시스템에서 자원은 on-demand로 할당된다.",
+      "choices": [
+        "Packet switching",
+        "Circuit switching",
+        "Line switching",
+        "Frequency switching"
+      ],
+      "answer": 1,
+      "explanation": "네트워크 자원을 미리 할당하여 경로가 고정된 circuit switching과는 달리, packet switching에서는 각 노드에서 네트워크의 상황에 따라 패킷의 경로가 계속하여 변할 수 있습니다. 실제 전송이 있을 때, 즉 요구가 있을 때 동적으로 정해진 경로에 해당하는 네트워크 자원이 할당됩니다.",
+      "references": [
+        {"Packet switching": "https://en.wikipedia.org/wiki/Packet_switching"},
+        {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"}
+      ]
+    },
+    {
+      "question": "다음 중 application layer의 서비스가 아닌 것은?",
+      "choices": [
+        "가상 터미널 (Virtual terminal)",
+        "파일 전송 및 관리",
+        "메일 서비스",
+        "에러 감지"
+      ],
+      "answer": 4,
+      "explanation": "에러 감지는 data link layer의 역할입니다.",
+      "references": [
+        {"VT": "https://en.wikipedia.org/wiki/Virtual_terminal"},
+        {"FTP": "https://en.wikipedia.org/wiki/File_Transfer_Protocol"},
+        {"SMTP": "https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol"},
+        {"Application layer": "https://en.wikipedia.org/wiki/Application_layer"},
+        {"Data link layer": "https://en.wikipedia.org/wiki/Data_link_layer"}
+      ]
     }
   ]
 }
