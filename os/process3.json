@@ -407,7 +407,7 @@
       "explanation": "Critical section problem을 단순화시키기 위해 두 프로세스만 있다고 가정했을 때의 풀이들을 보면 답을 이해하는데에 도움이 됩니다. e.g. Dekker's algorithm 또는 Peterson's algorithm",
       "references": [
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
-        {"Dekker's algorithm": "https://en.wikipedia.org/wiki/Dekker%27s_algorithm"}
+        {"Dekker's algorithm": "https://en.wikipedia.org/wiki/Dekker%27s_algorithm"},
         {"Peterson's algorithm": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm"}
       ]
     }
