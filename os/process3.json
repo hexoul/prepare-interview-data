@@ -464,7 +464,54 @@
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "세마포어는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자만을 의미합니다.",
+      "explanation": "세마포어는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자만을 의미합니다. 나아가 세마포어가 가지는 수에 따라 counting semaphore 또는 binary semaphore 라고 불립니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "Spinlock에 대한 맞는 설명은?",
+      "choices": [
+        "Critical section 진입이 불가할때 CPU를 낭비한다.",
+        "Context switching 시간을 절약하기위해 사용된다.",
+        "싱글프로세서보다 멀티프로세서에서 보다 효율적이다.",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "Spinlock은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 context switching없이 critical section에 진입할 수 있어 효율적이지만, 프로세서가 적을 때 사용되면 다른 프로세스를 방해할 가능성이 커진다는 단점이 있습니다.",
+      "references": [
+        {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
+        {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
+        {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
+      ]
+    },
+    {
+      "question": "Spinlock의 단점은?",
+      "choices": [
+        "Busy waiting이 요구된다.",
+        "멀티프로세서 시스템에 적절하지 않다.",
+        "신뢰성이 떨어진다.",
+        "구현이 매우 복잡하다."
+      ],
+      "answer": 1,
+      "explanation": "Spinlock은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 context switching없이 critical section에 진입할 수 있어 효율적이지만, 프로세서가 적을 때 사용되면 다른 프로세스를 방해할 가능성이 커진다는 단점이 있습니다.",
+      "references": [
+        {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
+        {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
+        {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
+      ]
+    },
+    {
+      "question": "Counting semaphore의 wait operation은 ___ 시스템 콜을 이용해 구현된다.",
+      "choices": [
+        "Stop",
+        "Block",
+        "Hold",
+        "Wait"
+      ],
+      "answer": 2,
+      "explanation": "Semaphore는 자원을 요청할 때 불리는 wait와 자원이 해제될 때 불리는 signal operation이 있습니다. 이 때 wait를 부른 프로세스는 semaphore queue에서 자원을 기다리는 blocked state가 되어야하므로 block 시스템 콜이 불립니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
