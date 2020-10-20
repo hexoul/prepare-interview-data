@@ -410,6 +410,65 @@
         {"Dekker's algorithm": "https://en.wikipedia.org/wiki/Dekker%27s_algorithm"},
         {"Peterson's algorithm": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm"}
       ]
+    },
+    {
+      "question": "Bakery algorithm은 ___",
+      "choices": [
+        "각 프로세스를 큐에 삽입한 후 순서대로 자원을 할당한다.",
+        "각 프로세스에 중복될 수도 있는 번호를 주고 제일 작은 번호를 가진 프로세스부터 자원을 할당한다.",
+        "각 프로세스에 고유 번호를 주고 제일 높은 번호를 가진 프로세스부터 자원을 할당한다.",
+        "각 프로세스에 고유 번호를 주고 제일 작은 번호를 가진 프로세스부터 자원을 할당한다."
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Lamport's bakery algorithm": "https://en.wikipedia.org/wiki/Lamport's_bakery_algorithm"}
+      ]
+    },
+    {
+      "question": "Concurrent programming에서 인터럽트에 영향을 받지않는 operation을 ___ operation이라 한다.",
+      "choices": [
+        "Single",
+        "Static",
+        "Atomic",
+        "Non-atomic"
+      ],
+      "answer": 3,
+      "explanation": "Atomicity은 원자성이라하여 다른 operation에 방해를 받지 않습니다. Linearizability라고도 합니다.",
+      "references": [
+        {"Concurrent programming": "https://en.wikipedia.org/wiki/Concurrent_computing"},
+        {"Linearizability": "https://en.wikipedia.org/wiki/Linearizability"}
+      ]
+    },
+    {
+      "question": "TestAndSet 명령어는 ___ 실행된다.",
+      "choices": [
+        "특정 프로세스의 실행 후에",
+        "주기적으로",
+        "원자성을 가지고",
+        "안전하게"
+      ],
+      "answer": 3,
+      "explanation": "Test-and-set 명령어는 상호 배제 등 동시성을 제어하기 위해 쓰이는 명령어로 인터럽지되지 않습니다. HW 레벨에서 구현될 수도 있고 SW 레벨에서 구현될 수도 있습니다.",
+      "references": [
+        {"[한] TestAndSet": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%82%AC%EC%99%80_%EC%A7%80%EC%A0%95"},
+        {"TestAndSet": "https://en.wikipedia.org/wiki/Test-and-set"}
+      ]
+    },
+    {
+      "question": "Semaphore는 critical section problem을 풀기 위한 ___이다.",
+      "choices": [
+        "하드웨어",
+        "소프트웨어",
+        "변수",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "세마포어는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자만을 의미합니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
     }
   ]
 }
