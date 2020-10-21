@@ -1,6 +1,6 @@
 License Zero Noncommercial Public License 2.0.1
 
-Copyright: Seunggon Kim
+Copyright: © 2020 Seunggon Kim
 
 Source: https://github.com/hexoul/prepare-interview-data
 
