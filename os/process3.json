@@ -446,7 +446,7 @@
         "특정 프로세스의 실행 후에",
         "주기적으로",
         "원자성을 가지고",
-        "안전하게"
+        "비동기적으로"
       ],
       "answer": 3,
       "explanation": "Test-and-set 명령어는 상호 배제 등 동시성을 제어하기 위해 쓰이는 명령어로 인터럽지되지 않습니다. HW 레벨에서 구현될 수도 있고 SW 레벨에서 구현될 수도 있습니다.",
@@ -512,6 +512,21 @@
       ],
       "answer": 2,
       "explanation": "Semaphore는 자원을 요청할 때 불리는 wait와 자원이 해제될 때 불리는 signal operation이 있습니다. 이 때 wait를 부른 프로세스는 semaphore queue에서 자원을 기다리는 blocked state가 되어야하므로 block 시스템 콜이 불립니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "만약 queue를 이용해 구현된 세마포어의 값이 음수라면, ___",
+      "choices": [
+        "비정상적인 경우이다.",
+        "Signal operation이 있을 때까지 다른 작업을 할 수 없는 상태이다.",
+        "임계 구역 (critical section) 에 진입하기 위해 대기 중인 프로세스가 있는 상태이다.",
+        "Blocked였던 프로세스가 ready queue로 옮겨지는 상황이다."
+      ],
+      "answer": 3,
+      "explanation": "우선 busy waiting이 아니라 queue를 이용해 프로세스의 상태를 관리하므로 요청한 프로세스가 대기하는 동안 다른 작업을 할 수 있어 2번은 틀린 내용이 됩니다. 4번은 signal operation 시에 세마포어가 음수일 때의 동작입니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
