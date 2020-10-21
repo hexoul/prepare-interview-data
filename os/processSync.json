@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "question": "같은 프로세스에 의해 non-recursive mutex가 두 번 이상 lock 될 경우 발생하는 일은?",
+      "choices": [
+        "Starvation",
+        "Deadlock",
+        "Aging",
+        "Signaling"
+      ],
+      "answer": 2,
+      "explanation": "Non-recursive mutex는 재진입이 불가능한 mutex를 말합니다. 이 경우, 첫 lock에서는 mutex를 문제없이 취득하지만 두 번째 lock에서는 mutex를 놓지않은 채 재취득하려는 시도만 있기 때문에 오도 가도 못하는 상황이 되어 deadlock에 빠지게 됩니다.",
+      "references": [
+        {"Starvation": "https://en.wikipedia.org/wiki/Starvation_(computer_science)"},
+        {"Deadlock": "https://en.wikipedia.org/wiki/Deadlock"},
+        {"Aging": "https://en.wikipedia.org/wiki/Aging_(scheduling)"},
+        {"Recursive mutex": "https://en.wikipedia.org/wiki/Reentrant_mutex"}
+      ]
+    },
+    {
+      "question": "세마포어란?",
+      "choices": [
+        "Binary mutex이다.",
+        "오직 한 프로세스로부터만 접근되어야 한다.",
+        "여러 프로세스로부터 접근될 수 있다.",
+        "모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "세마포어의 두 종류는?",
+      "choices": [
+        "mutex & counting",
+        "binary & counting",
+        "mutex & binary ",
+        "spin & binary"
+      ],
+      "answer": 2,
+      "explanation": "세마포어가 0 또는 1만 가리키는 것을 binary semaphore라 하고 이외에는 counting semaphore라 합니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "Mutex란?",
+      "choices": [
+        "Binary semaphore이다.",
+        "오직 한 프로세스로부터만 접근되어야 한다.",
+        "여러 프로세스로부터 접근될 수 있다.",
+        "모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "Binary semaphore는 세마포어를 감소시켰던 프로세스가 아닌 다른 프로세스도 세마포어를 증가시킬 수 있는 것에 반해, mutex는 취득했던 프로세스 또는 쓰레드가 직접 해제해야 한다는 차이가 있습니다. 따라서 mutex는 binary semaphore와는 다르고 여러 프로세스 또는 쓰레드들로부터 접근되면 안됩니다.",
+      "references": [
+        {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "특정 시점에 counting semaphore의 값이 7이었다면, 20 번의 P operation과 15 번의 V operation 후에 값이 어떻게 변경되는가?",
+      "choices": [
+        "2",
+        "7",
+        "12",
+        "42"
+      ],
+      "answer": 1,
+      "explanation": "세마포어에서 P operation은 값을 1 감소시키는 wait operation에 해당하고, V operation은 값을 1 증가시키는 signal operation에 해당합니다. 따라서 7 - 20 + 15가 되어 답은 2가 됩니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    }
+  ]
+}
