@@ -76,6 +76,42 @@
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
+    },
+    {
+      "question": "Bounded buffer problem은 ___라고도 알려져 있다.",
+      "choices": [
+        "Reader-writer (독자-저자) problem",
+        "Producer-consumer (생산자-소비자) problem",
+        "Dining philosophers (철학자들의 만찬) problem",
+        "Sleeping barber (잠자는 이발사) problem"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"[한] Reader-writer problem": "https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9E%90-%EC%A0%80%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
+        {"Reader-writer problem": "https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"},
+        {"[한] Producer-consumer problem": "https://ko.wikipedia.org/wiki/%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
+        {"Producer-consumer problem": "https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"},
+        {"[한] Dining philosophers problem": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EC%82%AC%ED%95%98%EB%8A%94_%EC%B2%A0%ED%95%99%EC%9E%90%EB%93%A4_%EB%AC%B8%EC%A0%9C"},
+        {"Dining philosophers problem": "https://en.wikipedia.org/wiki/Dining_philosophers_problem"},
+        {"[한] Sleeping barber problem": "https://ko.wikipedia.org/wiki/%EC%9E%A0%EC%9E%90%EB%8A%94_%EC%9D%B4%EB%B0%9C%EC%82%AC_%EB%AC%B8%EC%A0%9C"},
+        {"Sleeping barber problem": "https://en.wikipedia.org/wiki/Sleeping_barber_problem"}
+      ]
+    },
+    {
+      "question": "Bounded buffer problem에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "비어있는 버퍼와 사용될 수 있는 버퍼의 수에 대한 세마포어를 가지고 있다.",
+        "유한한 N 개의 버퍼를 가지고 있다.",
+        "세마포어만으로 이 문제를 해결할 수 있다.",
+        "Producer가 아이템을 queue에 넣는 속도와 consumer가 queue에서 아이템을 빼는 속도가 같다면, bounded buffer problem은 발생하지 않는다."
+      ],
+      "answer": 3,
+      "explanation": "Producer와 consumer가 각각 하나만 있다면 세마포어만으로 해결 가능합니다. 하지만 복수개의 producer 또는 consumer가 있다면 race condition로부터 deadlock이 발생할 수 있습니다. 이 경우 문제해결에 mutex도 요구됩니다.",
+      "references": [
+        {"[한] Producer-consumer problem": "https://ko.wikipedia.org/wiki/%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
+        {"Producer-consumer problem": "https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"}
+      ]
     }
   ]
 }
