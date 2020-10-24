@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "전제 조건 (precondition) 에 대한 설명...",
+      "choices": [
+        "Put",
+        "Create",
+        "Assign",
+        "Push"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Precondition": "https://en.wikipedia.org/wiki/Precondition"}
+      ],
+      "visible": false
+    }
+  ]
+}
