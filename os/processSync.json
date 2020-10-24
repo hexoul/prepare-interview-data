@@ -161,6 +161,21 @@
         {"Dijkstra's algorithm": "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"},
         {"Chandy–Misra–Haas algorithm": "https://en.wikipedia.org/wiki/Chandy%E2%80%93Misra%E2%80%93Haas_algorithm_resource_model"}
       ]
+    },
+    {
+      "question": "세마포어를 P-CS-V 순이 아니라, V-CS-P 순으로 사용하면 어떤 일이 발생하는가?",
+      "choices": [
+        "Deadlock이 발생한다.",
+        "Starvation이 발생한다.",
+        "Inconsistency가 발생한다.",
+        "Interrupt가 발생한다."
+      ],
+      "answer": 3,
+      "explanation": "P는 wait operation, V는 signal operation, CS는 critical section입니다. 정상적인 경우라면 P부터 실행하여 허가를 받고 CS에 진입하여야 하지만, V부터 실행하게 된다면 호출한 프로세스도 대기하지않고 대기 중이었던 프로세스마저 하나 해제시켜버립니다. 따라서 되려 동시 접근을 늘려 inconsistency가 발생할 수 있습니다.",
+      "references": [
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
+        {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
     }
   ]
 }
