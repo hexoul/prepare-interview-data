@@ -80,7 +80,7 @@
     {
       "question": "Bounded buffer problem은 ___라고도 알려져 있다.",
       "choices": [
-        "Reader-writer (독자-저자) problem",
+        "Readers-writers (독자-저자) problem",
         "Producer-consumer (생산자-소비자) problem",
         "Dining philosophers (철학자들의 만찬) problem",
         "Sleeping barber (잠자는 이발사) problem"
@@ -88,8 +88,8 @@
       "answer": 2,
       "explanation": "-",
       "references": [
-        {"[한] Reader-writer problem": "https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9E%90-%EC%A0%80%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
-        {"Reader-writer problem": "https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"},
+        {"[한] Readers-writers problem": "https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9E%90-%EC%A0%80%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
+        {"Readers-writers problem": "https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"},
         {"[한] Producer-consumer problem": "https://ko.wikipedia.org/wiki/%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
         {"Producer-consumer problem": "https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"},
         {"[한] Dining philosophers problem": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EC%82%AC%ED%95%98%EB%8A%94_%EC%B2%A0%ED%95%99%EC%9E%90%EB%93%A4_%EB%AC%B8%EC%A0%9C"},
@@ -111,6 +111,55 @@
       "references": [
         {"[한] Producer-consumer problem": "https://ko.wikipedia.org/wiki/%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
         {"Producer-consumer problem": "https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"}
+      ]
+    },
+    {
+      "question": "Readers-writers problem에서 ___는 공유 객체에 배타적으로 (exclusive) 접근해야 한다.",
+      "choices": [
+        "Reader",
+        "Writer",
+        "Reader and writer",
+        "Process"
+      ],
+      "answer": 3,
+      "explanation": "읽기 중에 쓰거나 쓰기 중에 읽는 경우 모두 inconsistency를 발생시킬 수 있으므로, reader와 writer 모두 공유 객체에 대해 배타적으로 접근해야 합니다.",
+      "references": [
+        {"[한] Reader-writer problem": "https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9E%90-%EC%A0%80%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
+        {"Reader-writer problem": "https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"}
+      ]
+    },
+    {
+      "question": "식사하는 철학자들 (Dining philosophers) 문제가 발생하는 경우는?",
+      "choices": [
+        "3명의 철학자들과 5개의 젓가락",
+        "4명의 철학자들과 5개의 젓가락",
+        "5명의 철학자들과 5개의 젓가락",
+        "5명의 철학자들과 6개의 젓가락"
+      ],
+      "answer": 3,
+      "explanation": "철학자의 수보다 젓가락의 수가 같거나 작으면 해당 문제가 발생할 수 있습니다. 젓가락이 한개라도 많고 자원에 접근하는 순서가 보장된다면 무한정 대기하는 상황에는 빠지지 않습니다.",
+      "references": [
+        {"[한] Dining philosophers problem": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EC%82%AC%ED%95%98%EB%8A%94_%EC%B2%A0%ED%95%99%EC%9E%90%EB%93%A4_%EB%AC%B8%EC%A0%9C"},
+        {"Dining philosophers problem": "https://en.wikipedia.org/wiki/Dining_philosophers_problem"}
+      ]
+    },
+    {
+      "question": "다음 중 식사하는 철학자들 (Dining philosophers) 문제의 해법이 아닌 것은?",
+      "choices": [
+        "Resource hierarchy solution",
+        "Arbitrator solution",
+        "Dijkstra's algorithmm",
+        "Chandy–Misra–Haas algorithm"
+      ],
+      "answer": 3,
+      "explanation": "Dijkstra's algorithm은 최단 경로를 찾는 알고리즘입니다. Resource hierarchy solution도 dijkstra에 의해 제안되었고 자원 간 경로를 기반으로 해결한다는 점에서 유사하게 보일 수 있으나, 최단 경로만으로는 이 문제를 해결할 수 없습니다.",
+      "references": [
+        {"[한] Dining philosophers problem": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EC%82%AC%ED%95%98%EB%8A%94_%EC%B2%A0%ED%95%99%EC%9E%90%EB%93%A4_%EB%AC%B8%EC%A0%9C"},
+        {"Dining philosophers problem": "https://en.wikipedia.org/wiki/Dining_philosophers_problem"},
+        {"Resource hierarchy solution": "https://en.wikipedia.org/wiki/Dining_philosophers_problem#Resource_hierarchy_solution"},
+        {"Arbitrator solution": "https://en.wikipedia.org/wiki/Dining_philosophers_problem#Resource_hierarchy_solution"},
+        {"Dijkstra's algorithm": "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"},
+        {"Chandy–Misra–Haas algorithm": "https://en.wikipedia.org/wiki/Chandy%E2%80%93Misra%E2%80%93Haas_algorithm_resource_model"}
       ]
     }
   ]
