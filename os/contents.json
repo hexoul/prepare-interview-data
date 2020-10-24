@@ -2,6 +2,6 @@
   {"content": "기초", "link": "/os/basics.json", "num": 19},
   {"content": "프로세스", "link": "/os/process.json", "num": 19},
   {"content": "프로세스 동기화", "link": "/os/process3.json", "num": 37},
-  {"content": "프로세스 동기화 (cont.)", "link": "/os/processSync.json", "num": 7},
+  {"content": "프로세스 동기화 (cont.)", "link": "/os/processSync.json", "num": 11},
   {"content": "프로세스/CPU 스케줄링", "link": "/os/process2.json", "num": 37}
 ]
