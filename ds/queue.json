@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "question": "Stack에서는 요소 (element) 를 넣는 동작을 ___라 한다.",
+      "choices": [
+        "Insert",
+        "Create",
+        "Assign",
+        "Push"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "Stack에서는 요소 (element) 를 제거하는 동작을 ___라 한다.",
+      "choices": [
+        "Remove",
+        "Release",
+        "Pop",
+        "Push"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    }
+  ]
+}
