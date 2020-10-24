@@ -16,6 +16,20 @@
       ]
     },
     {
+      "question": "Array 첫번째 요소의 인덱스는?",
+      "choices": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
       "question": "Array에서 IndexOutOfBoundsException은 언제 발생할 수 있는가?",
       "choices": [
         "Compile time",
@@ -29,6 +43,34 @@
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Compile time": "https://en.wikipedia.org/wiki/Compile_time"},
         {"Runtime": "https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)"}
+      ]
+    },
+    {
+      "question": "int의 크기가 4 bytes 라면, 'int arr[10]'로 선언된 arr의 크기는?",
+      "choices": [
+        "10 bytes",
+        "14 bytes",
+        "40 bytes",
+        "44 bytes"
+      ],
+      "answer": 3,
+      "explanation": "'[10]'는 10개의 요소가 저장될 수 있음을 나타내므로 10 * 4로 계산할 수 있습니다.",
+      "references": [
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
+      "question": "int의 크기가 4 bytes 이고 'int arr[10]'로 선언됐다면 arr[10]의 크기는?",
+      "choices": [
+        "0 byte",
+        "4 bytes",
+        "10 bytes",
+        "40 bytes"
+      ],
+      "answer": 1,
+      "explanation": "'[10]'은 인덱스가 10에 해당하는 요소를 선택하는 문법입니다. 그런데 위에 같이 선언됐을 경우 요소의 크기는 10이지만 인덱스가 0부터 시작하여 9까지만 존재하므로, 인덱스가 10인 요소는 존재하지 않습니다.",
+      "references": [
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
       ]
     },
     {
