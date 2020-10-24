@@ -1,29 +1,29 @@
 {
   "questions": [
     {
-      "question": "Stack에서는 요소 (element) 를 넣는 동작을 ___라 한다.",
+      "question": "요소 (element) 를 Stack에 넣는 동작을 ___라 한다.",
       "choices": [
-        "Insert",
+        "Put",
         "Create",
         "Assign",
         "Push"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "Put, create 및 assign은 stack의 요소를 넣고 뺄 때 일반적으로 사용되지 않는 용어입니다.",
       "references": [
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
     {
-      "question": "Stack에서는 요소 (element) 를 제거하는 동작을 ___라 한다.",
+      "question": "요소 (element) 를 Stack에서 제거하는 동작을 ___라 한다.",
       "choices": [
-        "Remove",
-        "Release",
+        "Put",
+        "Peak",
         "Pop",
         "Push"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "Peak는 제거는 하지 않고 마지막 (Stack에서는 마지막으로 삽입됐었던) 요소를 반환만 하는 함수입니다.",
       "references": [
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
