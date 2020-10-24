@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "Array에 대한 적절한 설명은?",
+      "choices": [
+        "계층적인 구조를 가진다.",
+        "일반적으로 같은 타입으로만 이루어진다.",
+        "불변성 (immutability) 을 가진다.",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
+        {"Immutability": "https://en.wikipedia.org/wiki/Immutable_object"}
+      ]
+    }
+  ]
+}
