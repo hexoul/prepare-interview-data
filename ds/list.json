@@ -44,7 +44,8 @@
       "references": [
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Immutability": "https://en.wikipedia.org/wiki/Immutable_object"}
-      ]
+      ],
+      "visible": true
     }
   ]
 }
