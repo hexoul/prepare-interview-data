@@ -101,13 +101,13 @@
     {
       "question": "Bounded buffer problem에 대한 설명으로 틀린 것은?",
       "choices": [
-        "비어있는 버퍼와 사용될 수 있는 버퍼의 수에 대한 세마포어를 가지고 있다.",
+        "문제해결에 비어있는 버퍼와 사용될 수 있는 버퍼의 수에 대한 세마포어가 사용될 수 있다.",
         "유한한 N 개의 버퍼를 가지고 있다.",
-        "세마포어만으로 이 문제를 해결할 수 있다.",
+        "세마포어만으로 이 문제를 완벽하게 해결할 수 있다.",
         "Producer가 아이템을 queue에 넣는 속도와 consumer가 queue에서 아이템을 빼는 속도가 같다면, bounded buffer problem은 발생하지 않는다."
       ],
       "answer": 3,
-      "explanation": "Producer와 consumer가 각각 하나만 있다면 세마포어만으로 해결 가능합니다. 하지만 복수개의 producer 또는 consumer가 있다면 race condition로부터 deadlock이 발생할 수 있습니다. 이 경우 문제해결에 mutex도 요구됩니다.",
+      "explanation": "Producer와 consumer가 각각 하나만 있다면 세마포어만으로 해결 가능합니다. 하지만 복수개의 producer 또는 consumer가 있다면 race condition으로부터 deadlock이 발생할 수 있습니다. 이 경우 문제해결에 mutex도 요구됩니다.",
       "references": [
         {"[한] Producer-consumer problem": "https://ko.wikipedia.org/wiki/%EC%83%9D%EC%82%B0%EC%9E%90-%EC%86%8C%EB%B9%84%EC%9E%90_%EB%AC%B8%EC%A0%9C"},
         {"Producer-consumer problem": "https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"}
