@@ -29,7 +29,7 @@
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Immutability": "https://en.wikipedia.org/wiki/Immutable_object"}
       ],
-      visible: false
+      "visible": false
     },
     {
       "question": "Test2\n---\n123\n456\n---\naaa",
