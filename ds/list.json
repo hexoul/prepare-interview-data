@@ -87,6 +87,70 @@
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference"}
       ]
+    },
+    {
+      "question": "집합이 물리적으로 연속된 공간에 저장되지않고 각 요소가 다음 요소를 가리키는 포인터를 가지고 있는 선형 집합을 ___라 한다.",
+      "choices": [
+        "Node list",
+        "Array list",
+        "Linked list",
+        "Unordered list"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"}
+      ]
+    },
+    {
+      "question": "단일 연결 리스트 (singly linked list) 와 head 포인터가 있을 때, 리스트의 제일 앞에 삽입하는 시간 복잡도는 ___이고, 제일 뒤에 삽입하는 시간 복잡도는 ___이다.",
+      "choices": [
+        "O(1), O(1)",
+        "O(1), O(n)",
+        "O(n), O(1)",
+        "O(n), O(n)"
+      ],
+      "answer": 2,
+      "explanation": "제일 앞에 삽입하는 것은 head 포인터를 통해 바로 가능하지만, 제일 뒤에 삽입하는 것은 tail 포인터가 없기 때문에 head에서부터 마지막까지 탐색하여야 해서 O(n)이 됩니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+      ]
+    },
+    {
+      "question": "Linked list의 기본 단위인 노드 (node)는 실제 데이터 값과 ___를 저장하고 있다.",
+      "choices": [
+        "Head pointer",
+        "Tail pointer",
+        "Node pointer",
+        "Node"
+      ],
+      "answer": 3,
+      "explanation": "Head 또는 tail 포인터는 linked list 자체에는 포함되지않는 외부 요소입니다. 노드는 물리적으로 연속된 공간에 저장된 것이 아니기 때문에 또 다른 노드를 내부적으로 저장하는 경우는 없고 다음 노드가 저장된 주소만 가지고 있습니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"}
+      ]
+    },
+    {
+      "question": "Linked list의 탐색 시간 복잡도는?",
+      "choices": [
+        "O(1)",
+        "O(n)",
+        "O(n^2)",
+        "O(n^3)"
+      ],
+      "answer": 2,
+      "explanation": "Linked list는 선형 자료구조이기 때문에 특별한 장치를 두지 않는 한 선형 검색만 가능합니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+      ]
     }
   ]
 }
