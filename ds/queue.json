@@ -42,6 +42,67 @@
       "references": [
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
+    },
+    {
+      "question": "Stack이 비어있을 때 pop을 하면 ___가 발생한다.",
+      "choices": [
+        "IndexOutOfBounds",
+        "Memory access violation",
+        "Underflow",
+        "Overflow"
+      ],
+      "answer": 3,
+      "explanation": "객체를 통해 추상화된 함수를 통한 접근이기 때문에, 메모리 접근 위치를 직접 입력하는 것이 아니라 1번과 2번 모두 발생할 수 없습니다.",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "Stack이 꽉 차있을 때 push를 하면 ___가 발생한다.",
+      "choices": [
+        "IndexOutOfBounds",
+        "Memory access violation",
+        "Underflow",
+        "Overflow"
+      ],
+      "answer": 4,
+      "explanation": "객체를 통해 추상화된 함수를 통한 접근이기 때문에, 메모리 접근 위치를 직접 입력하는 것이 아니라 1번과 2번 모두 발생할 수 없습니다.",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "다음 중 stack이 적용될 수 있는 application이 아닌 것은?",
+      "choices": [
+        "Balanced parentheses",
+        "지역 변수 저장",
+        "Syntax analyzer",
+        "Inter-process Communication (IPC)"
+      ],
+      "answer": 4,
+      "explanation": "데이터 전달에서는 먼저 보낸 것을 먼저 받아야 하므로 IPC에 stack은 적당하지 않습니다.",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"Balanced parentheses": "https://runestone.academy/runestone/books/published/pythonds/BasicDS/SimpleBalancedParentheses.html"},
+        {"Stack for local variable": "http://www.it.uc3m.es/pbasanta/asng/course_notes/dynamic_memory_stack_en.html"},
+        {"Stack for syntax anlayzer": "https://en.wikipedia.org/wiki/LR_parser#Bottom-up_parse_stack"},
+        {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
+      ]
+    },
+    {
+      "question": "Balanced parentheses 확인에 stack을 쓸 때, 입력이 '(()(())(()))' 라면 stack의 크기는 최대 몇까지 자라나는가?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Balanced parentheses는 열고 닫는 괄호의 순서와 갯수가 알맞게 쓰여져있는지 확인하는 걸 말합니다. 이에 열린 괄호일 때는 stack에 push하고 닫힌 괄호일 때는 peak가 열린 괄호인지 확인하고 pop합니다. 최종적으로 stack의 크기가 0이라면 balanced parentheses라는 것을 알 수 있습니다.\n문제에서는 3번째 문자에서 stack의 크기가 1이 되었다가 5번째에서 3이 되고, 7번째 문자에서 다시 1이 되었다가 9번째 문자에서 한번 더 3에 도달합니다.",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"Balanced parentheses": "https://runestone.academy/runestone/books/published/pythonds/BasicDS/SimpleBalancedParentheses.html"}
+      ]
     }
   ]
 }
