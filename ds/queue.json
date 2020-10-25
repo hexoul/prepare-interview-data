@@ -1,6 +1,21 @@
 {
   "questions": [
     {
+      "question": "Stack은 ___로 동작한다.",
+      "choices": [
+        "FIFO",
+        "FILO",
+        "LILO",
+        "FCFS"
+      ],
+      "answer": 2,
+      "explanation": "First In Last Out (FILO), 즉 처음 들어온 것이 마지막으로 나가는 것을 의미합니다. Last In First Out (LIFO) 라고도 합니다.\n나머지 First In First Out (FIFO), Last In Last Out (LILO), First Come First Served (FCFS) 는 동의어로 Queue의 동작 방식입니다.",
+      "references": [
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"FIFO": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"}
+      ]
+    },
+    {
       "question": "요소 (element) 를 Stack에 넣는 동작을 ___라 한다.",
       "choices": [
         "Put",
