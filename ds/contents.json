@@ -1,5 +1,5 @@
 [
   {"content": "기초", "link": "/ds/basics.json", "num": 3},
   {"content": "Array / List", "link": "/ds/list.json", "num": 6},
-  {"content": "Stack / Queue", "link": "/ds/queue.json", "num": 3}
+  {"content": "Stack / Queue", "link": "/ds/queue.json", "num": 7}
 ]
