@@ -38,7 +38,7 @@
         "Push"
       ],
       "answer": 3,
-      "explanation": "Peak는 제거는 하지 않고 마지막 (Stack에서는 마지막으로 삽입됐었던) 요소를 반환만 하는 함수입니다.",
+      "explanation": "Peak는 제거는 하지 않고 제공될 순서의 요소를 반환만 하는 함수입니다. Stack에서는 마지막으로 삽입됐었던 요소입니다. 참고로 Queue라면 삽입된지 제일 오래된 요소가 됩니다.",
       "references": [
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
