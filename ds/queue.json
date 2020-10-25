@@ -103,6 +103,37 @@
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
         {"Balanced parentheses": "https://runestone.academy/runestone/books/published/pythonds/BasicDS/SimpleBalancedParentheses.html"}
       ]
+    },
+    {
+      "question": "후위 표기법 (postfix notation) 으로 쓰인 '2 5 3 + 4 * -'의 계산 값은?",
+      "choices": [
+        "17",
+        "-3",
+        "-30",
+        "-33"
+      ],
+      "answer": 3,
+      "explanation": "2 - ((5+3) * 4) = -30",
+      "references": [
+        {"[한] Postfix notation": "https://ko.wikipedia.org/wiki/%EC%97%AD%ED%8F%B4%EB%9E%80%EB%93%9C_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Postfix notation": "https://en.wikipedia.org/wiki/Reverse_Polish_notation"}
+      ]
+    },
+    {
+      "question": "중위 표기법 (infix notation) 으로 쓰인 '9 + 1 * (6 / 2 - 6)'를 후위 표기법으로 변환할 때 stack은 최대 몇까지 증가하는가?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "변환 시 stack은 피연산자를 제외한 연산자와 괄호를 담기위한 용도로 사용됩니다. Peak의 연산자보다 우선순위가 높을 경우 계속 stack에 쌓이게 되므로 '/'까지 계속 push되어 크기가 4까지 증가했다가 '-'를 넣지않고 pop하여 줄어들기 시작합니다.",
+      "references": [
+        {"[한] Postfix notation": "https://ko.wikipedia.org/wiki/%EC%97%AD%ED%8F%B4%EB%9E%80%EB%93%9C_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Postfix notation": "https://en.wikipedia.org/wiki/Reverse_Polish_notation"},
+        {"Infix to postfix conversion": "https://en.wikipedia.org/wiki/Reverse_Polish_notation#Converting_from_infix_notation"}
+      ]
     }
   ]
 }
