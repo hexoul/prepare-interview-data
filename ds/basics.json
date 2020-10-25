@@ -1,19 +1,35 @@
 {
   "questions": [
     {
-      "question": "전제 조건 (precondition) 에 대한 설명...",
+      "question": "전제 조건 (precondition) 에 대한 설명으로 틀린 것은?",
       "choices": [
-        "Put",
-        "Create",
-        "Assign",
-        "Push"
+        "코드의 특정 구간이 실행되기 전에 반드시 true여야 하는 조건이다.",
+        "Assertion이 쓰이기도 한다.",
+        "한번 작성되면 수정되는 일은 거의 없다.",
+        "정의되지않는 경우도 있다."
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "전제 조건을 검사하는 부분도 프로그래머에 의해 개발되는 부분이므로 잘못 작성되는 경우도 많습니다. 정의보다 느슨한 기준으로 구현되면 에러가 발생하거나 보장안된 결과가 도출될 수 있고, 정의보다 엄격한 조건으로 구현되면 assertion에 의해 의도치않게 프로그램이 정지되거나 결과를 얻지 못할 수도 있습니다.\n입력이 필요없는 stateless한 동작은 정의되지않기도 합니다. 예) 상수를 stdout에 출력",
       "references": [
-        {"Precondition": "https://en.wikipedia.org/wiki/Precondition"}
+        {"Precondition": "https://en.wikipedia.org/wiki/Precondition"},
+        {"Assertion": "https://en.wikipedia.org/wiki/Assertion_(software_development)"}
+      ]
+    },
+    {
+      "question": "Abstract Data Type (ADT)에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "주로 자료구조 (data structure) 라고 불린다.",
+        "C 또는 Java 등 특정 프로그래밍 언어에 연관되지 않는다.",
+        "데이터와 데이터를 조작하는 함수 등으로 이루어진다.",
+        "은닉화 (Encapsulation) 을 제공한다는 장점이 있다."
       ],
-      "visible": false
+      "answer": 1,
+      "explanation": "ADT는 프로그래밍 언어와는 상관없이 데이터와 데이터를 조작하는 함수들을 포함하는 수학적 모델입니다. 일반적으로 ADT 인스턴스 별로 데이터와 상태 (state) 를 가진다고도 볼 수 있습니다.\nADT는 자료구조와는 다릅니다. 자료구조가 사용자 입장에서의 정의라면 ADT는 자료구조를 구현자 관점에서 실현시키기위한 모델로, 자료와 조작을 위한 함수를 갖는다는 점은 공통적이지만 목적이 다릅니다.",
+      "references": [
+        {"ADT": "https://en.wikipedia.org/wiki/Abstract_data_type"},
+        {"Data structure": "https://en.wikipedia.org/wiki/Data_structure"},
+        {"Encapsulation": "https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)"}
+      ]
     }
   ]
 }
