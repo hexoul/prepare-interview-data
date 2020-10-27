@@ -151,6 +151,75 @@
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
         {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
+    },
+    {
+      "question": "n번째에 있는 아이템을 탐색할 때 가장 좋은 방법은?",
+      "choices": [
+        "단일 연결 리스트 (singly linked list)",
+        "이중 연결 리스트 (doubly linked list)",
+        "원형 연결 리스트 (circular linked list)",
+        "Array로 구현된 linked list"
+      ],
+      "answer": 4,
+      "explanation": "포인터만 있는 linked list는 linear search만 가능해서 O(n) 탐색이지만, array는 random access가 가능하므로 O(1) 탐색이 가능합니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"}
+      ]
+    },
+    {
+      "question": "Linked list를 사용하여 구현하기 적절하지 않은 것은?",
+      "choices": [
+        "삽입 정렬 (insertion sort)",
+        "기수 정렬 (radix sort)",
+        "이진 탐색 (binary search)",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 3,
+      "explanation": "삽입 정렬과 기수 정렬은 random access가 필요없지만 이진 탐색에는 인덱스들을 건너뛰기위해 필요합니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"Insertion sort": "https://en.wikipedia.org/wiki/Insertion_sort"},
+        {"Radix sort": "https://en.wikipedia.org/wiki/Radix_sort"},
+        {"Binary search": "https://en.wikipedia.org/wiki/Binary_search_algorithm"}
+      ]
+    },
+    {
+      "question": "Array와 linked list에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "Array는 linked list보다 space locality가 좋다.",
+        "데이터 삭제는 array보다 linked list가 간단하다.",
+        "Linked list에서 random access는 허용되지 않는다.",
+        "평균적인 탐색 시간은 array보다 linked list가 짧다."
+      ],
+      "answer": 4,
+      "explanation": "Array에서 데이터는 근접한 메모리 영역에 저장되기 때문에 space locality가 좋습니다. 대신 삭제 시에는 중간이 비게 될 경우 뒤의 데이터들을 앞으로 한 칸씩 옮겨야하므로 linked list보다 비용이 많이 듭니다. 탐색 시간은 random access가 가능한 array가 짧습니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
+        {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference"}
+      ]
+    },
+    {
+      "question": "다음 중 linked list를 제일 작은 time complexity를 가지고 정렬할 수 있는 것은?",
+      "choices": [
+        "Insertion sort",
+        "Merge sort",
+        "Quick sort",
+        "Heap sort"
+      ],
+      "answer": 2,
+      "explanation": "우선 quick과 heap은 random access가 요구되므로 linked list에는 적절하지 않습니다. Insertion sort는 linked list에 적용될 수 있으나 최악의 경우에는 시간 복잡도가 O(n^2)가 되므로 O(n log n)인 merge sort와 비교해 덜 선호됩니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"Insertion sort": "https://en.wikipedia.org/wiki/Insertion_sort"},
+        {"Merge sort": "https://en.wikipedia.org/wiki/Merge_sort"},
+        {"Quick sort": "https://en.wikipedia.org/wiki/Quicksort"},
+        {"Heap sort": "https://en.wikipedia.org/wiki/Heapsort"}
+      ]
     }
   ]
 }
