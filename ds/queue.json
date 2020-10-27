@@ -11,6 +11,7 @@
       "answer": 2,
       "explanation": "First In Last Out (FILO), 즉 처음 들어온 것이 마지막으로 나가는 것을 의미합니다. Last In First Out (LIFO) 라고도 합니다.\n나머지 First In First Out (FIFO), Last In Last Out (LILO), First Come First Served (FCFS) 는 동의어로 Queue의 동작 방식입니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
         {"FIFO": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"}
       ]
@@ -26,6 +27,7 @@
       "answer": 4,
       "explanation": "Put, create 및 assign은 stack의 요소를 넣고 뺄 때 일반적으로 사용되지 않는 용어입니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
@@ -40,6 +42,7 @@
       "answer": 3,
       "explanation": "Peak는 제거는 하지 않고 제공될 순서의 요소를 반환만 하는 함수입니다. Stack에서는 마지막으로 삽입됐었던 요소입니다. 참고로 Queue라면 삽입된지 제일 오래된 요소가 됩니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
@@ -54,6 +57,7 @@
       "answer": 3,
       "explanation": "객체를 통해 추상화된 함수를 통한 접근이기 때문에, 메모리 접근 위치를 직접 입력하는 것이 아니라 1번과 2번 모두 발생할 수 없습니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
@@ -68,6 +72,7 @@
       "answer": 4,
       "explanation": "객체를 통해 추상화된 함수를 통한 접근이기 때문에, 메모리 접근 위치를 직접 입력하는 것이 아니라 1번과 2번 모두 발생할 수 없습니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
@@ -82,6 +87,7 @@
       "answer": 4,
       "explanation": "데이터 전달에서는 먼저 보낸 것을 먼저 받아야 하므로 IPC에 stack은 적당하지 않습니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
         {"Balanced parentheses": "https://runestone.academy/runestone/books/published/pythonds/BasicDS/SimpleBalancedParentheses.html"},
         {"Stack for local variable": "http://www.it.uc3m.es/pbasanta/asng/course_notes/dynamic_memory_stack_en.html"},
@@ -100,6 +106,7 @@
       "answer": 3,
       "explanation": "Balanced parentheses는 열고 닫는 괄호의 순서와 갯수가 알맞게 쓰여져있는지 확인하는 걸 말합니다. 이에 열린 괄호일 때는 stack에 push하고 닫힌 괄호일 때는 peak가 열린 괄호인지 확인하고 pop합니다. 최종적으로 stack의 크기가 0이라면 balanced parentheses라는 것을 알 수 있습니다.\n문제에서는 3번째 문자에서 stack의 크기가 1이 되었다가 5번째에서 3이 되고, 7번째 문자에서 다시 1이 되었다가 9번째 문자에서 한번 더 3에 도달합니다.",
       "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
         {"Balanced parentheses": "https://runestone.academy/runestone/books/published/pythonds/BasicDS/SimpleBalancedParentheses.html"}
       ]
