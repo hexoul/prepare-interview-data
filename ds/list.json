@@ -11,6 +11,7 @@
       "answer": 2,
       "explanation": "Array는 선형 구조이며, 변경이 가능하므로 immutable이 아니라 mutable입니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Immutability": "https://en.wikipedia.org/wiki/Immutable_object"}
       ]
@@ -26,6 +27,7 @@
       "answer": 2,
       "explanation": "Array뿐만 아니라 컴퓨터에서 인덱스는 일반적으로 0으로 시작합니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
       ]
     },
@@ -40,6 +42,7 @@
       "answer": 2,
       "explanation": "Array의 범위를 벗어나는 인덱스에 실제로 접근하려할 때 발생하므로, 컴파일과는 관계없이 프로그램 실행 중인 런타임에 발생할 수 있습니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Compile time": "https://en.wikipedia.org/wiki/Compile_time"},
         {"Runtime": "https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)"}
@@ -56,6 +59,7 @@
       "answer": 3,
       "explanation": "10개의 요소가 저장될 수 있는 크기를 나타내므로 10 * 4로 계산할 수 있습니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
       ]
     },
@@ -70,6 +74,7 @@
       "answer": 1,
       "explanation": "'[10]'은 인덱스가 10에 해당하는 요소를 선택하는 문법입니다. 그런데 위와 같이 선언됐을 경우 array의 길이는 10이지만 인덱스가 0부터 시작하여 9까지만 존재합니다. 따라서 인덱스가 10인 요소는 존재하지 않는다는 것을 알 수 있습니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
       ]
     },
@@ -84,6 +89,7 @@
       "answer": 4,
       "explanation": "Array는 선형 구조로 메모리 상의 연속된 블록에 저장되므로, OS가 spatial locality를 고려하여 데이터를 추가적으로 가져올 때 도움이 됩니다.",
       "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference"}
       ]
@@ -117,7 +123,9 @@
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
-        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"},
+        {"점근 표기법 (asymptotic notation)": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
       ]
     },
     {
@@ -149,7 +157,9 @@
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
-        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"},
+        {"점근 표기법 (asymptotic notation)": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
       ]
     },
     {
@@ -198,6 +208,7 @@
       "references": [
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
         {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference"}
       ]
@@ -215,6 +226,8 @@
       "references": [
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"},
         {"Insertion sort": "https://en.wikipedia.org/wiki/Insertion_sort"},
         {"Merge sort": "https://en.wikipedia.org/wiki/Merge_sort"},
         {"Quick sort": "https://en.wikipedia.org/wiki/Quicksort"},
