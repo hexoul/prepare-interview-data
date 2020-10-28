@@ -243,7 +243,52 @@
         "마지막 노드가 아닐 때만"
       ],
       "answer": 4,
-      "explanation": "첫 번째 노드라면 head를 갱신해야하는데 head를 모르기에 갱신할 수 없습니다.\n첫 번째 노드가 아니라면 head를 갱신할 필요는 없지만 head를 모르기에 이전 노드를 알아낼 방법이 없어 A 다음의 노드와 스왑해야하는데 이 조건만으로는 다음 노드가 있다는 것을 보장할 수 없습니다. 같은 이유로 마지막 노드였다면 확실하게 불가능하다는 것을 알 수 있습니다. 마지막 노드가 아니라면 A의 다음 노드가 있다는 것을 보장할 수 있으므로 스왑하는 것으로 삭제할 수 있습니다.\n\ntemp = A->next;\nA->data = temp->data;\nA->next = temp->next;\nfree(temp);",
+      "explanation": "첫 번째 노드라면 head를 갱신해야하는데 head를 모르기에 갱신할 수 없습니다. 첫 번째 노드가 아니라면 head를 갱신할 필요는 없지만 head를 모르기에 이전 노드를 알아낼 방법이 없어 A 다음의 노드와 스왑해야하는데 이 조건만으로는 다음 노드가 있다는 것을 보장할 수 없습니다. 같은 이유로 마지막 노드였다면 확실하게 불가능하다는 것을 알 수 있습니다. 마지막 노드가 아니라면 A의 다음 노드가 있다는 것을 보장할 수 있으므로 스왑하는 것으로 삭제할 수 있습니다.\n\ntemp = A->next;\nA->data = temp->data;\nA->next = temp->next;\nfree(temp);",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"}
+      ]
+    },
+    {
+      "question": "다음 중 array의 단점이 아닌 것은?",
+      "choices": [
+        "고정된 크기",
+        "할당된 크기보다 적게 사용할 때 메모리 낭비가 발생",
+        "인덱스 기반 삭제",
+        "인덱스를 통한 요소 접근"
+      ],
+      "answer": 4,
+      "explanation": "인덱스를 통한 접근, 즉 임의의 위치에 직접 접근하다는 것은 탐색에 유리합니다. 연속된 공간에 저장된 형태를 유지하기위해 중간에 위치한 값이 삭제될 경우 뒷 쪽의 요소들을 한 칸씩 앞으로 당겨오는 비싼 작업이 필요하게 됩니다.",
+      "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
+      "question": "같은 길이를 가지는 두 array를 연결하는 작업의 시간 복잡도는?",
+      "choices": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "배열에서 마지막 삽입의 시간 복잡도는 O(1)이나, 하나의 배열에 나머지 배열이 가진 모든 값을 하나씩 옮겨야 하므로 배열의 크기가 시간 복잡도가 됩니다. O(1 * n) = O(n)",
+      "references": [
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
+      "question": "같은 길이를 가지는 두 linked list를 연결하는 작업의 시간 복잡도는?",
+      "choices": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "한 linked list의 끝에 다른 하나를 연결시켜야 하는데, tail 포인터를 가지고 있지 않는 한 linked list의 끝을 알 수 없기때문에 먼저 끝까지 탐색할 필요가 있습니다. 탐색 시간 복잡도는 O(n)입니다. 다만 마지막 노드를 알고 난 후는 연결만 해주면 되므로 연결 자체는 O(1) 입니다. 따라서 O(n + 1) = O(n)이 됩니다.",
       "references": [
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"}
