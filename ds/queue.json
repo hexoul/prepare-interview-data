@@ -141,6 +141,79 @@
         {"Postfix notation": "https://en.wikipedia.org/wiki/Reverse_Polish_notation"},
         {"Infix to postfix conversion": "https://en.wikipedia.org/wiki/Reverse_Polish_notation#Converting_from_infix_notation"}
       ]
+    },
+    {
+      "question": "Stack의 pop 시간 복잡도는?",
+      "choices": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n log n)"
+      ],
+      "answer": 1,
+      "explanation": "탐색없이 바로 접근할 수 있도록 관리되므로 constant time, 즉 O(1)입니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"},
+        {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
+      ]
+    },
+    {
+      "question": "Array로 구현된 Stack에 대한 설명으로 올바르지 않은 것은?",
+      "choices": [
+        "Stack의 capacity는 런타임에 변하지 않는다.",
+        "컴파일 타임에 capacity가 결정된다.",
+        "Dynamic stack에 비해 push/pop이 빠르다.",
+        "Overflow가 발생하지 않는다."
+      ],
+      "answer": 4,
+      "explanation": "Capacity, 즉 stack의 용량이 변하는 런타임에 동적으로 변할 수 있는 dynamic stack과 달리 컴파일 때부터 capacity가 결정되어 변하지 않습니다. 동적으로 메모리를 할당받을 필요가 없고 구조가 더 단순하므로 push/pop 오버헤드가 더 작습니다. 또한 크기가 고정되어 있기 때문에 overflow가 발생할 확률이 더 높습니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
+      "question": "Singly linked list (SLL) 을 역정렬시키는데 stack을 사용한다면 시간 복잡도는 ___이다.",
+      "choices": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 3,
+      "explanation": "SLL의 모든 요소를 stack에 push한 뒤에 pop하면 역정렬이 됩니다. push와 pop은 모두 constant time의 시간 복잡도를 가지므로 길이만 고려하면 되어, O(2 * n) = O(n)이 됩니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"},
+        {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
+      ]
+    },
+    {
+      "question": "괄호와 사칙연산이 가능한 중위 표기법 (infix notation) 계산기를 stack으로 구현할 때 필요한 stack의 갯수는?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Infix evaluation (중위 표기법 계산) 은 일반적으로 postfix로 변환 후 postfix evaluation이 행해집니다. 이 때, 변환 시에 연산자를 담기 위해 stack이 한 개 쓰이고 postfix evaluation 시에는 피연산자를 담기 위해 stack이 한 개 쓰입니다. 다만 stack이 두 군데에서 사용되지만 동시에 진행되는 작업이 아니므로 결국 한 개만 있으면 됩니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"},
+        {"[한] Postfix notation": "https://ko.wikipedia.org/wiki/%EC%97%AD%ED%8F%B4%EB%9E%80%EB%93%9C_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Postfix notation": "https://en.wikipedia.org/wiki/Reverse_Polish_notation"},
+        {"Infix to postfix conversion": "https://en.wikipedia.org/wiki/Reverse_Polish_notation#Converting_from_infix_notation"}
+      ]
     }
   ]
 }
