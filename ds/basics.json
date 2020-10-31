@@ -45,6 +45,36 @@
         {"Data structure": "https://en.wikipedia.org/wiki/Data_structure"},
         {"Encapsulation": "https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)"}
       ]
+    },
+    {
+      "question": "다음 Big O 표기법 중 가장 작은 값을 나타내는 것은?",
+      "choices": [
+        "O(n)",
+        "O(n / 100)",
+        "O(2n)",
+        "O(log n)"
+      ],
+      "answer": 4,
+      "explanation": "Big O 표기법에서 계수 (coefficient) 나 상수는 그 정의에 따라 1로 수렴됩니다. 따라서 O(n / 100)도 O(2n)도 모두 O(n)가 됩니다.\n로그함수는 일차함수보다 발산하는 정도가 약하므로 O(log n) < O(n)입니다.",
+      "references": [
+        {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
+      ]
+    },
+    {
+      "question": "다음 Big O 표기법 간의 비교로 틀린 것은?",
+      "choices": [
+        "O(n) = O(n + 50)",
+        "O(n) = O(10n + 100)",
+        "O(n) = O(n^2)",
+        "O(n) = O(n + log n)"
+      ],
+      "answer": 3,
+      "explanation": "Big O 표기법에서 계수 (coefficient) 나 상수는 그 정의에 따라 1로 수렴됩니다. 또한 상한 점근이기 때문에 최고차수에 대한 표현만 남고 나머지는 무시됩니다. 따라서 O(n + log n)도 O(n)이 됩니다. O(n^2 + n)의 경우에도 O(n^2)이 됩니다.",
+      "references": [
+        {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
+        {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
+      ]
     }
   ]
 }
