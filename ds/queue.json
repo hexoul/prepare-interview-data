@@ -291,7 +291,8 @@
       "explanation": "Queue를 이용하면 되며 입력을 모두 받은 후 출력해야 하므로 한 번 입력 길이만큼 저장할 필요가 있습니다. 따라서 O(n)이 됩니다.",
       "references": [
         {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
-        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"},
+        {"Space complexity": "https://en.wikipedia.org/wiki/Space_complexity"}
       ]
     }
   ]
