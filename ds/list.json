@@ -222,7 +222,7 @@
         "Heap sort"
       ],
       "answer": 2,
-      "explanation": "우선 quick과 heap은 random access가 요구되므로 linked list에는 적절하지 않습니다. Insertion sort는 linked list에 적용될 수 있으나 최악의 경우에는 시간 복잡도가 O(n^2)가 되므로 O(n log n)인 merge sort와 비교해 덜 선호됩니다.",
+      "explanation": "우선 quick과 heap은 random access가 요구되므로 linked list에는 적절하지 않습니다. Insertion sort는 linked list에 적용될 수 있으나 최악의 경우에는 시간 복잡도가 O(n^2)가 되므로, O(n log n)인 merge sort와 비교해 덜 선호됩니다.",
       "references": [
         {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
@@ -375,6 +375,22 @@
         {"Circulr linked list": "https://en.wikipedia.org/wiki/Linked_list#Circular_linked_list"},
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
         {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+      ]
+    },
+    {
+      "question": "Linked list를 역정렬할 때 필요한 공간 복잡도는?",
+      "choices": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 3,
+      "explanation": "Stack에 전부 push했다가 pop하면서 linked list를 다시 구성하면 됩니다. 이 때, linked list에서 stack으로 옮겨가는 것이고 중복 존재하는 것이 아니기 때문에 메모리 상에 존재하는 요소의 갯수는 항상 n이라고 알 수 있습니다. 따라서 공간 복잡도도 O(n)이 됩니다.",
+      "references": [
+        {"[한] Linked list": "https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B2%B0_%EB%A6%AC%EC%8A%A4%ED%8A%B8"},
+        {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
+        {"Space complexity": "https://en.wikipedia.org/wiki/Space_complexity"}
       ]
     }
   ]
