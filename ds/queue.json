@@ -294,6 +294,41 @@
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"},
         {"Space complexity": "https://en.wikipedia.org/wiki/Space_complexity"}
       ]
+    },
+    {
+      "question": "Priority queue는 효율을 위해 일반적으로 ___를 사용하여 구현된다.",
+      "choices": [
+        "Array",
+        "List",
+        "Heap",
+        "Graph"
+      ],
+      "answer": 3,
+      "explanation": "Priority가 높은 값이 먼저 반환되어야 하는 priority queue의 정의 상 최댓값 또는 최솟값을 빠르게 구하기위해 고안된 heap이 유용합니다.",
+      "references": [
+        {"[한] Priority queue": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84_%ED%81%90"},
+        {"Priority queue": "https://en.wikipedia.org/wiki/Priority_queue"},
+        {"[한] Heap": "https://ko.wikipedia.org/wiki/%ED%9E%99_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Heap": "https://en.wikipedia.org/wiki/Heap_(data_structure)"}
+      ]
+    },
+    {
+      "question": "Priority queue를 사용하기 적절하지 않은 곳은?",
+      "choices": [
+        "Interrupt handling",
+        "Undo operation",
+        "Huffman coding",
+        "Dijkstra's algorithm"
+      ],
+      "answer": 2,
+      "explanation": "Undo는 stack을 이용하여 구현하는 것이 적절합니다.\n- Interrupt handling: interrupt 간에 우선순위가 있어 높은 우선순위부터 처리되어야 합니다.\n- Huffman coding: 출현 빈도수에 따라 표기가 정해지므로 출현 빈도수를 우선순위로 보고 priority queue가 쓰일 수 있습니다.\n- Dijkstra's algorithm: 최단 거리를 구하기 위해 가중치가 낮은 경로를 선택할 때 쓰일 수 있습니다.",
+      "references": [
+        {"[한] Priority queue": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84_%ED%81%90"},
+        {"Priority queue": "https://en.wikipedia.org/wiki/Priority_queue"},
+        {"Interrupt priority level": "https://en.wikipedia.org/wiki/Interrupt_priority_level"},
+        {"Huffman coding": "https://en.wikipedia.org/wiki/Huffman_coding"},
+        {"Dijkstra's algorithm": "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"}
+      ]
     }
   ]
 }
