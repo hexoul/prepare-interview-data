@@ -329,6 +329,42 @@
         {"Huffman coding": "https://en.wikipedia.org/wiki/Huffman_coding"},
         {"Dijkstra's algorithm": "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"}
       ]
+    },
+    {
+      "question": "Double-ended queue (deque) 란?",
+      "choices": [
+        "front와 rear 모두에서 삽입과 삭제가 가능한 queue",
+        "Doubly linked list로 구현된 queue",
+        "삽입은 front에서 이루어지고 rear가 둘로 나뉘어진 queue",
+        "직렬로 연결된 두 개의 queue"
+      ],
+      "answer": 1,
+      "explanation": "Dequeue라고 불리기도 하지만 일반적으로 deque로 쓰입니다. Dequeue는 queue에서 제거하는 작업을 뜻하기도 하기 때문입니다. 참고로 queue에 추가하는 작업은 enqueue라 합니다.",
+      "references": [
+        {"[한] Deque": "https://ko.wikipedia.org/wiki/%EB%8D%B1_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Deque": "https://en.wikipedia.org/wiki/Double-ended_queue"},
+        {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "Double-ended queue (deque) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "front로만 push와 pop을 하면 stack이 된다.",
+        "rear로만 push와 pop을 하면 queue가 된다.",
+        "front로는 push만 하고 rear로는 pop만 하면 queue가 된다.",
+        "rear로는 push만 하고 front로는 pop만 하면 queue가 된다."
+      ],
+      "answer": 2,
+      "explanation": "front 또는 rear 상관없이 한 쪽에서만 push와 pop을 하면 LIFO인 stack으로 동작하게 됩니다.",
+      "references": [
+        {"[한] Deque": "https://ko.wikipedia.org/wiki/%EB%8D%B1_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Deque": "https://en.wikipedia.org/wiki/Double-ended_queue"},
+        {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"},
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
     }
   ]
 }
