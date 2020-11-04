@@ -1,7 +1,7 @@
 [
   {"content": "운영체제", "link": "/os/contents.json", "num": 123},
   {"content": "네트워크", "link": "/network/contents.json", "num": 86},
-  {"content": "자료구조", "link": "/ds/contents.json", "num": 51},
+  {"content": "자료구조", "link": "/ds/contents.json", "num": 54},
   {"content": "Java", "link": "", "num": 0},
   {"content": "1", "link": "", "num": 0},
   {"content": "2", "link": "", "num": 0},
