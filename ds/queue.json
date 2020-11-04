@@ -365,6 +365,23 @@
         {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
+    },
+    {
+      "question": "Double-ended queue (deque) 를 stack으로만 구현한다면 몇 개가 필요한가?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "우선 front 또는 rear (back) 중 한 방향을 위해 stack이 한 개 필요합니다. push_front와 pop_front를 위해 stack A가 쓰였다고 하면 구현해야하는 남은 오퍼레이션은 push_back과 pop_back입니다.\npush_back을 위해서는 기존 stack A에 들어있는 요소를 모두 뺀 뒤 마지막에 추가해야 합니다. 그 뒤 기존의 들어있었던 요소들의 순서를 유지하도록, 뺐었던 순서의 반대로 기존 stack A에 다시 넣어주면 됩니다. 따라서 임시 저장소로 stack B를 사용하면 구현 가능합니다. 비슷하게 pop_back은 stack A에 N개가 들어있었다면 N개를 전부 stack B로 pop한 뒤 마지막 요소는 버리고 나머지 N-1개를 다시 stack A로 push하면 pop_back이 구현됩니다.",
+      "references": [
+        {"[한] Deque": "https://ko.wikipedia.org/wiki/%EB%8D%B1_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
+        {"Deque": "https://en.wikipedia.org/wiki/Double-ended_queue"},
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
     }
   ]
 }
