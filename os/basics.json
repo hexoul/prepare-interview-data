@@ -76,7 +76,10 @@
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "\n* 시분할 multiplexing 예시 : Single-core processor 상에서의 multiprogramming (CPU scheduling).\n\n* 공간 분할 multiplexing 예시 : Process Control Block (PCB)"
+      "explanation": "\n- 시분할 multiplexing 예시 : single-core processor 상에서의 multiprogramming (CPU scheduling).\n- 공간 분할 multiplexing 예시 : memory 또는 disk. 하드웨어 자원을 여러 프로세스 또는 유저가 사용할 수 있도록 공간적으로 분리하는 것을 말합니다.",
+      "references": [
+        {"Multiplexing": "https://en.wikipedia.org/wiki/Multiplexing"}
+      ]
     },
     {
       "question": "프로세스가 실패했을 때 대부분의 운영체제는 에러 정보를 ___에 기록한다.",
@@ -129,9 +132,10 @@
         "Bootstrap program"
       ],
       "answer": 4,
-      "explanation": "전원을 공급받고 초기 설정을 하는 단계를 bootstrapping이라 합니다. 구체적으로 bootstrapping이란 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 최초로 메인메모리로 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 준비상태로 만드는 것까지를 말합니다. 준비상태를 만드는 것에는 설정 값과 BIOS를 불러오는 작업 등이 포함됩니다. Bootstrapping을 줄여 booting이라고도 부르지만 bootstrap program은 boot program이라고 줄이지 않습니다.",
+      "explanation": "전원을 공급받고 초기 설정을 하는 단계를 bootstrapping이라 합니다. 구체적으로 bootstrapping이란 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 최초로 메인메모리로 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 준비상태로 만드는 것까지를 말합니다. 준비상태를 만드는 것에는 설정 값과 BIOS를 불러오는 작업 등이 포함됩니다. 전형적으로 OS 초기화까지를 뜻합니다.\nBootstrapping을 줄여 booting이라고도 부르지만 일반적으로 bootstrap program은 boot program이라고 줄이지 않습니다.",
       "references": [
-        {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"}
+        {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"},
+        {"Booting": "https://en.wikipedia.org/wiki/Booting"}
       ]
     },
     {
@@ -159,7 +163,7 @@
       "answer": 2,
       "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 예로 breakpoint, 0으로 나누기 (division by zero) 또는 유효하지않은 메모리에의 접근이 있습니다.",
       "references": [
-        {"Software interrupt" : "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"},
+        {"Software interrupt": "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"},
         {"Trap": "https://en.wikipedia.org/wiki/Trap_(computing)"},
         {"Exception": "https://en.wikipedia.org/wiki/Exception_handling"}
       ]
