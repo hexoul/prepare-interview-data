@@ -64,7 +64,7 @@
       "answer": 1,
       "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등",
       "references": [
-        {"Command interpreter" : "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}
+        {"Command interpreter": "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}
       ]
     },
     {
@@ -104,7 +104,7 @@
       "explanation": "Palm OS는 96년도에 출시된 PDA 및 모바일용 운영체제로 터치스크린 GUI를 위해 개발되었고 실시간 운영체제는 아닙니다.",
       "references": [
         {"[한] Palm OS": "https://ko.wikipedia.org/wiki/%ED%8C%9C_OS"},
-        {"Palm OS" : "https://en.wikipedia.org/wiki/Palm_OS"}
+        {"Palm OS": "https://en.wikipedia.org/wiki/Palm_OS"}
       ]
     },
     {
@@ -118,9 +118,9 @@
       "answer": 2,
       "explanation": "\nKernel space 크기 : Monolithic kernel > Hybrid kernel > Microkernel > Exokernel",
       "references": [
-        {"Microkernel" : "https://en.wikipedia.org/wiki/Microkernel"},
-        {"Monolithic kernel" : "https://en.wikipedia.org/wiki/Monolithic_kernel"},
-        {"Hybrid kernel" : "https://en.wikipedia.org/wiki/Hybrid_kernel"}
+        {"Microkernel": "https://en.wikipedia.org/wiki/Microkernel"},
+        {"Monolithic kernel": "https://en.wikipedia.org/wiki/Monolithic_kernel"},
+        {"Hybrid kernel": "https://en.wikipedia.org/wiki/Hybrid_kernel"}
       ]
     },
     {
@@ -134,7 +134,7 @@
       "answer": 4,
       "explanation": "전원을 공급받고 초기 설정을 하는 단계를 bootstrapping이라 합니다. 구체적으로 bootstrapping이란 하드웨어적으로 지정된 시작 주소에 있는 bootstrap progrm을 최초로 메인메모리로 읽어들여 외부 입력없이 추가적인 명령어를 읽어들일 수 있는 준비상태로 만드는 것까지를 말합니다. 준비상태를 만드는 것에는 설정 값과 BIOS를 불러오는 작업 등이 포함됩니다. 전형적으로 OS 초기화까지를 뜻합니다.\nBootstrapping을 줄여 booting이라고도 부르지만 일반적으로 bootstrap program은 boot program이라고 줄이지 않습니다.",
       "references": [
-        {"Bootstrapping" : "https://en.wikipedia.org/wiki/Bootstrapping#Computing"},
+        {"Bootstrapping": "https://en.wikipedia.org/wiki/Bootstrapping#Computing"},
         {"Booting": "https://en.wikipedia.org/wiki/Booting"}
       ]
     },
@@ -149,7 +149,7 @@
       "answer": 3,
       "explanation": "Interrupt는 수행되고 있는 프로세스들에 직접적으로 영향을 줄 수 있어, 운영체제 레벨에서 관리되도록 사용자가 직접 호출할 수 있는 방법은 제공하지않습니다. 시스템 콜을 통해서만 가능하도록 설계되어 있습니다. 시스템 콜을 통해 특정 한 명령어가 실행되는 것으로 명령어들의 집합이 아니기에 프로그램은 잘못된 설명입니다.",
       "references": [
-        {"Software interrupt" : "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"}
+        {"Software interrupt": "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"}
       ]
     },
     {
@@ -179,7 +179,7 @@
       "answer": 3,
       "explanation": "Interrupt가 발생했을 때 main routine에서 벗어나 interrupt의 종류에 따른 적절한 처리를 하고 복귀하기에 interrupt service routine이라 합니다.",
       "references": [
-        {"ISR" : "https://en.wikipedia.org/wiki/Interrupt_handler"}
+        {"ISR": "https://en.wikipedia.org/wiki/Interrupt_handler"}
       ]
     },
     {
@@ -193,7 +193,7 @@
       "answer": 1,
       "explanation": "Interrupt vector란 인터럽트가 발생했을 때 수행되어야 할 interrupt handler 주소로 interrupt vector table에 모여 저장 및 관리됩니다.",
       "references": [
-        {"Interrupt vector table" : "https://en.wikipedia.org/wiki/Interrupt_vector_table"}
+        {"Interrupt vector table": "https://en.wikipedia.org/wiki/Interrupt_vector_table"}
       ]
     },
     {
@@ -208,7 +208,7 @@
       "explanation": "Direct Memory Access (DMA) 는 CPU와는 독립적인 하드웨어를 통해 메모리에 직접 접근할 수 있도록 지원하는 기법입니다. 데이터 전송에 CPU의 개입이 불필요해 데이터 전송을 위해 읽고 쓰기를 하는 대신 다른 작업의 처리를 할 수 있게 되어 CPU 효율이 증가합니다.",
       "references": [
         {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
-        {"DMA" : "https://en.wikipedia.org/wiki/Direct_memory_access"}
+        {"DMA": "https://en.wikipedia.org/wiki/Direct_memory_access"}
       ]
     },
     {
@@ -222,8 +222,8 @@
       "answer": 2,
       "explanation": "MMIO란 메모리 공간 중 일부를 입출력 장치에 할당하여 쓰는 방식으로 일반 데이터를 읽고 쓰는 것처럼 I/O를 쓸 수 있습니다. 설계 관점에서 단순해지는 반면 I/O가 일반적으로 메모리 접근보다 느리기때문에 같은 주소 버스를 사용하게되는 메모리 접근이 영향을 받아 느려질 수 있습니다.",
       "references": [
-        {"[한] MMIO" : "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%A7%B5_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
-        {"MMIO" : "https://en.wikipedia.org/wiki/Memory-mapped_I/O"}
+        {"[한] MMIO": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%A7%B5_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"MMIO": "https://en.wikipedia.org/wiki/Memory-mapped_I/O"}
       ]
     },
     {
@@ -237,8 +237,8 @@
       "answer": 1,
       "explanation": "Programmed I/O 또는 polled I/O라 불리는 PIO는 입출력 장치와의 매 데이터 전송마다 CPU가 개입합니다.",
       "references": [
-        {"[한] PIO" : "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
-        {"PIO" : "https://en.wikipedia.org/wiki/Programmed_input%E2%80%93output"},
+        {"[한] PIO": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"PIO": "https://en.wikipedia.org/wiki/Programmed_input%E2%80%93output"},
         {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"}
       ]
     },
@@ -253,8 +253,8 @@
       "answer": 3,
       "explanation": "-",
       "references": [
-        {"Interrupt" : "https://en.wikipedia.org/wiki/Interrupt"},
-        {"Interrupt-driven I/O" : "http://inputoutput5822.weebly.com/interrupt-driven-io.html"}
+        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
+        {"Interrupt-driven I/O": "http://inputoutput5822.weebly.com/interrupt-driven-io.html"}
       ]
     },
     {
@@ -268,7 +268,7 @@
       "answer": 4,
       "explanation": "-",
       "references": [
-        {"ISR" : "https://en.wikipedia.org/wiki/Interrupt_handler"},
+        {"ISR": "https://en.wikipedia.org/wiki/Interrupt_handler"},
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch#Interrupt_handling"}
       ]
     }
