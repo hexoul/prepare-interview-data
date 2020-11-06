@@ -124,7 +124,7 @@
       ]
     },
     {
-      "question": "컴퓨터가 전원을 공급받았을 때 bootloader에 의해 최초로 실행되는 프로그램을 ___라 한다.",
+      "question": "컴퓨터가 전원을 공급받은 후 bootloader에 의해 실행되는 프로그램을 ___라 한다.",
       "choices": [
         "Boot program",
         "Setup program",
