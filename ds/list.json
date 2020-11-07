@@ -392,6 +392,41 @@
         {"Linked list": "https://en.wikipedia.org/wiki/Linked_list"},
         {"Space complexity": "https://en.wikipedia.org/wiki/Space_complexity"}
       ]
+    },
+    {
+      "question": "행렬 (matrix)을 배열 (array)로 표현할 때에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "1차원 행렬은 1차원 배열로 표현할 수 있다.",
+        "2차원 행렬은 2차원 배열로 표현할 수 있다.",
+        "2차원 행렬은 1차원 배열로 표현할 수 없다.",
+        "Sparse matrix를 표현하는 데에는 비효율적이다."
+      ],
+      "answer": 2,
+      "explanation": "2차원 행렬도 1차원 배열에 저장될 수 있습니다. 다만 1차원 배열의 인덱스로부터 행과 열을 계산하는 작업이 요구됩니다.\nSparse matrix란 0이 아닌 요소가 적은 행렬입니다. 따라서 모든 위치의 값을 저장하고 있는 배열의 경우 대부분 0을 저장하게 되어 불필요하게 많은 공간을 사용한다고 볼 수 있습니다.",
+      "references": [
+        {"[한] Matrix": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%A0%AC"},
+        {"Matrix": "https://en.wikipedia.org/wiki/Matrix_(mathematics)"},
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
+    },
+    {
+      "question": "2차원 행렬 (matrix)을 1차원 배열 (array)로 표현할 때 같은 행에 있는 요소부터 근접한 공간에 저장하는 것을 ___라 한다.",
+      "choices": [
+        "Row-minor order",
+        "Column-minor order",
+        "Row-major order",
+        "Column-major order"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"Row and column-major order": "https://en.wikipedia.org/wiki/Row-_and_column-major_order"},
+        {"[한] Matrix": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%A0%AC"},
+        {"Matrix": "https://en.wikipedia.org/wiki/Matrix_(mathematics)"},
+        {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
+        {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
+      ]
     }
   ]
 }
