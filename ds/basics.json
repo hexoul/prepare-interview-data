@@ -75,6 +75,38 @@
         {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
         {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
       ]
+    },
+    {
+      "question": "문자열을 반전시키기에 적절한 자료구조는?",
+      "choices": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "문자열 반전을 위해서는 마지막이 처음으로 올 필요가 있으므로 stack의 특성은 LIFO가 적절합니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "회문 (palindrome) 을 찾기 적절한 자료구조는?",
+      "choices": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "회문 (palindrome) 이란 낱말이나 문장이 그대로 읽든 거꾸로 읽든 같은 것을 말합니다. 예를 들어 ''가 있습니다. 따라서 회문 판멸을 위해서는 문자열을 반전시킬 필요가 있으므로 보기 중에서는 stack이 적절합니다. 문자열을 새롭게 구성안해도 비교만 하면 되므로 역으로 탐색이 가능한 array나 list가 쓰일 수도 있습니다.",
+      "references": [
+        {"[한] Palindrome": "https://ko.wikipedia.org/wiki/%ED%9A%8C%EB%AC%B8"},
+        {"Palindrome": "https://en.wikipedia.org/wiki/Palindrome"},
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
     }
   ]
 }
