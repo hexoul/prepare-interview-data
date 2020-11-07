@@ -205,7 +205,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "Direct Memory Access (DMA) 는 CPU와는 독립적인 하드웨어를 통해 메모리에 직접 접근할 수 있도록 지원하는 기법입니다. 데이터 전송에 CPU의 개입이 불필요해 데이터 전송을 위해 읽고 쓰기를 하는 대신 다른 작업의 처리를 할 수 있게 되어 CPU 효율이 증가합니다.",
+      "explanation": "Direct Memory Access (DMA) 는 CPU와는 독립적인 하드웨어를 통해 메모리에 직접 접근할 수 있도록 지원하는 기법입니다. 데이터 전송에 CPU의 개입이 불필요해 데이터 전송을 위해 읽고 쓰기를 하는 대신 다른 작업의 처리를 할 수 있게 되어 CPU 효율이 증가합니다. 멀티코어 프로세서 시스템에서 DMA는 프로세서 간의 데이터 전송을 지원합니다.",
       "references": [
         {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
         {"DMA": "https://en.wikipedia.org/wiki/Direct_memory_access"}
