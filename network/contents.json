@@ -1,5 +1,5 @@
 [
-  {"content": "기초", "link": "/network/basics.json", "num": 31},
+  {"content": "일반", "link": "/network/basics.json", "num": 31},
   {"content": "Reference Model", "link": "/network/referencemodel.json", "num": 24},
   {"content": "OSI Model", "link": "/network/osi.json", "num": 31}
 ]
