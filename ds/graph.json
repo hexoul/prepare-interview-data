@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "Binary tree는 몇 개의 자식을 가지는가?",
+      "choices": [
+        "1",
+        "2",
+        "2개 이하",
+        "2개 이상"
+      ],
+      "answer": 3,
+      "explanation": "-",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    }
+  ]
+}
