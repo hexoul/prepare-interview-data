@@ -107,6 +107,23 @@
         {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
+    },
+    {
+      "question": "하노이의 탑 (tower of Hanoi) 을 풀기 위해 적절한 자료구조는?",
+      "choices": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "기둥에 꽂혀있는 원판은 제일 위에 위치한 것만 옮길 수 있으므로 stack이 적절합니다.",
+      "references": [
+        {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
+        {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"},
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
     }
   ]
 }
