@@ -109,7 +109,7 @@
       ]
     },
     {
-      "question": "하노이의 탑 (tower of Hanoi) 을 풀기 위해 적절한 자료구조는?",
+      "question": "하노이의 탑 (Tower of Hanoi) 문제를 풀기 위해 적절한 자료구조는?",
       "choices": [
         "Stack",
         "Queue",
@@ -123,6 +123,38 @@
         {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"},
         {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "하노이의 탑 (Tower of Hanoi) 문제에서 n개의 원판을 옮기는 데 최소 몇 번의 이동이 필요한가?",
+      "choices": [
+        "2n - 1",
+        "2n + 1",
+        "2^n - 1",
+        "2^n + 1"
+      ],
+      "answer": 3,
+      "explanation": "수학적 귀납법을 통해 증명할 수 있으며, 2^n -1은 메르센 수 (Mersenne number) 라고도 불립니다.",
+      "references": [
+        {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
+        {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"},
+        {"[한] Mersenne prime": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%A5%B4%EC%84%BC_%EC%86%8C%EC%88%98"},
+        {"Mersenne prime": "https://en.wikipedia.org/wiki/Mersenne_prime"}
+      ]
+    },
+    {
+      "question": "다음 중 하노이의 탑 (Tower of Hanoi) 문제를 푸는 방법은?",
+      "choices": [
+        "Iterative solution",
+        "Recursive solution",
+        "Binary solution",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "일반적으로 ToH를 푸는 방법으로 재귀 (recursive) 가 많이 알려져 있지만 이외에도 iteration, binary, grey-code 등 많은 풀이 방법이 있습니다.",
+      "references": [
+        {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
+        {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"}
       ]
     }
   ]
