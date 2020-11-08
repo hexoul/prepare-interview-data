@@ -416,6 +416,36 @@
         {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
+    },
+    {
+      "question": "문자열 반전을 stack으로만 구현하려면 stack이 ___개 필요하다.",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "같은 stack에 문자열의 길이만큼 push를 한 후 pop을 해야하므로 한 개만 필요합니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
+    },
+    {
+      "question": "문자열 반전을 stack으로 구현하면 시간 복잡도는 ___이다.",
+      "choices": [
+        "O(1)",
+        "O(log n)",
+        "O(n log n)",
+        "O(n)"
+      ],
+      "answer": 4,
+      "explanation": "문자열의 길이만큼 push를 한 후 pop을 해야하므로 O(2n) = O(n)이 됩니다.",
+      "references": [
+        {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
+        {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
+      ]
     }
   ]
 }
