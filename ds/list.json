@@ -79,7 +79,7 @@
       ]
     },
     {
-      "question": "다음 중 어떤 개념에서 array를 활용할 여지가 있는가?",
+      "question": "다음 개념들 중 무엇에서 array가 가장 잘 활용되는가?",
       "choices": [
         "Binary tree",
         "Process scheduling",
@@ -87,7 +87,7 @@
         "Spatial locality"
       ],
       "answer": 4,
-      "explanation": "Array는 선형 구조로 메모리 상의 연속된 블록에 저장되므로, OS가 spatial locality를 고려하여 데이터를 추가적으로 가져올 때 도움이 됩니다.",
+      "explanation": "Array는 선형 구조로 메모리 상의 연속된 블록에 저장되므로, OS가 spatial locality를 고려하여 데이터를 가져올 때 가장 도움이 됩니다.\nBinary tree에서는 사용 가능하나 비효율이 발생할 수 있습니다. Process scheduling에서 선형 구조는 활용될 수 있지만 공간적 특성으로 인한 이점은 없습니다.\nCaching의 경우도 기본적으로 key-value 구조이므로 key가 인덱스가 아니면 적용하기 어렵고 위와 마찬가지로 공간적 특성을 활용하기 어렵습니다.",
       "references": [
         {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
