@@ -16,7 +16,7 @@
       ]
     },
     {
-      "question": "Binary tree를 array로 구현할 때 ___은(는) 단점이 된다.",
+      "question": "Binary tree를 array로 구현할 때 ___은 단점이 된다.",
       "choices": [
         "자식 노드를 찾기 어려운 점",
         "부모 노드를 찾기 어려운 점",
@@ -25,6 +25,39 @@
       ],
       "answer": 4,
       "explanation": "Array로는 구현이 쉽고 부모 또는 자식 노드의 위치를 수학적으로 바로 계산할 수 있어 찾기도 쉽습니다. 그러나 완전 이진 트리 (complete binary tree) 가 아닐 경우 빈 값을 가진 요소들이 생겨 공간 낭비가 생길 수 있습니다.",
+      "references": [
+        {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    },
+    {
+      "question": "Binary tree를 array로 구현할 때 높이가 H까지 증가한다면 array의 크기는 몇이 적절한가?",
+      "choices": [
+        "H",
+        "2H",
+        "H^2 - 1",
+        "2^H - 1"
+      ],
+      "answer": 4,
+      "explanation": "이진 트리가 높이에 따라 가질 수 있는 최대 노드 개수를 구하면 됩니다. 최대 개수가 되려면 자식 노드를 항상 두 개씩 가져야 하므로 높이가 증가할 때마다 두 배씩 늘어난 다는 것을 알 수 있습니다. 예를 들어 높이가 3이라면 1+2+4, 4라면 1+2+4+8이 됩니다. 따라서 점화식으로부터 등비수열의 합을 통해 2^H - 1 를 구할 수 있습니다.",
+      "references": [
+        {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"},
+        {"등비수열": "https://ko.wikipedia.org/wiki/%EB%93%B1%EB%B9%84%EC%88%98%EC%97%B4"}
+      ]
+    },
+    {
+      "question": "Binary tree를 array로 구현할 때 노드 A의 인덱스가 i라면 left child의 인덱스는 ___ 이다.",
+      "choices": [
+        "i + 1",
+        "2i",
+        "2i + 1",
+        "2i + 2"
+      ],
+      "answer": 3,
+      "explanation": "높이가 증가할 때마다 해당 높이의 노드들을 저장하는 크기가 두 배씩 증가하는 것을 생각해보면 left와 right child의 인덱스가 각각 2i + 1과 2i + 2가 됨을 이해할 수 있습니다.",
       "references": [
         {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
