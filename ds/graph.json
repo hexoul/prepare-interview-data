@@ -49,7 +49,7 @@
       ]
     },
     {
-      "question": "Binary tree를 array로 구현할 때 노드 A의 인덱스가 i라면 left child의 인덱스는 ___ 이다.",
+      "question": "Binary tree를 array로 구현할 때 어떤 노드의 인덱스가 i라면 left child의 인덱스는 ___ 이다.",
       "choices": [
         "i + 1",
         "2i",
@@ -57,7 +57,39 @@
         "2i + 2"
       ],
       "answer": 3,
-      "explanation": "높이가 증가할 때마다 해당 높이의 노드들을 저장하는 크기가 두 배씩 증가하는 것을 생각해보면 left와 right child의 인덱스가 각각 2i + 1과 2i + 2가 됨을 이해할 수 있습니다.",
+      "explanation": "높이가 증가할 때마다 해당 높이의 노드들을 저장하는 크기가 두 배씩 증가하는 것을 생각해보면 left와 right child의 인덱스가 각각 (2i + 1)과 (2i + 2)가 됨을 이해할 수 있습니다.",
+      "references": [
+        {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    },
+    {
+      "question": "Binary tree를 array로 구현할 때 root가 아닌 어떤 노드의 인덱스가 i라면 부모 노드의 인덱스는 ___ 이다.",
+      "choices": [
+        "ceil((i - 1)/2)",
+        "floor((i - 1)/2)",
+        "(i - 1)/2",
+        "i/2"
+      ],
+      "answer": 2,
+      "explanation": "높이가 증가할 때마다 해당 높이의 노드들을 저장하는 크기가 두 배씩 증가하는 것을 생각해보면 left와 right child의 인덱스가 각각 (2i + 1)과 (2i + 2)가 됨을 이해할 수 있습니다.\n(2i + 1)과 (2i + 2)가 부모 노드인 i를 가리키려면 1을 뺀 뒤 2로 나눈 것에서 floor 함수로 소수점을 없애면 된다는 것을 알 수 있습니다.",
+      "references": [
+        {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    },
+    {
+      "question": "Binary tree를 array로 구현했다면 height가 3이고 모든 노드가 한 개의 자식만 가지는 트리를 표현했을 때 몇 개의 요소가 빈 값으로 남아있는가?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "모든 노드가 자식을 하나만 가진다면 선형 구조처럼 되어 각 높이 당 노드가 하나만 존재합니다. 따라서 높이 = 노드의 수가 됩니다.\n높이가 3이었으므로 배열의 총 길이는 2^3 - 1 = 7이기 때문에 노드의 수를 빼주면 정답은 4가 됩니다.",
       "references": [
         {"Array for Binary tree": "https://en.wikipedia.org/wiki/Binary_tree#Arrays"},
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
