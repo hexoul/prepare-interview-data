@@ -159,6 +159,66 @@
         {"[한] DFS": "https://ko.wikipedia.org/wiki/%EA%B9%8A%EC%9D%B4_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89"},
         {"DFS": "https://en.wikipedia.org/wiki/Depth-first_search"}
       ]
+    },
+    {
+      "question": "왼쪽 subtree -> 현재 노드 -> 오른쪽 subtree 순으로 순회하는 방식은?",
+      "choices": [
+        "전위 순회 (Pre-order)",
+        "중위 순회 (In-order)",
+        "역순 중위 순회 (Reverse in-order)",
+        "후위 순회 (Post-order)"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
+    },
+    {
+      "question": "왼쪽 subtree -> 오른쪽 subtree -> 현재 노드 순으로 순회하는 방식은?",
+      "choices": [
+        "전위 순회 (Pre-order)",
+        "중위 순회 (In-order)",
+        "역순 중위 순회 (Reverse in-order)",
+        "후위 순회 (Post-order)"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
+    },
+    {
+      "question": "이진 트리의 크기를 재귀적으로 구하기위한 구현으로 알맞은 것은? 함수의 이름은 'size'이고 인자가 null로 주어지면 0을 반환한다고 가정한다.",
+      "choices": [
+        "size(node->left) + size(node->right)",
+        "size(node->left) + size(node->right) + 1",
+        "size(node->left) + size(node) + size(node->right)",
+        "size(node->left) + size(node) + size(node->right) + 1"
+      ],
+      "answer": 2,
+      "explanation": "좌우의 subtree 이외에 자신을 카운트해야 하기 때문에 '+1'을 해주어야 합니다. 보기 3과 4는 'size(node)' 때문에 자신을 무한하게 불러 stack overflow가 발생합니다.",
+      "references": [
+        {"[한] Tree": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EA%B5%AC%EC%A1%B0"},
+        {"Tree": "https://en.wikipedia.org/wiki/Tree_(data_structure)"}
+      ]
+    },
+    {
+      "question": "트리를 거울에 비춘 것처럼 좌우대칭으로 만들기 위한 작업으로 알맞은 것은?",
+      "choices": [
+        "Pre-order 순회하며 stack에 노드의 데이터를 push한 후 한번 더 순회하며 pop된 데이터로 바꾼다.",
+        "In-order 순회하며 stack에 노드의 데이터를 push한 후 한번 더 순회하며 pop된 데이터로 바꾼다.",
+        "재귀적으로 left와 right child의 노드의 데이터를 스왑한다.",
+        "재귀적으로 left와 right child의 포인터를 스왑한다."
+      ],
+      "answer": 4,
+      "explanation": "거울에 비춘 것처럼 좌우대칭으로 만들기 위해서는 노드가 가진 데이터 뿐만 아니라 트리의 구조가 바뀌어야합니다. 재귀적으로 subtree 단위의 교환을 반복해주면 됩니다.",
+      "references": [
+        {"[한] Tree": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EA%B5%AC%EC%A1%B0"},
+        {"Tree": "https://en.wikipedia.org/wiki/Tree_(data_structure)"}
+      ]
     }
   ]
 }
