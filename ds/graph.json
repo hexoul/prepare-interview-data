@@ -125,6 +125,40 @@
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
         {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
       ]
+    },
+    {
+      "question": "트리 순회 (tree traversal) 방법이 아닌 것은?",
+      "choices": [
+        "전위 순회 (Pre-order)",
+        "중위 순회 (In-order)",
+        "후위 순회 (Post-order)",
+        "무작위 순회 (Random order)"
+      ],
+      "answer": 4,
+      "explanation": "트리 자료구조에서 무작위는 적합하지 않습니다.",
+      "references": [
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
+    },
+    {
+      "question": "다음 트리 순회 방법들 중 특성이 다른 하나는?",
+      "choices": [
+        "Pre-order",
+        "In-order",
+        "Post-order",
+        "Level order"
+      ],
+      "answer": 4,
+      "explanation": "Level order는 너비 우선 탐색 (Breadth-First Search, BFS) 인 반면 나머지는 깊이 우선 탐색 (Depth-First Search, DFS) 입니다.",
+      "references": [
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"},
+        {"[한] BFS": "https://ko.wikipedia.org/wiki/%EB%84%88%EB%B9%84_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89"},
+        {"BFS": "https://en.wikipedia.org/wiki/Breadth-first_search"},
+        {"[한] DFS": "https://ko.wikipedia.org/wiki/%EA%B9%8A%EC%9D%B4_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89"},
+        {"DFS": "https://en.wikipedia.org/wiki/Depth-first_search"}
+      ]
     }
   ]
 }
