@@ -95,6 +95,36 @@
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
         {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
       ]
+    },
+    {
+      "question": "Sparse binary tree에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "배열로 표현하면 메모리에 비효율적이다.",
+        "Linked list로 표현하면 메모리에 비효율적이다.",
+        "Complete binary tree는 sparse binary tree에 속한다.",
+        "Dense binary tree에 비해 노드 수가 많다."
+      ],
+      "answer": 1,
+      "explanation": "Sparse binary tree란 complete binary tree 대비 노드 수가 적은, 비어있는 부분이 많은 트리입니다. 따라서 배열로 표현할 경우에는 빈 공간이 많이 생겨 메모리에 비효율적입니다. Linked list로는 실제로 노드가 있을 때에만 연결되므로 배열보다 저장 공간을 적게 씁니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    },
+    {
+      "question": "Binary tree를 linked list로 표현할 때의 장점이 아닌 것은?",
+      "choices": [
+        "저장 공간에 낭비가 없다.",
+        "삽입 구현이 쉽다.",
+        "삭제 구현이 쉽다.",
+        "Random access가 가능하다."
+      ],
+      "answer": 3,
+      "explanation": "Linked list의 경우 임의의 노드에 도달하기 위해 root부터 탐색해야 합니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
     }
   ]
 }
