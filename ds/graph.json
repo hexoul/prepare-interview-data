@@ -119,7 +119,7 @@
         "삭제 구현이 쉽다.",
         "Random access가 가능하다."
       ],
-      "answer": 3,
+      "answer": 4,
       "explanation": "Linked list의 경우 임의의 노드에 도달하기 위해 root부터 탐색해야 합니다.",
       "references": [
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
