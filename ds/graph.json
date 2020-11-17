@@ -219,6 +219,40 @@
         {"[한] Tree": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EA%B5%AC%EC%A1%B0"},
         {"Tree": "https://en.wikipedia.org/wiki/Tree_(data_structure)"}
       ]
+    },
+    {
+      "question": "노드 수가 n인 이진 트리의 검색 시간 복잡도는 ___이다.",
+      "choices": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "answer": 3,
+      "explanation": "이진 트리는 정렬되어 있지 않기 때문에 원하는 노드를 찾기 위해 트리를 전부 탐색해야 합니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"},
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
+    },
+    {
+      "question": "노드 수가 n인 이진 탐색 트리 (Binary Search Tree, BST) 의 검색 시간 복잡도는 ___이다.",
+      "choices": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "answer": 2,
+      "explanation": "이진 트리와 달리 BST는 정렬되어 있기 때문에 이진 검색 알고리즘 (binary search algorithm) 이 적용가능합니다.",
+      "references": [
+        {"[한] BST": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%83%90%EC%83%89_%ED%8A%B8%EB%A6%AC"},
+        {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"},
+        {"[한] Binary search algorithm": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%EA%B2%80%EC%83%89_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98"},
+        {"Binary search algorithm": "https://en.wikipedia.org/wiki/Binary_search_algorithm"}
+      ]
     }
   ]
 }
