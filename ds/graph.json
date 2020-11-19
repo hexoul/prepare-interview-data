@@ -306,6 +306,36 @@
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
         {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
+    },
+    {
+      "question": "완전 이진 트리 (complete binary tree) 에 대한 설명으로 올바른 것은?",
+      "choices": [
+        "루트 노드만 있는 트리는 완전 이진 트리이다.",
+        "높이가 3이고 노드 수가 6인 이진 트리는 완전 이진 트리이다.",
+        "높이가 3인 트리에서 레벨 2인 노드의 수가 2인 이진 트리는 완전 이진 트리이다.",
+        "높이가 4인 트리에서 레벨 3인 노드의 수가 3인 이진 트리는 완전 이진 트리이다."
+      ],
+      "answer": 1,
+      "explanation": "완전 이진 트리란 마지막 레벨 이외에는 모든 노드가 차있고 마지막 레벨에서는 왼쪽부터 차있는 트리를 말합니다. 보기 2번과 3번은 모두 레벨 2까지는 완전 이진 트리의 조건을 만족하지만 마지막 레벨에서 노드들이 어떻게 배치되어 있는지 알 수 없기 때문에 단정지을 수 없습니다. 4번의 경우 레벨 3인 노드가 차있지 않기 때문에 마지막 레벨은 고려할 것도 없이 완전 이진 트리가 아닙니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
+    },
+    {
+      "question": "포화 이진 트리 (full tree) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "완전 이진 트리이기도 하다.",
+        "Leaf 노드를 제외하고 모든 노드는 자식 노드를 두 개씩 가진다.",
+        "높이가 같다면 완전 이진 트리보다 노드 수가 항상 같거나 많다.",
+        "높이가 3인 포화 이진 트리의 노드 수는 7보다 같거나 작다."
+      ],
+      "answer": 4,
+      "explanation": "포화 이진 트리는 마지막 레벨의 노드도 모두 차있어야 하므로 높이가 3이라면 노드 수가 7인 트리만 포화 이진 트리입니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
+      ]
     }
   ]
 }
