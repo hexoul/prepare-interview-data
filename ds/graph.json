@@ -234,7 +234,9 @@
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
         {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"},
         {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
-        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
     },
     {
@@ -251,11 +253,13 @@
         {"[한] BST": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%83%90%EC%83%89_%ED%8A%B8%EB%A6%AC"},
         {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"},
         {"[한] Binary search algorithm": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%EA%B2%80%EC%83%89_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98"},
-        {"Binary search algorithm": "https://en.wikipedia.org/wiki/Binary_search_algorithm"}
+        {"Binary search algorithm": "https://en.wikipedia.org/wiki/Binary_search_algorithm"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
     },
     {
-      "question": "BST에서 삽입의 평균 시간 복잡도는 ___이다.",
+      "question": "노드 수가 n인 BST에서 삽입의 평균 시간 복잡도는 ___이다.",
       "choices": [
         "O(1)",
         "O(log n)",
@@ -270,7 +274,7 @@
       ]
     },
     {
-      "question": "BST에서 삭제의 평균 시간 복잡도는 ___이다.",
+      "question": "노드 수가 n인 BST에서 삭제의 평균 시간 복잡도는 ___이다.",
       "choices": [
         "O(1)",
         "O(log n)",
@@ -281,7 +285,26 @@
       "explanation": "우선 삭제될 노드를 찾기 위해 검색해야해서 시작은 삽입과 비슷하지만 마지막 노드까지는 가지 않을 수도 있다는 점이 삽입과 다릅니다. 삭제의 경우 삭제 후에도 in-order 순서가 유지되어야 해서 경우에 따라 처리 방법이 달라집니다.\n자식 노드가 없으면 단순히 삭제하고 끝냅니다. 만약 자식 노드가 1개였으면 자식 노드를 자신의 위치로 바꾼 뒤 삭제합니다. 자식 노드가 2개였다면 우측 subtree에서 가장 작은 값을 가진 노드와 교체한 뒤 삭제합니다.\n\n자식 노드가 2개인 노드를 지울 때 지울 노드와 대체할 노드를 찾기 위해 결과적으로 마지막 노드까지 탐색하므로 O(log n)이라 볼 수 있고 최악의 경우가 아닌 이상 삭제 자체는 constant time에 끝날 것이기 때문에 O(log n) + O(1) = O(log n) 이라고 볼 수 있습니다. 참고로 자식 노드가 2개일 때 오른쪽 subtree에서만 삭제하면 불균형 (unbalanced) 가 심해질 수 있으므로 번갈아 삭제하는 등의 기법들이 있습니다.",
       "references": [
         {"[한] BST": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%83%90%EC%83%89_%ED%8A%B8%EB%A6%AC"},
-        {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"}
+        {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"},
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
+      ]
+    },
+    {
+      "question": "노드 수가 n인 트리에서 non-recursive (iterative) in-order traversal의 worst case 공간 복잡도는?",
+      "choices": [
+        "O(log n)",
+        "O(n)",
+        "O(n^2)",
+        "O(2^n)"
+      ],
+      "answer": 2,
+      "explanation": "재귀가 아닐 경우 stack을 사용해서 탐색을 구현하게 됩니다. 이 때 leaf 노드를 제외한 모든 노드가 좌측에 자식을 가진다면, 좌측의 처리를 끝낼 때까지 pop을 하지 못하므로 stack이 노드 수만큼 쌓입니다.",
+      "references": [
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+        {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
+        {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
     }
   ]
