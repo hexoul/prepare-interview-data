@@ -302,7 +302,7 @@
       "explanation": "재귀가 아닐 경우 stack을 사용해서 탐색을 구현하게 됩니다. 이 때 leaf 노드를 제외한 모든 노드가 좌측에 자식을 가진다면, 좌측의 처리를 끝낼 때까지 pop을 하지 못하므로 stack이 노드 수만큼 쌓입니다.",
       "references": [
         {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
-        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"},
         {"[한] Time complexity": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84_%EB%B3%B5%EC%9E%A1%EB%8F%84"},
         {"Time complexity": "https://en.wikipedia.org/wiki/Time_complexity"}
       ]
