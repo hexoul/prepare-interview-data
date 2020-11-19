@@ -226,9 +226,9 @@
       "answer": 4,
       "explanation": "다중 프로그래밍의 정도란 한 프로세서가 얼마나 많은 프로그램을 수행할 수 있는지로 볼 수 있습니다. 우선 단위 시간 내에 실행된 수는 적절하지 않습니다. 왜냐하면 다중 프로그래밍의 정도가 높더라도 실제 실행된 프로세스의 수는 적을 수도 있기 때문입니다. 예를 들어 대부분의 프로세스가 I/O 응답을 기다리고 있었다면 동시에 실행되는 프로세스의 수는 적을 것입니다.\n프로세스가 메모리에 적재되었다는 것은 다중 프로그래밍의 대상이 될 수 있다는 얘기이므로 4가 정답입니다. Ready queue 또는 waiting queue 둘 중 하나가 아닌 전부 고려되어야 합니다.",
       "references": [
+        {"The degree of multiprogramming": "https://owd.tcnj.edu/~coburn/os"},
         {"[한] Multiprogramming": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EC%A4%91_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"},
-        {"Multiprogramming 1": "https://en.wikipedia.org/wiki/Computer_multitasking#Multiprogramming"},
-        {"Multiprogramming 2": "https://owd.tcnj.edu/~coburn/os"}
+        {"Multiprogramming": "https://en.wikipedia.org/wiki/Computer_multitasking#Multiprogramming"}
       ]
     },
     {
