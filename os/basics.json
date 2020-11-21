@@ -28,7 +28,7 @@
       "references": [{"System call": "https://en.wikipedia.org/wiki/System_call"}]
     },
     {
-      "question": "다음 중 틀린 설명은?",
+      "question": "커널 (Kernel) 에 대한 설명으로 틀린 것은?",
       "choices": [
         "Kernel은 운영체제의 핵심을 구성하는 프로그램이다.",
         "Kernel은 부팅하는 동안 메모리를 로드하는 운영체제의 첫 부분이다.",
@@ -36,7 +36,7 @@
         "Kernel은 컴퓨터의 전체 세션동안 메모리에 남아있다."
       ],
       "answer": 3,
-      "explanation": "Kernel은 운영체제의 핵심 부분으로 운영체제에 다양한 서비스를 지원하기위해 상호작용이 되어야하므로 읽어들일 수 있어야 합니다.",
+      "explanation": "커널은 운영체제의 핵심 부분으로 운영체제에 다양한 서비스를 지원하기위해 상호작용이 되어야하므로 지속적으로 읽어들일 수 있어야 합니다. 다만 커널은 강력한 권한을 가지기 때문에 보안을 위해 응용 프로그램이 접근할 수 없는 메모리 영역에서 보호됩니다.",
       "references": [
         {"[한] Kernel": "https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Kernel": "https://en.wikipedia.org/wiki/Kernel_(operating_system)"}
