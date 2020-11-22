@@ -16,7 +16,7 @@
       ]
     },
     {
-      "question": "OSI 모델 계층 구조에서 상위 계층에서 하위 계층으로 갈 때 헤더는 ___",
+      "question": "OSI 7계층에서 상위 계층에서 하위 계층으로 갈 때 헤더는 ___",
       "choices": [
         "추가된다",
         "제거된다",
@@ -25,7 +25,10 @@
       ],
       "answer": 1,
       "explanation": "상위 계층에서 하위 계층으로 가는 건 전송의 경우입니다. 전송 시 각 레이어는 이전 레이어에서 받은 헤더에 자신의 헤더를 추가합니다. 예를 들어, Layer 3인 Network layer에서는 Layer 4 Transport layer의 Protocol Data Unit (PDU)에 IP header를 덧붙입니다.",
-      "references": [{"OSI Model": "https://en.wikipedia.org/wiki/OSI_model"}]
+      "references": [
+        {"[한] OSI Model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
+        {"OSI Model": "https://en.wikipedia.org/wiki/OSI_model"}
+      ]
     },
     {
       "question": "키보드와 컴퓨터 사이의 통신은 ___ 전송을 이용한다.",
