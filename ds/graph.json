@@ -370,6 +370,36 @@
         {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
         {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
       ]
+    },
+    {
+      "question": "중복을 허용하지 않는 이진 탐색 트리 (BST) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "왼쪽 자식은 부모보다 값이 작거다.",
+        "오른쪽 자식은 부모보다 값이 크다.",
+        "모든 subtree도 BST의 특성을 따른다.",
+        "중위 순회 (in-order traversal) 결과는 내림차순이다."
+      ],
+      "answer": 4,
+      "explanation": "중위 순회는 왼쪽 subtree부터 탐색하므로 BST에서는 작은 값부터 탐색하게 됩니다. 따라서 오름차순이 됩니다.",
+      "references": [
+        {"[한] BST": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%83%90%EC%83%89_%ED%8A%B8%EB%A6%AC"},
+        {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"}
+      ]
+    },
+    {
+      "question": "이진 탐색 트리 (BST) 노드의 값들을 내림차순으로 얻기 위해서는 ___를 사용하면 된다.",
+      "choices": [
+        "전위 순회 (Pre-order)",
+        "중위 순회 (In-order)",
+        "역순 중위 순회 (Reverse in-order)",
+        "후위 순회 (Post-order)"
+      ],
+      "answer": 3,
+      "explanation": "오름차순을 반환하는 중위 순회의 반대로 순회하면 내림차순이 됩니다. 따라서 역순 중위 순회가 적절합니다.",
+      "references": [
+        {"[한] BST": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%83%90%EC%83%89_%ED%8A%B8%EB%A6%AC"},
+        {"BST": "https://en.wikipedia.org/wiki/Binary_search_tree"}
+      ]
     }
   ]
 }
