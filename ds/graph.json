@@ -336,6 +336,40 @@
         {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
         {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"}
       ]
+    },
+    {
+      "question": "Complete binary tree를 전위 순회한 결과가 A, C, B라면 후위 순회의 결과는 ___가 된다.",
+      "choices": [
+        "A, B, C",
+        "A, C, B",
+        "B, A, C",
+        "C, B, A"
+      ],
+      "answer": 4,
+      "explanation": "Complete binary tree에서 노드가 세 개라면 높이가 2라는 것을 알 수 있습니다. 전위 순회는 현재 노드, 왼쪽 subtree, 오른쪽 subtree 순으로 검색하므로 A가 루트 노드이고 C가 왼쪽 자식 노드, B가 오른쪽 자식 노드임을 알 수 있습니다.\n후위 순회는 왼쪽 subtree, 오른쪽 subtree, 현재 노드 순으로 검색하므로 정답은 C, B, A가 됩니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"},
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
+    },
+    {
+      "question": "Complete binary tree를 후위 순회한 결과가 C, B, A, D, E, F라면 중위 순회의 결과는 ___가 된다.",
+      "choices": [
+        "F, A, C, B, E, D",
+        "C, A, B, F, D, E",
+        "C, B, A, D, E, F",
+        "E, F, D, A, B, C"
+      ],
+      "answer": 2,
+      "explanation": "Complete binary tree에서 노드가 여섯 개라면 포화 이진 트리에서 노드가 하나빠진 높이 3의 트리라는 것을 알 수 있습니다. 이 경우 구조를 그려보면 왼쪽 subtree의 노드 수가 3, 오른쪽 subtree의 노드 수는 2가 됩니다.\n후위 순회는 왼쪽 subtree, 오른쪽 subtree, 현재 노드 순으로 검색하므로 왼쪽에서부터 세 개인 C, B, A가 왼쪽 subtree, 다음의 두 개인 D, E가 오른쪽 subtree, F가 루트 노드에 해당합니다. 이 과정을 반복해서 트리의 각 노드가 가지는 값을 정확히 알고 중위 순회의 결과를 구할 수 있습니다.",
+      "references": [
+        {"[한] Binary tree": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%ED%8A%B8%EB%A6%AC"},
+        {"Binary tree": "https://en.wikipedia.org/wiki/Binary_tree"},
+        {"[한] Tree traversal": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C"},
+        {"Tree traversal": "https://en.wikipedia.org/wiki/Tree_traversal"}
+      ]
     }
   ]
 }
