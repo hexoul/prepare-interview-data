@@ -153,7 +153,7 @@
       ]
     },
     {
-      "question": "Trap 이란?",
+      "question": "Trap이란?",
       "choices": [
         "에러에 의해 하드웨어로부터 발생된 인터럽트",
         "에러에 의해 소프트웨어로부터 발생된 인터럽트",
@@ -164,6 +164,7 @@
       "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 예로 breakpoint, 0으로 나누기 (division by zero) 또는 유효하지않은 메모리 접근이 있습니다.",
       "references": [
         {"Software interrupt": "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"},
+        {"[한] Trap": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Trap": "https://en.wikipedia.org/wiki/Trap_(computing)"},
         {"Exception": "https://en.wikipedia.org/wiki/Exception_handling"}
       ]
@@ -179,6 +180,7 @@
       "answer": 3,
       "explanation": "Interrupt가 발생했을 때 main routine에서 벗어나 interrupt의 종류에 따른 적절한 처리를 하고 복귀하기에 interrupt service routine이라 합니다.",
       "references": [
+        {"[한] ISR": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8_%ED%95%B8%EB%93%A4%EB%9F%AC"},
         {"ISR": "https://en.wikipedia.org/wiki/Interrupt_handler"}
       ]
     },
@@ -193,6 +195,7 @@
       "answer": 1,
       "explanation": "Interrupt vector란 인터럽트가 발생했을 때 수행되어야 할 interrupt handler 주소로 interrupt vector table에 모여 저장 및 관리됩니다.",
       "references": [
+        {"[한] Interrupt vector table": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8_%EB%B2%A1%ED%84%B0_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Interrupt vector table": "https://en.wikipedia.org/wiki/Interrupt_vector_table"}
       ]
     },
