@@ -124,7 +124,7 @@
       ]
     },
     {
-      "question": "컴퓨터가 전원을 공급받은 후 bootloader에 의해 실행되는 프로그램을 ___라 한다.",
+      "question": "컴퓨터가 전원을 공급받은 후 부트로더 (boot loader) 에 의해 실행되는 프로그램을 ___라 한다.",
       "choices": [
         "Boot program",
         "Setup program",
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "question": "Trap 또는 exception에 대한 설명은?",
+      "question": "Trap 이란?",
       "choices": [
         "에러에 의해 하드웨어로부터 발생된 인터럽트",
         "에러에 의해 소프트웨어로부터 발생된 인터럽트",
@@ -161,7 +161,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 2,
-      "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 예로 breakpoint, 0으로 나누기 (division by zero) 또는 유효하지않은 메모리에의 접근이 있습니다.",
+      "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 예로 breakpoint, 0으로 나누기 (division by zero) 또는 유효하지않은 메모리 접근이 있습니다.",
       "references": [
         {"Software interrupt": "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"},
         {"Trap": "https://en.wikipedia.org/wiki/Trap_(computing)"},
