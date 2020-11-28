@@ -152,7 +152,7 @@
         "Chandy–Misra–Haas algorithm"
       ],
       "answer": 3,
-      "explanation": "Dijkstra's algorithm은 최단 경로를 찾는 알고리즘입니다. Resource hierarchy solution도 dijkstra에 의해 제안되었고 자원 간 경로를 기반으로 해결한다는 점에서 유사하게 보일 수 있으나, 최단 경로만으로는 이 문제를 해결할 수 없습니다.",
+      "explanation": "Dijkstra's algorithm은 최단 경로를 찾는 알고리즘입니다.\nResource hierarchy solution도 Dijkstra에 의해 제안되었고 자원 간 경로를 기반으로 해결한다는 점에서 유사하게 보일 수 있으나, 최단 경로를 찾는 해법만으로는 환형 대기를 회피할 수 없습니다.",
       "references": [
         {"[한] Dining philosophers problem": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EC%82%AC%ED%95%98%EB%8A%94_%EC%B2%A0%ED%95%99%EC%9E%90%EB%93%A4_%EB%AC%B8%EC%A0%9C"},
         {"Dining philosophers problem": "https://en.wikipedia.org/wiki/Dining_philosophers_problem"},
@@ -175,6 +175,37 @@
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
+      ]
+    },
+    {
+      "question": "___하면 환형 대기 (circular wait) 를 방지할 수 있다.",
+      "choices": [
+        "자원 유형에 따른 사용 순서를 정의",
+        "Thread를 사용",
+        "Pipe를 사용",
+        "Socket을 사용"
+      ],
+      "answer": 1,
+      "explanation": "자원 유형에 따른 사용 순서의 정의는 resource hierarchy solution에 해당하는 설명입니다. 이는 교착 상태의 조건 중 circular wait을 방지하는데 쓰일 수 있습니다.",
+      "references": [
+        {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
+        {"Deadlock": "https://en.wikipedia.org/wiki/Deadlock"}
+      ]
+    },
+    {
+      "question": "다음 중 교착 상태 회피 알고리즘은?",
+      "choices": [
+        "Round-robin algorithm",
+        "Banker's algorithm",
+        "Elevator algorithm",
+        "Karn's algorithm"
+      ],
+      "answer": 2,
+      "explanation": "은행원 알고리즘 (banker's algorithm) 은 Dijkstra에 의해 개발된 교착 상태 회피 알고리즘 (deadlock avoidance algorithm) 입니다. 이 알고리즘은 운영체제가 교착 상태에 빠지지 않는 안전한 상태를 유지하면서 유한한 자원을 할당하도록 개발되었습니다.",
+      "references": [
+        {"Banker's algorithm": "https://en.wikipedia.org/wiki/Banker%27s_algorithm"},
+        {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
+        {"Deadlock": "https://en.wikipedia.org/wiki/Deadlock"}
       ]
     }
   ]
