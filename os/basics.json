@@ -264,7 +264,7 @@
       ]
     },
     {
-      "question": "Interrupt handler (ISR)에 의해 수행되는 동작은?",
+      "question": "인터럽트 핸들러가 수행하는 동작은?",
       "choices": [
         "현재의 컨텍스트를 저장한다.",
         "Interrupt vector에 저장된 코드를 읽고 실행한다.",
