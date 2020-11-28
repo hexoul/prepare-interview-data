@@ -108,7 +108,7 @@
       ]
     },
     {
-      "question": "다음 중 Kernel mode (Kernel space)의 비중이 제일 큰 kernel은?",
+      "question": "다음 중 커널 모드의 비중이 제일 큰 커널은?",
       "choices": [
         "Microkernel",
         "Monolithic kernel",
@@ -116,7 +116,7 @@
         "Exokernel"
       ],
       "answer": 2,
-      "explanation": "\nKernel space 크기 : Monolithic kernel > Hybrid kernel > Microkernel > Exokernel",
+      "explanation": "\n커널 모드 비중 : Monolithic kernel > Hybrid kernel > Microkernel > Exokernel\n\n커널 모드란 커널, 커널 익스텐션 또는 디바이스 드라이버 등 시스템 레벨 소프트웨어가 권한을 받아 제약없이 코드를 실행할 수 있도록 예약된 공간을 뜻합니다. 커널 모드의 비중이 크다는 것은 커널이 많은 기능을 제공한다고 해석할 수 있습니다. 보기 중에서는 모놀리식 커널 (monolithic kernel) 의 커널 비중이 제일 높습니다. 단일형 커널이라 하여 운영체제의 거의 모든 기능이 단일 메모리 공간에서 실행됩니다.\n참고로 커널 모드는 커널 공간 (kernel space) 라고도 합니다.",
       "references": [
         {"Microkernel": "https://en.wikipedia.org/wiki/Microkernel"},
         {"Monolithic kernel": "https://en.wikipedia.org/wiki/Monolithic_kernel"},
