@@ -59,7 +59,7 @@
         "사용자 정의 명령을 해석하고 실행하기 위함",
         "API와 응용프로그램 간의 인터페이스를 제공하기 위함",
         "운영체제에서 파일들을 처리하기 위함",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
       "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등",
@@ -68,12 +68,12 @@
       ]
     },
     {
-      "question": "운영체제의 자원은 ___을 통해 관리되어진다.",
+      "question": "운영체제의 자원은 ___으로 관리되어진다.",
       "choices": [
         "시분할 (Time division) multiplexing",
         "공간 분할 (Space division) multiplexing",
         "시공간 분할 (Time and space division) multiplexing",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
       "explanation": "\n- 시분할 multiplexing 예시 : single-core processor 상에서의 multiprogramming (CPU scheduling).\n- 공간 분할 multiplexing 예시 : memory 또는 disk. 하드웨어 자원을 여러 프로세스 또는 유저가 사용할 수 있도록 공간적으로 분리하는 것을 말합니다.",
