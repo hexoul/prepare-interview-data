@@ -264,15 +264,15 @@
       ]
     },
     {
-      "question": "인터럽트 핸들러가 수행하는 동작은?",
+      "question": "ISR 중 수행되는 동작은?",
       "choices": [
         "현재의 컨텍스트를 저장한다.",
-        "Interrupt vector에 저장된 코드를 읽고 실행한다.",
-        "Handling이 끝나면 인터럽트가 발생하기 전의 컨텍스트로 되돌린다.",
+        "인터럽트 벡터가 가리키는 코드를 읽고 실행한다.",
+        "처리가 끝나면 인터럽트가 발생하기 전의 컨텍스트로 되돌린다.",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "ISR은 Interrupt Service Routine으로 인터럽트가 발생했을 때 실행되는 일련의 과정입니다. 현재의 컨텍스트를 저장하고 발생한 인터럽트에 해당하는 인터럽트 벡터를 찾아 코드를 실행한 뒤 저장해두었던 컨텍스트를 복구시킵니다. 컨텍스트는 지역 변수 및 SP (stack pointer) 등을 포함합니다.",
       "references": [
         {"ISR": "https://en.wikipedia.org/wiki/Interrupt_handler"},
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch#Interrupt_handling"}
