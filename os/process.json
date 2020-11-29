@@ -21,7 +21,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다. 저장하는 구조체의 이름을 Process Control Block (PCB) 라고 합니다. PCB에는 프로세스 상태, 프로그램 카운터, 범용 레지스터, 프로세스에서 연 파일들에 대한 정보, 시그널 핸들러 등을 포함합니다.",
+      "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다. 저장하는 구조체의 이름을 Process Control Block (PCB) 라고 합니다. PCB에는 프로세스 상태, 프로그램 카운터, 범용 레지스터, 프로세스에서 연 파일들에 대한 정보 그리고 시그널 핸들러 등을 포함합니다.",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
