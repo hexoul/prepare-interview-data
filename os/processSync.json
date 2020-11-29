@@ -35,10 +35,10 @@
     {
       "question": "세마포어의 두 종류는?",
       "choices": [
-        "mutex & counting",
-        "binary & counting",
-        "mutex & binary ",
-        "spin & binary"
+        "mutex와 counting",
+        "binary와 counting",
+        "mutex와 binary ",
+        "spin과 binary"
       ],
       "answer": 2,
       "explanation": "세마포어가 0 또는 1만 가리키는 것을 binary semaphore라 하고 이외에는 counting semaphore라 합니다.",
@@ -118,7 +118,7 @@
       "choices": [
         "Reader",
         "Writer",
-        "Reader and writer",
+        "Reader와 writer",
         "Process"
       ],
       "answer": 3,
