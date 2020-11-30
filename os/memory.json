@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "운영체제란?",
+      "choices": [
+        "하드웨어 자원들을 관리하는 프로그램들의 집합",
+        "응용프로그램들을 위한 System service provider",
+        "하드웨어와 응용프로그램들을 이어주는 연결부",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 4,
+      "explanation": "-",
+      "references": [
+        {"[한] OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
+        {"OS": "https://en.wikipedia.org/wiki/Operating_system"}
+      ]
+    }
+  ]
+}
