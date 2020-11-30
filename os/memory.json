@@ -1,18 +1,39 @@
 {
   "questions": [
     {
-      "question": "운영체제란?",
+      "question": "운영체제에서 각 프로세스에 메인 메모리보다 큰 크기의 공간을 추상적으로 제공하기위해 어떤 기법을 사용한다. 여기서 추상적으로 제공된 공간에서 쓰이는 주소를 ___라 한다.",
       "choices": [
-        "하드웨어 자원들을 관리하는 프로그램들의 집합",
-        "응용프로그램들을 위한 System service provider",
-        "하드웨어와 응용프로그램들을 이어주는 연결부",
-        "위에 언급된 모두 해당"
+        "실주소 (Real address)",
+        "물리 주소 (Physical address)",
+        "가상 주소 (Virtual address)",
+        "이진 주소 (Binary address)"
       ],
-      "answer": 4,
-      "explanation": "-",
+      "answer": 3,
+      "explanation": "가상 메모리는 실제 물리 공간보다 큰 추상화된 공간을 각 프로세스에 제공할 수 있습니다. 여기서 각 프로세스는 물리 주소가 아니라 가상 주소를 통해서 데이터를 읽고 쓸 수 있습니다.\n물리 주소는 실주소 또는 이진주소라고도 하며, 가상 주소는 논리 주소 (logical address) 라고도 합니다.",
       "references": [
-        {"[한] OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
-        {"OS": "https://en.wikipedia.org/wiki/Operating_system"}
+        {"[한] Virtual address": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EC%A3%BC%EC%86%8C_%EA%B3%B5%EA%B0%84"},
+        {"Virtual address": "https://en.wikipedia.org/wiki/Virtual_address_space"},
+        {"[한] Physical address": "https://ko.wikipedia.org/wiki/%EB%AC%BC%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
+        {"Physical address": "https://en.wikipedia.org/wiki/Physical_address"}
+      ]
+    },
+    {
+      "question": "___는 가상 주소를 물리 주소로 변환하는 하드웨어 장치이다.",
+      "choices": [
+        "Virtual-physical mapper",
+        "Memory management unit",
+        "Memory mapping unit",
+        "Memory processing unit"
+      ],
+      "answer": 2,
+      "explanation": "MMU (Memory Management Unit) 은 가상 주소를 물리 주소로 변환하는 것 외에도 메모리 보호나 캐시 제어 등 다양한 역할을 가지고 있습니다.",
+      "references": [
+        {"[한] MMU": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B4%80%EB%A6%AC_%EC%9E%A5%EC%B9%98"},
+        {"MMU": "https://en.wikipedia.org/wiki/Memory_management_unit"},
+        {"[한] Virtual address": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EC%A3%BC%EC%86%8C_%EA%B3%B5%EA%B0%84"},
+        {"Virtual address": "https://en.wikipedia.org/wiki/Virtual_address_space"},
+        {"[한] Physical address": "https://ko.wikipedia.org/wiki/%EB%AC%BC%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
+        {"Physical address": "https://en.wikipedia.org/wiki/Physical_address"}
       ]
     }
   ]
