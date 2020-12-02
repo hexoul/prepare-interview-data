@@ -10,7 +10,9 @@
       ],
       "answer": 2,
       "explanation": "한 개의 프로세서를 뜻하는 Uniprocessor가 정답입니다. Uniprogramming system은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 multiprogramming system이라 합니다.",
-      "references": [{"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}]
+      "references": [
+        {"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}
+      ]
     },
     {
       "question": "운영체제에서 각 프로세스는 자신의 ___를 가진다.",
@@ -66,7 +68,10 @@
       ],
       "answer": 1,
       "explanation": "2는 Blocked에 대한 설명이며 3은 Running에 대한 설명입니다.",
-      "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
+      "references": [
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
+        {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "Inter-process communication 이란?",
@@ -78,7 +83,10 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"IPC" : "https://en.wikipedia.org/wiki/Inter-process_communication"}]
+      "references": [
+        {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
+        {"IPC" : "https://en.wikipedia.org/wiki/Inter-process_communication"}
+      ]
     },
     {
       "question": "프로세스의 교착 상태 (deadlock) 조건에 해당하지 않는 경우는?",
@@ -105,7 +113,10 @@
       ],
       "answer": 4,
       "explanation": "-",
-      "references": [{"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}]
+      "references": [
+        {"[한] Call stack": "https://ko.wikipedia.org/wiki/%EC%BD%9C_%EC%8A%A4%ED%83%9D"},
+        {"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}
+      ]
     },
     {
       "question": "종료된 자식 프로세스의 정보를 얻어올 수 있는 system call은?",
@@ -133,7 +144,10 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}]
+      "references": [
+        {"[한] Program counter": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%B9%B4%EC%9A%B4%ED%84%B0"},
+        {"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}
+      ]
     },
     {
       "question": "Process Control Block (PCB) 에 포함되지 않는 것은?",
@@ -160,7 +174,9 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Throughput and Capacity": "https://www.weibull.com/hotwire/issue27/relbasics27.htm"}]
+      "references": [
+        {"Throughput and Capacity": "https://www.weibull.com/hotwire/issue27/relbasics27.htm"}
+      ]
     },
     {
       "question": "프로세스의 상태 (state) 는 ___에 의해 정의된다.",
@@ -172,7 +188,10 @@
       ],
       "answer": 4,
       "explanation": "-",
-      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+      "references": [
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
+        {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "다음 중 프로세스의 상태 (state) 가 아닌 것은?",
@@ -185,6 +204,7 @@
       "answer": 2,
       "explanation": "New 또는 created는 생성 직후의 상태입니다. Running은 실행 중인 상태, waiting은 실행되지않고 I/O 등의 인터럽트를 기다리고 있는 상태입니다. 완료 시 terminated 상태가 되며 old 상태는 없습니다.",
       "references": [
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
       ]
     },
@@ -213,7 +233,10 @@
       ],
       "answer": 3,
       "explanation": "-",
-      "references": [{"Process table and PCB": "https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/"}]
+      "references": [
+        {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"Process table and PCB": "https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/"}
+      ]
     },
     {
       "question": "다중 프로그래밍의 정도 (the degree of multiprogramming) 를 판단할 수 있는 요소는?",
@@ -256,7 +279,10 @@
       ],
       "answer": 1,
       "explanation": "단일 프로그램만 수행할 경우 I/O가 있을 때 프로그램 수행을 멈추고 인터럽트를 기다려야해서 대기하는 동안 CPU를 활용하지 못하는 비효율이 발생합니다. 이에 대기하는 시간에 다른 프로그램을 실행시켜 CPU 활용효율을 개선하고자 제안된 것이 multiprogramming 입니다.",
-      "references": [{"Multiprogramming": "https://en.wikipedia.org/wiki/Computer_multitasking"}]
+      "references": [
+        {"[한] Multiprogramming": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EC%A4%91_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"},
+        {"Multiprogramming": "https://en.wikipedia.org/wiki/Computer_multitasking"}
+      ]
     }
   ]
 }
