@@ -67,7 +67,7 @@
         "모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "2는 Blocked에 대한 설명이며 3은 Running에 대한 설명입니다.",
+      "explanation": "(2)는 Blocked에 대한 설명이며 (3)은 Running에 대한 설명입니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
