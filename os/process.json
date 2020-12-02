@@ -106,9 +106,9 @@
     {
       "question": "프로세스의 스택 (Stack) 이 포함하지 않는 것은?",
       "choices": [
-        "함수 매개변수 (Function parameters)",
-        "지역 변수 (Local variables)",
-        "복귀 주소 (Return addresses)",
+        "함수 매개변수 (Function parameter)",
+        "지역 변수 (Local variable)",
+        "복귀 주소 (Return address)",
         "자식 프로세스의 PID"
       ],
       "answer": 4,
