@@ -35,7 +35,7 @@
         "fork",
         "create",
         "new",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
       "explanation": "-",
@@ -62,9 +62,9 @@
       "question": "프로세스의 상태 (state) 중 Ready에 해당하는 것은?",
       "choices": [
         "실행 후 다음 실행을 위해 스케줄 된 상태",
-        "어떤 Task가 완료될 때까지 실행할 수 없는 상태",
+        "어떤 태스크 (task) 가 완료될 때까지 실행할 수 없는 상태",
         "CPU를 사용하고 있는 상태",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
       "explanation": "(2)는 Blocked에 대한 설명이며 (3)은 Running에 대한 설명입니다.",
@@ -74,15 +74,15 @@
       ]
     },
     {
-      "question": "Inter-process communication 이란?",
+      "question": "Inter-process communication (IPC) 란?",
       "choices": [
         "프로세스 내부의 통신",
         "두 프로세스 간의 통신",
         "같은 프로세스에 속하는 두 쓰레드 간의 통신",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "Inter-process라는 표현에서 바로 알 수 있듯이 프로세스 간의 통신을 말합니다. 통신하는 프로세스는 같은 컴퓨터의 메모리에 존재하는 두 프로세스 일수도 있고, 서로 다른 컴퓨터에 존재할 수도 있습니다. 이 경우 네트워크를 통해 통신하게 됩니다.",
       "references": [
         {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC" : "https://en.wikipedia.org/wiki/Inter-process_communication"}
