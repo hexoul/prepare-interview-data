@@ -137,13 +137,13 @@
     {
       "question": "다음에 실행될 명령어의 주소를 저장하고 있는 곳은?",
       "choices": [
-        "CPU registers",
-        "Program counter",
-        "Process stack",
-        "Pipe"
+        "CPU 범용 레지스터",
+        "프로그램 카운터 (Program counter)",
+        "프로세스의 스택",
+        "파이프 (Pipe)"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "프로그램 카운터도 CPU의 레지스터에 속하지만 범용이 아닌 특수 목적 레지스터입니다. 다양한 위치 또는 값을 저장하는 범용 레지스터와 달리 다음에 실행될 명령어의 주소만 저장합니다.",
       "references": [
         {"[한] Program counter": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%B9%B4%EC%9A%B4%ED%84%B0"},
         {"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}
