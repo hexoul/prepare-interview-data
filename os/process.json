@@ -112,7 +112,7 @@
         "자식 프로세스의 PID"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "프로세스의 스택은 콜 스택 (call stack) 이라 하여 실행 중인 컨텍스트를 저장하고 제어하기 위해 쓰입니다. 다양하게 활용되지만 주 용도 중 하나는 함수의 호출과 복귀입니다.\n함수 호출이 완료됐을 때 현재 위치로 돌아오기 위해 복귀 주소를 스택에 넣습니다. 다음으로 매개변수를 요구하는 함수일 경우 전달하기 위해 스택에 넣습니다. 호출된 함수는 필요에 따라 스택을 추가적으로 활용하기도 하는데 지역 변수도 이에 포함됩니다.\n자식 프로세스의 ID (PID) 를 포함하여 자신의 PID 등 프로세스에 대한 정보는 PCB (Process Control Block)에 저장됩니다. PCB는 운영체제가 관리하기에 콜 스택이 아닌 운영체제가 가진 풀 (pool) 에 속합니다.",
       "references": [
         {"[한] Call stack": "https://ko.wikipedia.org/wiki/%EC%BD%9C_%EC%8A%A4%ED%83%9D"},
         {"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}
