@@ -147,7 +147,8 @@
       "references": [
         {"[한] Program counter": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%B9%B4%EC%9A%B4%ED%84%B0"},
         {"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "Process Control Block (PCB) 에 포함되지 않는 것은?",
