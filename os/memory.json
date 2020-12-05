@@ -93,7 +93,7 @@
         "이진 주소 (Binary address)"
       ],
       "answer": 3,
-      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 읽어온 후 다시 접근하게 됩니다.",
+      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소에 해당하는 데이터가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 메인  읽어온 후 다시 접근하게 됩니다.",
       "references": [
         {"[한] Memory address": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
         {"Memory address": "https://en.wikipedia.org/wiki/Memory_address"},
