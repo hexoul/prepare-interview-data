@@ -67,6 +67,38 @@
         {"[한] Locality": "https://ko.wikipedia.org/wiki/%EC%BA%90%EC%8B%9C#%EC%A7%80%EC%97%AD%EC%84%B1"},
         {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference#Spatial_and_temporal_locality_usage"}
       ]
+    },
+    {
+      "question": "___는 저장소 간의 속도 차이때문에 바로 전달되지 못하고 대기해야하는 데이터를 임시로 저장하기 위해 쓰인다.",
+      "choices": [
+        "Disk",
+        "Cache",
+        "Buffer",
+        "RAM"
+      ],
+      "answer": 3,
+      "explanation": "임시로 저장된다는 점에서 캐시와 버퍼는 비슷하게 보일 수 있습니다. 하지만 버퍼는 단순히 전달되기 전의 일시적인 상태에 불과한 데 반해, 캐시는 반복해서 쓰일 수 있다는 점 등 목적이 다양합니다.",
+      "references": [
+        {"[한] Cache": "https://ko.wikipedia.org/wiki/%EC%BA%90%EC%8B%9C"},
+        {"[한] Buffer": "https://ko.wikipedia.org/wiki/%EB%B2%84%ED%8D%BC_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
+        {"Buffer vs Cache": "https://en.wikipedia.org/wiki/Cache_(computing)#Buffer_vs._cache"}
+      ]
+    },
+    {
+      "question": "가상 메모리를 지원하는 운영체제 하에서 CPU가 접근하는 주소체계는 ___이다.",
+      "choices": [
+        "실주소 (Real address)",
+        "물리 주소 (Physical address)",
+        "논리 주소 (Logical address)",
+        "이진 주소 (Binary address)"
+      ],
+      "answer": 3,
+      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 읽어온 후 다시 접근하게 됩니다.",
+      "references": [
+        {"[한] Memory address": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
+        {"Memory address": "https://en.wikipedia.org/wiki/Memory_address"},
+        {"Page fault": "https://en.wikipedia.org/wiki/Page_fault"}
+      ]
     }
   ]
 }
