@@ -153,13 +153,13 @@
     {
       "question": "Process Control Block (PCB) 에 포함되지 않는 것은?",
       "choices": [
-        "Code",
-        "Stack",
-        "Bootstrap program",
-        "Data"
+        "프로세스 상태 (Process state)",
+        "프로그램 카운터 (Program counter)",
+        "스택 (Stack)",
+        "Page table"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "PCB에는 레지스터의 값들도 포함됩니다. 레지스터 중에는 콜 스택을 추적하기위한 stack pointer (SP)도 포함됩니다. 다만 SP는 포인터일 뿐이고 스택 그 자체는 아닙니다.",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
