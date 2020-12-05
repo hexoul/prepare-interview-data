@@ -35,6 +35,38 @@
         {"[한] Physical address": "https://ko.wikipedia.org/wiki/%EB%AC%BC%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
         {"Physical address": "https://en.wikipedia.org/wiki/Physical_address"}
       ]
+    },
+    {
+      "question": "보조기억장치 (Secondary storage) 는 주기억장치보다 ___",
+      "choices": [
+        "용량이 크고 느리다.",
+        "용량이 작고 느리다.",
+        "용량이 크고 빠르다.",
+        "용량이 작고 느리다."
+      ],
+      "answer": 1,
+      "explanation": "일반적으로 메모리 계층에서 저장소는 CPU와 가까울수록 access latency가 짧은 대신에 bit 당 저장 비용이 비쌉니다. 따라서 멀수록 같은 가격에도 많은 용량을 저장할 수 있으므로 보조기억장치는 일반적으로 주기억장치보다 용량이 큽니다.",
+      "references": [
+        {"[한] Memory hierarchy": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B3%84%EC%B8%B5_%EA%B5%AC%EC%A1%B0"},
+        {"Memory hierarchy": "https://en.wikipedia.org/wiki/Memory_hierarchy"}
+      ]
+    },
+    {
+      "question": "메모리 계층 구조는 다음 중 어떤 이점을 취하기 위한 하드웨어 최적화인가?",
+      "choices": [
+        "시간 지역성 (Temporal locality)",
+        "공간 지역성 (Spatial locality)",
+        "시간 및 공간 지역성",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "메모리 계층 구조를 통해 시간 지역성 및 공간 지역성의 이점을 최대화 하기위해 다양한 방식으로 하드웨어가 설계되고 있습니다.",
+      "references": [
+        {"[한] Memory hierarchy": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B3%84%EC%B8%B5_%EA%B5%AC%EC%A1%B0"},
+        {"Memory hierarchy": "https://en.wikipedia.org/wiki/Memory_hierarchy"},
+        {"[한] Locality": "https://ko.wikipedia.org/wiki/%EC%BA%90%EC%8B%9C#%EC%A7%80%EC%97%AD%EC%84%B1"},
+        {"Locality": "https://en.wikipedia.org/wiki/Locality_of_reference#Spatial_and_temporal_locality_usage"}
+      ]
     }
   ]
 }
