@@ -203,7 +203,7 @@
         "Running"
       ],
       "answer": 2,
-      "explanation": "New 또는 created는 생성 직후의 상태입니다. Running은 실행 중인 상태, waiting은 실행되지않고 I/O 등의 인터럽트를 기다리고 있는 상태입니다. 완료 시 terminated 상태가 되며 old 상태는 없습니다.",
+      "explanation": "프로세스의 상태는 생성 (new 또는 created),  실행 (running), 준비 (ready), 대기 (waiting 또는 blocked), 종료 (terminated) 의 다섯 가지가 있습니다. '생성'은 생성 직후의 상태입니다. '실행'은 실행 중인 상태, '준비'는 실행될 수 있는 상태입니다. '대기'는 I/O 등의 인터럽트를 기다려야해서 실행될 수 없는 상태입니다. 프로세스가 수행을 마치거나 강제로 종료되었을 때 '종료' 상태가 됩니다. Old 상태는 없습니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
