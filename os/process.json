@@ -159,7 +159,7 @@
         "페이지 테이블 포인터 (Page table pointer)"
       ],
       "answer": 3,
-      "explanation": "PCB에는 레지스터의 값 들도 포함됩니다. 레지스터 중에는 콜 스택을 추적하기위한 stack pointer (SP)도 포함됩니다. 다만 SP는 포인터일 뿐이고 스택 그 자체는 아닙니다.\n비슷하게 페이지 테이블에 대해서도 포인터를 가지고 있고 페이지 테이블 자체는 운영체제에 의해 커널 공간에서 관리됩니다.",
+      "explanation": "PCB에는 레지스터의 값 들도 포함됩니다. 레지스터 중에는 콜 스택을 추적하기위한 stack pointer (SP) 도 포함됩니다. 다만 SP는 포인터일 뿐이고 스택 그 자체는 아닙니다.\n비슷하게 PCB는 페이지 테이블에 대해서도 포인터를 가지고 있고 페이지 테이블 자체는 운영체제에 의해 커널 공간에서 관리됩니다.",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
