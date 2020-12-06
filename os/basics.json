@@ -215,7 +215,8 @@
       "references": [
         {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
         {"DMA": "https://en.wikipedia.org/wiki/Direct_memory_access"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "Memory-mapped I/O (MMIO) 에 대한 설명으로 맞는 것은?",
@@ -230,7 +231,8 @@
       "references": [
         {"[한] MMIO": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%A7%B5_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
         {"MMIO": "https://en.wikipedia.org/wiki/Memory-mapped_I/O"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "Programmed I/O (PIO) 에 대한 설명으로 맞는 것은?",
@@ -246,7 +248,8 @@
         {"[한] PIO": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
         {"PIO": "https://en.wikipedia.org/wiki/Programmed_input%E2%80%93output"},
         {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "Interrupt-driven I/O에 대한 설명으로 맞는 것은?",
@@ -261,7 +264,8 @@
       "references": [
         {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
         {"Interrupt-driven I/O": "http://inputoutput5822.weebly.com/interrupt-driven-io.html"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "ISR 중 수행되는 동작은?",
