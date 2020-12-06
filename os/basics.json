@@ -9,7 +9,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "운영체제란 하드웨어의 관리뿐만 아니라 응용 프로그램을 위한 서비스도 제공하는 시스템 소프트웨어입니다. 이 서비스를 통해 응용 프로그램은 하드웨어를 활용할 수 있습니다.",
       "references": [
         {"[한] OS": "https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C"},
         {"OS": "https://en.wikipedia.org/wiki/Operating_system"}
@@ -62,7 +62,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "예시 - Bash (Unix의 shell), Z shell (Zsh) 등",
+      "explanation": "예시 : Bash (Unix의 shell), Z shell (Zsh) 등",
       "references": [
         {"Command interpreter": "https://en.wikipedia.org/wiki/List_of_command-line_interpreters"}
       ]
@@ -291,6 +291,21 @@
       "references": [
         {"[한] Program counter": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%B9%B4%EC%9A%B4%ED%84%B0"},
         {"Program counter" : "https://en.wikipedia.org/wiki/Program_counter"}
+      ]
+    },
+    {
+      "question": "DMA란?",
+      "choices": [
+        "Driving Memory Access",
+        "Digital Memory Access",
+        "Direct Memory Access",
+        "Direct Memory Avoidance"
+      ],
+      "answer": 3,
+      "explanation": "DMA란 Direct Memory Access로 CPU와는 독립적인 하드웨어를 통해 메모리에 직접 접근할 수 있도록 지원하는 기법입니다. 데이터 전송에 CPU의 개입이 불필요해 데이터 전송을 위해 읽고 쓰기를 하는 대신 다른 작업의 처리를 할 수 있게 되어 CPU 효율이 증가합니다.",
+      "references": [
+        {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
+        {"DMA": "https://en.wikipedia.org/wiki/Direct_memory_access"}
       ]
     }
   ]
