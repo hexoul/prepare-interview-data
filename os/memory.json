@@ -99,6 +99,53 @@
         {"Memory address": "https://en.wikipedia.org/wiki/Memory_address"},
         {"Page fault": "https://en.wikipedia.org/wiki/Page_fault"}
       ]
+    },
+    {
+      "question": "가상주소가 가리키는 2차 기억 장치에 존재하는 값을 메인 메모리에 읽어오기 위한 메모리 관리 기법을 ___라 한다.",
+      "choices": [
+        "Fragmentation",
+        "Paging",
+        "Mapping",
+        "Caching"
+      ],
+      "answer": 2,
+      "explanation": "아직 메인 메모리에 값이 존재하지 않을 때 page fault가 발생하고 handling으로써 2차 기억 장치에서 메인 메모리로 옮겨오는 작업을 페이징 (paging) 이라 합니다.",
+      "references": [
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "페이지 테이블의 위치를 저장하고 있는 레지스터는?",
+      "choices": [
+        "Stack pointer register",
+        "Program counter register",
+        "Status register",
+        "Page table base register"
+      ],
+      "answer": 4,
+      "explanation": "PTBR (Page Table Base Register) 은 페이지 테이블의 시작 위치를 저장하고 있는 레지스터입니다. 페이징 시에 PTBR을 참조하여 페이지 테이블에 접근하게 됩니다. 페이지 테이블의 크기를 저장하고 있는 PTLR (Page Table Length Register) 도 있습니다.",
+      "references": [
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "PTBR이 저장되어 있는 위치는?",
+      "choices": [
+        "스택",
+        "메인 메모리",
+        "MMU",
+        "PCB"
+      ],
+      "answer": 4,
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR 값 역시 프로세스마다 다릅니다. 따라서 컨텍스트 스위칭이 발생할 때마다 저장 및 복구가 되어야하므로 PCB로 관리되어 집니다.",
+      "references": [
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"},
+        {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
+      ]
     }
   ]
 }
