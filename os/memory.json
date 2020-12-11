@@ -146,6 +146,40 @@
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
       ]
+    },
+    {
+      "question": "운영체제는 각 ___ 마다 페이지 테이블을 가지고 있다.",
+      "choices": [
+        "프로세스",
+        "프로그램",
+        "쓰레드",
+        "주소"
+      ],
+      "answer": 1,
+      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스가 여러 쓰레드를 가질 수 있으므로 쓰레드도 정답이 아닙니다.",
+      "references": [
+        {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
+        {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "다음 중 PTE가 포함하지 않는 것은?",
+      "choices": [
+        "Dirty bit",
+        "Priority bit",
+        "Present bit",
+        "Physical address"
+      ],
+      "answer": 2,
+      "explanation": "PTE는 Page Table Entry로 페이지 테이블의 한 행 (row) 또는 레코드입니다. 한 virtual address에 연관된 정보들이 저장되어 있습니다. 정보에는 물리 주소뿐만 아니라 아래와 같은 플래그 등이 포함됩니다.\n- Present bit : 페이지에 할당된 프레임이 있는지\n- Dirty bit : 페이지가 변경된 적이 있는지\n- Access bit : 페이지에 접근된 적이 있는지\n- Read/Write : 읽기/쓰기 권한",
+      "references": [
+        {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
+        {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
     }
   ]
 }
