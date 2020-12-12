@@ -271,7 +271,7 @@
       ]
     },
     {
-      "question": "멀티프로그래밍 (Multiprogramming) 의 목적은?",
+      "question": "다중 프로그래밍 (Multiprogramming) 의 목적은?",
       "choices": [
         "프로세스들을 항상 실행시키기 위함",
         "Queue에 대기하고있는 복수의 프로그램들을 실행시킬 준비를 하기 위함",
