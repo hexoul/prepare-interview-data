@@ -311,6 +311,51 @@
         {"[한] DMA": "https://ko.wikipedia.org/wiki/%EC%A7%81%EC%A0%91_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A0%91%EA%B7%BC"},
         {"DMA": "https://en.wikipedia.org/wiki/Direct_memory_access"}
       ]
+    },
+    {
+      "question": "메모리를 특정 크기로 할당 및 해제할 때 공간 사용에 비효율이 생기는 것을 ___라 한다.",
+      "choices": [
+        "Fragmentation",
+        "Defragmentation",
+        "Blocking",
+        "Caching"
+      ],
+      "answer": 1,
+      "explanation": "단편화 (Fragmentation) 는 메모리의 할당과 해제가 계속하여 이루어지는 환경에서 발생하는 현상입니다. 공간이 할당되었는데도 불구하고 사용하지않는 공간이 있거나, 전체적으로는 빈 공간이 충분히 있음에도 불구하고 연속되어있지않아 사용할 수 없는 경우 등에서 공간이 낭비되는 것을 말합니다. 종류로는 내부 단편화, 외부 단편화 그리고 데이터 단편화가 있습니다.",
+      "references": [
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
+    },
+    {
+      "question": "외부 단편화에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "메모리의 크기가 2의 배수가 아닐 때 발생한다.",
+        "빈 공간이 쪼개져있어 제대로 사용하지 못하는 상황이다.",
+        "용량이 큰 파일을 이동시킬 때 발생한다.",
+        "실제 사용량보다 큰 크기의 영역이 할당되었을 때 발생한다."
+      ],
+      "answer": 2,
+      "explanation": "빈 공간이 쪼개져있어 빈 공간의 합이 요청 크기보다 큼에도 불구하고 할당할 수 없거나 비효율적으로 할당하여 성능이 저하되는 상태를 외부 단편화 (external fragmentation) 라 합니다.",
+      "references": [
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
+    },
+    {
+      "question": "내부 단편화에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "메모리의 크기가 2의 배수가 아닐 때 발생한다.",
+        "빈 공간이 쪼개져있어 제대로 사용하지 못하는 상황이다.",
+        "용량이 큰 파일을 이동시킬 때 발생한다.",
+        "실제 사용량보다 큰 크기의 영역이 할당되었을 때 발생한다."
+      ],
+      "answer": 4,
+      "explanation": "실제 사용량보다 큰 크기의 영역이 할당되어 사용하지않는 영역이 생기는 것을 내부 단편화 (internal fragmentation) 라 합니다.",
+      "references": [
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
     }
   ]
 }
