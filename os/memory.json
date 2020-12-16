@@ -194,6 +194,20 @@
       "references": [
         {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"}
       ]
+    },
+    {
+      "question": "실제 필요한 크기와 상관없이 메모리를 일정한 크기로 나누어 할당해주는 기법은?",
+      "choices": [
+        "Contiguous memory allocation",
+        "Dynamic memory partitioning",
+        "Fixed memory partitioning",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "Fixed partitioning은 항상 운영체제에서 사전에 정의한 크기로 메모리를 할당합니다.\nContiguous allocation과 dynamic partitioning은 요청량에 따라 메모리 내의 할당 크기가 바뀔 수 있습니다. 차이점은 Contiguous는 연속된 공간인 것에 반해 dynamic은 연속되지않을 수도 있습니다.",
+      "references": [
+        {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"}
+      ]
     }
   ]
 }
