@@ -208,6 +208,38 @@
       "references": [
         {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"}
       ]
+    },
+    {
+      "question": "Fixed memory partitioning의 단위가 클 경우 심해질 수 있는 단편화는?",
+      "choices": [
+        "데이터 단편화 (Data fragmentation)",
+        "외부 단편화 (External fragmentation)",
+        "내부 단편화 (Internal fragmentation)",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "단위가 크다면 실제로 사용되는 크기를 많이 초과하여 메모리를 할당하는 경우가 생깁니다. 예를 들어, 파티션의 단위가 128Kb라면 1Kb만 필요했을 때 127Kb가 사용되지 못한 채 낭비됩니다. 이렇게 할당받은 공간 내에서 발생하는 낭비를 내부 단편화라 합니다.",
+      "references": [
+        {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"},
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
+    },
+    {
+      "question": "외부 단편화가 심화되는 상황이 아닌 것은?",
+      "choices": [
+        "파일을 자주 생성하고 삭제할 때",
+        "메모리 할당 요청이 오면 전체 메모리를 탐색하지않고 할당 가능한 영역을 찾으면 바로 할당할 때",
+        "다양하게 큰 크기의 메모리를 할당할 때",
+        "메모리 블럭의 최소 할당 크기 단위를 줄일 때"
+      ],
+      "answer": 4,
+      "explanation": "(4)를 제외하면 모두 할당되지않은 공간이 연속되어 있을 확률을 감소시키는 동작들입니다. 외부 단편화란 할당되지않은 공간이 쪼개져 있어 충분한 여유 공간이 있음에도 불구하고 할당을 못해주는 현상을 말합니다. 따라서 할당되지않은 공간이 분산되어 있도록 만드는 것은 외부 단편화를 심화시킨다고 볼 수 있습니다.\n메모리 블럭의 할당 단위를 작게 하는 것은 할당된 공간 사이의 여유 공간이 작더라도 사용할 수 있는 확률을 높여 외부 단편화를 완화시킬 수 있는 설정이고 심화시키는 것은 아닙니다.",
+      "references": [
+        {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"},
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
     }
   ]
 }
