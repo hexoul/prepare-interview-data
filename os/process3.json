@@ -23,7 +23,7 @@
         "Asynchronous exclusion"
       ],
       "answer": 1,
-      "explanation": "임계 구역 (Critical section) 은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
+      "explanation": "임계 구역 (Critical section) 은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지 않습니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
