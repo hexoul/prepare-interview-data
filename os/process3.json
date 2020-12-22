@@ -9,7 +9,7 @@
         "Critical condition"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "교착 상태 (race condition) 란 여러 프로세스가 공유 자원을 사용할 때 접근 순서에 따라 결과가 바뀔 수 있는 상태를 말합니다. 교착 상태에서는 기대 결과가 보장되지 않으므로 교착 상태가 되지 않도록 방지할 필요가 있습니다.",
       "references": [
         {"Race condition": "https://en.wikipedia.org/wiki/Race_condition#Software"}
       ]
