@@ -52,7 +52,7 @@
         "뮤텍스 (Mutex)",
         "이진 세마포어 (Binary semaphore)",
         "뮤텍스와 이진 세마포어",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
       "explanation": "이진 세마포어 (Binary semaphore)는 뮤텍스 (mutex) 라고도 합니다.",
