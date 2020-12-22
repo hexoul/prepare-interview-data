@@ -15,7 +15,7 @@
       ]
     },
     {
-      "question": "만약 한 프로세스가 critical section을 실행 중이라면, 다른 프로세스들은 자신의 critical section을 실행할 수 없게 된다. 이를 무엇이라 하는가?",
+      "question": "만약 한 프로세스가 임계 구역 (critical section) 을 실행 중이라면, 다른 프로세스들은 자신의 임계 구역을 실행할 수 없게 된다. 이를 무엇이라 하는가?",
       "choices": [
         "Mutual exclusion",
         "Critical exclusion",
@@ -23,7 +23,7 @@
         "Asynchronous exclusion"
       ],
       "answer": 1,
-      "explanation": "Critical section은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
+      "explanation": "임계 구역 (Critical section) 은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지않습니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
@@ -32,35 +32,39 @@
     {
       "question": "다음 중 동기화에 쓰이는 자원은?",
       "choices": [
-        "Thread",
-        "Pipe",
-        "Semaphore",
-        "Socket"
+        "스레드 (Thread)",
+        "파이프 (Pipe)",
+        "세마포어 (Semaphore)",
+        "소켓 (Socket)"
       ],
       "answer": 3,
       "explanation": "-",
       "references": [
+        {"[한] Pipe": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%ED%94%84_(%EC%9C%A0%EB%8B%89%EC%8A%A4)"},
+        {"Pipe": "https://en.wikipedia.org/wiki/Pipeline_(Unix)"},
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "상호 배제 (Mutual exclusion)는 ___을 통해 제공받을 수 있다.",
+      "question": "상호 배제 (Mutual exclusion) 는 ___을 통해 구현할 수 있다.",
       "choices": [
-        "Mutex lock",
-        "Binary semaphore",
-        "Mutex lock과 binary semaphore",
+        "뮤텍스 (Mutex)",
+        "이진 세마포어 (Binary semaphore)",
+        "뮤텍스와 이진 세마포어",
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Binary semaphore는 mutex lock으로도 알려져 있습니다.",
+      "explanation": "이진 세마포어 (Binary semaphore)는 뮤텍스 (mutex) 라고도 합니다.",
       "references": [
+        {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EB%9D%BD_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
+        {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "High priority task가 medium priority task에 의해 간접적으로 선점되어질 때 두 task의 상대 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
+      "question": "High priority task가 medium priority task에 의해 간접적으로 선점되어질 때 두 태스크의 상대 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
       "choices": [
         "Priority removal",
         "Priority inversion",
