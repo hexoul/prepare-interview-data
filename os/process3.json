@@ -38,7 +38,7 @@
         "소켓 (Socket)"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "스레드는 작업 실행 단위로 동시성을 높이기 위해 사용될 수 있습니다. 파이프와 소켓은 프로세스 간 통신에 쓰이는 자원입니다.",
       "references": [
         {"[한] Pipe": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%ED%94%84_(%EC%9C%A0%EB%8B%89%EC%8A%A4)"},
         {"Pipe": "https://en.wikipedia.org/wiki/Pipeline_(Unix)"},
