@@ -64,7 +64,7 @@
       ]
     },
     {
-      "question": "High priority task가 medium priority task에 의해 간접적으로 선점되어질 때 두 태스크의 상대 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
+      "question": "높은 우선순위의 태스크가 낮은 우선순위의 태스크에게 간접적으로 선점되어질 때 두 태스크의 상대적인 우선순위가 도치된다. 이런 상황을 무엇이라 하는가?",
       "choices": [
         "Priority removal",
         "Priority inversion",
@@ -73,18 +73,20 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Prirority inversion": "https://en.wikipedia.org/wiki/Priority_inversion"}]
+      "references": [
+        {"Prirority inversion": "https://en.wikipedia.org/wiki/Priority_inversion"}
+      ]
     },
     {
       "question": "프로세스 동기화는 ___에서 이루어진다.",
       "choices": [
-        "hardware level",
-        "software level",
-        "hardware and software level",
-        "모두 해당 안됨"
+        "하드웨어 레벨",
+        "소프트웨어 레벨",
+        "하드웨어 레벨과 소프트웨어 레벨 모두",
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Critical section을 기반으로 한 프로세스 선점 (preemption) 제어는 hardware와 software에서 모두 이루어질 수 있습니다. Software level은 OS scheduling 기법들로 구현될 수 있습니다. Hardware level의 예로는 interrupt를 일시적으로 disable 시키거나 lock 제어를 위한 compare-and-swap을 hardware instruction level로 제공하는 것이 있습니다.",
+      "explanation": "임계구역 (Critical section) 을 기반으로 한 프로세스 선점 (preemption) 제어는 소프트웨어 레벨과 하드웨어 레벨 모두에서 이루어질 수 있습니다. 소프트웨어 레벨은 OS 스케줄링 기법으로 구현될 수 있습니다. 하드웨어 레벨의 예로는 인터럽트를 일시적으로 disable 시키거나 lock 제어를 위한 compare-and-swap (CAS) 을 hardware instruction level로 제공하는 것이 있습니다.",
       "references": [
         {"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}
       ]
@@ -99,7 +101,10 @@
       ],
       "answer": 2,
       "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메세지큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 critical section을 통해 동기화하는 semaphore 등의 동기화 기법의 설명으로 볼 수 있습니다.",
-      "references": [{"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}]
+      "references": [
+        {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
+        {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
+      ]
     },
     {
       "question": "Message passing 시스템은 프로세스가 ___ 하는 것을 가능하게 해준다.",
@@ -111,7 +116,10 @@
       ],
       "answer": 1,
       "explanation": "Message passing 시스템은 메세지 큐 또는 채널을 통해 메세지를 전달하는 시스템으로 수신 측에서 가져가는 작업이 있어야만 데이터가 최종적으로 전달됩니다.",
-      "references": [{"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}]
+      "references": [
+        {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
+        {"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}
+      ]
     },
     {
       "question": "다음 중 IPC로부터 제공받는 두 operation은?",
@@ -124,6 +132,7 @@
       "answer": 4,
       "explanation": "-",
       "references": [
+        {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
       ]
     },
@@ -138,6 +147,7 @@
       "answer": 3,
       "explanation": "메세지 크기는 고정과 가변 둘 다 가능하며 각각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다.\n\n결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메세지는 고정된 크기의 header와 가변 body를 가집니다. Header에 메세지 제어를 위한 정보와 함께 길이 정보도 있어 이에 기반하여 body 범위를 인지하고 얻어옵니다.",
       "references": [
+        {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
       ]
     },
