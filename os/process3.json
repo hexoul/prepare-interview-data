@@ -169,30 +169,30 @@
       "visible": false
     },
     {
-      "question": "다음 중 direct communication에 대해 맞는 설명은?",
+      "question": "다음 중 직접 통신 (direct communication) 에 대해 맞는 설명은?",
       "choices": [
-        "하나의 communication link가 N 개의 프로세스와 연결될 수 있다.",
-        "하나의 communication link는 정확히 두 프로세스와만 연결된다.",
-        "N 개의 프로세스가 있을 때 정확히 N/2 개의 communication link가 존재한다.",
-        "연결된 두 프로세스의 쌍(pair)마다 정확히 두 개의 링크를 가진다."
+        "하나의 통신 링크 (communication link) 가 N 개의 프로세스와 연결될 수 있다.",
+        "하나의 통신 링크는 정확히 두 프로세스와만 연결된다.",
+        "N 개의 프로세스가 있을 때 정확히 N/2 개의 통신 링크가 존재한다.",
+        "연결된 두 프로세스의 쌍(pair)마다 정확히 두 개의 통신 링크를 가진다."
       ],
       "answer": 2,
-      "explanation": "한 프로세스가 여러 프로세스와 연결될 수 있고 각 연결에서 한 link가 쓰이므로, N 개의 프로세스가 있다면 조합의 수인 nC2 = N! / 2! * (N - 2)! 개 만큼 link가 존재할 수 있습니다.",
+      "explanation": "한 프로세스가 여러 프로세스와 연결될 수 있고 각 연결에서 한 통신 링크가 쓰이므로, N 개의 프로세스가 있다면 조합의 수인 nC2 = N! / 2! * (N - 2)! 개 만큼 통신 링크가 존재할 수 있습니다.",
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"},
         {"Combination": "https://en.wikipedia.org/wiki/Combination"}
       ]
     },
     {
-      "question": "다음 중 프로세스 P와 Q의 indirect communication에 대해 맞는 설명은?",
+      "question": "다음 중 프로세스 P와 Q의 간접 통신 (indirect communication) 에 대해 맞는 설명은?",
       "choices": [
         "프로세스 P와 Q 사이에서 메시지를 받아 전달해주는 프로세스 R이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 별도 머신이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 mailbox가 존재한다.",
-        "direct communication보다 느리다."
+        "직접 통신 (Direct communication) 보다 느리다."
       ],
       "answer": 3,
-      "explanation": "Indirect communication에서 송신자는 메시지를 mailbox에 저장하고 수신자는 메시지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 communication 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 direct냐 indirect냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
+      "explanation": "간접 통신 (Indirect communication) 에서 송신자는 메시지를 mailbox에 저장하고 수신자는 메시지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 통신 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 직접 통신이냐 간접 통신이냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
       ]
@@ -206,7 +206,7 @@
         "메시지를 보내고 작업을 재개한다."
       ],
       "answer": 4,
-      "explanation": "비동기 프로세스는 다른 쓰레드의 작업을 실패시키거나 중지시키면 안되기때문에, 메시지를 보내는 경우 쓰기만 하고 결과는 polling 등을 통해 추후에 확인합니다.",
+      "explanation": "비동기 프로세스는 다른 쓰레드의 작업을 실패시키거나 중지시키면 안되기 때문에, 메시지를 보내는 경우 쓰기만 하고 결과는 polling 등을 통해 추후에 확인합니다.",
       "references": [
         {"Non-blocking algorithm": "https://en.wikipedia.org/wiki/Non-blocking_algorithm"},
         {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"}
