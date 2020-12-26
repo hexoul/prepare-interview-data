@@ -100,7 +100,7 @@
         "네트워크를 통한 프로세스 간의 통신과 동기화"
       ],
       "answer": 2,
-      "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메세지큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 critical section을 통해 동기화하는 semaphore 등의 동기화 기법의 설명으로 볼 수 있습니다.",
+      "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메시지 큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 critical section을 통해 동기화하는 semaphore 등의 동기화 기법의 설명으로 볼 수 있습니다.",
       "references": [
         {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
@@ -113,7 +113,7 @@
         "수신 측의 프로세스 구현을 모르는 채 통신",
         "수신 측의 프로세스 구현에 의존적인 통신",
         "다른 프로세스에 데이터를 직접 공유",
-        "메세지의 발신자와 수신자의 이름을 기록"
+        "메시지의 발신자와 수신자의 이름을 기록"
       ],
       "answer": 1,
       "explanation": "메시지 패싱 (Message passing) 시스템은 메시지를 전달하기위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기 (synchronous) 방식과 비동기 (asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드 (hybrid) 라 부르기도 합니다.",
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "question": "프로세스로부터 보내지는 메세지의 크기는 ___",
+      "question": "프로세스로부터 보내지는 메시지의 크기는 ___",
       "choices": [
         "고정되어야 한다.",
         "가변이어야 한다.",
@@ -146,7 +146,7 @@
         "운영체제마다 다르다."
       ],
       "answer": 3,
-      "explanation": "메세지 크기는 고정과 가변 둘 다 가능하며 각각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다.\n\n결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메세지는 고정된 크기의 header와 가변 body를 가집니다. Header에 메세지 제어를 위한 정보와 함께 길이 정보도 있어 이에 기반하여 body 범위를 인지하고 얻어옵니다.",
+      "explanation": "메시지 크기는 고정과 가변 둘 다 가능하며 각각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다.\n\n결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메시지는 고정된 크기의 header와 가변 body를 가집니다. Header에 메시지 제어를 위한 정보와 함께 길이 정보도 있어 이에 기반하여 body 범위를 인지하고 얻어옵니다.",
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
@@ -154,7 +154,7 @@
       "visible": false
     },
     {
-      "question": "메세지를 보내고 받기 위한 두 프로세스 간의 링크를 ___라 한다.",
+      "question": "메시지를 보내고 받기 위한 두 프로세스 간의 링크를 ___라 한다.",
       "choices": [
         "Communication link",
         "Message-passing link",
@@ -165,7 +165,8 @@
       "explanation": "-",
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "다음 중 direct communication에 대해 맞는 설명은?",
@@ -185,13 +186,13 @@
     {
       "question": "다음 중 프로세스 P와 Q의 indirect communication에 대해 맞는 설명은?",
       "choices": [
-        "프로세스 P와 Q 사이에서 메세지를 받아 전달해주는 프로세스 R이 존재한다.",
+        "프로세스 P와 Q 사이에서 메시지를 받아 전달해주는 프로세스 R이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 별도 머신이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 mailbox가 존재한다.",
         "direct communication보다 느리다."
       ],
       "answer": 3,
-      "explanation": "Indirect communication에서 송신자는 메세지를 mailbox에 저장하고 수신자는 메세지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 communication 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 direct냐 indirect냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
+      "explanation": "Indirect communication에서 송신자는 메시지를 mailbox에 저장하고 수신자는 메시지를 mailbox로부터 꺼내가게 됩니다. 속도에 관해서는 communication 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 direct냐 indirect냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
       ]
@@ -199,13 +200,13 @@
     {
       "question": "Non-blocking 프로세스는 ___",
       "choices": [
-        "메세지가 수신될 때까지 계속하여 메세지를 보낸다.",
-        "메세지를 받을 때까지 계속하여 메세지를 보낸다.",
-        "메세지를 보내고 메세지를 받을 때까지 대기한다.",
-        "메세지를 보내고 작업을 재개한다."
+        "메시지가 수신될 때까지 계속하여 메시지를 보낸다.",
+        "메시지를 받을 때까지 계속하여 메지를 보낸다.",
+        "메시지를 보내고 메시지를 받을 때까지 대기한다.",
+        "메시지를 보내고 작업을 재개한다."
       ],
       "answer": 4,
-      "explanation": "비동기 프로세스는 다른 쓰레드의 작업을 실패시키거나 중지시키면 안되기때문에, 메세지를 보내는 경우 쓰기만 하고 결과는 polling 등을 통해 추후에 확인합니다.",
+      "explanation": "비동기 프로세스는 다른 쓰레드의 작업을 실패시키거나 중지시키면 안되기때문에, 메시지를 보내는 경우 쓰기만 하고 결과는 polling 등을 통해 추후에 확인합니다.",
       "references": [
         {"Non-blocking algorithm": "https://en.wikipedia.org/wiki/Non-blocking_algorithm"},
         {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"}
@@ -214,13 +215,13 @@
     {
       "question": "Zero capacity queue에 대해서 올바른 설명은?",
       "choices": [
-        "Queue가 적어도 하나의 메세지를 저장할 수 있다.",
-        "송신자는 수신자가 메세지를 받아갈 때까지 블록된다.",
-        "송신자는 계속해서 메세지를 보낼 수 있지만 메세지가 queue에 머무르지 않는다.",
+        "Queue가 적어도 하나의 메시지를 저장할 수 있다.",
+        "송신자는 수신자가 메시지를 받아갈 때까지 블록된다.",
+        "송신자는 계속해서 메시지를 보낼 수 있지만 메시지가 queue에 머무르지 않는다.",
         "송신자는 상황에 따라 블록될 수도 안될 수도 있다."
       ],
       "answer": 2,
-      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메세지 전달을 보장하기 위해서 송신자는 수신자가 메세지를 받아갈 때까지 블록되어야 합니다.",
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메시지 전달을 보장하기 위해서 송신자는 수신자가 메시지를 받아갈 때까지 블록되어야 합니다.",
       "references": [
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
       ]
@@ -234,7 +235,7 @@
         "Unbounded link"
       ],
       "answer": 1,
-      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미합니다. 따라서 queue에 공간이 없기 때문에 메세지가 쌓여 대기할 수 없고 버퍼링이 존재하지않게 됩니다.",
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미합니다. 따라서 queue에 공간이 없기 때문에 메시지가 쌓여 대기할 수 없고 버퍼링이 존재하지않게 됩니다.",
       "references": [
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
       ]
@@ -318,7 +319,7 @@
     {
       "question": "클라이언트 사이드 stub이 하는 것은?",
       "choices": [
-        "서버 사이드에 메세지 전달",
+        "서버 사이드에 메시지 전달",
         "전달할 매개변수 marshalling",
         "전달받은 응답 unmarshalling",
         "위에 언급된 모두 해당"
