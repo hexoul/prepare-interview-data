@@ -72,7 +72,7 @@
         "Priority modification"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "우선순위 역전 (Priority inversion) 이란 낮은 우선순위의 태스크가 높은 우선순위의 태스크보다 우선되어 실행되는 상황을 일컫습니다. 예를 들어 같은 공유 자원에 대해 낮은 우선순위의 태스크가 먼저 선점했을 때 발생할 수 있습니다. 일반적으로 lock을 한 주체만 unlock할 수 있으므로 우선순위가 높더라도 unlock할 때까지 기다려야 합니다.",
       "references": [
         {"Prirority inversion": "https://en.wikipedia.org/wiki/Priority_inversion"}
       ]
@@ -104,7 +104,8 @@
       "references": [
         {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "Message passing 시스템은 프로세스가 ___ 하는 것을 가능하게 해준다.",
@@ -124,10 +125,10 @@
     {
       "question": "다음 중 IPC로부터 제공받는 두 operation은?",
       "choices": [
-        "write & delete message",
-        "delete & receive message",
-        "send & delete message",
-        "receive & send message"
+        "write message와 delete message",
+        "delete message와 receive message",
+        "send message와 delete message",
+        "receive message와 send message"
       ],
       "answer": 4,
       "explanation": "-",
@@ -149,7 +150,8 @@
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "메세지를 보내고 받기 위한 두 프로세스 간의 링크를 ___라 한다.",
