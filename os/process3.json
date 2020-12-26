@@ -108,15 +108,15 @@
       "visible": false
     },
     {
-      "question": "Message passing 시스템은 프로세스가 ___ 하는 것을 가능하게 해준다.",
+      "question": "메시지 패싱 (Message passing) 시스템은 프로세스가 ___ 하는 것을 가능하게 해준다.",
       "choices": [
-        "공유 데이터를 사용하지않고 다른 프로세스와 통신",
-        "공유 데이터를 사용하여 다른 프로세스와 통신",
+        "수신 측의 프로세스 구현을 모르는 채 통신",
+        "수신 측의 프로세스 구현에 의존적인 통신",
         "다른 프로세스에 데이터를 직접 공유",
         "메세지의 발신자와 수신자의 이름을 기록"
       ],
       "answer": 1,
-      "explanation": "Message passing 시스템은 메세지 큐 또는 채널을 통해 메세지를 전달하는 시스템으로 수신 측에서 가져가는 작업이 있어야만 데이터가 최종적으로 전달됩니다.",
+      "explanation": "메시지 패싱 (Message passing) 시스템은 메시지를 전달하기위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기 (synchronous) 방식과 비동기 (asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드 (hybrid) 라 부르기도 합니다.",
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}
