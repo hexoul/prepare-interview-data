@@ -263,10 +263,10 @@
         "Wait-free 알고리즘 하에서는 기아 (starvation) 가 없다.",
         "Lock-free 알고리즘은 lock이 없어 공유 자원을 위한 경쟁이 필요없다.",
         "모든 wait-free 알고리즘은 lock-free이다.",
-        "wait-free 알고리즘이 lock-free보다 구현이 어렵다."
+        "Wait-free 알고리즘이 lock-free보다 구현이 어렵다."
       ],
       "answer": 2,
-      "explanation": "Wait-free는 non-blocking에서 가장 강력한 자유도를 보장하는 수준으로 반응성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다. Lock-free는 lock이 없다는 것이 아니라 대기 시간이 bound 되어있다는 의미로, wait-free와는 달리 자원 경쟁이 있어 기아가 발생할 수 있으나 유한한 시간 내에 공유 자원을 획득할 수 있습니다. Wait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
+      "explanation": "Wait-free는 non-blocking에서 가장 강력한 자유도를 보장하는 수준으로 반응성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다.\nLock-free는 lock이 없다는 것이 아니라 대기 시간이 bound 되어있다는 의미로, wait-free와는 달리 자원 경쟁이 있어 기아가 발생할 수 있으나 유한한 시간 내에 공유 자원을 획득할 수 있습니다.\nWait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
       "references": [
         {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"}
@@ -278,7 +278,7 @@
         "모든 wait-free 알고리즘은 obstruction-free이다.",
         "모든 lock-free 알고리즘은 obstruction-free이다.",
         "모든 obstruction-free 알고리즘은 lock-free이다.",
-        "obstruction-free 알고리즘이 가장 약한 수준의 자유도를 보장한다."
+        "Obstruction-free 알고리즘이 가장 약한 수준의 자유도를 보장한다."
       ],
       "answer": 3,
       "explanation": "Wait-free에서 lock-free, obstruction-free로 갈수록 자유도를 덜 보장받습니다. 따라서 lock-free는 obstruction-free를 위한 조건도 충족시키지만, 반대로 obstruction-free는 lock-free의 조건을 충족시킬 수 없습니다.",
@@ -301,7 +301,8 @@
       "references": [
         {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
         {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기위해 ___를 제공한다.",
@@ -317,7 +318,8 @@
         {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
         {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"},
         {"stub": "https://en.wikipedia.org/wiki/Stub_(distributed_computing)"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "클라이언트 사이드 stub이 하는 것은?",
@@ -333,7 +335,8 @@
         {"stub": "https://en.wikipedia.org/wiki/Stub_(distributed_computing)"},
         {"Marshalling": "https://en.wikipedia.org/wiki/Marshalling_(computer_science)"},
         {"Unmarshalling": "https://en.wikipedia.org/wiki/Marshalling_(computer_science)#Unmarshalling"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "RMI란?",
@@ -348,7 +351,8 @@
       "references": [
         {"RMI": "https://en.wikipedia.org/wiki/Distributed_object_communication"},
         {"Java RMI": "https://en.wikipedia.org/wiki/Java_remote_method_invocation"}
-      ]
+      ],
+      "visible": false
     },
     {
       "question": "동기화없이 공유 데이터를 동시 접근하는 것은 ___를 야기한다.",
