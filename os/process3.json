@@ -374,25 +374,25 @@
         "Secure section",
         "Critical section",
         "Non-critical section",
-        "Synchorinzed section"
+        "Synchronized section"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "임계 구역 (Critical section) 은 복수의 프로세스 또는 쓰레드가 동시에 접근할 수 없는 영역입니다. 일관성을 위한 동시성 제어를 통해 의도치않은 동작을 방지합니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
       ]
     },
     {
-      "question": "다음 중 critical section 문제를 풀기 위해 만족되어야 하는 상태는?",
+      "question": "다음 중 임계 구역 (critical section) 문제를 풀기 위해 만족되어야 하는 상태는?",
       "choices": [
-        "Mutual exclusion",
+        "상호 배제 (Mutual exclusion)",
         "Progress",
-        "Bounded waiting",
+        "유한 대기 (Bounded waiting)",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "임계 구역의 구현을 위한 알고리즘에 요구되는 요구사항은 상호 배제 (mutual exclusion), progress 및 유한 대기 (bounded waiting) 입니다.\n상호 배제는 경합 조건을 피하기 위한 동시성 제어 속성입니다.",
       "references": [
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
         {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"},
