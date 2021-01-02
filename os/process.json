@@ -294,7 +294,7 @@
         "IPC가 지원하지 못하는 부분을 보충"
       ],
       "answer": 3,
-      "explanation": "RPC는 별도의 원격 제어를 위한 코딩없이 다른 주소 공간에 있는 프로시저를 실행시키는 기법으로, 프로시저가 로컬에 있든 원격에 있든 상관없이 동일하게 실행할 수 있는 추상화 인터페이스를 프로그래머에 제공합니다. RPC는 IPC의 한 형태이므로 4번도 틀린 설명입니다.",
+      "explanation": "RPC는 별도의 원격 제어를 위한 코딩없이 다른 주소 공간에 있는 프로시저를 실행시키는 기법으로, 프로시저가 로컬에 있든 원격에 있든 상관없이 동일하게 실행할 수 있는 추상화 인터페이스를 프로그래머에 제공합니다. RPC는 IPC의 한 형태이므로 (4)는 틀린 설명입니다.",
       "references": [
         {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
         {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"}
