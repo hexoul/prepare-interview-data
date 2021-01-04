@@ -384,7 +384,7 @@
       ]
     },
     {
-      "question": "다음 중 임계 구역 (critical section) 실행의 전제 조건은?",
+      "question": "다음 중 임계 구역 (Critical section) 실행의 전제 조건은?",
       "choices": [
         "상호 배제 (Mutual exclusion)",
         "진행 조건 (Progress)",
@@ -408,10 +408,10 @@
         "다른 프로세스들은 임계 구역을 실행하고 있으면 안된다.",
         "다른 프로세스들도 임계 구역을 실행하고 있어야 한다.",
         "수행이 끝날 때까지 모든 시스템 자원은 블록되어야 한다.",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "-",
+      "explanation": "전역적으로 임계 구역은 한 번에 하나의 프로세스 또는 스레드만 실행해야 합니다. 다만 임계 구역이 아니라면 동시에 다른 프로세스가 실행될 수 있습니다.\n임계 구역의 조건을 만족시키기 위해 쓰이는 자원을 제외한 시스템 자원은 사용가능하므로 (3)은 틀린 설명입니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
@@ -419,15 +419,15 @@
       ]
     },
     {
-      "question": "Bounded waiting이란 어떤 프로세스가 ___ critical section에 진입할 때까지의 시간이 유한한 것을 말한다.",
+      "question": "한계 대기 (Bounded waiting) 이란 어떤 프로세스가 ___ 임계 구역 (critical section) 에 진입할 때까지의 시간이 유한한 것을 말한다.",
       "choices": [
-        "critical section을 수행 중이던 프로세스의 종료 후",
-        "critical section 요청 진입 후",
-        "한 번 critical section 수행을 마친 후 다시",
-        "모두 해당 안됨"
+        "임계 구역을 수행 중이던 프로세스의 종료 후",
+        "임계 구역 요청 진입 후",
+        "한 번 임계 구역 수행을 마친 후 다시",
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "(1)과 (3)은 임계 구역에 언제 진입을 다시 시도할지 결정적이지 않기 때문에 대기 시간으로 고려되기 적절하지 않습니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
@@ -435,7 +435,7 @@
       ]
     },
     {
-      "question": "Critical section problem을 해결하기 위해서는 최소 ___ 개의 변수가 공유되어야 한다.",
+      "question": "임계 구역 (Critical section) 조건을 만족시키기 위해서는 최소 ___ 개의 변수가 공유되어야 한다.",
       "choices": [
         "1",
         "2",
@@ -443,7 +443,7 @@
         "4"
       ],
       "answer": 2,
-      "explanation": "Critical section problem을 단순화시키기 위해 두 프로세스만 있다고 가정했을 때의 풀이들을 보면 답을 이해하는데에 도움이 됩니다. e.g. Dekker's algorithm 또는 Peterson's algorithm",
+      "explanation": "임계 구역 (Critical section) 조건을 만족시키기 위한 문제 상황을 단순화시키기 위해 두 프로세스만 있다고 가정했을 때의 풀이들을 보면 답을 이해하는데에 도움이 됩니다. e.g. Dekker's algorithm 또는 Peterson's algorithm",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
