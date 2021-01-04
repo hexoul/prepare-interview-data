@@ -384,32 +384,36 @@
       ]
     },
     {
-      "question": "다음 중 임계 구역 (critical section) 문제를 풀기 위해 만족되어야 하는 상태는?",
+      "question": "다음 중 임계 구역 (critical section) 실행의 전제 조건은?",
       "choices": [
         "상호 배제 (Mutual exclusion)",
-        "Progress",
-        "유한 대기 (Bounded waiting)",
+        "진행 조건 (Progress)",
+        "한계 대기 (Bounded waiting)",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "임계 구역의 구현을 위한 알고리즘에 요구되는 요구사항은 상호 배제 (mutual exclusion), progress 및 유한 대기 (bounded waiting) 입니다.\n상호 배제는 경합 조건을 피하기 위한 동시성 제어 속성입니다.",
+      "explanation": "임계 구역의 구현을 위한 알고리즘에 요구되는 요구사항은 상호 배제 (mutual exclusion), 진행 조건 (progress) 및 한계 대기 (bounded waiting) 입니다.\n상호 배제는 경합 조건을 피하기 위한 동시성 제어 속성입니다. 진행 조건은 임계 구역을 실행하고 있는 프로세스가 없을 때, 임계 구역 중 나머지 구역을 실행하고 있지 않은 프로세스 중에서 임계 구역에 진입할 프로세스가 선택됨을 말합니다. 한계 대기는 임계 구역에 진입하려고 대기하기 시작한 프로세스가 유한한 시간 내에 진입해야 하는 조건입니다.",
       "references": [
+        {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
         {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"},
-        {"Bounded waiting": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm#Bounded_waiting"}
+        {"Bounded waiting": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm#Bounded_waiting"},
+        {"[한] Peterson's algorithm": "https://ko.wikipedia.org/wiki/%ED%94%BC%ED%84%B0%EC%8A%A8%EC%9D%98_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98"},
+        {"Peterson's algorithm": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm"}
       ]
     },
     {
-      "question": "상호 배제 (Mutual exclusion) 하에서는 만약 한 프로세스가 자신의 critical section을 실행하고 있다면 ___",
+      "question": "상호 배제 (Mutual exclusion) 하에서는 만약 한 프로세스가 자신의 임계 구역을 실행하고 있다면 ___",
       "choices": [
-        "다른 프로세스들은 critical section을 실행하고 있으면 안된다.",
-        "다른 프로세스들도 critical section을 실행하고 있어야 한다.",
+        "다른 프로세스들은 임계 구역을 실행하고 있으면 안된다.",
+        "다른 프로세스들도 임계 구역을 실행하고 있어야 한다.",
         "수행이 끝날 때까지 모든 시스템 자원은 블록되어야 한다.",
         "모두 해당 안됨"
       ],
       "answer": 1,
       "explanation": "-",
       "references": [
+        {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
         {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"}
       ]
@@ -425,6 +429,7 @@
       "answer": 2,
       "explanation": "-",
       "references": [
+        {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
         {"Bounded waiting": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm#Bounded_waiting"}
       ]
@@ -440,6 +445,7 @@
       "answer": 2,
       "explanation": "Critical section problem을 단순화시키기 위해 두 프로세스만 있다고 가정했을 때의 풀이들을 보면 답을 이해하는데에 도움이 됩니다. e.g. Dekker's algorithm 또는 Peterson's algorithm",
       "references": [
+        {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"},
         {"Dekker's algorithm": "https://en.wikipedia.org/wiki/Dekker%27s_algorithm"},
         {"Peterson's algorithm": "https://en.wikipedia.org/wiki/Peterson%27s_algorithm"}
