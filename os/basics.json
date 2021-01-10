@@ -400,6 +400,35 @@
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
       ]
+    },
+    {
+      "question": "물리 메모리 (Physical memory) 에서 고정된 크기의 연속된 블록들을 ___라고 한다.",
+      "choices": [
+        "Storage",
+        "Frame",
+        "Page",
+        "Row"
+      ],
+      "answer": 2,
+      "explanation": "물리 메모리에서 프레임 (frame) 은 2의 거듭제곱만큼 고정된 크기로 운영체제마다 다를 수 있습니다. e.g. 512 bytes 또는 1,024 bytes 등.\n따라서 프레임의 크기에 따라 한 프레임에 포함되는 블록의 개수 도 바뀝니다. 블록의 크기는 프로세서의 하드웨어 스펙 및 ISA (Instruction Set Architecture) 로부터 결정됩니다.",
+      "references": [
+        {"Primary storage": "https://en.wikipedia.org/wiki/Computer_data_storage#Primary_storage"}
+      ]
+    },
+    {
+      "question": "가상 메모리 (Virtual memory) 에서 고정된 크기의 연속된 블록들을 ___라고 한다.",
+      "choices": [
+        "Storage",
+        "Frame",
+        "Page",
+        "Row"
+      ],
+      "answer": 3,
+      "explanation": "가상 메모리에서 물리 메모리의 프레임 (frame) 에 해당하는 것이 페이지 (page) 입니다. 일반적으로 프레임과 페이지의 크기는 동일합니다. 다만 가상 메모리 특성 상 페이지의 순서는 프레임의 순서와 상관없으며, 서로 다른 페이지가 동일한 프레임을 가리킬 수 있습니다.",
+      "references": [
+        {"[한] Virtual memory": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC"},
+        {"Virtual memory": "https://en.wikipedia.org/wiki/Virtual_memory"}
+      ]
     }
   ]
 }
