@@ -438,7 +438,7 @@
         "Dispatch 될 프로세스를 선택하는데 걸린 시간"
       ],
       "answer": 3,
-      "explanation": "Dispatch latency는 우선순위가 더 높은 프로세스 (혹은 태스크 또는 쓰레드) 를 실행시키기위해 reschedule하는 시간이라고도 볼 수 있습니다.",
+      "explanation": "Dispatch latency는 우선순위가 더 높은 프로세스 (혹은 태스크 또는 스레드) 를 실행시키기위해 리스케줄 (reschedule) 하는 시간이라고도 볼 수 있습니다.",
       "references": [
         {"Dispatcher": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Dispatcher"},
         {"Dispatch latency": "https://docs.oracle.com/cd/E19455-01/806-4750/chap7rt-21297/index.html"}
