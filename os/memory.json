@@ -152,11 +152,11 @@
       "choices": [
         "프로세스",
         "프로그램",
-        "쓰레드",
+        "스레드",
         "주소"
       ],
       "answer": 1,
-      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스가 여러 쓰레드를 가질 수 있으므로 쓰레드도 정답이 아닙니다.",
+      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스가 여러 스레드 (thread) 를 가질 수 있으므로 스레드도 정답이 아닙니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -297,6 +297,23 @@
         {"[한] Buddy memory allocation": "https://ko.wikipedia.org/wiki/%EB%B2%84%EB%94%94_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9"},
         {"Buddy memory allocation": "https://en.wikipedia.org/wiki/Buddy_memory_allocation"},
         {"Memory allocation": "https://web.stanford.edu/class/archive/cs/cs140/cs140.1088/lectures/sum0708/lecture14.pdf"}
+      ]
+    },
+    {
+      "question": "PTE가 가지는 순서쌍에 대한 의미로 맞는 것은?",
+      "choices": [
+        "(페이지 번호, 프레임 번호)",
+        "(프레임 번호, 페이지 번호)",
+        "(페이지 번호, 페이지 변위)",
+        "(프레임 번호, 페이지 변위)"
+      ],
+      "answer": 1,
+      "explanation": "PTE (Page Table Entry) 의 순서쌍은 가상 주소로부터 물리 주소로 변환될 수 있는 정보를 포함합니다. 구체적으로 페이지 번호에 해당하는 프레임 번호를 제공하여, 페이지 변위를 더해 물리 주소로 변환할 수 있습니다.\n가상 주소는 프로세스의 페이지를 나타내므로 순서쌍의 key가 물리 주소와 연관된 프레임 번호가 될 수 없습니다.",
+      "references": [
+        {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
+        {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
       ]
     }
   ]
