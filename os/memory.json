@@ -308,7 +308,24 @@
         "(프레임 번호, 페이지 변위)"
       ],
       "answer": 1,
-      "explanation": "PTE (Page Table Entry) 의 순서쌍은 가상 주소로부터 물리 주소로 변환될 수 있는 정보를 포함합니다. 구체적으로 페이지 번호에 해당하는 프레임 번호를 제공하여, 페이지 변위를 더해 물리 주소로 변환할 수 있습니다.\n가상 주소는 프로세스의 페이지를 나타내므로 순서쌍의 key가 물리 주소와 연관된 프레임 번호가 될 수 없습니다.",
+      "explanation": "PTE (Page Table Entry) 의 순서쌍은 가상 주소로부터 물리 주소로 변환될 수 있는 정보를 포함합니다. 구체적으로 페이지 번호 (page number) 에 해당하는 프레임 번호 (frame number) 를 제공하여, 페이지 변위 (page offset) 를 더해 물리 주소로 변환할 수 있습니다.\n가상 주소는 프로세스의 페이지를 나타내므로 순서쌍의 key가 물리 주소와 연관된 프레임 번호가 될 수 없습니다.",
+      "references": [
+        {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
+        {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "프로세스가 실제로 사용하는 물리 메모리의 크기를 알기 위해 필요한 것은?",
+      "choices": [
+        "PC (Program Counter)",
+        "PTBR (Page Table Base Register)",
+        "PTLR (Page Table Length Register)",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 4,
+      "explanation": "페이지 테이블 자체의 크기는 PTLR로 구할 수 있습니다. 하지만 페이지 테이블의 모든 엔트리가 유효하지 않기 때문에 테이블의 크기 만으로는 사용 중인 크기를 알 수 없습니다. 실제로 가상 주소를 통한 메모리 접근이 있을 때 page fault가 발생하여 채워지게 됩니다.\nPC는 현재 실행 중인 코드의 주소로 페이지 테이블과는 상관 없습니다.\n따라서 실제 사용 중인 물리 메모리의 크기는 페이지 테이블의 모든 엔트리를 탐색하여 유효한 페이지 수를 구하고 페이지의 크기를 곱하여 구할 수 있습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
