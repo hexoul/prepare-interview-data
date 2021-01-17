@@ -504,46 +504,48 @@
         "모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "세마포어는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자를 가질 뿐입니다. 단지 직접 접근하면 안되고 P와 V라는 명령어를 통해서만 접근해야 합니다. 나아가 세마포어가 가지는 수에 따라 counting semaphore 또는 binary semaphore 라고 불립니다.",
+      "explanation": "세마포어는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자를 가질 뿐입니다. 단지 직접 접근하면 안되고 P와 V라는 명령어를 통해서만 접근해야 합니다. 나아가 세마포어가 가지는 수에 따라 계수 세마포어 (counting semaphore) 또는 이진 세마포어 (binary semaphore) 라고 불립니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "Spinlock에 대한 맞는 설명은?",
+      "question": "스핀락 (Spinlock) 에 대한 맞는 설명은?",
       "choices": [
-        "Critical section 진입이 불가할때 CPU를 낭비한다.",
-        "Context switching 시간을 절약하기위해 사용된다.",
-        "싱글프로세서보다 멀티프로세서에서 보다 효율적이다.",
+        "임계 구역 (Critical section) 진입이 불가할때 CPU를 낭비한다.",
+        "문맥 교환 (Context switch) 시간을 절약하기위해 사용된다.",
+        "싱글 프로세서보다 멀티 프로세서에서 효율적이다.",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "Spinlock은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 context switching없이 critical section에 진입할 수 있어 효율적이지만, 프로세서가 적을 때 사용되면 다른 프로세스를 방해할 가능성이 커진다는 단점이 있습니다.",
+      "explanation": "스핀락은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 문맥 교환없이 임계 구역에 진입할 수 있어 효율적입니다. 멀티 프로세서 환경에서는 스핀락에 의해 한 코어가 점유되고 있더라도 다른 프로세스를 수행할 수 있는 여분의 코어가 있으므로 비효율을 경감시킬 수 있습니다.",
       "references": [
         {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
         {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
+        {"[한] Busy waiting": "https://ko.wikipedia.org/wiki/%EB%B0%94%EC%81%9C_%EB%8C%80%EA%B8%B0"},
         {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
       ]
     },
     {
-      "question": "Spinlock의 단점은?",
+      "question": "스핀락 (Spinlock) 의 단점은?",
       "choices": [
-        "Busy waiting이 요구된다.",
-        "멀티프로세서 시스템에 적절하지 않다.",
+        "동시성이 떨어질 수 있다.",
+        "문맥 교환 (Context switch) 이 느리다.",
         "신뢰성이 떨어진다.",
-        "구현이 매우 복잡하다."
+        "구현이 복잡하다."
       ],
       "answer": 1,
-      "explanation": "Spinlock은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 context switching없이 critical section에 진입할 수 있어 효율적이지만, 프로세서가 적을 때 사용되면 다른 프로세스를 방해할 가능성이 커진다는 단점이 있습니다.",
+      "explanation": "Busy waiting이 길어질 수록 CPU를 낭비하는 비효율을 발생시켜 동시성이 떨어질 수 있습니다. 하지만 time slice가 만료되는 등의 상황이 아니라면 CPU를 놓지않고 있으므로, 이 경우에는 문맥 교환이 아예 발생하지않아 자원을 절약할 수 있습니다.\n프로세스 혹은 스레드를 잠들게 하고 깨우기 위한 작업들이 필요없으므로 구현은 다른 락에 비해 복잡하지 않습니다.",
       "references": [
         {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
         {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
+        {"[한] Busy waiting": "https://ko.wikipedia.org/wiki/%EB%B0%94%EC%81%9C_%EB%8C%80%EA%B8%B0"},
         {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
       ]
     },
     {
-      "question": "Counting semaphore의 wait operation은 ___ 시스템 콜을 이용해 구현된다.",
+      "question": "계수 세마포어 (Counting semaphore) 의 wait operation은 ___ 시스템 콜을 이용해 구현된다.",
       "choices": [
         "Stop",
         "Block",
@@ -551,7 +553,7 @@
         "Wait"
       ],
       "answer": 2,
-      "explanation": "Semaphore는 자원을 요청할 때 불리는 wait와 자원이 해제될 때 불리는 signal operation이 있습니다. 이 때 wait를 부른 프로세스는 semaphore queue에서 자원을 기다리는 blocked state가 되어야하므로 block 시스템 콜이 불립니다.",
+      "explanation": "세마포어는 자원을 요청할 때 불리는 wait와 자원이 해제될 때 불리는 signal operation이 있습니다. 이 때 wait를 부른 프로세스는 semaphore queue에서 자원을 기다리는 blocked state가 되어야하므로 block 시스템 콜이 불립니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
