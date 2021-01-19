@@ -561,15 +561,15 @@
       ]
     },
     {
-      "question": "만약 queue를 이용해 구현된 세마포어의 값이 음수라면, ___",
+      "question": "만약 큐 (queue) 를 이용하는 세마포어의 값이 음수라면, ___",
       "choices": [
         "비정상적인 경우이다.",
-        "Signal operation이 있을 때까지 다른 작업을 할 수 없는 상태이다.",
-        "임계 구역 (critical section) 에 진입하기 위해 대기 중인 프로세스가 있는 상태이다.",
+        "Signal operation이 있을 때까지 임계 구역을 실행 중인 프로세스 외에는 다른 작업을 할 수 없는 상태이다.",
+        "임계 구역 (Critical section) 에 진입하기 위해 대기 중인 프로세스가 있는 상태이다.",
         "Blocked였던 프로세스가 ready queue로 옮겨지는 상황이다."
       ],
       "answer": 3,
-      "explanation": "우선 busy waiting이 아니라 queue를 이용해 프로세스의 상태를 관리하므로 요청한 프로세스가 대기하는 동안 다른 작업을 할 수 있어 2번은 틀린 내용이 됩니다. 4번은 signal operation 시에 세마포어가 음수일 때의 동작입니다.",
+      "explanation": "우선 세마포어의 값이 음수라는 것은 자원 할당을 기다리는 프로세스가 1개 이상 있다는 뜻입니다.\n문제에서 busy waiting이 아니라 큐 (queue) 를 이용한다 하였으므로 임계 구역에 진입하려하는 프로세스는 깨어있는 상태로 계속 시도를 하는 것이 아니라 진입 가능할 때까지 잠들어 있게 됩니다. 따라서 코어가 낭비되지않아 임계 구역에 진입을 시도하여 잠들어 있는 프로세스를 제외하고는 수행이 가능합니다.\n(4)는 signal operation 시에 세마포어가 음수일 때의 동작입니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
