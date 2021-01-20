@@ -198,7 +198,7 @@
       ]
     },
     {
-      "question": "Non-blocking 프로세스는 ___",
+      "question": "논블로킹 (Non-blocking) 프로세스는 ___",
       "choices": [
         "메시지가 수신될 때까지 계속하여 메시지를 보낸다.",
         "메시지를 받을 때까지 계속하여 메지를 보낸다.",
@@ -258,7 +258,7 @@
       ]
     },
     {
-      "question": "Non-blocking 알고리즘의 wait-free와 lock-free에 대한 설명으로 틀린 것은?",
+      "question": "논블로킹 (Non-blocking) 알고리즘의 wait-free와 lock-free에 대한 설명으로 틀린 것은?",
       "choices": [
         "Wait-free 알고리즘 하에서는 기아 상태 (starvation) 가 없다.",
         "Lock-free 알고리즘은 lock이 없어 공유 자원을 위한 경쟁이 필요없다.",
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "question": "Non-blocking 알고리즘의 freedom level에 따른 설명으로 틀린 것은?",
+      "question": "논블로킹 (Non-blocking) 알고리즘의 freedom level에 따른 설명으로 틀린 것은?",
       "choices": [
         "모든 wait-free 알고리즘은 obstruction-free이다.",
         "모든 lock-free 알고리즘은 obstruction-free이다.",
