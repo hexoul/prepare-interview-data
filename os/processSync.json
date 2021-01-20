@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "같은 프로세스에 의해 non-recursive mutex를 두 번 이상 lock하려할 때 발생하는 일은?",
+      "question": "같은 프로세스가 non-recursive mutex를 두 번 이상 취득하려 시도할 때 발생하는 일은?",
       "choices": [
         "기아 상태 (Starvation)",
         "교착 상태 (Deadlock)",
@@ -9,7 +9,7 @@
         "Signaling"
       ],
       "answer": 2,
-      "explanation": "Non-recursive mutex는 재진입이 불가능한 mutex를 말합니다. 이 경우, 첫 lock에서는 mutex를 문제없이 취득하지만 두 번째 lock에서는 mutex를 놓지않은 채 재취득하려는 시도만 있기 때문에 오도 가도 못하는 상황이 되어 교착 상태가 발생합니다.",
+      "explanation": "Non-recursive mutex는 재진입이 불가능한 뮤텍스 (mutex) 를 말합니다. 이 경우, 첫 lock에서는 뮤텍스를 문제없이 취득하지만 두 번째 lock에서는 뮤텍스를 놓지않은 채 재취득하려는 시도만 있기 때문에 오도 가도 못하는 상황이 되어 교착 상태가 발생합니다.",
       "references": [
         {"[한] Starvation": "https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C"},
         {"Starvation": "https://en.wikipedia.org/wiki/Starvation_(computer_science)"},
@@ -28,7 +28,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "세마포어는 동시 접근을 제어하기위해 사용되는 변수로 여러 프로세스로부터 접근될 수 있습니다.\n참고로 binary mutex라는 말은 없습니다. 이진 세마포어 (Binary semaphore)가 뮤텍스 (mutex) 와 유사하게 동작할 수는 있으나, 동의어는 아니니 유의해야 합니다.",
+      "explanation": "세마포어는 동시 접근을 제어하기위해 사용되는 변수로 여러 프로세스로부터 접근될 수 있습니다.\n참고로 binary mutex라는 말은 없습니다. 이진 세마포어 (Binary semaphore) 가 뮤텍스 (mutex) 와 유사하게 동작할 수는 있으나, 동의어는 아니니 유의해야 합니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
