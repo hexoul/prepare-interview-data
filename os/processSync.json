@@ -1,17 +1,19 @@
 {
   "questions": [
     {
-      "question": "같은 프로세스에 의해 non-recursive mutex가 두 번 이상 lock 될 경우 발생하는 일은?",
+      "question": "같은 프로세스에 의해 non-recursive mutex를 두 번 이상 lock하려할 때 발생하는 일은?",
       "choices": [
-        "Starvation",
-        "Deadlock",
+        "기아 상태 (Starvation)",
+        "교착 상태 (Deadlock)",
         "Aging",
         "Signaling"
       ],
       "answer": 2,
-      "explanation": "Non-recursive mutex는 재진입이 불가능한 mutex를 말합니다. 이 경우, 첫 lock에서는 mutex를 문제없이 취득하지만 두 번째 lock에서는 mutex를 놓지않은 채 재취득하려는 시도만 있기 때문에 오도 가도 못하는 상황이 되어 deadlock에 빠지게 됩니다.",
+      "explanation": "Non-recursive mutex는 재진입이 불가능한 mutex를 말합니다. 이 경우, 첫 lock에서는 mutex를 문제없이 취득하지만 두 번째 lock에서는 mutex를 놓지않은 채 재취득하려는 시도만 있기 때문에 오도 가도 못하는 상황이 되어 교착 상태가 발생합니다.",
       "references": [
+        {"[한] Starvation": "https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C"},
         {"Starvation": "https://en.wikipedia.org/wiki/Starvation_(computer_science)"},
+        {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
         {"Deadlock": "https://en.wikipedia.org/wiki/Deadlock"},
         {"Aging": "https://en.wikipedia.org/wiki/Aging_(scheduling)"},
         {"Recursive mutex": "https://en.wikipedia.org/wiki/Reentrant_mutex"}
@@ -23,10 +25,10 @@
         "Binary mutex이다.",
         "오직 한 프로세스로부터만 접근되어야 한다.",
         "여러 프로세스로부터 접근될 수 있다.",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "세마포어는 동시 접근을 제어하기위해 사용되는 변수로 여러 프로세스로부터 접근될 수 있습니다.\n참고로 binary mutex라는 말은 없습니다. 이진 세마포어 (Binary semaphore)가 뮤텍스 (mutex) 와 유사하게 동작할 수는 있으나, 동의어는 아니니 유의해야 합니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
@@ -41,29 +43,31 @@
         "spin과 binary"
       ],
       "answer": 2,
-      "explanation": "세마포어가 0 또는 1만 가리키는 것을 binary semaphore라 하고 이외에는 counting semaphore라 합니다.",
+      "explanation": "세마포어가 0 또는 1만 가리키는 것을 이진 세마포어 (binary semaphore) 라 하고 이외에는 계수 세마포어 (counting semaphore) 라 합니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "Mutex란?",
+      "question": "뮤텍스 (Mutex) 란?",
       "choices": [
-        "Binary semaphore이다.",
-        "오직 한 프로세스로부터만 접근되어야 한다.",
-        "여러 프로세스로부터 접근될 수 있다.",
-        "모두 해당 안됨"
+        "이진 세마포어 (Binary semaphore) 이다.",
+        "해제는 오직 한 프로세스로부터만 접근되어야 한다.",
+        "해제 시 여러 프로세스로부터 접근될 수 있다.",
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "Binary semaphore는 세마포어를 감소시켰던 프로세스가 아닌 다른 프로세스도 세마포어를 증가시킬 수 있는 것에 반해, mutex는 취득했던 프로세스 또는 쓰레드가 직접 해제해야 한다는 차이가 있습니다. 따라서 mutex는 binary semaphore와는 다르고 여러 프로세스 또는 쓰레드들로부터 접근되면 안됩니다.",
+      "explanation": "이진 세마포어는 세마포어를 감소시켰던 프로세스가 아닌 다른 프로세스도 세마포어를 증가시킬 수 있는 것에 반해, 뮤텍스 (mutex) 는 lock을 취득했던 프로세스 또는 스레드가 직접 해제해야 한다는 차이가 있습니다. 따라서 뮤텍스는 엄밀하게 말하여 이진 세마포어와는 다릅니다.",
       "references": [
+        {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C"},
         {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
+        {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "특정 시점에 counting semaphore의 값이 7이었다면, 20 번의 P operation과 15 번의 V operation 후에 값이 어떻게 변경되는가?",
+      "question": "특정 시점에 계수 세마포어의 값이 7이었다면, 20 번의 P operation과 15 번의 V operation 후에 값이 어떻게 변경되는가?",
       "choices": [
         "2",
         "7",
