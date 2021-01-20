@@ -55,7 +55,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "이진 세마포어 (Binary semaphore)는 뮤텍스 (mutex) 라고도 합니다.",
+      "explanation": "이진 세마포어 (Binary semaphore) 와 뮤텍스 (mutex) 는 동작 방식은 다르지만 둘다 상호 배제를 구현하기위해 쓰일 수 있습니다.",
       "references": [
         {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EB%9D%BD_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
@@ -100,7 +100,7 @@
         "네트워크를 통한 프로세스 간의 통신과 동기화"
       ],
       "answer": 2,
-      "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메시지 큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 critical section을 통해 동기화하는 semaphore 등의 동기화 기법의 설명으로 볼 수 있습니다.",
+      "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메시지 큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 임계 구역을 통해 동기화하는 세마포어 등의 동기화 기법의 설명으로 볼 수 있습니다.",
       "references": [
         {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
