@@ -27,12 +27,13 @@
         "exec"
       ],
       "answer": 1,
-      "explanation": "-",
+      "explanation": "fork : 자신을 복제하여 자식 프로세스를 생성\nexit : 프로세스 종료\nexec : 현재의 프로세스 컨텍스트를 다른 실행가능한 파일로부터 만들어지는 프로세스로 대체",
       "references": [
         {"wait": "https://en.wikipedia.org/wiki/Wait_(system_call)"},
         {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
         {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"},
-        {"exit": "https://en.wikipedia.org/wiki/Exit_(system_call)"}
+        {"exit": "https://en.wikipedia.org/wiki/Exit_(system_call)"},
+        {"exec": "https://en.wikipedia.org/wiki/Exec_(system_call)"}
       ]
     },
     {
@@ -44,18 +45,18 @@
         "Circular termination"
       ],
       "answer": 3,
-      "explanation": "부모에서 생성된 자식 프로세스들부터 종료되는 것이 프로세스 트리 (process tree) 구조 상 순차에 맞기에 cascading이라 합니다."
+      "explanation": "만들어진 순서와 반대로 부모에서 생성된 자식 프로세스부터 bottom-up으로 종료되는 것이 지향됩니다. 만약 부모 프로세스부터 종료될 경우 남은 자식 프로세스는 고아가 될 수 있습니다. 프로세스 트리 (process tree) 를 그려보면 순차적으로 삭제되는 모습에서 cascading을 연상할 수 있습니다."
     },
     {
       "question": "___는 한 프로세서에서 다른 모든 프로세스를 대기시키면서 한 번에 오직 하나의 프로세스만 실행시키는 반면, ___는 여러 프로세스를 동시에 다른 프로세서에서 실행시킬 수 있다.",
       "choices": [
         "Multiprocessing, Multiprogramming",
         "Multiprogramming, Uniprocessing",
-        "Multiprogramming, Multiprocessing",
+        "Uniprocessing, Multiprocessing",
         "Uniprogramming, Multiprocessing"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "Uni는 하나, Multi는 복수를 뜻합니다. Uniprogramming은 하나의 프로그램, 즉 하나의 프로세스만 메인 메모리에 올려 실행시키는 것을 의미합니다. 반면 uniprocessing은 하나의 프로세서를 사용하는 것을 의미하는 용어로 메인 메모리에 여러 프로세스를 읽어둔 뒤 문맥 교환 (context switch) 을 해가며 실행시킬 수도 있습니다.\n비슷하게 Multiprogramming도 프로그램에만 관련된 정의라 여러 프로세스를 사용한다고 보기에는 논리적 비약이 있습니다.",
       "references": [
         {"Multitasking": "https://en.wikipedia.org/wiki/Computer_multitasking"},
         {"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}
