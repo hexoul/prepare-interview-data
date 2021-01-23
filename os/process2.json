@@ -1,16 +1,19 @@
 {
   "questions": [
     {
-      "question": "자식 프로세스를 부모 자원의 부분 집합으로 제한하는 것은 어떤 프로세스가 ___ 것을 방지하기 위함이다.",
+      "question": "자식 프로세스는 부모 프로세스와 ___를 공유한다.",
       "choices": [
-        "많은 보조 기억 장치를 사용함으로써 시스템에 부하를 만드는",
-        "매우 낮은 CPU 활용도로 시스템에 적게 부하를 주는",
-        "많은 서브프로세스를 만듦으로써 시스템에 부하를 주는",
-        "많은 자원을 활용함으로써 시스템에 장애를 주는"
+        "스택 (Stack)",
+        "힙 (Heap)",
+        "공유된 메모리 세그먼트 (Shared memory segment)",
+        "위에 언급된 모두 해당"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "Unix 기반 운영체제에서는 fork라는 시스템 콜로 자식 프로세스 (child process) 를 생성할 수 있습니다. 서브 프로세스 (subprocess) 또는 서브 태스크 (subtask) 라고도 불립니다.\n자식 프로세스는 부모 프로세스를 복제하여 만들어지고 이후에는 별도로 관리되어집니다. 메모리의 경우 공유된 세그먼트 이외에 공유되는 메모리는 없습니다. 다만 사용자 ID, 실행 중인 경로 등 속성 (attribute) 들은 상속됩니다.",
       "references": [
+        {"Child process": "https://en.wikipedia.org/wiki/Child_process"},
+        {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
+        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"},
         {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
       ]
@@ -27,6 +30,7 @@
       "explanation": "-",
       "references": [
         {"wait": "https://en.wikipedia.org/wiki/Wait_(system_call)"},
+        {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
         {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"},
         {"exit": "https://en.wikipedia.org/wiki/Exit_(system_call)"}
       ]
