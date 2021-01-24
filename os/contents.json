@@ -3,7 +3,7 @@
   {"content": "프로세스", "link": "/os/process.json", "num": 22},
   {"content": "프로세스 동기화", "link": "/os/process3.json", "num": 30},
   {"content": "프로세스 동기화 (cont.)", "link": "/os/processSync.json", "num": 13},
-  {"content": "프로세스/CPU 스케줄링", "link": "/os/process2.json", "num": 37},
+  {"content": "프로세스/CPU 스케줄링", "link": "/os/process2.json", "num": 39},
   {"content": "메모리", "link": "/os/memory.json", "num": 21},
   {"content": "I/O", "link": "/os/io.json", "num": 4}
 ]
