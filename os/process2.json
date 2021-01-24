@@ -558,10 +558,10 @@
     {
       "question": "프로세스가 자신을 무한히 복제함으로써 시스템 자원을 고갈시키는 공격을 ___라 한다.",
       "choices": [
-        "fork bomb",
-        "process bomb",
-        "thread bomb",
-        "resource bomb"
+        "포크 폭탄 (fork bomb)",
+        "프로세스 폭탄 (process bomb)",
+        "스레드 폭탄 (thread bomb)",
+        "자원 폭탄 (resource bomb)"
       ],
       "answer": 1,
       "explanation": "프로세스를 복제하는 시스템 콜인 fork를 이용한 공격이라 포크 폭탄 (fork bomb)이라 불립니다. 토끼 바이러스 (rabbit virus) 또는 웨빗 (wabbit) 이라고도 합니다. DoS (Denial-of-service) 공격의 한 종류입니다.",
