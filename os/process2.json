@@ -535,6 +535,42 @@
       "references": [
         {"Aging": "https://en.wikipedia.org/wiki/Aging_(scheduling)"}
       ]
+    },
+    {
+      "question": "자식 프로세스의 페이지 테이블에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "자식 프로세스에서는 페이지 테이블이 사용되지 않는다.",
+        "부모 프로세스의 페이지 테이블을 공유한다.",
+        "최초로 데이터를 읽을 때 무조건 page fault가 발생한다.",
+        "최초로 데이터를 쓸 때 페이지 복사가 발생한다."
+      ],
+      "answer": 4,
+      "explanation": "자식 프로세스 생성 시 페이지 테이블을 복제하여 부모 프로세스와는 상관없이 독립적으로 사용합니다. 이후 자식 프로세스가 데이터를 읽을 때 부모 프로세스가 이미 메모리에 불러왔던 페이지라면 page fault없이 바로 얻어올 수 있습니다. 하지만 데이터 쓰기를 할 때에는 부모 프로세스가 해당 페이지를 읽기 전용으로 읽고 있었으면 일관성을 해칠 수 있으므로 물리 주소를 새로 받아 복사한 뒤 사용합니다. 이러한 일련의 작업은 copy-on-write (COW) 라는 기법의 동작 방식으로 fork 후 불필요한 page fault를 줄여 메모리의 효율성을 올려줍니다.",
+      "references": [
+        {"[한] Page fault": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%B6%80%EC%9E%AC"},
+        {"Page fault": "https://en.wikipedia.org/wiki/Page_fault"},
+        {"Copy-on-write (COW)": "https://en.wikipedia.org/wiki/Copy-on-write"},
+        {"Child process": "https://en.wikipedia.org/wiki/Child_process"},
+        {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
+        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
+      ]
+    },
+    {
+      "question": "프로세스가 자신을 무한히 복제함으로써 시스템 자원을 고갈시키는 공격을 ___라 한다.",
+      "choices": [
+        "fork bomb",
+        "process bomb",
+        "thread bomb",
+        "resource bomb"
+      ],
+      "answer": 1,
+      "explanation": "프로세스를 복제하는 시스템 콜인 fork를 이용한 공격이라 포크 폭탄 (fork bomb)이라 불립니다. 토끼 바이러스 (rabbit virus) 또는 웨빗 (wabbit) 이라고도 합니다. DoS (Denial-of-service) 공격의 한 종류입니다.",
+      "references": [
+        {"[한] Fork bomb": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_%ED%8F%AD%ED%83%84"},
+        {"Fork bomb": "https://en.wikipedia.org/wiki/Fork_bomb"},
+        {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
+        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
+      ]
     }
   ]
 }
