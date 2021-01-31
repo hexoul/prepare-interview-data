@@ -66,12 +66,12 @@
       "question": "각 프로세스는 ___로 식별할 수 있다.",
       "choices": [
         "Process Control Block",
-        "Device Queue",
+        "Process Queue",
         "Process Identifier",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고 줄여씁니다.",
+      "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고도 합니다.\nPCB (Process Control Block) 는 PID를 포함하지만 그 자체로는 프로세스에 관련된 정보를 저장하는 자료구조일 뿐입니다.",
       "references": [
         {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
@@ -87,18 +87,21 @@
       ],
       "answer": 4,
       "explanation": "fork는 부모 프로세스에게만 자식 프로세스의 PID를 반환하는 함수로, 자식 프로세스에는 아무것도 의미하지않는 0이 반환됩니다.",
-      "references": [{"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}]
+      "references": [
+        {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
+        {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
+      ]
     },
     {
       "question": "자식 프로세스가 수행을 마쳤을 때 부모 프로세스가 실행 중이라면 자식 프로세스는 ___가 된다.",
       "choices": [
-        "고아 프로세스 (Orphan)",
-        "좀비 프로세스 (Zombie)",
-        "부모 프로세스",
-        "죽은 프로세스"
+        "고아 프로세스 (Orphan process)",
+        "좀비 프로세스 (Zombie process)",
+        "부모 프로세스 (Parent process)",
+        "대기 프로세스 (Waiting process)"
       ],
       "answer": 2,
-      "explanation": "좀비 프로세스가 된 자식 프로세스는 terminated 상태로 프로세스 테이블에 남아있다가 'wait' 시스템 콜이 호출됐을 때 제거됩니다.",
+      "explanation": "좀비 프로세스가 된 자식 프로세스는 종료 (terminated) 상태로 프로세스 테이블에 남아있다가 'wait' 시스템 콜이 호출됐을 때 제거됩니다.",
       "references": [
         {"Zombie process": "https://en.wikipedia.org/wiki/Zombie_process"},
         {"Orphan process": "https://en.wikipedia.org/wiki/Orphan_process"}
@@ -107,14 +110,15 @@
     {
       "question": "다음 중 프로세스를 위한 queue가 아닌 것은?",
       "choices": [
-        "Job Queue",
-        "PCB Queue",
-        "Device Queue",
-        "Ready Queue"
+        "Job queue",
+        "PCB queue",
+        "Device queue",
+        "Ready queue"
       ],
       "answer": 2,
-      "explanation": "PCB는 OS에 의해 pool로 관리되며 queue가 아닙니다.",
+      "explanation": "PCB는 OS에 의해 pool로 관리되며 queue가 아닙니다.\n- Job queue : 프로세스가 Long-term scheduler에 의해 선택되어 메인 메모리에 올라가 실행되기 전에 대기하는 queue\n- Device queue : 프로세스가 I/O를 요청했을 때 응답을 받기까지 대기하는 queue\n- Ready queue : 프로세스 수행 후 다시 실행할 준비가 되어 CPU를 할당받기 기다리는 queue",
       "references": [
+        {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
       ]
     },
@@ -128,7 +132,9 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Process state" : "https://en.wikipedia.org/wiki/Process_state"}]
+      "references": [
+        {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "프로세스가 종료될 때 발생하는 일은?",
