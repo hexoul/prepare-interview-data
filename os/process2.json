@@ -108,7 +108,7 @@
       ]
     },
     {
-      "question": "다음 중 프로세스를 위한 queue가 아닌 것은?",
+      "question": "다음 중 프로세스를 위한 큐 (queue) 가 아닌 것은?",
       "choices": [
         "Job queue",
         "PCB queue",
@@ -116,7 +116,7 @@
         "Ready queue"
       ],
       "answer": 2,
-      "explanation": "PCB는 OS에 의해 pool로 관리되며 queue가 아닙니다.\n- Job queue : 프로세스가 Long-term scheduler에 의해 선택되어 메인 메모리에 올라가 실행되기 전에 대기하는 queue\n- Device queue : 프로세스가 I/O를 요청했을 때 응답을 받기까지 대기하는 queue\n- Ready queue : 프로세스 수행 후 다시 실행할 준비가 되어 CPU를 할당받기 기다리는 queue",
+      "explanation": "운영체제는 PCB를 큐 (queue) 가 아니라 풀 (pool) 로 관리한다.\n- Job queue : 프로세스가 Long-term scheduler에 의해 선택되어 메인 메모리에 올라가 실행되기 전에 대기하는 queue\n- Device queue : 프로세스가 I/O를 요청했을 때 응답을 받기까지 대기하는 queue\n- Ready queue : 프로세스 수행 후 다시 실행할 준비가 되어 CPU를 할당받기 기다리는 queue",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
