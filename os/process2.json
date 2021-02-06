@@ -135,6 +135,7 @@
       "explanation": "프로세스가 프린터같은 I/O 장치에 읽기 또는 쓰기 요청을 하였을 때 프로세스는 blocked 상태가 되며 waiting queue 혹은 device queue로 옮겨집니다. 이후 I/O 장치로부터 응답을 받으면 실행가능한 상태가 되기에 ready queue로 옮겨집니다.",
       "references": [
         {"Job queue": "https://en.wikipedia.org/wiki/Job_queue"},
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
       ]
     },
@@ -150,14 +151,16 @@
       "explanation": "PCB는 OS에서 풀 (pool) 을 이용해 관리하는 자원으로, 프로세스 종료 시 풀로 돌아가는 것이고 할당이 해제되는 것은 아닙니다. 자식 프로세스는 강제로 종료되지않기에 고아 프로세스가 발생할 수 있습니다.",
       "references": [
         {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
-        {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
+        {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"},
+        {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
+        {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
       ]
     },
     {
       "question": "Long-term scheduler란?",
       "choices": [
-        "ready queue에 옮겨질 프로세스를 선택한다.",
-        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "Ready queue에 옮겨질 프로세스를 선택한다.",
+        "Waiting queue에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
@@ -184,8 +187,8 @@
     {
       "question": "Medium-term scheduler란?",
       "choices": [
-        "ready queue에 옮겨질 프로세스를 선택한다.",
-        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "Ready queue에 옮겨질 프로세스를 선택한다.",
+        "Waiting queue에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
@@ -198,13 +201,13 @@
     {
       "question": "Short-term scheduler란?",
       "choices": [
-        "ready queue에 옮겨질 프로세스를 선택한다.",
-        "waiting queue에 옮겨질 프로세스를 선택한다.",
+        "Ready queue에 옮겨질 프로세스를 선택한다.",
+        "Waiting queue에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "Short-term scheduler는 CPU scheduler라고도 불립니다. 이름에서 알 수 있듯이 medium-term scheduler와 long-term scheduler 보다 빈번하게 스케줄링합니다. 자주 호출되는 만큼 전체 수행시간에 주는 영향을 최소화하기 위하여 가능한 한 가볍게 작성됩니다.",
       "references": [
         {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}
       ]
@@ -212,7 +215,7 @@
     {
       "question": "Short-term scheduler와 Long-term scheduler의 주된 차이점은?",
       "choices": [
-        "queue 길이의 차이",
+        "Queue 길이의 차이",
         "스케줄되는 프로세스 타입의 차이",
         "스케줄러의 실행 주기",
         "스케줄링에 소모되는 시간"
@@ -226,16 +229,19 @@
       ]
     },
     {
-      "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition) 는 ___가 유일하다.",
+      "question": "유저 프로세스 스스로에 의한 상태 전이 (state transition) 는 ___이(가) 유일하다.",
       "choices": [
         "block",
         "wakeup",
         "dispatch",
-        "running"
+        "timeout"
       ],
       "answer": 1,
-      "explanation": "wakeup과 dispatch는 스케줄러에 의해 행해집니다.",
-      "references": [{"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}]
+      "explanation": "프로세스는 I/O 등 대기가 필요한 경우, 할당받아 사용 중이던 CPU를 스스로 해제하고 running에서 blocked 상태로 전이합니다.\nwakeup, dispatch 및 timeout은 스케줄러에 의해 행해집니다. wakeup은 프로세스를 blocked에서 ready 상태로, dispatch는 ready에서 running 상태로, timeout은 running에서 ready 상태로 전이시킵니다.",
+      "references": [
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
+        {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "Time-sharing OS에서는 프로세스에 주어졌던 time slot이 완료되었을 때, 프로세스를 running 상태에서 ___ 상태로 전환시킨다.",
@@ -247,7 +253,9 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"TSOS": "https://en.wikipedia.org/wiki/Time_Sharing_Operating_System"}]
+      "references": [
+        {"TSOS": "https://en.wikipedia.org/wiki/Time_Sharing_Operating_System"}
+      ]
     },
     {
       "question": "Multiprogramming 환경에서는 ___",
@@ -271,7 +279,10 @@
       ],
       "answer": 2,
       "explanation": "-",
-      "references": [{"Process state": "https://en.wikipedia.org/wiki/Process_state"}]
+      "references": [
+        {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
+        {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
+      ]
     },
     {
       "question": "PCB가 포함하지않는 것은?",
