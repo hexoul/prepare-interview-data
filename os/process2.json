@@ -260,7 +260,7 @@
       ]
     },
     {
-      "question": "Multiprogramming 환경에서는 ___.",
+      "question": "Multi-programming 환경에서는 ___.",
       "choices": [
         "프로세서가 한 번에 한 개 이상의 프로세스를 실행한다",
         "프로그램이 한 명 이상의 사람에 의해 개발된다",
@@ -268,8 +268,13 @@
         "한 명의 유저가 동시에 여러 프로그램을 실행시킬 수 있다"
       ],
       "answer": 3,
-      "explanation": "-",
-      "references": [{"Multiprogramming": "https://owd.tcnj.edu/~coburn/os"}]
+      "explanation": "다중 프로그래밍 (Multi-programming) 의 핵심은 CPU가 유휴 상태 (idle) 가 되지않도록 최대한 활용하기위해 주기억장치 (main memory) 에 프로그램들을 미리 읽어두는 것이 핵심입니다.\n멀티 코어 (multi-core) 가 아니라면 한 번에 한 개 이상이 아니라 한 개의 프로세스만 실행 가능하며, 멀티 코어라고 하더라도 multiprogramming이 아니라 multiprocessing에 대한 내용이 되어 (1)은 정답이 될 수 없습니다. 이와 비슷하게 (4)도 '동시에'를 만족시키려면 멀티 프로세서 (multi-processor) 혹은 멀티 코어 환경이 되어야 합니다.",
+      "references": [
+        {"[한] Multiprogramming": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EC%A4%91_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"},
+        {"Multiprogramming": "https://owd.tcnj.edu/~coburn/os"},
+        {"[한] Multi-core": "https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B0_%EC%BD%94%EC%96%B4"},
+        {"Multi-core": "https://en.wikipedia.org/wiki/Multi-core_processor"}
+      ]
     },
     {
       "question": "프로세스가 I/O 서비스를 기다리기위해 blocked state가 되었었다면, I/O 서비스가 완료되었을 때 프로세스는 어떤 상태가 되는가?",
@@ -280,7 +285,7 @@
         "Terminated state"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "I/O 응답을 받아 실행 가능한 상태가 되었으므로 ready 상태로 전이합니다. 실행 중인 프로세스가 없었다고 하더라도 바로 running 상태가 되지는 않고 우선 ready로 전이되어 스케줄러로부터 dispatch 되기를 기다려야 합니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
