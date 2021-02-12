@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "운영체제에서 각 프로세스에 메인 메모리보다 큰 크기의 공간을 추상적으로 제공하기위해 어떤 기법을 사용한다. 여기서 추상적으로 제공된 공간에서 쓰이는 주소를 ___라 한다.",
+      "question": "운영체제에서 각 프로세스에 메인 메모리보다 큰 크기의 공간을 추상적으로 제공하기 위해 어떤 기법을 사용한다. 여기서 추상적으로 제공된 공간에서 쓰이는 주소를 ___라 한다.",
       "choices": [
         "실주소 (Real address)",
         "물리 주소 (Physical address)",
@@ -60,7 +60,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "메모리 계층 구조를 통해 시간 지역성 및 공간 지역성의 이점을 최대화 하기위해 다양한 방식으로 하드웨어가 설계되고 있습니다.",
+      "explanation": "메모리 계층 구조를 통해 시간 지역성 및 공간 지역성의 이점을 최대화 하기 위해 다양한 방식으로 하드웨어가 설계되고 있습니다.",
       "references": [
         {"[한] Memory hierarchy": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B3%84%EC%B8%B5_%EA%B5%AC%EC%A1%B0"},
         {"Memory hierarchy": "https://en.wikipedia.org/wiki/Memory_hierarchy"},
