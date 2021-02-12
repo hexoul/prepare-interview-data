@@ -55,7 +55,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "이진 세마포어 (Binary semaphore) 와 뮤텍스 (mutex) 는 동작 방식은 다르지만 둘다 상호 배제를 구현하기위해 쓰일 수 있습니다.",
+      "explanation": "이진 세마포어 (Binary semaphore) 와 뮤텍스 (mutex) 는 동작 방식은 다르지만 둘다 상호 배제를 구현하기 위해 쓰일 수 있습니다.",
       "references": [
         {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EB%9D%BD_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
@@ -95,12 +95,12 @@
       "question": "Inter-process communication (IPC) 란?",
       "choices": [
         "같은 주소 공간을 사용할 때 프로세스 간에 행해지는 통신과 동기화",
-        "같은 주소 공간을 사용하지않는 프로세스 간의 통신과 동기화",
+        "같은 주소 공간을 사용하지 않는 프로세스 간의 통신과 동기화",
         "프로세스 간에 통신없이 동기화",
         "네트워크를 통한 프로세스 간의 통신과 동기화"
       ],
       "answer": 2,
-      "explanation": "IPC는 프로세스 간에 데이터를 공유하기위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메시지 큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지않고 통신 부분을 뺀다면 임계 구역을 통해 동기화하는 세마포어 등의 동기화 기법의 설명으로 볼 수 있습니다.",
+      "explanation": "IPC는 프로세스 간에 데이터를 공유하기 위해 통신을 가능하게 만드는 메커니즘으로, 이는 파일, 소켓, 메시지 큐 등을 통해 다양하게 구현될 수 있습니다. 따라서 네트워크를 통하는 것만이라고 한정지을 수 없습니다. 보기 1의 설명은 IPC의 설명으로는 맞지 않고 통신 부분을 뺀다면 임계 구역을 통해 동기화하는 세마포어 등의 동기화 기법의 설명으로 볼 수 있습니다.",
       "references": [
         {"[한] IPC": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0"},
         {"IPC": "https://en.wikipedia.org/wiki/Inter-process_communication"}
@@ -116,7 +116,7 @@
         "메시지의 발신자와 수신자의 이름을 기록"
       ],
       "answer": 1,
-      "explanation": "메시지 패싱 (Message passing) 시스템은 메시지를 전달하기위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기 (synchronous) 방식과 비동기 (asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드 (hybrid) 라 부르기도 합니다.",
+      "explanation": "메시지 패싱 (Message passing) 시스템은 메시지를 전달하기 위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기 (synchronous) 방식과 비동기 (asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드 (hybrid) 라 부르기도 합니다.",
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}
@@ -236,7 +236,7 @@
         "무한 메시지 시스템 (Unbounded message system)"
       ],
       "answer": 1,
-      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미합니다. 따라서 queue에 공간이 없기 때문에 메시지가 쌓여 대기할 수 없고 버퍼링이 존재하지않게 됩니다.",
+      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미합니다. 따라서 queue에 공간이 없기 때문에 메시지가 쌓여 대기할 수 없고 버퍼링이 존재하지 않게 됩니다.",
       "references": [
         {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
@@ -289,7 +289,7 @@
       ]
     },
     {
-      "question": "Remote Procedure Call (RPC) 은 ___ 하기위해 사용된다.",
+      "question": "Remote Procedure Call (RPC) 은 ___ 하기 위해 사용된다.",
       "choices": [
         "같은 프로그램 내의 프로시저를 호출",
         "같은 시스템 내의 프로시저를 호출",
@@ -305,7 +305,7 @@
       "visible": false
     },
     {
-      "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기위해 ___를 제공한다.",
+      "question": "RPC는 별도의 원격 제어없이 다른 주소 공간의 프로시저를 호출하기 위해 ___를 제공한다.",
       "choices": [
         "identifier",
         "stub",
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "question": "공유 자원에 동시접근했을 때 의도치 않은 동작이 발생할 수 있기 때문에, 동시접근을 막기위해 다른 프로세스 들로부터 보호받는 코드 구간을 무엇이라 하는가?",
+      "question": "공유 자원에 동시접근했을 때 의도치 않은 동작이 발생할 수 있기 때문에, 동시접근을 막기 위해 다른 프로세스 들로부터 보호받는 코드 구간을 무엇이라 하는가?",
       "choices": [
         "Secure section",
         "Critical section",
@@ -460,7 +460,7 @@
         "각 프로세스에 고유 번호를 주고 제일 작은 번호를 가진 프로세스부터 자원을 할당한다"
       ],
       "answer": 2,
-      "explanation": "베이커리 알고리즘 (Bakery algorithm) 은 복수의 스레드 (thread) 가 서로 간섭을 하지않고 안전하게 공유 자원을 사용할 수 있도록 Lamport에 의해 고안되었습니다. 스레드는 임계 구역에 진입을 시도할 때마다 번호표를 받고 앞서 실행하고 있는 스레드가 없을 때 진입합니다. 진입을 시도할 때 번호표를 받는 부분은 동시성 제어가 없어 같은 번호를 가지는 스레드가 있을 수 있으나, 번호표의 번호가 같을 때에는 스레드 번호가 작은 순대로 실행됨므로 동시 진입이 발생하지는 않습니다.",
+      "explanation": "베이커리 알고리즘 (Bakery algorithm) 은 복수의 스레드 (thread) 가 서로 간섭을 하지 않고 안전하게 공유 자원을 사용할 수 있도록 Lamport에 의해 고안되었습니다. 스레드는 임계 구역에 진입을 시도할 때마다 번호표를 받고 앞서 실행하고 있는 스레드가 없을 때 진입합니다. 진입을 시도할 때 번호표를 받는 부분은 동시성 제어가 없어 같은 번호를 가지는 스레드가 있을 수 있으나, 번호표의 번호가 같을 때에는 스레드 번호가 작은 순대로 실행됨므로 동시 진입이 발생하지는 않습니다.",
       "references": [
         {"Lamport's bakery algorithm": "https://en.wikipedia.org/wiki/Lamport's_bakery_algorithm"}
       ]
@@ -514,7 +514,7 @@
       "question": "스핀락 (Spinlock) 에 대한 맞는 설명은?",
       "choices": [
         "임계 구역 (Critical section) 진입이 불가할때 CPU를 낭비한다.",
-        "문맥 교환 (Context switch) 시간을 절약하기위해 사용된다.",
+        "문맥 교환 (Context switch) 시간을 절약하기 위해 사용된다.",
         "싱글 프로세서보다 멀티 프로세서에서 효율적이다.",
         "위에 언급된 모두 해당"
       ],
@@ -536,7 +536,7 @@
         "구현이 복잡하다."
       ],
       "answer": 1,
-      "explanation": "Busy waiting이 길어질 수록 CPU를 낭비하는 비효율을 발생시켜 동시성이 떨어질 수 있습니다. 하지만 time slice가 만료되는 등의 상황이 아니라면 CPU를 놓지않고 있으므로, 이 경우에는 문맥 교환이 아예 발생하지않아 자원을 절약할 수 있습니다.\n프로세스 혹은 스레드를 잠들게 하고 깨우기 위한 작업들이 필요없으므로 구현은 다른 락에 비해 복잡하지 않습니다.",
+      "explanation": "Busy waiting이 길어질 수록 CPU를 낭비하는 비효율을 발생시켜 동시성이 떨어질 수 있습니다. 하지만 time slice가 만료되는 등의 상황이 아니라면 CPU를 놓지 않고 있으므로, 이 경우에는 문맥 교환이 아예 발생하지 않아 자원을 절약할 수 있습니다.\n프로세스 혹은 스레드를 잠들게 하고 깨우기 위한 작업들이 필요없으므로 구현은 다른 락에 비해 복잡하지 않습니다.",
       "references": [
         {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
         {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
@@ -553,7 +553,7 @@
         "wait"
       ],
       "answer": 4,
-      "explanation": "세마포어는 자원을 요청할 때 부르는 P operation과 자원이 해제할 때 부르는 V operation이 있습니다. P와 V은 각각 wait와 signal이라고도 부릅니다. 이 때 P operation를 부른 프로세스는 자원을 기다리기위해 blocked state가 되어야하므로 wait 시스템 콜을 호출합니다.",
+      "explanation": "세마포어는 자원을 요청할 때 부르는 P operation과 자원이 해제할 때 부르는 V operation이 있습니다. P와 V은 각각 wait와 signal이라고도 부릅니다. 이 때 P operation를 부른 프로세스는 자원을 기다리기 위해 blocked state가 되어야하므로 wait 시스템 콜을 호출합니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"},
