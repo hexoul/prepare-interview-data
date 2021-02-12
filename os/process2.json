@@ -297,25 +297,25 @@
         "CPU 레지스터의 값",
         "프로세스 상태 (Process state)",
         "메모리 관리 정보",
-        "컨텍스트 스위치 (Context switch) 시간"
+        "문맥 교환 (Context switch) 시간"
       ],
       "answer": 4,
-      "explanation": "-",
+      "explanation": "PCB (Process Control Block) 는 문맥 교환 (Context switch) 등 프로세스를 제어하기위한 프로세스 관련 정보를 저장하는 자료구조입니다. 문맥 교환 시간은 제어'할' 정보가 아니라 제어'한' 과거의 정보이기에 불필요합니다.\n메모리 관리 정보에는 페이지 테이블 등이 포함됩니다.",
       "references": [
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"},
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
     },
     {
-      "question": "컨텍스트 스위칭 시에 필수적으로 저장될 필요가 없는 것은?",
+      "question": "문맥 교환 (Context switch) 시에 필수적으로 저장될 필요가 없는 것은?",
       "choices": [
-        "General purpose registers (GPR)",
-        "Translation lookaside buffer (TLB)",
-        "Program counter",
+        "General Purpose Registers (GPR)",
+        "Translation Lookaside Buffer (TLB)",
+        "Program Counter (PC)",
         "Page table"
       ],
       "answer": 2,
-      "explanation": "Translation lookaside buffer (TLB) 는 페이지 테이블에 빠르게 접근하기위한 캐시로 memory management unit (MMU) 에서 하드웨어 레벨로 구현됩니다.",
+      "explanation": "TLB는 페이지 테이블에 빠르게 접근하기위한 캐시로 memory management unit (MMU) 에서 하드웨어 레벨로 구현됩니다.",
       "references": [
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"},
@@ -323,18 +323,20 @@
       ]
     },
     {
-      "question": "다음 중 실행 중인 프로세스를 interrupt 하지않는 것은?",
+      "question": "다음 중 실행 중인 프로세스를 인터럽트 (interrupt) 하지않는 것은?",
       "choices": [
-        "외부 장치",
-        "Timer",
-        "스케줄러 프로세스",
-        "Power failure"
+        "외부 장치 (External device)",
+        "하드웨어 타이머 (Hardware timer)",
+        "비선점형 스케줄러 (Non-preemptive Scheduler)",
+        "전원 장애 (Power failure)"
       ],
       "answer": 3,
-      "explanation": "외부 장치와 Power 등 외부 요소는 I/O interrupt를 발생시킵니다. 반면 스케줄러 프로세스는 timer에 의해 trigger되는 프로세스로 다음에 실행될 프로세스를 선택할 뿐 실행 중인 프로세스를 직접적으로 interrupt하지는 않습니다.",
+      "explanation": "외부 장치와 전원 장애 등 외부 요소는 I/O 인터럽트를 발생시킵니다. 반면 비선점형 스케줄러는 실행 중인 프로세스가 스스로 CPU 할당을 해제할 때 실행될 뿐 먼저 개입하지 않습니다.",
       "references": [
         {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
-        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"}
+        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
+        {"[한] Scheduling": "https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
+        {"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(production_processes)"}
       ]
     },
     {
