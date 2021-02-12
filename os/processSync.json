@@ -28,7 +28,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "세마포어는 동시 접근을 제어하기위해 사용되는 변수로 여러 프로세스로부터 접근될 수 있습니다.\n참고로 binary mutex라는 말은 없습니다. 이진 세마포어 (Binary semaphore) 가 뮤텍스 (mutex) 와 유사하게 동작할 수는 있으나, 동의어는 아니니 유의해야 합니다.",
+      "explanation": "세마포어는 동시 접근을 제어하기 위해 사용되는 변수로 여러 프로세스로부터 접근될 수 있습니다.\n참고로 binary mutex라는 말은 없습니다. 이진 세마포어 (Binary semaphore) 가 뮤텍스 (mutex) 와 유사하게 동작할 수는 있으나, 동의어는 아니니 유의해야 합니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
