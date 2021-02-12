@@ -147,7 +147,7 @@
         "키보드 또는 마우스 입력을 통해 발생시킨다."
       ],
       "answer": 3,
-      "explanation": "인터럽트는 수행되고 있는 프로세스들에 직접적으로 영향을 줄 수 있어, 운영체제 레벨에서 관리되도록 사용자가 직접 호출할 수 있는 방법은 제공하지않습니다. 시스템 콜을 통해서만 가능하도록 설계되어 있습니다.\nCPU가 버스를 통해 시그널을 받는 것은 하드웨어 인터럽트입니다. 키보드와 마우스 같은 외부 장치가 하드웨어 인터럽트를 발생시켜 프로세서에게 읽을 데이터가 있다고 알릴 수도 있습니다.",
+      "explanation": "인터럽트는 수행되고 있는 프로세스들에 직접적으로 영향을 줄 수 있어, 운영체제 레벨에서 관리되도록 사용자가 직접 호출할 수 있는 방법은 제공하지 않습니다. 시스템 콜을 통해서만 가능하도록 설계되어 있습니다.\nCPU가 버스를 통해 시그널을 받는 것은 하드웨어 인터럽트입니다. 키보드와 마우스 같은 외부 장치가 하드웨어 인터럽트를 발생시켜 프로세서에게 읽을 데이터가 있다고 알릴 수도 있습니다.",
       "references": [
         {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
         {"Software interrupt": "https://en.wikipedia.org/wiki/Interrupt#Software_interrupts"}
@@ -162,7 +162,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 2,
-      "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 일례로 디버깅에 사용되는 브레이크포인트 (breakpoint), 0으로 나누기 (division by zero) 또는 유효하지않은 메모리 접근이 있습니다.",
+      "explanation": "Exception 또는 fault라고도 불리는 trap은 프로세스의 예외적인 상황에서 발생하는 동기 인터럽트 (synchronous interrupt) 로 소프트웨어로부터 발생합니다. 일례로 디버깅에 사용되는 브레이크포인트 (breakpoint), 0으로 나누기 (division by zero) 또는 유효하지 않은 메모리 접근이 있습니다.",
       "references": [
         {"[한] Trap": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%A9_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Trap": "https://en.wikipedia.org/wiki/Trap_(computing)"},
@@ -321,7 +321,7 @@
         "Caching"
       ],
       "answer": 1,
-      "explanation": "단편화 (Fragmentation) 는 메모리의 할당과 해제가 계속하여 이루어지는 환경에서 발생하는 현상입니다. 공간이 할당되었는데도 불구하고 사용하지않는 공간이 있거나, 전체적으로는 빈 공간이 충분히 있음에도 불구하고 연속되어있지않아 사용할 수 없는 경우 등에서 공간이 낭비되는 것을 말합니다. 종류로는 내부 단편화, 외부 단편화 그리고 데이터 단편화가 있습니다.",
+      "explanation": "단편화 (Fragmentation) 는 메모리의 할당과 해제가 계속하여 이루어지는 환경에서 발생하는 현상입니다. 공간이 할당되었는데도 불구하고 사용하지 않는 공간이 있거나, 전체적으로는 빈 공간이 충분히 있음에도 불구하고 연속되어있지않아 사용할 수 없는 경우 등에서 공간이 낭비되는 것을 말합니다. 종류로는 내부 단편화, 외부 단편화 그리고 데이터 단편화가 있습니다.",
       "references": [
         {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
         {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
@@ -351,7 +351,7 @@
         "실제 사용량보다 큰 크기의 영역이 할당되었을 때 발생한다."
       ],
       "answer": 4,
-      "explanation": "실제 사용량보다 큰 크기의 영역이 할당되어 사용하지않는 영역이 생기는 것을 내부 단편화 (internal fragmentation) 라 합니다.",
+      "explanation": "실제 사용량보다 큰 크기의 영역이 할당되어 사용하지 않는 영역이 생기는 것을 내부 단편화 (internal fragmentation) 라 합니다.",
       "references": [
         {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
         {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
@@ -361,7 +361,7 @@
       "question": "Inter-process communication (IPC) 란?",
       "choices": [
         "같은 주소 공간을 사용하는 프로세스 간의 통신",
-        "같은 주소 공간을 사용하지않는 프로세스 간의 통신",
+        "같은 주소 공간을 사용하지 않는 프로세스 간의 통신",
         "네트워크를 통한 프로세스 간의 통신",
         "통신이 필요없는 프로세스 간 동기화 기법"
       ],
