@@ -86,7 +86,7 @@
         "0, 양수"
       ],
       "answer": 4,
-      "explanation": "fork는 부모 프로세스에게만 자식 프로세스의 PID를 반환하는 함수로, 자식 프로세스에는 아무것도 의미하지않는 0이 반환됩니다.",
+      "explanation": "fork는 부모 프로세스에게만 자식 프로세스의 PID를 반환하는 함수로, 자식 프로세스에는 아무것도 의미하지 않는 0이 반환됩니다.",
       "references": [
         {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
         {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
@@ -292,7 +292,7 @@
       ]
     },
     {
-      "question": "PCB가 포함하지않는 것은?",
+      "question": "PCB가 포함하지 않는 것은?",
       "choices": [
         "CPU 레지스터의 값",
         "프로세스 상태 (Process state)",
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "question": "다음 중 실행 중인 프로세스를 인터럽트 (interrupt) 하지않는 것은?",
+      "question": "다음 중 실행 중인 프로세스를 인터럽트 (interrupt) 하지 않는 것은?",
       "choices": [
         "외부 장치 (External device)",
         "하드웨어 타이머 (Hardware timer)",
