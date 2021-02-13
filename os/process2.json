@@ -331,7 +331,7 @@
         "전원 장애 (Power failure)"
       ],
       "answer": 3,
-      "explanation": "외부 장치와 전원 장애 등 외부 요소는 I/O 인터럽트를 발생시킵니다. 반면 비선점형 스케줄러는 실행 중인 프로세스가 스스로 CPU 할당을 해제할 때 실행될 뿐 먼저 개입하지 않습니다.",
+      "explanation": "외부 장치와 전원 장애 등 외부 요소는 I/O 인터럽트를 발생시킵니다. 하지만 비선점형 스케줄러는 실행 중인 프로세스가 스스로 CPU 할당을 해제할 때 실행될 뿐 먼저 개입하지 않습니다. 반면 선점형 스케줄러는 강제로 CPU 할당을 해제하고 다른 프로세스에 재할당하는 것이 가능합니다.",
       "references": [
         {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
         {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
@@ -343,12 +343,12 @@
       "question": "프로세스가 시작해서 끝날 때까지의 시간을 뜻하는 용어는?",
       "choices": [
         "응답 시간 (Response time)",
-        "대기 시간 (Waiting time)",
+        "대기 시간 (Wait time)",
         "반환 시간 (Turnaround time)",
         "처리량 (Throughput)"
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "반환 시간은 프로세스 실행이 요청된 후 완전히 끝날 때까지의 시간입니다. 응답 시간이 유사하게 보이지만 응답 시간은 첫 응답까지의 시간만 포함합니다. 대기 시간은 처음으로 CPU를 할당받고 실행되기 전까지의 시간입니다.\n처리량은 단위 시간 내에 처리한 작업량으로 다른 시간 지표들과는 결이 다릅니다.",
       "references": [
         {"Response time": "https://en.wikipedia.org/wiki/Response_time_(technology)"},
         {"Turnaround time (TAT)": "https://en.wikipedia.org/wiki/Turnaround_time"},
@@ -361,10 +361,10 @@
         "First Come First Serve (FCFS) scheduling",
         "Shortest Job First (SJF) scheduling",
         "Priority scheduling",
-        "Round-robin scheduling"
+        "Round-Robin (RR) scheduling"
       ],
       "answer": 1,
-      "explanation": "FCFS (혹은 FIFO) 는 단어 뜻 그대로 요청된 순서대로 처리되는 알고리즘입니다. 보통 queue를 이용해 구현됩니다.",
+      "explanation": "- FCFS (혹은 FIFO) : 요청된 순서대로 처리. 보통 큐 (queue) 를 이용해 구현됨.\n- SJF : 예상 실행 시간이 제일 작은 작업을 최우선으로 처리\n- Priority : 우선순위 기반 처리. 높은 우선 순위를 갖는 프로세스를 낮은 우선 순위를 갖는 프로세스보다 우선.\n- RR : 모든 프로세스에 공평하게 시간이 배분되도록 처리. 일정 시간이 지날 때마다 CPU를 다음 프로세스에게 차례대로 넘김.",
       "references": [
         {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
         {"SJF": "https://en.wikipedia.org/wiki/Shortest_job_next"},
@@ -405,7 +405,7 @@
       "question": "다음 중 내부적으로 time quantum을 정의하는 알고리즘은?",
       "choices": [
         "Shortest Job First (SJF) scheduling",
-        "Round-robin (RR) scheduling",
+        "Round-Robin (RR) scheduling",
         "Priority scheduling",
         "Multilevel queue scheduling"
       ],
