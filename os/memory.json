@@ -332,6 +332,36 @@
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
       ]
+    },
+    {
+      "question": "TLB 사용 시 TLB에 접근하려고 하는 페이지의 page number가 없는 상황을 ___라 한다.",
+      "choices": [
+        "TLB hit",
+        "TLB miss",
+        "Page miss",
+        "Page fault"
+      ],
+      "answer": 2,
+      "explanation": "Translation Looakside Buffer (TLB) 는 페이지 테이블의 캐시 역할으로 기존에 접근이 있었어서 참조할 것이 있는 경우 hit, 없었을 경우 miss라고 합니다. hit될 경우 페이지 테이블을 확인할 필요가 없어 가상 주소와 물리 주소 간의 변환을 빠르게 할 수 있습니다.",
+      "references": [
+        {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
+        {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
+      ]
+    },
+    {
+      "question": "TLB에서 page number에 해당하는 frame number를 찾을 수 있었던 확률을 나타내는 용어는?",
+      "choices": [
+        "TLB hit count",
+        "TLB miss count",
+        "TLB hit ratio",
+        "TLB miss ratio"
+      ],
+      "answer": 3,
+      "explanation": "Hit ratio는 TLB에서 뿐만 아니라 캐시의 효율을 평가하기 위해 널리 사용되는 개념입니다. hit count를 hit + miss count로 나누어 구할 수 있습니다.",
+      "references": [
+        {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
+        {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
+      ]
     }
   ]
 }
