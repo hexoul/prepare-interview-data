@@ -387,7 +387,7 @@
         "Inverted page table"
       ],
       "answer": 2,
-      "explanation": "- Multi-level page table: 물리 주소로 변환하기 위해 참조해야 하는 페이지 테이블을 하나가 아니라 여러 개로 나누어 관리하는 기법. 계층적 페이지 테이블 (Hierarchical page table) 이라고도 합니다.\n- Hashed page table: 페이지 테이블의 key를 page number 대신 가상 주소를 hash function에 넣은 결과를 사용하는 기법.\n- Inverted page table: 전형적인 페이지 테이블과는 반대로 frame number를 key로 사용하는 기법.",
+      "explanation": "\n- Multi-level page table: 물리 주소로 변환하기 위해 참조해야 하는 페이지 테이블을 하나가 아니라 여러 개로 나누어 관리하는 기법. 계층적 페이지 테이블 (Hierarchical page table) 이라고도 합니다.\n- Hashed page table: 페이지 테이블의 key를 page number 대신 가상 주소를 hash function에 넣은 결과를 사용하는 기법.\n- Inverted page table: 전형적인 페이지 테이블과는 반대로 frame number를 key로 사용하는 기법.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
