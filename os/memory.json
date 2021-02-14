@@ -362,6 +362,51 @@
         {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
         {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
       ]
+    },
+    {
+      "question": "TLB hit ratio가 0.8이고 캐시 접근 시간이 1 ns, 메인 메모리 접근 시간이 100 ns일 때 평균 접근 시간 (average access time) 은?",
+      "choices": [
+        "21 ns",
+        "20.8 ns",
+        "81 ns",
+        "80.2 ns"
+      ],
+      "answer": 1,
+      "explanation": "평균 접근 시간 (혹은 effective access time) 은 캐시 접근 시간에 miss ratio에 메인 메모리 접근 시간을 곱해 구할 수 있습니다. hit이든 miss이든 TLB 확인을 위해 캐시 접근은 무조건 하므로 캐시 접근 시간은 hit ratio와 상관없이 더해집니다. miss ratio는 1에서 hit ratio를 빼면 됩니다. 따라서 1 + (1 - 0.8) * 100 = 21 ns 이 됩니다.",
+      "references": [
+        {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
+        {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
+      ]
+    },
+    {
+      "question": "다음 중 페이지 테이블의 종류가 아닌 것은?",
+      "choices": [
+        "Multi-level page table",
+        "Fixed page table",
+        "Hashed page table",
+        "Inverted page table"
+      ],
+      "answer": 2,
+      "explanation": "- Multi-level page table: 물리 주소로 변환하기 위해 참조해야 하는 페이지 테이블을 하나가 아니라 여러 개로 나누어 관리하는 기법. 계층적 페이지 테이블 (Hierarchical page table) 이라고도 합니다.\n- Hashed page table: 페이지 테이블의 key를 page number 대신 가상 주소를 hash function에 넣은 결과를 사용하는 기법.\n- Inverted page table: 전형적인 페이지 테이블과는 반대로 frame number를 key로 사용하는 기법.",
+      "references": [
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "다양한 페이지 테이블 기법들이 있는 이유 중 하나는 ___ 위해서다.",
+      "choices": [
+        "주소 변환 속도를 빠르게 하기",
+        "더 많은 정보를 저장하기",
+        "페이지 테이블의 크기를 줄이기",
+        "위에 언급된 모두 해당"
+      ],
+      "answer": 3,
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 프로세스가 많아 질수록 요구되는 메모리 크기와 overhead가 커지게 됩니다. 각 프로세스에서 항상 모든 페이지에 접근하지는 않으므로 사용되지않는 페이지를 위해 미리 큰 공간을 할당하는 것을 피하는 방법들이 제안되었습니다.",
+      "references": [
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
     }
   ]
 }
