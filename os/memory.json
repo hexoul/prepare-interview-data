@@ -407,6 +407,22 @@
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
       ]
+    },
+    {
+      "question": "Paged memory system에서 페이지 크기를 크게 한다면 내부 단편화 (internal fragmentation) 는 ___.",
+      "choices": [
+        "완화된다",
+        "심해진다",
+        "변화없다",
+        "알 수 없다"
+      ],
+      "answer": 2,
+      "explanation": "Fixed memory partitioning의 단위가 커지는 것과 같은 경우로, 실제로 사용되는 크기보다 큰 단위로 메모리의 전송이 발생할 확률이 높아집니다.",
+      "references": [
+        {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"},
+        {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
+        {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
+      ]
     }
   ]
 }
