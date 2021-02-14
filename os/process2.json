@@ -421,42 +421,44 @@
     {
       "question": "Multilevel feedback queue 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
       "choices": [
-        "프로세스는 다른 분류의 ready queue로 옮겨질 수 있다.",
-        "프로세스는 분류되어지지 않는다.",
+        "프로세스는 최초에 할당된 우선순위 큐로부터 옮겨질 수 있다.",
+        "프로세스 수행 시간이 길수록 우선순위가 높아진다.",
         "프로세스가 CPU bound라면 우선순위가 높아진다.",
         "많은 기아 (starvation) 가 발생할 수 있다."
       ],
       "answer": 1,
-      "explanation": "Multilevel feeback queue 스케줄링 알고리즘에서는 피드백에 따라 프로세스들의 우선순위가 동적으로 바뀌고, 이에 따라 할당되는 queue도 변경됩니다. 예를 들어, CPU bound보다 I/O bound에 높은 우선순위를 줌으로써 기아 (starvation) 를 방지하는 데에도 도움을 줍니다.",
+      "explanation": "Multilevel feedback queue 스케줄링 알고리즘에서는 피드백에 따라 프로세스들의 우선순위가 동적으로 바뀌고, 이에 따라 할당되는 우선순위 큐 (priority queue) 가 결정됩니다. 피드백에는 수행 시간이나 I/O bound 여부 등이 포함됩니다. CPU bound보다 I/O bound에 높은 우선순위를 줌으로써 기아 (starvation) 를 방지하는 데에도 도움을 줍니다.",
       "references": [
-        {"Multilevel feedback queue": "https://en.wikipedia.org/wiki/Multilevel_feedback_queue"}
+        {"[한] Multilevel feedback queue": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EB%8B%A8%EA%B3%84_%ED%81%90_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Multilevel feedback queue": "https://en.wikipedia.org/wiki/Multilevel_feedback_queue"},
+        {"I/O bound": "https://en.wikipedia.org/wiki/I/O_bound"}
       ]
     },
     {
       "question": "다음 중 커널에 의해 스케줄되지 않는 것은?",
       "choices": [
-        "Kernel-level thread",
-        "User-level thread",
-        "Process",
-        "모두 해당 안됨"
+        "커널 레벨 스레드 (Kernel-level thread)",
+        "사용자 레벨 스레드 (User-level thread)",
+        "프로세스 (Process)",
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "User-level thread는 라이브러리를 통해 애플리케이션 레벨에서 관리와 스케줄이 행해지므로 커널이 인식하지 못합니다. User-level threading은 context switch를 필요로 하지 않기때문에 kernel-level threading에 비해 빠르다는 장점이 있습니다.",
+      "explanation": "사용자 레벨 스레드는 라이브러리를 통해 애플리케이션 레벨에서 관리와 스케줄이 행해지므로 커널은 존재도 인지하지 못합니다. 즉 운영체제에 의한 문맥 교환 (context switch) 이 아니기 때문에 시스템 콜 호출이나 인터럽트도 없습니다. 따라서 커널 레벨 스레드보다도 오버헤드가 적습니다.\n - 문맥 교환 오버헤드 비교 : 프로세스 > 커널 스레드 > 사용자 스레드",
       "references": [
         {"[한] Thread": "https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Thread": "https://en.wikipedia.org/wiki/Thread_(computing)"}
       ]
     },
     {
-      "question": "Non-preemptive scheduling이 발생하는 경우는?",
+      "question": "비선점 스케줄링 (Non-preemptive scheduling) 이 발생하는 경우는?",
       "choices": [
         "프로세스가 running state에서 ready state로 전이될 때",
         "프로세스가 running state에서 waiting state로 전이될 때",
         "프로세스가 waiting state에서 ready state로 전이될 때",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "비선점 (non-preemtpvie) 으로 스케줄링이 발생하려면 간섭이 없어야하므로 프로세스가 스스로 자원을 놓는 상태 전이가 있어야 합니다. 즉 I/O 요청 등으로 인해 block되어 waiting state로 전이될 때가 이에 해당합니다.",
+      "explanation": "비선점 스케줄러는 실행 중인 프로세스에 간섭하지 않으므로 스케줄러가 실행되려면 프로세스가 스스로 자원을 놓는 상태 전이가 있어야 합니다. 즉 I/O 요청 등 자신을 block함으로써 waiting state로 전이할 때가 됩니다.",
       "references": [
         {"Preemption": "https://en.wikipedia.org/wiki/Preemption_(computing)"},
         {"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}
@@ -483,7 +485,7 @@
         "Non-preemptive",
         "Preemptive",
         "위에 언급된 모두 해당",
-        "모두 해당 안됨"
+        "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
       "explanation": "Round-robin 스케줄링에서는 time slice (혹은 time quantum) 마다 CPU 할당이 바뀌어야하므로, 실행 중인 프로세스가 있었더라도 다음 프로세스에 선점되어야합니다.",
