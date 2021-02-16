@@ -402,7 +402,7 @@
       ]
     },
     {
-      "question": "다음 중 내부적으로 time quantum을 정의하는 알고리즘은?",
+      "question": "다음 중 내부적으로 time quantum (혹은 time slice) 을 정의하는 알고리즘은?",
       "choices": [
         "Shortest Job First (SJF) scheduling",
         "Round-Robin (RR) scheduling",
@@ -419,7 +419,7 @@
       ]
     },
     {
-      "question": "Multilevel feedback queue 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
+      "question": "다단계 피드백 큐 (Multilevel feedback queue) 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
       "choices": [
         "프로세스는 최초에 할당된 우선순위 큐로부터 옮겨질 수 있다.",
         "프로세스 수행 시간이 길수록 우선순위가 높아진다.",
@@ -427,7 +427,7 @@
         "많은 기아 (starvation) 가 발생할 수 있다."
       ],
       "answer": 1,
-      "explanation": "Multilevel feedback queue 스케줄링 알고리즘에서는 피드백에 따라 프로세스들의 우선순위가 동적으로 바뀌고, 이에 따라 할당되는 우선순위 큐 (priority queue) 가 결정됩니다. 피드백에는 수행 시간이나 I/O bound 여부 등이 포함됩니다. CPU bound보다 I/O bound에 높은 우선순위를 줌으로써 기아 (starvation) 를 방지하는 데에도 도움을 줍니다.",
+      "explanation": "다단계 피드백 큐 스케줄링 알고리즘에서는 피드백에 따라 프로세스들의 우선순위가 동적으로 바뀌고, 이에 따라 할당되는 우선순위 큐 (priority queue) 가 결정됩니다. 피드백에는 수행 시간이나 I/O bound 여부 등이 포함됩니다. CPU bound보다 I/O bound에 높은 우선순위를 줌으로써 기아 (starvation) 를 방지하는 데에도 도움을 줍니다.",
       "references": [
         {"[한] Multilevel feedback queue": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EB%8B%A8%EA%B3%84_%ED%81%90_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Multilevel feedback queue": "https://en.wikipedia.org/wiki/Multilevel_feedback_queue"},
@@ -480,21 +480,22 @@
       ]
     },
     {
-      "question": "Round-robin 스케줄링은 ___이다.",
+      "question": "라운드 로빈 (Round-robin) 스케줄링은 ___ 이다.",
       "choices": [
-        "Non-preemptive",
-        "Preemptive",
-        "위에 언급된 모두 해당",
+        "비선점적 (Non-preemptive)",
+        "선점적 (Preemptive)",
+        "무작위 (Random)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "Round-robin 스케줄링에서는 time slice (혹은 time quantum) 마다 CPU 할당이 바뀌어야하므로, 실행 중인 프로세스가 있었더라도 다음 프로세스에 선점되어야합니다.",
+      "explanation": "라운드 로빈 (Round-robin) 스케줄링에서는 time slice (혹은 time quantum) 마다 CPU 할당이 다음 프로세스로 바뀌어야 하므로, 실행 중인 프로세스가 있었더라도 해제시켜 다음 프로세스가 선점할 수 있도록 해야 합니다.",
       "references": [
+        {"[한] Round-robin": "https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B4%EB%93%9C_%EB%A1%9C%EB%B9%88_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Round-robin": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
       ]
     },
     {
-      "question": "Round-robin 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
+      "question": "라운드 로빈 (Round-robin) 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
       "choices": [
         "Time slice가 매우 크다면 FCFS로 변환될 수 있다.",
         "Time slice가 매우 작다면 FCFS로 변환될 수 있다.",
@@ -502,25 +503,30 @@
         "Time slice가 매우 작다면 SJF로 변환될 수 있다."
       ],
       "answer": 1,
-      "explanation": "Time slice가 매우 크다면 선점되는 일 없이 queue에 들어온 순서대로 처리될 것이므로 FCFS로 변환될 수 있습니다. Time slice가 작다면 불필요하게 빈번한 컨텍스트 스위치가 발생해 오버헤드가 커집니다.",
+      "explanation": "Time slice가 매우 크다면 선점되는 일 없이 queue에 들어온 순서대로 처리될 것이므로 FCFS로 변환될 수 있습니다. Time slice가 작다면 불필요하게 빈번한 문맥 교환 (context switch) 가 발생해 오버헤드가 커집니다.",
       "references": [
+        {"[한] Round-robin": "https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B4%EB%93%9C_%EB%A1%9C%EB%B9%88_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Round-robin": "https://en.wikipedia.org/wiki/Round-robin_scheduling"},
+        {"[한] FCFS": "https://ko.wikipedia.org/wiki/%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B2%98%EB%A6%AC_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
+        {"[한] Context switch": "https://ko.wikipedia.org/wiki/%EB%AC%B8%EB%A7%A5_%EA%B5%90%ED%99%98"},
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
     },
     {
-      "question": "Idle time에 대한 설명으로 틀린 것은?",
+      "question": "유휴 시간 (Idle time) 에 대한 설명으로 틀린 것은?",
       "choices": [
-        "CPU가 busy가 아니었던 시간",
-        "CPU가 idle task를 실행시킨 시간",
-        "Kernel space에서 코드를 실행한 시간은 idle에 포함되지 않는다.",
+        "CPU가 busy가 아니었던 시간이다.",
+        "CPU가 idle task를 실행시킨 시간이다.",
+        "커널 공간 (Kernel space) 에서 코드를 실행한 시간은 idle에 포함되지 않는다.",
         "Idle task는 외부에서 관측되지 않는다."
       ],
       "answer": 4,
-      "explanation": "Kernel space나 user space 상관없이 idle task가 아닌 코드를 실행하고 있었다면 busy라고 보아야 합니다. Idle task는 OS 구현에 따라서 하드코딩되어있다면 관측되지 않을 수도 있지만 최하위 우선순위의 프로세스로 작성될 경우 관측 가능합니다.",
+      "explanation": "커널 공간 (Kernel space) 이냐 사용자 공간 (user space) 이냐 와는 상관없이 idle task가 아닌 코드를 실행하고 있었다면 busy라고 보아야 합니다. 유휴 태스크 (Idle task) 는 OS 구현에 따라 하드코딩되어 있다면 관측되지 않을 수도 있지만, 최하위 우선순위의 프로세스로 작성될 경우 관측 가능합니다.",
       "references": [
+        {"[한] Idle": "https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%9C%B4_(CPU)"},
         {"Idle": "https://en.wikipedia.org/wiki/Idle_(CPU)"},
+        {"[한] CPU time": "https://ko.wikipedia.org/wiki/CPU_%ED%83%80%EC%9E%84"},
         {"CPU time": "https://en.wikipedia.org/wiki/CPU_time"}
       ]
     },
