@@ -37,7 +37,7 @@
       ]
     },
     {
-      "question": "보조기억장치 (Secondary storage) 는 주기억장치 (primary storage 또는 main memory) 보다 ___",
+      "question": "보조기억장치 (Secondary storage) 는 주기억장치 (primary storage 또는 main memory) 보다 ___.",
       "choices": [
         "용량이 크고 느리다",
         "용량이 작고 느리다",
@@ -137,13 +137,13 @@
     {
       "question": "PTBR이 저장되어 있는 위치는?",
       "choices": [
-        "스택",
-        "메인 메모리",
+        "스택 (Stack)",
+        "보조기억장치 (Secondary storage)",
         "MMU",
         "PCB"
       ],
       "answer": 4,
-      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR 값 역시 프로세스마다 다릅니다. 따라서 컨텍스트 스위칭이 발생할 때마다 저장 및 복구가 되어야하므로 PCB로 관리되어 집니다.",
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR 값 역시 프로세스마다 다릅니다. 따라서 문맥 교환 (context switch) 이 발생할 때마다 저장 및 복구가 되어야 하므로 PCB로 관리되어 집니다.\n더불어 PCB들은 커널 영역에서 관리되므로 스왑 (swap) 대상이 아니라 보조기억장치에는 존재할 수 없습니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"},
@@ -152,15 +152,15 @@
       ]
     },
     {
-      "question": "운영체제는 각 ___ 마다 페이지 테이블을 가지고 있다.",
+      "question": "운영체제는 각 ___마다 페이지 테이블을 가지고 있다.",
       "choices": [
-        "프로세스",
-        "프로그램",
-        "스레드",
-        "주소"
+        "프로세스 (Process)",
+        "프로그램 (Program)",
+        "스레드 (Thread)",
+        "주소 (Address)"
       ],
       "answer": 1,
-      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스가 여러 스레드 (thread) 를 가질 수 있으므로 스레드도 정답이 아닙니다.",
+      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스는 여러 스레드 (thread) 를 가질 수 있는데, 이때 스레드들은 페이지 테이블을 공유하므로 스레드는 정답이 될 수 없습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -246,12 +246,12 @@
       ]
     },
     {
-      "question": "메모리 할당 알고리즘 중 best fit은 first fit ___",
+      "question": "메모리 할당 알고리즘 중 best fit은 first fit ___.",
       "choices": [
         "보다 빠르다",
         "보다 느리다",
-        "보다 무조건 좋다.",
-        "과 시간복잡도가 같다."
+        "보다 무조건 좋다",
+        "과 시간복잡도가 같다"
       ],
       "answer": 2,
       "explanation": "Best fit은 파편화의 영향이 제일 작아지도록 할당 요청된 크기보다 같거나 큰 파편 (fragment) 중 제일 작은 것을 고르는 방식입니다. 모든 파편을 비교하기 때문에 first fit보다 느립니다.\n시간복잡도 이외에도 상황에 따라 best fit이 first fit보다 안좋을 수도 있습니다. 예를 들어 best fit은 최대한 맞는 크기의 파편을 고르다보니 할당되기 힘들 정도로 작은 크기의 파편을 많이 발생시킬 수 있습니다.",
