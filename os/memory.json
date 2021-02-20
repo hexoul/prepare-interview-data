@@ -37,16 +37,20 @@
       ]
     },
     {
-      "question": "보조기억장치 (Secondary storage) 는 주기억장치보다 ___",
+      "question": "보조기억장치 (Secondary storage) 는 주기억장치 (primary storage 또는 main memory) 보다 ___",
       "choices": [
-        "용량이 크고 느리다.",
-        "용량이 작고 느리다.",
-        "용량이 크고 빠르다.",
-        "용량이 작고 느리다."
+        "용량이 크고 느리다",
+        "용량이 작고 느리다",
+        "용량이 크고 빠르다",
+        "용량이 작고 느리다"
       ],
       "answer": 1,
-      "explanation": "일반적으로 메모리 계층에서 저장소는 CPU와 가까울수록 access latency가 짧은 대신에 bit 당 저장 비용이 비쌉니다. 따라서 멀수록 같은 가격에도 많은 용량을 저장할 수 있으므로 보조기억장치는 일반적으로 주기억장치보다 용량이 큽니다.",
+      "explanation": "일반적으로 메모리 계층에서 저장소는 CPU와 가까울수록 접근 속도 (access latency) 가 짧은 대신에 bit 당 저장 비용이 비쌉니다. 따라서 멀수록 같은 가격에도 많은 용량을 저장할 수 있으므로 보조기억장치는 일반적으로 주기억장치보다 용량이 큽니다.",
       "references": [
+        {"[한] Main memory": "https://ko.wikipedia.org/wiki/%EC%A3%BC%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98"},
+        {"Main memory": "https://en.wikipedia.org/wiki/Computer_data_storage#Primary_storage"},
+        {"[한] Secondary storage": "https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%96%B5_%EC%9E%A5%EC%B9%98#%EB%B3%B4%EC%A1%B0_%EA%B8%B0%EC%96%B5_%EC%9E%A5%EC%B9%98"},
+        {"Secondary storage": "https://en.wikipedia.org/wiki/Computer_data_storage#Secondary_storage"},
         {"[한] Memory hierarchy": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B3%84%EC%B8%B5_%EA%B5%AC%EC%A1%B0"},
         {"Memory hierarchy": "https://en.wikipedia.org/wiki/Memory_hierarchy"}
       ]
@@ -56,7 +60,7 @@
       "choices": [
         "시간 지역성 (Temporal locality)",
         "공간 지역성 (Spatial locality)",
-        "시간 및 공간 지역성",
+        "시간 지역성 및 공간 지역성 모두",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
@@ -93,7 +97,7 @@
         "이진 주소 (Binary address)"
       ],
       "answer": 3,
-      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소에 해당하는 데이터가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 메인  읽어온 후 다시 접근하게 됩니다.",
+      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소에 해당하는 데이터가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 메인 메모리에 읽어온 후 다시 접근합니다.",
       "references": [
         {"[한] Memory address": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
         {"Memory address": "https://en.wikipedia.org/wiki/Memory_address"},
@@ -101,7 +105,7 @@
       ]
     },
     {
-      "question": "가상주소가 가리키는 2차 기억 장치에 존재하는 값을 메인 메모리에 읽어오기 위한 메모리 관리 기법을 ___라 한다.",
+      "question": "가상 주소 (virtual address) 가 가리키는 2차 기억 장치에 존재하는 값을 메인 메모리에 읽어오기 위한 메모리 관리 기법을 ___라 한다.",
       "choices": [
         "Fragmentation",
         "Paging",
@@ -109,7 +113,7 @@
         "Caching"
       ],
       "answer": 2,
-      "explanation": "아직 메인 메모리에 값이 존재하지 않을 때 page fault가 발생하고 handling으로써 2차 기억 장치에서 메인 메모리로 옮겨오는 작업을 페이징 (paging) 이라 합니다.",
+      "explanation": "아직 메인 메모리에 값이 존재하지 않을 때 page fault를 발생시켜 2차 기억 장치에서 메인 메모리로 데이터를 옮겨오는 작업을 페이징 (paging) 이라 합니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
