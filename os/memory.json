@@ -143,7 +143,7 @@
         "PCB"
       ],
       "answer": 4,
-      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR 값 역시 프로세스마다 다릅니다. 따라서 문맥 교환 (context switch) 이 발생할 때마다 저장 및 복구가 되어야 하므로 PCB로 관리되어 집니다.\n더불어 PCB들은 커널 영역에서 관리되므로 스왑 (swap) 대상이 아니라 보조기억장치에는 존재할 수 없습니다.",
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR (Page Table Base Register) 값 역시 프로세스마다 다릅니다. 따라서 문맥 교환 (context switch) 이 발생할 때마다 저장 및 복구가 되어야 하므로 PCB로 관리되어 집니다.\n더불어 PCB들은 커널 영역에서 관리되므로 스왑 (swap) 대상이 아니라 보조기억장치에는 존재할 수 없습니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"},
@@ -177,7 +177,7 @@
         "Physical address"
       ],
       "answer": 2,
-      "explanation": "PTE는 Page Table Entry로 페이지 테이블의 한 행 (row) 또는 레코드입니다. 한 virtual address에 연관된 정보들이 저장되어 있습니다. 정보에는 물리 주소뿐만 아니라 아래와 같은 플래그 등이 포함됩니다.\n- Present bit : 페이지에 할당된 프레임이 있는지\n- Dirty bit : 페이지가 변경된 적이 있는지\n- Access bit : 페이지에 접근된 적이 있는지\n- Read/Write : 읽기/쓰기 권한",
+      "explanation": "PTE는 Page Table Entry로 페이지 테이블의 한 행 (row) 또는 레코드 (record) 입니다. 한 가상 주소 (virtual address) 에 연관된 정보들이 저장되어 있습니다. 정보에는 물리 주소뿐만 아니라 아래와 같은 플래그 등이 포함됩니다.\n- Present bit : 페이지에 할당된 프레임이 있는지\n- Dirty bit : 페이지가 변경된 적이 있는지\n- Access bit : 페이지에 접근된 적이 있는지\n- Read/Write : 읽기/쓰기 권한",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
