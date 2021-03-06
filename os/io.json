@@ -107,6 +107,36 @@
         {"[한] Asynchronous I/O": "https://ko.wikipedia.org/wiki/%EB%B9%84%EB%8F%99%EA%B8%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
         {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"}
       ]
+    },
+    {
+      "question": "문자 장치 (Character device) 는 데이터를 ___.",
+      "choices": [
+        "1비트 (bit) 씩 전송한다",
+        "1바이트 (byte) 씩 전송한다",
+        "1블록 (block) 씩 전송한다",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 2,
+      "explanation": "문자 장치 (Character device) 는 하드웨어 장치에 직접 접근을 제공하는 원시적인 인터페이스입니다. 원시적이라고는 하지만 운영체제 레벨에서 제공하는 인터페이스이고 이름처럼 character 단위이기에 1비트가 아니라 한번에 1바이트씩 읽거나 씁니다.",
+      "references": [
+        {"[한] Character device": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%ED%8C%8C%EC%9D%BC#%EB%AC%B8%EC%9E%90_%EC%9E%A5%EC%B9%98"},
+        {"Character device": "https://en.wikipedia.org/wiki/Device_file#Character_devices"}
+      ]
+    },
+    {
+      "question": "블록 장치 (Block device) 는 데이터를 ___.",
+      "choices": [
+        "1비트 (bit) 씩 전송한다",
+        "1바이트 (byte) 씩 전송한다",
+        "1블록 (block) 씩 전송한다",
+        "위에 언급된 모두 해당 안됨"
+      ],
+      "answer": 3,
+      "explanation": "블록 장치 (Block device) 는 버퍼링을 지원하여 특정 크기의 블록 단위로 읽고 쓰는 것을 지원하는 인터페이스입니다. 블록의 크기는 프로그래밍 가능하여 1바이트일 수도 있고 수십 바이트 또는 그 이상일 수도 있습니다.",
+      "references": [
+        {"[한] Block device": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%ED%8C%8C%EC%9D%BC#%EB%B8%94%EB%A1%9D_%EC%9E%A5%EC%B9%98"},
+        {"Block device": "https://en.wikipedia.org/wiki/Device_file#Block_devices"}
+      ]
     }
   ]
 }
