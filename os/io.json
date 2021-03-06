@@ -55,10 +55,57 @@
         "CPU 외에 입출력 장치로부터 데이터를 읽어오기위한 장치가 있다."
       ],
       "answer": 3,
-      "explanation": "-",
+      "explanation": "인터럽트 (interrupt) 는 비동기로 동작하기 때문에 계속해서 하드웨어 자원을 소모하는 PIO (Programmed I/O) 보다 효율적입니다.",
       "references": [
         {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
         {"Interrupt-driven I/O": "http://inputoutput5822.weebly.com/interrupt-driven-io.html"}
+      ]
+    },
+    {
+      "question": "컴퓨터 간 또는 컴퓨터 내의 부품들 간 데이터 송수신에 쓰이는 매체를 ___라 한다.",
+      "choices": [
+        "Wire",
+        "CPU",
+        "Bus",
+        "Buffer"
+      ],
+      "answer": 3,
+      "explanation": "데이터 전달을 위해 전기 신호를 보낼 수 있는 하드웨어, 즉 매체들을 버스라 합니다.",
+      "references": [
+        {"[한] Bus": "https://ko.wikipedia.org/wiki/%EB%B2%84%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
+        {"Bus": "https://en.wikipedia.org/wiki/Bus_(computing)"}
+      ]
+    },
+    {
+      "question": "메시지들이 유선 매체를 통해서 어떻게 보내져야 하는지에 대한 규칙이 정의된 프로토콜이 구현된 소프트웨어를 ___라 한다.",
+      "choices": [
+        "Port",
+        "Bus",
+        "Node",
+        "Wire"
+      ],
+      "answer": 2,
+      "explanation": "컴퓨터 공학에서 버스 (Bus) 는 넓게 데이터가 이동하는 통로를 뜻합니다. 하드웨어 뿐만 아니라 통신 프로토콜과 같은 소프트웨어도 버스의 정의에 포함됩니다.",
+      "references": [
+        {"[한] Bus": "https://ko.wikipedia.org/wiki/%EB%B2%84%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
+        {"Bus": "https://en.wikipedia.org/wiki/Bus_(computing)"}
+      ]
+    },
+    {
+      "question": "다음 중 장치 드라이버 (device driver) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "하드웨어를 제어하기 위한 인터페이스를 제공하는 프로그램이다.",
+        "커널 모드로 실행되기도 한다.",
+        "사용자 모드로 실행되기도 한다.",
+        "동기 (Synchronous) 방식으로만 작동한다."
+      ],
+      "answer": 4,
+      "explanation": "장치 드라이버 (device driver) 는 운영체제와 구현에 따라서 커널 모드에서 실행될 수도 사용자 모드에서 실행될 수도 있습니다. 커널 모드에서 실행하면 문제가 있었을 때 커널 메모리를 오염시켜 시스템 충돌 (system crash) 을 야기할 수도 있습니다.\n장치 드라이버는 동기 I/O (synchronous I/O) 일 수도, 비동기 I/O (asynchronous I/O) 일 수도 있습니다.",
+      "references": [
+        {"[한] Device driver": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84"},
+        {"Device driver": "https://en.wikipedia.org/wiki/Device_driver"},
+        {"[한] Asynchronous I/O": "https://ko.wikipedia.org/wiki/%EB%B9%84%EB%8F%99%EA%B8%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"}
       ]
     }
   ]
