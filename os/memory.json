@@ -329,7 +329,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 4,
-      "explanation": "페이지 테이블 자체의 크기는 PTLR로 구할 수 있습니다. 하지만 페이지 테이블의 모든 엔트리가 유효하지 않기 때문에 테이블의 크기 만으로는 사용 중인 크기를 알 수 없습니다. 실제로 가상 주소를 통한 메모리 접근이 있을 때 page fault가 발생하여 채워지게 됩니다.\nPC는 현재 실행 중인 코드의 주소로 페이지 테이블과는 상관 없습니다.\n따라서 실제 사용 중인 물리 메모리의 크기는 페이지 테이블의 모든 엔트리를 탐색하여 유효한 페이지 수를 구하고 페이지의 크기를 곱하여 구할 수 있습니다.",
+      "explanation": "페이지 테이블 자체의 크기는 PTLR로 구할 수 있습니다. 하지만 페이지 테이블의 모든 엔트리가 유효하지 않기 때문에 테이블의 크기 만으로는 사용 중인 크기를 알 수 없습니다. 실제로 가상 주소를 통한 메모리 접근이 있을 때 페이지 부재 (page fault) 가 발생하여 유효화됩니다. 따라서 실제 사용 중인 물리 메모리의 크기는 페이지 테이블의 모든 엔트리를 탐색하여 유효한 페이지 수를 구하고 페이지의 크기를 곱하여 구할 수 있습니다.\nPC는 현재 실행 중인 코드의 주소로 페이지 테이블과는 상관 없습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "question": "TLB 사용 시 TLB에 접근하려고 하는 페이지의 page number가 없는 상황을 ___라 한다.",
+      "question": "TLB 사용 시 TLB에 접근하려고 하는 페이지의 페이지 번호 (page number) 가 없는 상황을 ___라 한다.",
       "choices": [
         "TLB hit",
         "TLB miss",
@@ -346,14 +346,14 @@
         "Page fault"
       ],
       "answer": 2,
-      "explanation": "Translation Looakside Buffer (TLB) 는 페이지 테이블의 캐시 역할으로 기존에 접근이 있었어서 참조할 것이 있는 경우 hit, 없었을 경우 miss라고 합니다. hit될 경우 페이지 테이블을 확인할 필요가 없어 가상 주소와 물리 주소 간의 변환을 빠르게 할 수 있습니다.",
+      "explanation": "Translation Looakside Buffer (TLB) 는 페이지 테이블의 캐시 역할으로 기존에 접근이 있었어서 참조할 것이 있는 경우 hit, 없었을 경우 miss라고 합니다. hit될 경우 페이지 테이블을 확인할 필요가 없어 가상 주소와 물리 주소 간의 변환을 보다 빠르게 할 수 있습니다.",
       "references": [
         {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
         {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
       ]
     },
     {
-      "question": "TLB에서 page number에 해당하는 frame number를 찾을 수 있었던 확률을 나타내는 용어는?",
+      "question": "TLB에서 페이지 번호 (page number) 에 해당하는 프레임 번호 (frame number) 를 찾을 수 있었던 확률을 나타내는 용어는?",
       "choices": [
         "TLB hit count",
         "TLB miss count",
@@ -361,7 +361,7 @@
         "TLB miss ratio"
       ],
       "answer": 3,
-      "explanation": "Hit ratio는 TLB에서 뿐만 아니라 캐시의 효율을 평가하기 위해 널리 사용되는 개념입니다. hit count를 hit + miss count로 나누어 구할 수 있습니다.",
+      "explanation": "Hit ratio는 TLB에서 뿐만 아니라 캐시의 효율을 평가하기 위해 널리 사용되는 개념입니다. Hit count를 (hit count + miss count)로 나누어 구할 수 있습니다. Hit ratio와는 반대 개념으로 캐시에 접근했을 때 찾을 수 없었던 확률인 miss ratio는 miss count에서 (hit count + miss count)를 나누거나 (1 - hit ratio)로 구할 수 있습니다.",
       "references": [
         {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
         {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
