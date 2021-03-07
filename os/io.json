@@ -70,7 +70,7 @@
         "Buffer"
       ],
       "answer": 3,
-      "explanation": "데이터 전달을 위해 전기 신호를 보낼 수 있는 하드웨어, 즉 매체들을 버스라 합니다.",
+      "explanation": "데이터 전달을 위해 전기 신호를 보낼 수 있는 하드웨어, 즉 매체들을 버스 (bus) 라 합니다.",
       "references": [
         {"[한] Bus": "https://ko.wikipedia.org/wiki/%EB%B2%84%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Bus": "https://en.wikipedia.org/wiki/Bus_(computing)"}
@@ -111,9 +111,9 @@
     {
       "question": "문자 장치 (Character device) 는 데이터를 ___.",
       "choices": [
-        "1비트 (bit) 씩 전송한다",
-        "1바이트 (byte) 씩 전송한다",
-        "1블록 (block) 씩 전송한다",
+        "1 비트 (bit) 씩 전송한다",
+        "1 바이트 (byte) 씩 전송한다",
+        "1 블록 (block) 씩 전송한다",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
@@ -126,9 +126,9 @@
     {
       "question": "블록 장치 (Block device) 는 데이터를 ___.",
       "choices": [
-        "1비트 (bit) 씩 전송한다",
-        "1바이트 (byte) 씩 전송한다",
-        "1블록 (block) 씩 전송한다",
+        "1 비트 (bit) 씩 전송한다",
+        "1 바이트 (byte) 씩 전송한다",
+        "1 블록 (block) 씩 전송한다",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
