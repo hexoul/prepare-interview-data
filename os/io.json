@@ -137,6 +137,59 @@
         {"[한] Block device": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%ED%8C%8C%EC%9D%BC#%EB%B8%94%EB%A1%9D_%EC%9E%A5%EC%B9%98"},
         {"Block device": "https://en.wikipedia.org/wiki/Device_file#Block_devices"}
       ]
-    }
+    },
+    {
+      "question": "프로세서는 임계구역 (Critical section) 실행 중 방해받지 않도록 ___ 인터럽트를 무시할 수 있다.",
+      "choices": [
+        "Non-maskable",
+        "Maskable",
+        "Synchronous",
+        "Asynchronous"
+      ],
+      "answer": 2,
+      "explanation": "Maskable 인터럽트란 마스킹이 가능한 인터럽트를 말합니다. 마스킹될 경우 인터럽트 신호는 프로세서에 의해 무시되어 인터럽트 핸들러 (ISR) 가 실행되지 않게 됩니다.",
+      "references": [
+        {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
+        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
+        {"NMI": "https://en.wikipedia.org/wiki/Non-maskable_interrupt"}
+      ]
+    },
+    {
+      "question": "Non-maskable interrupt (NMI) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "Maskable 인터럽트보다 우선순위가 낮다.",
+        "마스킹이 불가능한 인터럽트이다.",
+        "일반적으로 외부 장치가 아니라 내부 시스템에서 발생된다.",
+        "디버깅 (debugging) 에 쓰인다."
+      ],
+      "answer": 1,
+      "explanation": "NMI는 우선순위가 높기 때문에 프로세서가 임의로 무시할 수 없는 인터럽트입니다. 자동으로 복구가 불가능해 즉각적으로 대응이 필요한 경우가 포함됩니다. 예를 들어, 패리티 비트 (parity bit) 나 ECC (Error Correction Code) 에 의해 시스템 메모리가 오염된 것을 감지했을 때 에러는 바로 수정되어야 합니다.\n즉각적으로 시스템이 수행 중인 코드를 멈추고 진단할 수 있으므로 디버깅에 쓰이기도 합니다.",
+      "references": [
+        {"[한] Interrupt": "https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8"},
+        {"Interrupt": "https://en.wikipedia.org/wiki/Interrupt"},
+        {"NMI": "https://en.wikipedia.org/wiki/Non-maskable_interrupt"},
+        {"[한] Parity bit": "https://ko.wikipedia.org/wiki/%ED%8C%A8%EB%A6%AC%ED%8B%B0_%EB%B9%84%ED%8A%B8"},
+        {"Parity bit": "https://en.wikipedia.org/wiki/Parity_bit"},
+        {"[한] ECC": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%A5%98_%EA%B2%80%EC%B6%9C_%EC%A0%95%EC%A0%95"},
+        {"ECC": "https://en.wikipedia.org/wiki/Error_correction_code"}
+      ]
+    },
+    {
+      "question": "폴링 (Polling) 은 ___ 방식이다.",
+      "choices": [
+        "Programmable",
+        "Interrupt",
+        "Asynchronous",
+        "Busy waiting"
+      ],
+      "answer": 4,
+      "explanation": "폴링 (Polling) 은 주기적으로 상태를 확인하는 행위로 I/O에서 흔히 사용됩니다. 응답이 있을 때까지 계속하여 능동적으로 확인하기 때문에 대기 시간이 길어질수록 오버헤드 (overhead) 가 커집니다. 주기를 길게 하면 오버헤드가 감소될 수 있으나, 응답이 있었음에도 불구하고 바로 인지하지 못하여 응답 시간이 길어질 수 있습니다.",
+      "references": [
+        {"[한] Polling": "https://ko.wikipedia.org/wiki/%ED%8F%B4%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
+        {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"},
+        {"[한] Busy waiting": "https://ko.wikipedia.org/wiki/%EB%B0%94%EC%81%9C_%EB%8C%80%EA%B8%B0"},
+        {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
+      ]
+    },
   ]
 }
