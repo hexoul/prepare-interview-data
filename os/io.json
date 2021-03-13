@@ -177,18 +177,20 @@
     {
       "question": "폴링 (Polling) 은 ___ 방식이다.",
       "choices": [
-        "Programmable",
+        "Blocking",
         "Interrupt",
         "Asynchronous",
         "Busy waiting"
       ],
       "answer": 4,
-      "explanation": "폴링 (Polling) 은 주기적으로 상태를 확인하는 행위로 I/O에서 흔히 사용됩니다. 응답이 있을 때까지 계속하여 능동적으로 확인하기 때문에 대기 시간이 길어질수록 오버헤드 (overhead) 가 커집니다. 주기를 길게 하면 오버헤드가 감소될 수 있으나, 응답이 있었음에도 불구하고 바로 인지하지 못하여 응답 시간이 길어질 수 있습니다.",
+      "explanation": "폴링 (Polling) 은 주기적으로 상태를 확인하는 행위로 I/O에서 흔히 사용됩니다. 응답이 있을 때까지 계속하여 능동적으로 확인하기 때문에 대기 시간이 길어질수록 오버헤드 (overhead) 가 커집니다. 주기를 길게 하면 오버헤드가 감소될 수 있으나, 응답이 있었음에도 불구하고 바로 인지하지 못하여 응답 시간이 길어질 수 있습니다.\n폴링은 응답이 올 때까지 CPU를 계속 점유하고 있는 것이 아니므로 블로킹 (blocking) 이 아닙니다. 또한 폴링을 통해 콜백 (callback) 을 사용하지 않고 상태를 바로 확인하고 있으므로 동기 (synchronous) 방식입니다.",
       "references": [
         {"[한] Polling": "https://ko.wikipedia.org/wiki/%ED%8F%B4%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"},
         {"[한] Busy waiting": "https://ko.wikipedia.org/wiki/%EB%B0%94%EC%81%9C_%EB%8C%80%EA%B8%B0"},
-        {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"}
+        {"Busy waiting": "https://en.wikipedia.org/wiki/Busy_waiting"},
+        {"[한] Callback": "https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1"},
+        {"Callback": "https://en.wikipedia.org/wiki/Callback_(computer_programming)"}
       ]
     }
   ]
