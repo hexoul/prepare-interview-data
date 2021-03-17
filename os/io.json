@@ -192,6 +192,38 @@
         {"[한] Callback": "https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1"},
         {"Callback": "https://en.wikipedia.org/wiki/Callback_(computer_programming)"}
       ]
+    },
+    {
+      "question": "논블로킹 I/O (Non-blocking I/O) 는 ___.",
+      "choices": [
+        "프로세스의 실행을 중지시킨다",
+        "프로세스의 실행을 중지시키지 않는다",
+        "인터럽트를 발생시킨다",
+        "인터럽트를 발생시키지 않는다"
+      ],
+      "answer": 2,
+      "explanation": "논블로킹 I/O (Non-blocking I/O) 는 프로세스를 중지시키지 않습니다. 즉 waiting state가 되지 않습니다.\n논블로킹인 것 만으로는 어떤 시스템 콜을 사용하는지 알 수 없으므로 인터럽트 여부는 알 수 없습니다.",
+      "references": [
+        {"[한] Asynchronous I/O": "https://ko.wikipedia.org/wiki/%EB%B9%84%EB%8F%99%EA%B8%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"}
+      ]
+    },
+    {
+      "question": "비동기 I/O (Asynchronous I/O) 는 ___.",
+      "choices": [
+        "응답이 느리다",
+        "콜백 (callback) 을 사용할 수 있다",
+        "호출이 끝난 시점에 I/O도 완료된다",
+        "프로세스의 실행을 중지시킨다"
+      ],
+      "answer": 2,
+      "explanation": "비동기 I/O (Asynchronous I/O) 는 호출에 대해서 우선 응답을 한 후 별도로 처리합니다. 따라서 I/O 완료 시간은 길 수 있지만 응답 자체는 빠릅니다. I/O 결과는 콜백 (callback) 을 통해 확인할 수 있습니다.",
+      "references": [
+        {"[한] Asynchronous I/O": "https://ko.wikipedia.org/wiki/%EB%B9%84%EB%8F%99%EA%B8%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5"},
+        {"Asynchronous I/O": "https://en.wikipedia.org/wiki/Asynchronous_I/O"},
+        {"[한] Callback": "https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1"},
+        {"Callback": "https://en.wikipedia.org/wiki/Callback_(computer_programming)"}
+      ]
     }
   ]
 }
