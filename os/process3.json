@@ -56,7 +56,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "이진 세마포어(Binary semaphore)와 뮤텍스(mutex)는 동작 방식은 다르지만 둘다 상호 배제를 구현하기 위해 쓰일 수 있습니다.",
+      "explanation": "뮤텍스(mutex)와 이진 세마포어(Binary semaphore)는 동작 방식은 다르지만 둘다 상호 배제를 구현하기 위해 쓰일 수 있습니다. 뮤텍스는 락(lock)을 취득한 태스크(task)만 언락(unlock)을 할 수 있는 것에 반해, 세마포어는 락을 취득했던 태스크와는 다른 태스크가 언락을 할 수도 있습니다.",
       "references": [
         {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EB%9D%BD_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
