@@ -267,7 +267,7 @@
         "Wait-free 알고리즘이 lock-free보다 구현이 어렵다."
       ],
       "answer": 2,
-      "explanation": "Wait-free는 논블로킹(non-blocking)에서 가장 강력한 자유도를 보장하는 수준으로 반응성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다.\nLock-free는 락(lock)이 없다는 것이 아니라 대기 시간이 제한되어있다는 의미로, wait-free와는 달리 자원 경쟁이 있어 기아가 발생할 수 있으나 유한한 시간 내에 공유 자원을 획득할 수 있습니다.\nWait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
+      "explanation": "Wait-free는 논블로킹(non-blocking)에서 가장 강력한 자유도를 보장하는 수준으로 실시간성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다.\nLock-free는 락(lock)이 없다는 것이 아니라 락을 위한 블로킹에서 자유롭다는 의미일 뿐입니다. Wait-free와는 달리 자원 경쟁이 있을 경우 기아가 발생할 수 있으나, 적어도 한 프로세스는 유한한 시간 내에 공유 자원을 획득할 수 있습니다.\nWait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
       "references": [
         {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"}
