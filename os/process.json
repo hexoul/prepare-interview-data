@@ -9,7 +9,7 @@
         "Universal system"
       ],
       "answer": 2,
-      "explanation": "한 개의 프로세서를 뜻하는 Uniprocessor가 정답입니다. Uniprogramming system은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 multiprogramming system이라 합니다.",
+      "explanation": "한 개의 프로세서를 뜻하는 단일 프로세서(Uniprocessor)가 정답입니다. 단일 프로그래밍 시스템(Uniprogramming system)은 한 번에 하나의 프로그램에 대한 메모리만 로드할 수 있는 시스템입니다. 하나의 프로세서로도 한 번에 하나 이상의 프로그램들을 실행가능하게 만드는 시스템은 다중 프로그래밍 시스템(multiprogramming system)이라 합니다.",
       "references": [
         {"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}
       ]
@@ -17,13 +17,13 @@
     {
       "question": "운영체제에서 각 프로세스는 자신의 ___를 가진다.",
       "choices": [
-        "프로세스 상태",
-        "프로그램 카운터",
+        "프로세스 상태(Process state)",
+        "프로그램 카운터(Program counter)",
         "프로세스에서 연 파일들에 대한 정보",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다. 저장하는 구조체의 이름을 Process Control Block (PCB) 라고 합니다. PCB에는 프로세스 상태, 프로그램 카운터, 범용 레지스터, 프로세스에서 연 파일들에 대한 정보 그리고 시그널 핸들러 등을 포함합니다.",
+      "explanation": "여러 프로세스가 전환되어가며 실행될 수 있기때문에, 프로세스마다 서로 다른 실행 환경을 각자 저장하고 있습니다. 저장하는 구조체의 이름을 Process Control Block(PCB)라고 합니다. PCB에는 프로세스 상태(process state), 프로그램 카운터(program counter), 범용 레지스터(general register), 프로세스에서 연 파일들에 대한 정보 그리고 시그널 핸들러(signal handler) 등을 포함합니다.",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
@@ -59,22 +59,22 @@
       ]
     },
     {
-      "question": "프로세스의 상태 (state) 중 Ready에 해당하는 것은?",
+      "question": "프로세스의 상태(state) 중 ready에 해당하는 것은?",
       "choices": [
         "실행 후 다음 실행을 위해 스케줄 된 상태",
-        "어떤 태스크 (task) 가 완료될 때까지 실행할 수 없는 상태",
+        "어떤 태스크(task)가 완료될 때까지 실행할 수 없는 상태",
         "CPU를 사용하고 있는 상태",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "(2)는 Blocked에 대한 설명이며 (3)은 Running에 대한 설명입니다.",
+      "explanation": "(2)는 blocked에 대한 설명이며 (3)은 running에 대한 설명입니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state" : "https://en.wikipedia.org/wiki/Process_state"}
       ]
     },
     {
-      "question": "Inter-process communication (IPC) 란?",
+      "question": "Inter-process communication(IPC)란?",
       "choices": [
         "프로세스 내부의 통신",
         "두 프로세스 간의 통신",
@@ -90,37 +90,37 @@
       "visible": false
     },
     {
-      "question": "프로세스의 교착 상태 (deadlock) 조건에 해당하지 않는 경우는?",
+      "question": "프로세스의 교착 상태(deadlock) 조건에 해당하지 않는 경우는?",
       "choices": [
-        "상호배제 (Mutual exclusion)",
-        "점유대기 (Hold and wait)",
-        "선점 (Preemption)",
-        "순환대기 (Circular wait)"
+        "상호배제(Mutual exclusion)",
+        "점유대기(Hold and wait)",
+        "선점(Preemption)",
+        "순환대기(Circular wait)"
       ],
       "answer": 3,
-      "explanation": "Deadlock의 조건에 해당하는 것은 선점이 아니라 비선점 (No preemption) 입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
+      "explanation": "교착 상태(Deadlock)의 조건에 해당하는 것은 선점이 아니라 비선점(No preemption)입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
       "references": [
         {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
         {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}
       ]
     },
     {
-      "question": "프로세스의 스택 (Stack) 이 포함하지 않는 것은?",
+      "question": "프로세스의 스택(Stack)이 포함하지 않는 것은?",
       "choices": [
-        "함수 매개변수 (Function parameter)",
-        "지역 변수 (Local variable)",
-        "복귀 주소 (Return address)",
+        "함수 매개변수(Function parameter)",
+        "지역 변수(Local variable)",
+        "복귀 주소(Return address)",
         "자식 프로세스의 PID"
       ],
       "answer": 4,
-      "explanation": "프로세스의 스택은 콜 스택 (call stack) 이라 하여 실행 중인 컨텍스트를 저장하고 제어하기 위해 쓰입니다. 다양하게 활용되지만 주 용도 중 하나는 함수의 호출과 복귀입니다.\n함수 호출이 완료됐을 때 현재 위치로 돌아오기 위해 복귀 주소를 스택에 넣습니다. 다음으로 매개변수를 요구하는 함수일 경우 전달하기 위해 스택에 넣습니다. 호출된 함수는 필요에 따라 스택을 추가적으로 활용하기도 하는데 지역 변수도 이에 포함됩니다.\n자식 프로세스의 ID (PID) 를 포함하여 자신의 PID 등 프로세스에 대한 정보는 PCB (Process Control Block)에 저장됩니다. PCB는 운영체제가 관리하기에 콜 스택이 아닌 운영체제가 가진 풀 (pool) 에 속합니다.",
+      "explanation": "프로세스의 스택은 콜 스택(call stack)이라 하여 실행 중인 컨텍스트를 저장하고 제어하기 위해 쓰입니다. 다양하게 활용되지만 주 용도 중 하나는 함수의 호출과 복귀입니다.\n함수 호출이 완료됐을 때 현재 위치로 돌아오기 위해 복귀 주소를 스택에 넣습니다. 다음으로 매개변수를 요구하는 함수일 경우 전달하기 위해 스택에 넣습니다. 호출된 함수는 필요에 따라 스택을 추가적으로 활용하기도 하는데 지역 변수도 이에 포함됩니다.\n자식 프로세스의 ID(PID)를 포함하여 자신의 PID 등 프로세스에 대한 정보는 PCB(Process Control Block)에 저장됩니다. PCB는 운영체제가 관리하기에 콜 스택이 아닌 운영체제가 가진 풀(pool)에 속합니다.",
       "references": [
         {"[한] Call stack": "https://ko.wikipedia.org/wiki/%EC%BD%9C_%EC%8A%A4%ED%83%9D"},
         {"Call stack" : "https://en.wikipedia.org/wiki/Call_stack"}
       ]
     },
     {
-      "question": "종료된 자식 프로세스의 정보를 얻어올 수 있는 system call은?",
+      "question": "종료된 자식 프로세스의 정보를 얻어올 수 있는 시스템 은?",
       "choices": [
         "wait",
         "exit",
@@ -139,9 +139,9 @@
       "question": "다음에 실행될 명령어의 주소를 저장하고 있는 곳은?",
       "choices": [
         "CPU 범용 레지스터",
-        "프로그램 카운터 (Program counter)",
-        "프로세스의 스택",
-        "파이프 (Pipe)"
+        "프로그램 카운터(Program counter)",
+        "프로세스의 스택(stack)",
+        "파이프(Pipe)"
       ],
       "answer": 2,
       "explanation": "프로그램 카운터도 CPU의 레지스터에 속하지만 범용이 아닌 특수 목적 레지스터입니다. 다양한 위치 또는 값을 저장하는 범용 레지스터와 달리 다음에 실행될 명령어의 주소만 저장합니다.",
@@ -152,15 +152,15 @@
       "visible": false
     },
     {
-      "question": "Process Control Block (PCB) 에 포함되지 않는 것은?",
+      "question": "Process Control Block(PCB)에 포함되지 않는 것은?",
       "choices": [
-        "프로세스 상태 (Process state)",
-        "프로그램 카운터 (Program counter)",
-        "스택 (Stack)",
-        "페이지 테이블 포인터 (Page table pointer)"
+        "프로세스 상태(Process state)",
+        "프로그램 카운터(Program counter)",
+        "스택(Stack)",
+        "페이지 테이블 포인터(Page table pointer)"
       ],
       "answer": 3,
-      "explanation": "PCB에는 레지스터의 값 들도 포함됩니다. 레지스터 중에는 콜 스택을 추적하기위한 stack pointer (SP) 도 포함됩니다. 다만 SP는 포인터일 뿐이고 스택 그 자체는 아닙니다.\n비슷하게 PCB는 페이지 테이블에 대해서도 포인터를 가지고 있고 페이지 테이블 자체는 운영체제에 의해 커널 공간에서 관리됩니다.",
+      "explanation": "PCB에는 레지스터의 값 들도 포함됩니다. 레지스터 중에는 콜 스택을 추적하기위한 stack pointer(SP)도 포함됩니다. 다만 SP는 포인터일 뿐이고 스택 그 자체는 아닙니다.\n비슷하게 PCB는 페이지 테이블에 대해서도 포인터를 가지고 있고 페이지 테이블 자체는 운영체제에 의해 커널 공간에서 관리됩니다.",
       "references": [
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"}
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "question": "프로세스의 상태 (state) 는 ___ 라고 볼 수 있다.",
+      "question": "프로세스의 상태(state)는 ___ 라고 볼 수 있다.",
       "choices": [
         "프로세스의 최종 활동",
         "프로세스가 막 실행한 활동",
@@ -189,14 +189,14 @@
         "프로세스의 현재 활동"
       ],
       "answer": 4,
-      "explanation": "프로세스는 현재 상태에 따라 스케줄링되어야 하므로 프로세스의 상태는 메인 메모리 상에서 운영체제에 의해 지속적으로 관리됩니다. 유한 상태 기계 (Finite State Machine, FSM) 로 정의되기 때문에 이전 상태와 활동으로부터 전이됩니다. 따라서 막 수행한 활동이 관련은 있지만 현재 상태라고는 볼 수 없습니다. 현재의 상태는 현재의 활동으로 보아야 합니다.",
+      "explanation": "프로세스는 현재 상태에 따라 스케줄링되어야 하므로 프로세스의 상태는 메인 메모리 상에서 운영체제에 의해 지속적으로 관리됩니다. 유한 상태 기계(Finite State Machine, FSM)로 정의되기 때문에 이전 상태와 활동으로부터 전이됩니다. 따라서 막 수행한 활동이 관련은 있지만 현재 상태라고는 볼 수 없습니다. 현재의 상태는 현재의 활동으로 보아야 합니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
       ]
     },
     {
-      "question": "다음 중 프로세스의 상태 (state) 가 아닌 것은?",
+      "question": "다음 중 프로세스의 상태(state)가 아닌 것은?",
       "choices": [
         "New",
         "Old",
@@ -204,14 +204,14 @@
         "Running"
       ],
       "answer": 2,
-      "explanation": "프로세스의 상태는 생성 (new 또는 created),  실행 (running), 준비 (ready), 대기 (waiting 또는 blocked), 종료 (terminated) 의 다섯 가지가 있습니다. '생성'은 생성 직후의 상태입니다. '실행'은 실행 중인 상태, '준비'는 실행될 수 있는 상태입니다. '대기'는 I/O 등의 인터럽트를 기다려야해서 실행될 수 없는 상태입니다. 프로세스가 수행을 마치거나 강제로 종료되었을 때 '종료' 상태가 됩니다. Old 상태는 정의되어 있지 않습니다.",
+      "explanation": "프로세스의 상태는 생성(new 또는 created),  실행(running), 준비(ready), 대기(waiting 또는 blocked), 종료(terminated)의 다섯 가지가 있습니다. '생성'은 생성 직후의 상태입니다. '실행'은 실행 중인 상태, '준비'는 실행될 수 있는 상태입니다. '대기'는 I/O 등의 인터럽트를 기다려야해서 실행될 수 없는 상태입니다. 프로세스가 수행을 마치거나 강제로 종료되었을 때 '종료' 상태가 됩니다. Old 상태는 정의되어 있지 않습니다.",
       "references": [
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
         {"Process state": "https://en.wikipedia.org/wiki/Process_state"}
       ]
     },
     {
-      "question": "Process Control Block (PCB) 란?",
+      "question": "Process Control Block(PCB)란?",
       "choices": [
         "프로세스 타입 변수",
         "자료 구조",
@@ -241,11 +241,11 @@
       ]
     },
     {
-      "question": "다중 프로그래밍의 정도 (the degree of multiprogramming) 를 판단할 수 있는 요소는?",
+      "question": "다중 프로그래밍의 정도(the degree of multiprogramming)를 판단할 수 있는 요소는?",
       "choices": [
         "단위 시간 내에 실행된 프로세스의 수",
-        "Ready queue에 존재하는 프로세스의 수",
-        "Waiting queue에 존재하는 프로세스의 수",
+        "준비 큐(Ready queue)에 존재하는 프로세스의 수",
+        "대기 큐(Waiting queue)에 존재하는 프로세스의 수",
         "메모리에 존재하는 프로세스의 수"
       ],
       "answer": 4,
@@ -257,11 +257,11 @@
       ]
     },
     {
-      "question": "싱글 스레드 (thread) 하에서 프로세스는 ___를 처리할 수 있다.",
+      "question": "단일 스레드(thread) 하에서 프로세스는 ___를 처리할 수 있다.",
       "choices": [
-        "한 번에 하나의 태스크 (task)",
-        "한 번에 두 개의 태스크 (task)",
-        "한 번에 두 개 이상의 태스크 (task)",
+        "한 번에 하나의 태스크(task)",
+        "한 번에 두 개의 태스크(task)",
+        "한 번에 두 개 이상의 태스크(task)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "question": "다중 프로그래밍 (Multiprogramming) 의 목적은?",
+      "question": "다중 프로그래밍(Multiprogramming)의 목적은?",
       "choices": [
         "프로세스들을 항상 실행시키기 위함",
         "Queue에 대기하고있는 복수의 프로그램들을 실행시킬 준비를 하기 위함",
@@ -280,14 +280,14 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 1,
-      "explanation": "단일 프로그램만 수행할 경우 I/O가 있을 때 프로그램 수행을 멈추고 인터럽트를 기다려야해서 대기하는 동안 CPU를 활용하지 못하는 비효율이 발생합니다. 이에 대기하는 시간에 다른 프로그램을 실행시켜 CPU 활용효율을 개선하고자 제안된 것이 multiprogramming 입니다.",
+      "explanation": "단일 프로그램만 수행할 경우 I/O가 있을 때 프로그램 수행을 멈추고 인터럽트를 기다려야해서 대기하는 동안 CPU를 활용하지 못하는 비효율이 발생합니다. 이에 대기하는 시간에 다른 프로그램을 실행시켜 CPU 활용 효율을 개선하고자 제안된 것이 다중 프로그래밍(multiprogramming)입니다.",
       "references": [
         {"[한] Multiprogramming": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EC%A4%91_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D"},
         {"Multiprogramming": "https://en.wikipedia.org/wiki/Computer_multitasking"}
       ]
     },
     {
-      "question": "Remote Procedure Call (RPC) 은 ___ 하기위해 사용된다.",
+      "question": "Remote Procedure Call(RPC)은 ___ 하기위해 사용된다.",
       "choices": [
         "같은 프로그램 내의 프로시저를 호출",
         "같은 시스템 내의 프로시저를 호출",
@@ -310,7 +310,7 @@
         "Process"
       ],
       "answer": 2,
-      "explanation": "Stub은 일반적으로 RPC를 위해 자동생성되어지는 코드를 말합니다. 호출 시 클라이언트 사이드 stub에서는 매개변수 (parameter) 를 packing (혹은 marshalling) 하고, 서버 사이드 stub (혹은 skeleton) 에서는 unpacking (혹은 unmarshalling) 하여 매개변수를 전달받습니다. 응답 시에는 위 과정을 반대 순서로 진행합니다.",
+      "explanation": "스텁(Stub)은 일반적으로 RPC를 위해 자동생성되어지는 코드를 말합니다. 호출 시 클라이언트 사이드 스텁에서는 매개변수(parameter)를 packing(혹은 marshalling)하고, 서버 사이드 스텁(혹은 skeleton)에서는 unpacking(혹은 unmarshalling)하여 매개변수를 전달받습니다. 응답 시에는 위 과정을 반대 순서로 진행합니다.",
       "references": [
         {"[한] RPC": "https://ko.wikipedia.org/wiki/%EC%9B%90%EA%B2%A9_%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80_%ED%98%B8%EC%B6%9C"},
         {"RPC": "https://en.wikipedia.org/wiki/Remote_procedure_call"},
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "question": "클라이언트 사이드 stub이 하는 것은?",
+      "question": "클라이언트 사이드 스텁(stub)이 하는 것은?",
       "choices": [
         "서버 사이드에 메시지 전달",
         "전달할 매개변수 marshalling",
