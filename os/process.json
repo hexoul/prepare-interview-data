@@ -74,7 +74,7 @@
       ]
     },
     {
-      "question": "Inter-process communication(IPC)란?",
+      "question": "Inter-process communication(IPC)이란?",
       "choices": [
         "프로세스 내부의 통신",
         "두 프로세스 간의 통신",
@@ -98,14 +98,14 @@
         "순환대기(Circular wait)"
       ],
       "answer": 3,
-      "explanation": "교착 상태(Deadlock)의 조건에 해당하는 것은 선점이 아니라 비선점(No preemption)입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
+      "explanation": "교착 상태(Deadlock)의 조건에 해당하는 것은 선점이 아니라 비선점(no preemption)입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
       "references": [
         {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
         {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}
       ]
     },
     {
-      "question": "프로세스의 스택(Stack)이 포함하지 않는 것은?",
+      "question": "프로세스의 스택(stack)이 포함하지 않는 것은?",
       "choices": [
         "함수 매개변수(Function parameter)",
         "지역 변수(Local variable)",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "question": "Process Control Block(PCB)란?",
+      "question": "Process Control Block(PCB)이란?",
       "choices": [
         "프로세스 타입 변수",
         "자료 구조",
@@ -257,7 +257,7 @@
       ]
     },
     {
-      "question": "단일 스레드(thread) 하에서 프로세스는 ___를 처리할 수 있다.",
+      "question": "단일 스레드(single thread) 하에서 프로세스는 ___를 처리할 수 있다.",
       "choices": [
         "한 번에 하나의 태스크(task)",
         "한 번에 두 개의 태스크(task)",
