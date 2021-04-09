@@ -288,7 +288,7 @@
       ]
     },
     {
-      "question": "Remote Procedure Call(RPC)은 ___ 하기위해 사용된다.",
+      "question": "RPC(Remote Procedure Call)는 ___ 하기위해 사용된다.",
       "choices": [
         "같은 프로그램 내의 프로시저를 호출",
         "같은 시스템 내의 프로시저를 호출",
