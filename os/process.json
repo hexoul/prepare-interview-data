@@ -38,7 +38,7 @@
         "generate"
       ],
       "answer": 1,
-      "explanation": "-",
+      "explanation": "fork는 호출한 프로세스를 복제하여 새로운 프로세스를 만드는 시스템 콜입니다. 호출한 프로세스는 부모 프로세스로 생성된 프로세스는 자식 프로세스로 언급됩니다. 스레드가 아니라 프로세스이기 때문에 분리된 메모리 영역을 가지고 실행됩니다.",
       "references": [
         {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
       ]
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "question": "종료된 자식 프로세스의 정보를 얻어올 수 있는 시스템 콜(system call)은?",
+      "question": "종료된 자식 프로세스(child process)의 정보를 얻어올 수 있는 시스템 콜(system call)은?",
       "choices": [
         "wait",
         "exit",
@@ -129,7 +129,7 @@
         "get"
       ],
       "answer": 1,
-      "explanation": "-",
+      "explanation": "wait은 자식 프로세스가 종료되기를 기다렸다가, 종료되면 자식 프로세스의 PID와 종료된 상태를 반환합니다. 종료된 상태는 종료가 정상적이었는지, 비정상적이었는지 또는 시그널을 받아 종료되었는지 등의 다양한 정보를 포함합니다.",
       "references": [
         {"wait" : "https://en.wikipedia.org/wiki/Wait_(system_call)"},
         {"exit" : "https://en.wikipedia.org/wiki/Exit_(system_call)"},
