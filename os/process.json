@@ -382,6 +382,35 @@
         {"[한] Thread": "https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Thread": "https://en.wikipedia.org/wiki/Thread_(computing)"}
       ]
+    },
+    {
+      "question": "CPU bound란 ___ 것을 말한다.",
+      "choices": [
+        "수행 완료 시간이 CPU의 영향을 받지 않는",
+        "수행 완료 시간이 CPU의 속도에 의해 정해지는",
+        "수행 완료 시간이 I/O의 영향을 받지 않는",
+        "유휴 시간(idle time)이 CPU의 속도에 의해 정해지는"
+      ],
+      "answer": 2,
+      "explanation": "CPU bound란 태스크(task)의 수행 완료 시간이 CPU의 속도에 의해 결정되는 것을 말합니다. 달리 말해, CPU가 병목 구간(bottleneck)이라고 할 수 있습니다. 예를 들어, 대기 상태로 전환되는 시스템 콜 호출이 없거나 적고 순수 연산만 많은 프로그램이 해당될 수 있습니다.",
+      "references": [
+        {"CPU bound": "https://en.wikipedia.org/wiki/CPU-bound"}
+      ]
+    },
+    {
+      "question": "I/O bound란 ___ 것을 말한다.",
+      "choices": [
+        "유휴 시간(idle time)이 I/O에 의해서만 생기는",
+        "I/O를 사용하지 않도록 구현된",
+        "수행 완료 시간이 I/O 대기 시간에 의해 정해지는",
+        "수행 완료 시간이 I/O의 영향을 받지 않는"
+      ],
+      "answer": 3,
+      "explanation": "I/O bound란 태스크(task)의 수행 완료 시간이 I/O 처리를 위해 쓰이는 시간에 의해 결정되는 것을 말합니다. 달리 말해, I/O가 병목 구간(bottleneck)이라고 할 수 있습니다. CPU bound와 반대되는 개념으로, I/O를 위한 처리가 많아 대기 큐(waiting queue)에 빈번하게 들어가는 경우라고 볼 수도 있습니다.",
+      "references": [
+        {"I/O bound": "https://en.wikipedia.org/wiki/I/O_bound"},
+        {"CPU bound": "https://en.wikipedia.org/wiki/CPU-bound"}
+      ]
     }
   ]
 }
