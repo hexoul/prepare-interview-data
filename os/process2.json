@@ -458,7 +458,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "비선점 스케줄러는 실행 중인 프로세스에 간섭하지 않으므로 스케줄러가 실행되려면 프로세스가 스스로 자원을 놓는 상태 전이가 있어야 합니다. 예를 들어, I/O 요청 등 자신을 블록함으로써 대기 상태로 전이할 때 비선점 스케줄러가 실행됩니다.",
+      "explanation": "비선점형 스케줄러(Non-preemptive scheduler)는 실행 중인 프로세스에 간섭하지 않으므로 스케줄러가 실행되려면 프로세스가 스스로 자원을 놓는 상태 전이(state transition)가 있어야 합니다. 예를 들어, I/O 요청 등을 통해 자신을 블록할 때 대기 상태로 전이되고 비선점형 스케줄러가 실행됩니다.\nRunning state에서 ready state로 전환되는 것은 선점형 스케줄러(preemptive scheduler)에 의한 결과이기 때문에, 비선점형 스케줄러를 사용하는 환경 하에서는 발생할 수 없습니다.",
       "references": [
         {"Preemption": "https://en.wikipedia.org/wiki/Preemption_(computing)"},
         {"Blocked": "https://en.wikipedia.org/wiki/Process_state#Blocked"}
