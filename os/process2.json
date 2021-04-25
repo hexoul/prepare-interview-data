@@ -157,21 +157,21 @@
       ]
     },
     {
-      "question": "Long-term 스케줄러란?",
+      "question": "장기(Long-term) 스케줄러란?",
       "choices": [
-        "Ready queue에 옮겨질 프로세스를 선택한다.",
-        "Waiting queue에 옮겨질 프로세스를 선택한다.",
+        "준비 큐(Ready queue)에 옮겨질 프로세스를 선택한다.",
+        "대기 큐(Waiting queue)에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 1,
-      "explanation": "Long-term 스케줄러는 실행되는 프로세스들이 I/O bound인지 CPU bound인지 파악하고 적절하게 ready queue에 배치함으로써 다중 프로그래밍의 정도(the degree of multiprogramming), 즉 병렬도를 향상시키기 위한 스케줄을 합니다.",
+      "explanation": "장기(Long-term) 스케줄러는 실행되는 프로세스들이 I/O bound인지 CPU bound인지 파악하고 적절하게 준비 큐(ready queue)에 배치함으로써 다중 프로그래밍의 정도(the degree of multiprogramming), 즉 병렬도를 향상시키기 위한 스케줄을 합니다.",
       "references": [
         {"Long-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Long-term_scheduling"}
       ]
     },
     {
-      "question": "만약 모든 프로세스가 I/O bound라면 ready queue는 거의 항상 ___ short-term 스케줄러는 할 일이 ___",
+      "question": "만약 모든 프로세스가 I/O bound라면 준비 큐(ready queue)는 거의 항상 ___ 단기(short-term) 스케줄러는 할 일이 ___",
       "choices": [
         "꽉 차있고, 적다",
         "꽉 차있고, 많다",
@@ -179,13 +179,13 @@
         "비어있고, 많다"
       ],
       "answer": 3,
-      "explanation": "프로세스가 I/O bound라면 I/O에 시간을 많이 쓰는 것이므로 ready보다 대기 큐(waiting queue)에 있을 확률이 높다고 생각할 수 있습니다. 따라서 다음에 CPU를 할당받을 프로세스를 선택하는 short-term 스케줄러 입장에서는 할 일이 적어집니다.",
+      "explanation": "프로세스가 I/O bound라면 I/O에 시간을 많이 쓰는 것이므로 ready보다 대기 큐(waiting queue)에 있을 확률이 높다고 생각할 수 있습니다. 따라서 다음에 CPU를 할당받을 프로세스를 선택하는 단기(short-term) 스케줄러 입장에서는 할 일이 적어집니다.",
       "references": [
         {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}
       ]
     },
     {
-      "question": "Medium-term 스케줄러란?",
+      "question": "중기(Medium-term) 스케줄러란?",
       "choices": [
         "준비 큐(Ready queue)에 옮겨질 프로세스를 선택한다.",
         "대기 큐(Waiting queue)에 옮겨질 프로세스를 선택한다.",
@@ -193,13 +193,13 @@
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 4,
-      "explanation": "Medium-term 스케줄러는 메모리 효율을 위해 오래동안 사용되지않은 프로세스를 메모리에서 HDD와 같은 보조기억장치(secondary memory)에 옮기거나, 빈번하게 페이지 부재(page fault)를 발생시키는 프로세스를 메인 메모리에 유지시키는 등 프로세스의 메모리 스왑 여부를 결정하는 스케줄러입니다.",
+      "explanation": "중기(Medium-term) 스케줄러는 메모리 효율을 위해 오래동안 사용되지않은 프로세스를 메모리에서 HDD와 같은 보조기억장치(secondary memory)에 옮기거나, 빈번하게 페이지 부재(page fault)를 발생시키는 프로세스를 메인 메모리에 유지시키는 등 프로세스의 메모리 스왑 여부를 결정하는 스케줄러입니다.",
       "references": [
         {"Medium-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Medium-term_scheduling"}
       ]
     },
     {
-      "question": "Short-term 스케줄러란?",
+      "question": "단기(Short-term) 스케줄러란?",
       "choices": [
         "준비 큐에 옮겨질 프로세스를 선택한다.",
         "대기 큐에 옮겨질 프로세스를 선택한다.",
@@ -207,13 +207,13 @@
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
       "answer": 3,
-      "explanation": "Short-term 스케줄러는 CPU 스케줄러라고도 불립니다. 이름에서 알 수 있듯이 medium-term 스케줄러와 long-term 스케줄러보다 빈번하게 스케줄링합니다. 자주 호출되는 만큼 전체 수행시간에 주는 영향을 최소화하기 위하여 가능한 한 가볍게 작성됩니다.",
+      "explanation": "단기(Short-term) 스케줄러는 CPU 스케줄러라고도 불립니다. 이름에서 알 수 있듯이 중기(medium-term) 스케줄러와 장기(long-term) 스케줄러보다 빈번하게 스케줄링합니다. 자주 호출되는 만큼 전체 수행시간에 주는 영향을 최소화하기 위하여 가능한 한 가볍게 작성됩니다.",
       "references": [
         {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"}
       ]
     },
     {
-      "question": "Short-term 스케줄러와 Long-term 스케줄러의 주된 차이점은?",
+      "question": "단기(Short-term) 스케줄러와 장기(long-term) 스케줄러의 주된 차이점은?",
       "choices": [
         "큐 길이의 차이",
         "스케줄되는 프로세스 타입의 차이",
@@ -221,7 +221,7 @@
         "스케줄링에 소모되는 시간"
       ],
       "answer": 3,
-      "explanation": "이름에서 알 수 있듯이 'term'은 스케줄러의 주기를 나타냅니다. 주기가 짧을수록 빈번하게 실행됩니다.\n실행 주기 : Long-term 스케줄러 > Medium-term 스케줄러 > Short-term 스케줄러",
+      "explanation": "이름에서 알 수 있듯이 'term'은 스케줄러의 주기를 나타냅니다. 주기가 짧을수록 빈번하게 실행됩니다.\n실행 주기 : 장기(Long-term) 스케줄러 > 중기(Medium-term) 스케줄러 > 단기(Short-term) 스케줄러",
       "references": [
         {"Scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)"},
         {"Short-term scheduler": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Short-term_scheduling"},
@@ -315,7 +315,7 @@
         "Page table"
       ],
       "answer": 2,
-      "explanation": "TLB는 페이지 테이블에 빠르게 접근하기위한 캐시로 MMU(memory management unit)에서 하드웨어 레벨로 구현됩니다.",
+      "explanation": "TLB는 페이지 테이블에 빠르게 접근하기위한 캐시로 MMU(Memory Management Unit)에서 하드웨어 레벨로 구현됩니다.",
       "references": [
         {"Context switch": "https://en.wikipedia.org/wiki/Context_switch"},
         {"PCB": "https://en.wikipedia.org/wiki/Process_control_block"},
@@ -373,12 +373,12 @@
       ]
     },
     {
-      "question": "CPU 제어권을 short-term 스케줄러에 의해 선택된 프로세스에게 넘겨주는 모듈은?",
+      "question": "CPU 제어권을 단기(short-term) 스케줄러에 의해 선택된 프로세스에게 넘겨주는 모듈은?",
       "choices": [
-        "interrupt",
-        "scheduler",
-        "dispatcher",
-        "fetcher"
+        "Interrupt",
+        "Scheduler",
+        "Dispatcher",
+        "Fetcher"
       ],
       "answer": 3,
       "explanation": "-",
@@ -392,7 +392,7 @@
         "가장 높은 우선순위를 가진 프로세스에 CPU를 할당한다.",
         "가장 낮은 우선순위를 가진 프로세스에 CPU를 할당한다.",
         "동일한 우선순위를 가진 프로세스들은 스케줄될 수 없다.",
-        "큐 (Queue) 에 빨리 들어온 프로세스가 높은 우선순위를 가진다."
+        "큐(Queue)에 빨리 들어온 프로세스가 높은 우선순위를 가진다."
       ],
       "answer": 1,
       "explanation": "우선순위 스케줄링 알고리즘(Priority scheduling algorithm)은 높은 우선순위를 가진 프로세스에 먼저 CPU를 할당하며, 동일한 우선순위를 가진 프로세스가 2개 이상 있다면 임의로 그 중 하나를 선택합니다. 스케줄이 안되는 경우는 없습니다. 우선순위는 직접 입력을 받기도 하지만 특성에 따라 산정되기도 합니다. 예로 RTOS에서는 데드라인이 짧을수록 우선순위가 높은 EDF 등이 있습니다.",
@@ -564,10 +564,10 @@
         "캐시가 만료되지 않도록 유지하는 것",
         "페이지가 메모리에서 스왑되지 않도록 유지하는 것",
         "최근 실행된 프로세스의 우선순위를 낮추는 것",
-        "오랫동안 수행되지 못하고 대기한 태스크 (task) 의 우선순위를 높이는 것"
+        "오랫동안 수행되지 못하고 대기한 태스크(task)의 우선순위를 높이는 것"
       ],
       "answer": 4,
-      "explanation": "우선순위 (Priority) 스케줄링 알고리즘에서는 낮은 우선순위를 가진 프로세스의 경우 기아 (starvation) 가 발생해 무한히 대기할 수도 있습니다. 이러한 문제점을 해결하고자, 프로세스가 유한한 시간 내에 끝날 수 있도록 CPU 대기시간이 긴 태스크 (task) 에 대해서 일시적으로 우선순위를 높이는 기법이 제안되었습니다. 이를 aging이라 합니다.",
+      "explanation": "우선순위(Priority) 스케줄링 알고리즘에서는 낮은 우선순위를 가진 프로세스의 경우 기아(starvation)가 발생해 무한히 대기할 수도 있습니다. 이러한 문제점을 해결하고자, 프로세스가 유한한 시간 내에 끝날 수 있도록 CPU 대기시간이 긴 태스크(task)에 대해서 일시적으로 우선순위를 높이는 기법이 제안되었습니다. 이를 aging이라 합니다.",
       "references": [
         {"Aging": "https://en.wikipedia.org/wiki/Aging_(scheduling)"}
       ]
@@ -581,7 +581,7 @@
         "최초로 데이터를 쓸 때 페이지 복사가 발생한다."
       ],
       "answer": 4,
-      "explanation": "자식 프로세스 생성 시 페이지 테이블을 복제하여 부모 프로세스와는 상관없이 독립적으로 사용합니다. 이후 자식 프로세스가 데이터를 읽을 때 부모 프로세스가 이미 메모리에 불러왔던 페이지라면 page fault없이 바로 얻어올 수 있습니다. 하지만 데이터 쓰기를 할 때에는 부모 프로세스가 해당 페이지를 읽기 전용으로 읽고 있었으면 일관성을 해칠 수 있으므로 물리 주소를 새로 받아 복사한 뒤 사용합니다. 이러한 일련의 작업은 COW(copy-on-write)라는 기법의 동작 방식으로 fork 후 불필요한 페이지 부재(page fault)를 줄여 메모리의 효율성을 올려줍니다.",
+      "explanation": "자식 프로세스 생성 시 페이지 테이블을 복제하여 부모 프로세스와는 상관없이 독립적으로 사용합니다. 이후 자식 프로세스가 데이터를 읽을 때 부모 프로세스가 이미 메모리에 불러왔던 페이지라면 페이지 부재(page fault)없이 바로 얻어올 수 있습니다. 하지만 데이터 쓰기를 할 때에는 부모 프로세스가 해당 페이지를 읽기 전용으로 읽고 있었으면 일관성을 해칠 수 있으므로 물리 주소를 새로 받아 복사한 뒤 사용합니다. 이러한 일련의 작업은 COW(copy-on-write)라는 기법의 동작 방식으로 fork 후 불필요한 페이지 부재를 줄여 메모리의 효율성을 올려줍니다.",
       "references": [
         {"[한] Page fault": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%B6%80%EC%9E%AC"},
         {"Page fault": "https://en.wikipedia.org/wiki/Page_fault"},
