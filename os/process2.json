@@ -585,7 +585,7 @@
       "references": [
         {"[한] Page fault": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%B6%80%EC%9E%AC"},
         {"Page fault": "https://en.wikipedia.org/wiki/Page_fault"},
-        {"Copy-on-write (COW)": "https://en.wikipedia.org/wiki/Copy-on-write"},
+        {"COW(Copy-On-Write)": "https://en.wikipedia.org/wiki/Copy-on-write"},
         {"Child process": "https://en.wikipedia.org/wiki/Child_process"},
         {"[한] fork": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%81%AC_(%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)"},
         {"fork": "https://en.wikipedia.org/wiki/Fork_(system_call)"}
