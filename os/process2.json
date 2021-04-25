@@ -56,7 +56,7 @@
         "Uniprogramming, Multiprocessing"
       ],
       "answer": 4,
-      "explanation": "Uni는 하나, Multi는 복수를 뜻합니다. Uniprogramming은 하나의 프로그램, 즉 하나의 프로세스만 메인 메모리에 올려 실행시키는 것을 의미합니다. 반면 uniprocessing은 하나의 프로세서를 사용하는 것을 의미하는 용어로 메인 메모리에 여러 프로세스를 읽어 둔 뒤 문맥 교환 (context switch) 을 해가며 실행시킬 수도 있습니다.\n비슷하게 Multiprogramming도 프로그램에만 관련된 정의라 여러 프로세스를 사용한다고 보기에는 논리적 비약이 있습니다.",
+      "explanation": "Uni는 하나, multi는 복수를 뜻합니다. 단일 프로그래밍(Uniprogramming)은 하나의 프로그램, 즉 하나의 프로세스만 메인 메모리에 올려 실행시키는 것을 의미합니다. 반면 단일 프로세싱(uniprocessing)은 하나의 프로세서를 사용하는 것을 의미하는 용어로 메인 메모리에 여러 프로세스를 읽어 둔 뒤 문맥 교환 (context switch) 을 해가며 실행시킬 수도 있습니다.\n비슷하게 다중 프로그래밍(multiprogramming)도 프로그램에만 관련된 정의라 여러 프로세스를 사용한다고 보기에는 논리적 비약이 있습니다.",
       "references": [
         {"Multitasking": "https://en.wikipedia.org/wiki/Computer_multitasking"},
         {"Uniprocessor system": "https://en.wikipedia.org/wiki/Uniprocessor_system"}
@@ -65,13 +65,13 @@
     {
       "question": "각 프로세스는 ___로 식별할 수 있다.",
       "choices": [
-        "Process Control Block",
-        "Process Queue",
-        "Process Identifier",
+        "PCB(Process Control Block)",
+        "Process queue",
+        "PID(Process IDentifier)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "Process Identifier는 프로세스 식별자라는 의미로 PID라고도 합니다.\nPCB (Process Control Block) 는 PID를 포함하지만 그 자체로는 프로세스에 관련된 정보를 저장하는 자료구조일 뿐입니다.",
+      "explanation": "PID(Process IDentifier)는 프로세스 식별자라는 의미로 PID라고도 합니다.\nPCB(Process Control Block)는 PID를 포함하지만 그 자체로는 프로세스에 관련된 정보를 저장하는 자료구조일 뿐입니다.",
       "references": [
         {"[한] Process": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4"},
         {"Process": "https://en.wikipedia.org/wiki/Process_(computing)"}
@@ -110,13 +110,13 @@
     {
       "question": "다음 중 프로세스를 위한 큐(queue)가 아닌 것은?",
       "choices": [
-        "Job queue",
+        "작업 큐(Job queue)",
         "PCB queue",
-        "Device queue",
-        "Ready queue"
+        "장치 큐(Device queue)",
+        "준비 큐(Ready queue)"
       ],
       "answer": 2,
-      "explanation": "운영체제는 PCB를 큐(queue)가 아니라 풀(pool)로 관리한다.\n- Job queue : 프로세스가 Long-term 스케줄러에 의해 선택되어 메인 메모리에 올라가 실행되기 전에 대기하는 큐\n- Device queue : 프로세스가 I/O를 요청했을 때 응답을 받기까지 대기하는 큐\n- Ready queue : 프로세스 수행 후 다시 실행할 준비가 되어 CPU를 할당받기 기다리는 큐",
+      "explanation": "운영체제는 PCB를 큐(queue)가 아니라 풀(pool)로 관리한다.\n- 작업 큐(Job queue): 프로세스가 장기(long-term) 스케줄러에 의해 선택되어 메인 메모리에 올라가 실행되기 전에 대기하는 큐\n- 장치 큐(Device queue): 프로세스가 I/O를 요청했을 때 응답을 받기까지 대기하는 큐\n- 준비 큐(Ready queue): 프로세스 수행 후 다시 실행할 준비가 되어 CPU를 할당받기 기다리는 큐",
       "references": [
         {"Job queue": "https://en.wikipedia.org/wiki/Job_queue"},
         {"[한] PCB": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D"},
@@ -126,13 +126,13 @@
     {
       "question": "프로세스가 I/O를 요청했을 때 ___에 배치된다.",
       "choices": [
-        "Job queue",
-        "Waiting queue",
-        "Ready queue",
-        "Priority queue"
+        "작업 큐(Job queue)",
+        "대기 큐(Waiting queue)",
+        "준비 큐(Ready queue)",
+        "우선순위 큐(Priority queue)"
       ],
       "answer": 2,
-      "explanation": "프로세스가 프린터같은 I/O 장치에 읽기 또는 쓰기 요청을 하였을 때 프로세스는 blocked 상태가 되며 waiting queue 혹은 device queue로 옮겨집니다. 이후 I/O 장치로부터 응답을 받으면 실행가능한 상태가 되기에 ready queue로 옮겨집니다.",
+      "explanation": "프로세스가 프린터같은 I/O 장치에 읽기 또는 쓰기 요청을 하였을 때 프로세스는 blocked 상태가 되며 대기 큐(waiting queue) 혹은 장치 큐(device queue)로 옮겨집니다. 이후 I/O 장치로부터 응답을 받으면 실행가능한 상태가 되기에 준비 큐(ready queue)로 옮겨집니다.",
       "references": [
         {"Job queue": "https://en.wikipedia.org/wiki/Job_queue"},
         {"[한] Process state": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%9D%98_%EC%83%81%ED%83%9C"},
@@ -143,7 +143,7 @@
       "question": "프로세스가 종료될 때 발생하는 일은?",
       "choices": [
         "모든 큐에서 삭제된다.",
-        "Job queue를 제외한 큐에서 삭제된다.",
+        "작업 큐를 제외한 큐에서 삭제된다.",
         "PCB의 메모리 할당이 해제된다.",
         "자식 프로세스를 강제로 종료시킨다."
       ],
@@ -159,8 +159,8 @@
     {
       "question": "장기(Long-term) 스케줄러란?",
       "choices": [
-        "준비 큐(Ready queue)에 옮겨질 프로세스를 선택한다.",
-        "대기 큐(Waiting queue)에 옮겨질 프로세스를 선택한다.",
+        "준비 큐에 옮겨질 프로세스를 선택한다.",
+        "대기 큐에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
@@ -187,8 +187,8 @@
     {
       "question": "중기(Medium-term) 스케줄러란?",
       "choices": [
-        "준비 큐(Ready queue)에 옮겨질 프로세스를 선택한다.",
-        "대기 큐(Waiting queue)에 옮겨질 프로세스를 선택한다.",
+        "준비 큐에 옮겨질 프로세스를 선택한다.",
+        "대기 큐에 옮겨질 프로세스를 선택한다.",
         "다음에 CPU를 할당받고 실행될 프로세스를 선택한다.",
         "메모리에서 스왑되어 제거될 프로세스를 선택한다."
       ],
@@ -309,9 +309,9 @@
     {
       "question": "문맥 교환(Context switch) 시에 필수적으로 저장될 필요가 없는 것은?",
       "choices": [
-        "General Purpose Registers(GPR)",
-        "Translation Lookaside Buffer(TLB)",
-        "Program Counter(PC)",
+        "GPR(General Purpose Register)",
+        "TLB(Translation Lookaside Buffer)",
+        "PC(Program Counter)",
         "Page table"
       ],
       "answer": 2,
@@ -358,18 +358,18 @@
     {
       "question": "처음으로 CPU를 요청한 프로세스가 처음으로 CPU를 할당받는 스케줄링 알고리즘은?",
       "choices": [
-        "First Come First Serve(FCFS) scheduling",
-        "Shortest Job First(SJF) scheduling",
-        "Priority scheduling",
-        "Round-Robin(RR) scheduling"
+        "FCFS(First Come First Serve) 스케줄링",
+        "SJF(Shortest Job First) 스케줄링",
+        "우선순위(Priority) 스케줄링",
+        "라운드 로빈(RR 혹은 Round-Robin) 스케줄링"
       ],
       "answer": 1,
-      "explanation": "\n- FCFS(혹은 FIFO) : 요청된 순서대로 처리. 보통 큐(queue)를 이용해 구현됨.\n- SJF : 예상 실행 시간이 제일 작은 작업을 최우선으로 처리\n- Priority : 우선순위 기반 처리. 높은 우선 순위를 갖는 프로세스를 낮은 우선 순위를 갖는 프로세스보다 우선.\n- RR : 모든 프로세스에 공평하게 시간이 배분되도록 처리. 일정 시간이 지날 때마다 CPU를 다음 프로세스에게 차례대로 넘김.",
+      "explanation": "\n- FCFS(혹은 FIFO) 스케줄링: 요청된 순서대로 처리. 보통 큐(queue)를 이용해 구현됨.\n- SJF 스케줄링: 예상 실행 시간이 제일 작은 작업을 최우선으로 처리\n- 우선순위 스케줄링: 우선순위 기반 처리. 높은 우선 순위를 갖는 프로세스를 낮은 우선 순위를 갖는 프로세스보다 우선.\n- 라운드 로빈 스케줄링: 모든 프로세스에 공평하게 시간이 배분되도록 처리. 일정 시간이 지날 때마다 CPU를 다음 프로세스에게 차례대로 넘김.",
       "references": [
         {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
         {"SJF": "https://en.wikipedia.org/wiki/Shortest_job_next"},
         {"Priority scheduling": "https://en.wikipedia.org/wiki/Scheduling_(computing)#Priority_scheduling"},
-        {"Round-robin (RR)": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
+        {"RR(Round-robin)": "https://en.wikipedia.org/wiki/Round-robin_scheduling"}
       ]
     },
     {
@@ -404,10 +404,10 @@
     {
       "question": "다음 중 내부적으로 time quantum(혹은 time slice)을 정의하는 알고리즘은?",
       "choices": [
-        "Shortest Job First(SJF) 스케줄링",
-        "Round-Robin(RR) 스케줄링",
-        "Priority 스케줄링",
-        "Multilevel queue 스케줄링"
+        "SJF(Shortest Job First) 스케줄링",
+        "라운드 로빈(RR 혹은 Round-Robin) 스케줄링",
+        "우선순위(Priority) 스케줄링",
+        "다단계 큐(Multilevel queue) 스케줄링"
       ],
       "answer": 2,
       "explanation": "라운드 로빈(Round-robin)은 모든 프로세스를 우선순위없이 동등하게 실행시키기위해 time slice(혹은 time quantum)만큼 각 프로세스에 CPU를 할당하는 알고리즘입니다. 이러한 특성상 순환 실행(cyclic executive)이라고도 불립니다. 우선순위가 없기때문에 starvation-free를 구현하기 쉬워집니다.",
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "question": "라운드 로빈(Round-robin) 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
+      "question": "라운드 로빈 스케줄링 알고리즘에 대한 설명으로 맞는 것은?",
       "choices": [
         "Time slice가 매우 크다면 FCFS로 변환될 수 있다.",
         "Time slice가 매우 작다면 FCFS로 변환될 수 있다.",
