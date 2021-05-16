@@ -26,7 +26,7 @@
         "2, 2"
       ],
       "answer": 3,
-      "explanation": "플래터(platter)는 앞면과 뒷면을 모두 사용하기 때문에 한 플래터 당 두 개의 암(arm)이 니다.",
+      "explanation": "플래터(platter)는 앞면과 뒷면을 모두 사용하기 때문에 한 플래터 당 두 개의 암(arm)이 필요합니다. 각 암에서는 한 개의 헤드로 데이터 읽기 및 쓰기를 모두 합니다.",
       "references": [
         {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
         {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"}
