@@ -216,9 +216,9 @@
     {
       "question": "고정 메모리 분할(fixed memory partitioning)의 단위가 클 경우 심해질 수 있는 단편화는?",
       "choices": [
-        "데이터 단편화(Data fragmentation)",
-        "외부 단편화(External fragmentation)",
-        "내부 단편화(Internal fragmentation)",
+        "데이터 단편화(data fragmentation)",
+        "외부 단편화(external fragmentation)",
+        "내부 단편화(internal fragmentation)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
@@ -263,7 +263,7 @@
       "question": "메모리 할당 알고리즘 중 next fit에 대한 설명으로 틀린 것은?",
       "choices": [
         "First fit보다 외부 단편화가 덜 발생한다.",
-        "연속 할당 (Contiguous allocation) 에 속한다.",
+        "연속 할당(contiguous allocation)에 속한다.",
         "First fit으로부터 확장된 방식이다.",
         "마지막으로 할당했던 위치를 기억해 두었다가 다음 할당 시 참조한다."
       ],
@@ -296,7 +296,7 @@
         "2의 배수 단위로 할당한다."
       ],
       "answer": 2,
-      "explanation": "버디 메모리 할당 (Buddy memory allocation) 은 주소 공간을 2의 거듭제곱 값으로 나누어 할당하는 방식입니다. 따라서 최소 할당 단위가 있어 할당되는 경우의 수가 제한적인 대신에 외부 단편화가 완화됩니다. 반면 최소 단위가 있기 때문에 내부 단편화는 심해집니다. 예를 들어 최소 단위가 64Kb면 1Kb만 필요해도 64Kb가 할당되어 63Kb의 메모리 낭비, 즉 내부 단편화가 발생합니다.",
+      "explanation": "버디 메모리 할당(Buddy memory allocation)은 주소 공간을 2의 거듭제곱 값으로 나누어 할당하는 방식입니다. 따라서 최소 할당 단위가 있어 할당되는 경우의 수가 제한적인 대신에 외부 단편화가 완화됩니다. 반면 최소 단위가 있기 때문에 내부 단편화는 심해집니다. 예를 들어 최소 단위가 64 Kb면 1 Kb만 필요해도 64 Kb가 할당되어 63 Kb의 메모리 낭비, 즉 내부 단편화가 발생합니다.",
       "references": [
         {"[한] Buddy memory allocation": "https://ko.wikipedia.org/wiki/%EB%B2%84%EB%94%94_%EB%A9%94%EB%AA%A8%EB%A6%AC_%ED%95%A0%EB%8B%B9"},
         {"Buddy memory allocation": "https://en.wikipedia.org/wiki/Buddy_memory_allocation"},
@@ -312,7 +312,7 @@
         "(프레임 번호, 페이지 변위)"
       ],
       "answer": 1,
-      "explanation": "PTE (Page Table Entry) 의 순서쌍은 가상 주소로부터 물리 주소로 변환될 수 있는 정보를 포함합니다. 구체적으로 페이지 번호 (page number) 에 해당하는 프레임 번호 (frame number) 를 제공하여, 페이지 변위 (page offset) 를 더해 물리 주소로 변환할 수 있습니다.\n가상 주소는 프로세스의 페이지를 나타내므로 순서쌍의 key가 물리 주소와 연관된 프레임 번호가 될 수 없습니다.",
+      "explanation": "PTE(Page Table Entry)의 순서쌍은 가상 주소로부터 물리 주소로 변환될 수 있는 정보를 포함합니다. 구체적으로 페이지 번호(page number)에 해당하는 프레임 번호(frame number)를 제공하여, 페이지 변위(page offset)를 더해 물리 주소로 변환할 수 있습니다.\n가상 주소는 프로세스의 페이지를 나타내므로 순서쌍의 키(key)가 물리 주소와 연관된 프레임 번호가 될 수 없습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -323,13 +323,13 @@
     {
       "question": "프로세스가 실제로 사용하는 물리 메모리의 크기를 알기 위해 필요한 것은?",
       "choices": [
-        "PC (Program Counter)",
-        "PTBR (Page Table Base Register)",
-        "PTLR (Page Table Length Register)",
+        "PC(Program Counter)",
+        "PTBR(Page Table Base Register)",
+        "PTLR(Page Table Length Register)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 4,
-      "explanation": "페이지 테이블 자체의 크기는 PTLR로 구할 수 있습니다. 하지만 페이지 테이블의 모든 엔트리가 유효하지 않기 때문에 테이블의 크기 만으로는 사용 중인 크기를 알 수 없습니다. 실제로 가상 주소를 통한 메모리 접근이 있을 때 페이지 부재 (page fault) 가 발생하여 유효화됩니다. 따라서 실제 사용 중인 물리 메모리의 크기는 페이지 테이블의 모든 엔트리를 탐색하여 유효한 페이지 수를 구하고 페이지의 크기를 곱하여 구할 수 있습니다.\nPC는 현재 실행 중인 코드의 주소로 페이지 테이블과는 상관 없습니다.",
+      "explanation": "페이지 테이블 자체의 크기는 PTLR로 구할 수 있습니다. 하지만 페이지 테이블의 모든 엔트리가 유효하지 않기 때문에 테이블의 크기 만으로는 사용 중인 크기를 알 수 없습니다. 실제로 가상 주소를 통한 메모리 접근이 있을 때 페이지 부재(page fault)가 발생하여 유효화됩니다. 따라서 실제 사용 중인 물리 메모리의 크기는 페이지 테이블의 모든 엔트리를 탐색하여 유효한 페이지 수를 구하고 페이지의 크기를 곱하여 구할 수 있습니다.\nPC는 현재 실행 중인 코드의 주소로 페이지 테이블과는 상관 없습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "question": "TLB 사용 시 TLB에 접근하려고 하는 페이지의 페이지 번호 (page number) 가 없는 상황을 ___라 한다.",
+      "question": "TLB 사용 시 TLB에 접근하려고 하는 페이지의 페이지 번호(page number)가 없는 상황을 ___라 한다.",
       "choices": [
         "TLB hit",
         "TLB miss",
@@ -346,14 +346,14 @@
         "Page fault"
       ],
       "answer": 2,
-      "explanation": "Translation Looakside Buffer (TLB) 는 페이지 테이블의 캐시 역할으로 기존에 접근이 있었어서 참조할 것이 있는 경우 hit, 없었을 경우 miss라고 합니다. hit될 경우 페이지 테이블을 확인할 필요가 없어 가상 주소와 물리 주소 간의 변환을 보다 빠르게 할 수 있습니다.",
+      "explanation": "TLB(Translation Looakside Buffer)는 페이지 테이블의 캐시 역할으로 기존에 접근이 있었어서 참조할 것이 있는 경우 hit, 없었을 경우 miss라고 합니다. hit될 경우 페이지 테이블을 확인할 필요가 없어 가상 주소와 물리 주소 간의 변환을 보다 빠르게 할 수 있습니다.",
       "references": [
         {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
         {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
       ]
     },
     {
-      "question": "TLB에서 페이지 번호 (page number) 에 해당하는 프레임 번호 (frame number) 를 찾을 수 있었던 확률을 나타내는 용어는?",
+      "question": "TLB에서 페이지 번호(page number)에 해당하는 프레임 번호(frame number)를 찾을 수 있었던 확률을 나타내는 용어는?",
       "choices": [
         "TLB hit count",
         "TLB miss count",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "question": "TLB hit ratio가 0.8이고 캐시 접근 시간이 1 ns, 메인 메모리 접근 시간이 100 ns일 때 평균 접근 시간 (average access time) 은?",
+      "question": "TLB hit ratio가 0.8이고 캐시 접근 시간이 1 ns, 메인 메모리 접근 시간이 100 ns일 때 평균 접근 시간(average access time)은?",
       "choices": [
         "21 ns",
         "20.8 ns",
@@ -376,7 +376,7 @@
         "80.2 ns"
       ],
       "answer": 1,
-      "explanation": "평균 접근 시간 (혹은 effective access time) 은 캐시 접근 시간에 miss ratio에 메인 메모리 접근 시간을 곱해 구할 수 있습니다. hit이든 miss이든 TLB 확인을 위해 캐시 접근은 무조건 하므로 캐시 접근 시간은 hit ratio와 상관없이 더해집니다. miss ratio는 1에서 hit ratio를 빼면 됩니다. 따라서 1 + (1 - 0.8) * 100 = 21 ns 이 됩니다.",
+      "explanation": "평균 접근 시간(혹은 effective access time)은 캐시 접근 시간에 miss ratio에 메인 메모리 접근 시간을 곱해 구할 수 있습니다. hit이든 miss이든 TLB 확인을 위해 캐시 접근은 무조건 하므로 캐시 접근 시간은 hit ratio와 상관없이 더해집니다. miss ratio는 1에서 hit ratio를 빼면 됩니다. 따라서 1 + (1 - 0.8) * 100 = 21 ns 이 됩니다.",
       "references": [
         {"[한] TLB": "https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98_%EC%83%89%EC%9D%B8_%EB%B2%84%ED%8D%BC"},
         {"TLB": "https://en.wikipedia.org/wiki/Translation_lookaside_buffer"}
@@ -391,7 +391,7 @@
         "Inverted page table"
       ],
       "answer": 2,
-      "explanation": "\n- Multi-level page table: 물리 주소로 변환하기 위해 참조해야 하는 페이지 테이블을 하나가 아니라 여러 개로 나누어 관리하는 기법. 계층적 페이지 테이블 (Hierarchical page table) 이라고도 합니다.\n- Hashed page table: 페이지 테이블의 key를 페이지 번호 (page number) 대신 가상 주소를 해시 함수 (hash function)에 넣은 결과를 사용하는 기법.\n- Inverted page table: 전형적인 페이지 테이블과는 반대로 frame number를 key로 사용하는 기법.",
+      "explanation": "\n- Multi-level page table: 물리 주소로 변환하기 위해 참조해야 하는 페이지 테이블을 하나가 아니라 여러 개로 나누어 관리하는 기법. 계층적 페이지 테이블(Hierarchical page table)이라고도 합니다.\n- Hashed page table: 페이지 테이블의 키(key)를 페이지 번호(page number) 대신 가상 주소를 해시 함수(hash function)에 넣은 결과를 사용하는 기법.\n- Inverted page table: 전형적인 페이지 테이블과는 반대로 프레임 번호를 키로 사용하는 기법.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"},
@@ -410,14 +410,14 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 3,
-      "explanation": "페이지 테이블은 프로세스마다 존재하므로 프로세스가 많아 질수록 요구되는 메모리 크기와 오버헤드 (overhead) 가 커지게 됩니다. 각 프로세스에서 항상 모든 페이지에 접근하지는 않으므로 사용되지 않는 페이지를 위해 미리 큰 공간을 할당하는 것을 피하는 방법들이 제안되었습니다.",
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 프로세스가 많아 질수록 요구되는 메모리 크기와 오버헤드(overhead)가 커지게 됩니다. 각 프로세스에서 항상 모든 페이지에 접근하지는 않으므로 사용되지 않는 페이지를 위해 미리 큰 공간을 할당하는 것을 피하는 방법들이 제안되었습니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
       ]
     },
     {
-      "question": "Paged memory system에서 페이지 크기를 크게 한다면 내부 단편화 (internal fragmentation) 는 ___.",
+      "question": "Paged memory system에서 페이지 크기를 크게 한다면 내부 단편화(internal fragmentation)는 ___.",
       "choices": [
         "완화된다",
         "심해진다",
