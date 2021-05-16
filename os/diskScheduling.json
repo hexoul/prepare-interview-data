@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "question": "하드 디스크 드라이브(hard disk drive)에서 데이터를 저장하는 원형 금속판을 ___라 한다.",
+      "choices": [
+        "자기 디스크(magnetic disk)",
+        "플래터(platter)",
+        "섹터(sector)",
+        "실린더(cylinder)"
+      ],
+      "answer": 2,
+      "explanation": "-",
+      "references": [
+        {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
+        {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"},
+        {"[한] Platter": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%ED%94%8C%EB%9E%98%ED%84%B0"},
+        {"Platter": "https://en.wikipedia.org/wiki/Hard_disk_drive_platter"}
+      ]
+    },
+    {
+      "question": "HDD(Hard Disk Drive)에서 한 플래터(platter) 당 ___ 개의 암(arm)이 있고, 각 암에는 ___ 개의 헤드(head)가 있다.",
+      "choices": [
+        "1, 1",
+        "1, 2",
+        "2, 1",
+        "2, 2"
+      ],
+      "answer": 3,
+      "explanation": "플래터(platter)는 앞면과 뒷면을 모두 사용하기 때문에 한 플래터 당 두 개의 암(arm)이 니다.",
+      "references": [
+        {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
+        {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"}
+      ]
+    }
+  ]
+}
