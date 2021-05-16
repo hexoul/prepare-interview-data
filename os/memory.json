@@ -3,13 +3,13 @@
     {
       "question": "운영체제가 얼마나 많은 프로세스가 동시에 가지고 있는 지와 상관없이 각 프로세스에게 충분한 공간을 가졌다는 추상화를 제공하기 위해 어떤 기법을 사용한다. 이때 쓰이는 주소를 ___라 한다.",
       "choices": [
-        "실주소 (Real address)",
-        "물리 주소 (Physical address)",
-        "가상 주소 (Virtual address)",
-        "이진 주소 (Binary address)"
+        "실주소(real address)",
+        "물리 주소(physical address)",
+        "가상 주소(virtual address)",
+        "이진 주소(binary address)"
       ],
       "answer": 3,
-      "explanation": "가상 주소를 통해 실제 물리 공간보다 큰 추상화된 공간을 각 프로세스에 제공할 수 있습니다. 여기서 각 프로세스는 물리 주소가 아니라 가상 주소를 통해서 데이터를 읽고 쓸 수 있습니다.\n물리 주소는 실주소 또는 이진주소라고도 하며, 가상 주소는 논리 주소 (logical address) 라고도 합니다.",
+      "explanation": "가상 주소를 통해 실제 물리 공간보다 큰 추상화된 공간을 각 프로세스에 제공할 수 있습니다. 여기서 각 프로세스는 물리 주소가 아니라 가상 주소를 통해서 데이터를 읽고 쓸 수 있습니다.\n물리 주소는 실주소 또는 이진주소라고도 하며, 가상 주소는 논리 주소(logical address)라고도 합니다.",
       "references": [
         {"[한] Virtual address": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EC%A3%BC%EC%86%8C_%EA%B3%B5%EA%B0%84"},
         {"Virtual address": "https://en.wikipedia.org/wiki/Virtual_address_space"},
@@ -26,7 +26,7 @@
         "Memory processing unit"
       ],
       "answer": 2,
-      "explanation": "MMU (Memory Management Unit) 은 가상 주소를 물리 주소로 변환하는 것 외에도 메모리 보호나 캐시 제어 등 다양한 역할을 가지고 있습니다.",
+      "explanation": "MMU(Memory Management Unit)은 가상 주소를 물리 주소로 변환하는 것 외에도 메모리 보호나 캐시 제어 등 다양한 역할을 가지고 있습니다.",
       "references": [
         {"[한] MMU": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EA%B4%80%EB%A6%AC_%EC%9E%A5%EC%B9%98"},
         {"MMU": "https://en.wikipedia.org/wiki/Memory_management_unit"},
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "question": "보조기억장치 (Secondary storage) 는 주기억장치 (primary storage 또는 main memory) 보다 ___.",
+      "question": "보조기억장치(secondary storage)는 주기억장치(primary storage 또는 main memory)보다 ___.",
       "choices": [
         "용량이 크고 느리다",
         "용량이 작고 느리다",
@@ -45,7 +45,7 @@
         "용량이 작고 느리다"
       ],
       "answer": 1,
-      "explanation": "일반적으로 메모리 계층에서 저장소는 CPU와 가까울수록 접근 속도 (access latency) 가 짧은 대신에 bit 당 저장 비용이 비쌉니다. 따라서 멀수록 같은 가격에도 많은 용량을 저장할 수 있으므로 보조기억장치는 일반적으로 주기억장치보다 용량이 큽니다.",
+      "explanation": "일반적으로 메모리 계층에서 저장소는 CPU와 가까울수록 접근 속도(access latency)가 짧은 대신에 bit 당 저장 비용이 비쌉니다. 따라서 멀수록 같은 가격에도 많은 용량을 저장할 수 있으므로 보조기억장치는 일반적으로 주기억장치보다 용량이 큽니다.",
       "references": [
         {"[한] Main memory": "https://ko.wikipedia.org/wiki/%EC%A3%BC%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98"},
         {"Main memory": "https://en.wikipedia.org/wiki/Computer_data_storage#Primary_storage"},
@@ -58,8 +58,8 @@
     {
       "question": "메모리 계층 구조는 다음 중 어떤 이점을 취하기 위한 하드웨어 최적화인가?",
       "choices": [
-        "시간 지역성 (Temporal locality)",
-        "공간 지역성 (Spatial locality)",
+        "시간 지역성(temporal locality)",
+        "공간 지역성(spatial locality)",
         "시간 지역성 및 공간 지역성 모두",
         "위에 언급된 모두 해당 안됨"
       ],
@@ -75,10 +75,10 @@
     {
       "question": "___는 저장소 간의 속도 차이때문에 바로 전달되지 못하고 대기해야하는 데이터를 임시로 저장하기 위해 쓰인다.",
       "choices": [
-        "디스크 (Disk)",
-        "캐시 (Cache)",
-        "버퍼 (Buffer)",
-        "램 (RAM)"
+        "디스크(disk)",
+        "캐시(cache)",
+        "버퍼(buffer)",
+        "램(RAM)"
       ],
       "answer": 3,
       "explanation": "임시로 저장된다는 점에서 캐시와 버퍼는 비슷하게 보일 수 있습니다. 하지만 버퍼는 단순히 전달되기 전의 일시적인 상태에 불과한 데 반해, 캐시는 반복해서 쓰일 수 있다는 점 등 목적이 다양합니다.",
@@ -91,13 +91,13 @@
     {
       "question": "가상 메모리를 지원하는 운영체제 하에서 CPU가 접근하는 주소체계는 ___이다.",
       "choices": [
-        "실주소 (Real address)",
-        "물리 주소 (Physical address)",
-        "논리 주소 (Logical address)",
-        "이진 주소 (Binary address)"
+        "실주소(real address)",
+        "물리 주소(physical address)",
+        "논리 주소(logical address)",
+        "이진 주소(binary address)"
       ],
       "answer": 3,
-      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소에 해당하는 데이터가 메인 메모리에 존재하지 않는다면 page fault가 발생하여 메인 메모리에 읽어온 후 다시 접근합니다.",
+      "explanation": "가상 메모리를 지원하는 운영체제에서 CPU는 논리 주소에 접근합니다. 이 때 논리 주소에 매핑된 물리 주소에 해당하는 데이터가 메인 메모리에 존재하지 않는다면 페이지 부재(page fault)가 발생하여 메인 메모리에 읽어온 후 다시 접근합니다.",
       "references": [
         {"[한] Memory address": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C"},
         {"Memory address": "https://en.wikipedia.org/wiki/Memory_address"},
@@ -105,15 +105,15 @@
       ]
     },
     {
-      "question": "가상 주소 (virtual address) 가 가리키는 2차 기억 장치에 존재하는 값을 메인 메모리에 읽어오기 위한 메모리 관리 기법을 ___라 한다.",
+      "question": "가상 주소(virtual address)가 가리키는 보조기억장치에 존재하는 값을 메인 메모리에 읽어오기 위한 메모리 관리 기법을 ___라 한다.",
       "choices": [
-        "Fragmentation",
-        "Paging",
-        "Mapping",
+        "파편화(Fragmentation)",
+        "페이징(Paging)",
+        "매핑(Mapping)",
         "Caching"
       ],
       "answer": 2,
-      "explanation": "아직 메인 메모리에 값이 존재하지 않을 때 page fault를 발생시켜 2차 기억 장치에서 메인 메모리로 데이터를 옮겨오는 작업을 페이징 (paging) 이라 합니다.",
+      "explanation": "아직 메인 메모리에 값이 존재하지 않을 때 page fault를 발생시켜 2차 기억 장치에서 메인 메모리로 데이터를 옮겨오는 작업을 페이징(paging)이라 합니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
@@ -122,13 +122,13 @@
     {
       "question": "페이지 테이블의 위치를 저장하고 있는 레지스터는?",
       "choices": [
-        "Stack pointer register",
-        "Program counter register",
-        "Status register",
-        "Page table base register"
+        "Stack pointer 레지스터",
+        "Program counter 레지스터",
+        "Status 레지스터",
+        "Page table base 레지스터"
       ],
       "answer": 4,
-      "explanation": "PTBR (Page Table Base Register) 은 페이지 테이블의 시작 위치를 저장하고 있는 레지스터입니다. 페이징 시에 PTBR을 참조하여 페이지 테이블에 접근하게 됩니다. 페이지 테이블의 크기를 저장하고 있는 PTLR (Page Table Length Register) 도 있습니다.",
+      "explanation": "PTBR(Page Table Base Register)은 페이지 테이블의 시작 위치를 저장하고 있는 레지스터입니다. 페이징 시에 PTBR을 참조하여 페이지 테이블에 접근하게 됩니다. 페이지 테이블의 크기를 저장하고 있는 PTLR(Page Table Length Register)도 있습니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"}
@@ -137,13 +137,13 @@
     {
       "question": "PTBR이 저장되어 있는 위치는?",
       "choices": [
-        "스택 (Stack)",
-        "보조기억장치 (Secondary storage)",
-        "MMU",
-        "PCB"
+        "스택(stack)",
+        "보조기억장치(secondary storage)",
+        "MMU(Memory Management Unit)",
+        "PCB(Process Control Block)"
       ],
       "answer": 4,
-      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR (Page Table Base Register) 값 역시 프로세스마다 다릅니다. 따라서 문맥 교환 (context switch) 이 발생할 때마다 저장 및 복구가 되어야 하므로 PCB로 관리되어 집니다.\n더불어 PCB들은 커널 영역에서 관리되므로 스왑 (swap) 대상이 아니라 보조기억장치에는 존재할 수 없습니다.",
+      "explanation": "페이지 테이블은 프로세스마다 존재하므로 PTBR(Page Table Base Register) 값 역시 프로세스마다 다릅니다. 따라서 문맥 교환(context switch)이 발생할 때마다 저장 및 복구가 되어야 하므로 PCB로 관리되어 집니다.\n더불어 PCB들은 커널 영역에서 관리되므로 스왑(swap) 대상이 아니라 보조기억장치에는 존재할 수 없습니다.",
       "references": [
         {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
         {"Paging": "https://en.wikipedia.org/wiki/Paging"},
@@ -154,13 +154,13 @@
     {
       "question": "운영체제는 각 ___마다 페이지 테이블을 가지고 있다.",
       "choices": [
-        "프로세스 (Process)",
-        "프로그램 (Program)",
-        "스레드 (Thread)",
-        "주소 (Address)"
+        "프로세스(process)",
+        "프로그램(program)",
+        "스레드(thread)",
+        "주소(address)"
       ],
       "answer": 1,
-      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스는 여러 스레드 (thread) 를 가질 수 있는데, 이때 스레드들은 페이지 테이블을 공유하므로 스레드는 정답이 될 수 없습니다.",
+      "explanation": "가상 주소에 연결되는 물리 주소는 실행 중인 프로그램마다 달라야 하기에, 프로그램이 아니라 프로세스마다 페이지 테이블을 가집니다. 한 프로세스는 여러 스레드(thread)를 가질 수 있는데, 이때 스레드들은 페이지 테이블을 공유하므로 스레드는 정답이 될 수 없습니다.",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -177,7 +177,7 @@
         "Physical address"
       ],
       "answer": 2,
-      "explanation": "PTE는 Page Table Entry로 페이지 테이블의 한 행 (row) 또는 레코드 (record) 입니다. 한 가상 주소 (virtual address) 에 연관된 정보들이 저장되어 있습니다. 정보에는 물리 주소뿐만 아니라 아래와 같은 플래그 등이 포함됩니다.\n- Present bit : 페이지에 할당된 프레임이 있는지\n- Dirty bit : 페이지가 변경된 적이 있는지\n- Access bit : 페이지에 접근된 적이 있는지\n- Read/Write : 읽기/쓰기 권한",
+      "explanation": "PTE는 Page Table Entry로 페이지 테이블의 한 행(row) 또는 레코드(record)입니다. 한 가상 주소(virtual address)에 연관된 정보들이 저장되어 있습니다. 정보에는 물리 주소뿐만 아니라 아래와 같은 플래그 등이 포함됩니다.\n- Present bit : 페이지에 할당된 프레임이 있는지\n- Dirty bit : 페이지가 변경된 적이 있는지\n- Access bit : 페이지에 접근된 적이 있는지\n- Read/Write : 읽기/쓰기 권한",
       "references": [
         {"[한] Page table": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%85%8C%EC%9D%B4%EB%B8%94"},
         {"Page table": "https://en.wikipedia.org/wiki/Page_table"},
@@ -202,27 +202,27 @@
     {
       "question": "메모리를 일정한 크기로 나누어 할당하여 실제 요청한 메모리 크기보다 크게 할당받기도 하는 기법은?",
       "choices": [
-        "연속 메모리 할당 (Contiguous memory allocation)",
-        "동적 메모리 분할 (Dynamic memory partitioning)",
-        "고정 메모리 분할 (Fixed memory partitioning)",
+        "연속 메모리 할당(contiguous memory allocation)",
+        "동적 메모리 분할(dynamic memory partitioning)",
+        "고정 메모리 분할(fixed memory partitioning)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "고정 분할 (Fixed partitioning) 은 항상 운영체제에서 사전에 정의한 크기로 메모리를 할당합니다.\n연속 할당 (Contiguous allocation) 과 동적 분할 (dynamic partitioning) 은 요청량에 따라 메모리 내의 할당 크기가 바뀔 수 있습니다. 차이점은 연속 할당은 연속된 공간이 할당되는 것에 반해 동적 분할은 연속되지 않을 수도 있다는 것입니다.",
+      "explanation": "고정 분할(fixed partitioning)은 항상 운영체제에서 사전에 정의한 크기로 메모리를 할당합니다.\n연속 할당(contiguous allocation)과 동적 분할(dynamic partitioning)은 요청량에 따라 메모리 내의 할당 크기가 바뀔 수 있습니다. 차이점은 연속 할당은 연속된 공간이 할당되는 것에 반해 동적 분할은 연속되지 않을 수도 있다는 것입니다.",
       "references": [
         {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"}
       ]
     },
     {
-      "question": "고정 메모리 분할 (Fixed memory partitioning) 의 단위가 클 경우 심해질 수 있는 단편화는?",
+      "question": "고정 메모리 분할(fixed memory partitioning)의 단위가 클 경우 심해질 수 있는 단편화는?",
       "choices": [
-        "데이터 단편화 (Data fragmentation)",
-        "외부 단편화 (External fragmentation)",
-        "내부 단편화 (Internal fragmentation)",
+        "데이터 단편화(Data fragmentation)",
+        "외부 단편화(External fragmentation)",
+        "내부 단편화(Internal fragmentation)",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "단위가 크다면 실제로 사용되는 크기를 많이 초과하여 메모리를 할당하는 경우가 생깁니다. 예를 들어, 파티션 (partition) 의 단위가 128 Kb라면 1 Kb만 필요했었더라도 128 Kb가 할당되어 127Kb가 사용되지 못한 채 낭비됩니다. 이렇게 할당받은 공간 내에서 발생하는 낭비를 내부 단편화라 합니다.",
+      "explanation": "단위가 크다면 실제로 사용되는 크기를 많이 초과하여 메모리를 할당하는 경우가 생깁니다. 예를 들어, 파티션(partition)의 단위가 128 Kb라면 1 Kb만 필요했었더라도 128 Kb가 할당되어 127Kb가 사용되지 못한 채 낭비됩니다. 이렇게 할당받은 공간 내에서 발생하는 낭비를 내부 단편화라 합니다.",
       "references": [
         {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"},
         {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "question": "외부 단편화 (External fragmentation) 가 심화되는 상황이 아닌 것은?",
+      "question": "외부 단편화(external fragmentation)가 심화되는 상황이 아닌 것은?",
       "choices": [
         "파일을 자주 생성하고 삭제할 때",
         "메모리 할당 요청이 오면 전체 메모리를 탐색하지않고 할당 가능한 영역을 찾으면 바로 할당할 때",
@@ -238,7 +238,7 @@
         "메모리 블럭의 최소 크기 단위를 줄일 때"
       ],
       "answer": 4,
-      "explanation": "(4)를 제외하면 모두 할당되지 않은 공간이 연속되어 있을 확률을 감소시키는 동작들입니다. 외부 단편화란 할당되지 않은 공간이 쪼개져 있어 충분한 여유 공간이 있음에도 불구하고 할당을 못해주는 현상을 말합니다. 따라서 할당되지 않은 공간이 분산되어 있도록 만드는 것은 외부 단편화를 심화시킨다고 볼 수 있습니다.\n메모리 블럭 (memory block) 의 단위를 작게 하는 것은 할당된 공간 사이의 여유 공간이 작더라도 사용할 수 있는 확률을 높여 외부 단편화를 완화시킬 수 있는 설정이고 심화시키는 것은 아닙니다.",
+      "explanation": "(4)를 제외하면 모두 할당되지 않은 공간이 연속되어 있을 확률을 감소시키는 동작들입니다. 외부 단편화란 할당되지 않은 공간이 쪼개져 있어 충분한 여유 공간이 있음에도 불구하고 할당을 못해주는 현상을 말합니다. 따라서 할당되지 않은 공간이 분산되어 있도록 만드는 것은 외부 단편화를 심화시킨다고 볼 수 있습니다.\n메모리 블럭(memory block)의 단위를 작게 하는 것은 할당된 공간 사이의 여유 공간이 작더라도 사용할 수 있는 확률을 높여 외부 단편화를 완화시킬 수 있는 설정이고 심화시키는 것은 아닙니다.",
       "references": [
         {"Memory management": "https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"},
         {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
@@ -254,7 +254,7 @@
         "과 시간복잡도가 같다"
       ],
       "answer": 2,
-      "explanation": "Best fit은 파편화 (fragmentation) 의 영향이 제일 작아지도록 할당 요청된 크기보다 같거나 큰 파편 (fragment) 중 제일 작은 것을 고르는 방식입니다. 모든 파편을 비교하기 때문에 first fit보다 느립니다.\n시간복잡도 이외에도 상황에 따라 best fit이 first fit보다 안좋을 수도 있습니다. 예를 들어 best fit은 최대한 맞는 크기의 파편을 고르다보니 할당되기 힘들 정도로 작은 크기의 파편을 많이 발생시킬 수 있습니다.",
+      "explanation": "Best fit은 파편화(fragmentation)의 영향이 제일 작아지도록 할당 요청된 크기보다 같거나 큰 파편(fragment) 중 제일 작은 것을 고르는 방식입니다. 모든 파편을 비교하기 때문에 first fit보다 느립니다.\n시간복잡도 이외에도 상황에 따라 best fit이 first fit보다 안좋을 수도 있습니다. 예를 들어 best fit은 최대한 맞는 크기의 파편을 고르다보니 할당되기 힘들 정도로 작은 크기의 파편을 많이 발생시킬 수 있습니다.",
       "references": [
         {"Memory allocation": "https://web.stanford.edu/class/archive/cs/cs140/cs140.1088/lectures/sum0708/lecture14.pdf"}
       ]
