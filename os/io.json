@@ -16,7 +16,7 @@
       ]
     },
     {
-      "question": "MMIO(Memory-mapped I/O)에 대한 설명으로 맞는 것은?",
+      "question": "MMIO(Memory-Mapped I/O)에 대한 설명으로 맞는 것은?",
       "choices": [
         "입출력 장치가 데이터를 주고받을 준비가 되었는지 CPU가 지속적으로 폴링(polling)하며 확인한다.",
         "입출력 장치와 메모리가 같은 주소 버스(address bus)를 사용한다.",
@@ -85,7 +85,7 @@
         "Wire"
       ],
       "answer": 2,
-      "explanation": "컴퓨터 공학에서 버스(Bus)는 넓게 데이터가 이동하는 통로를 뜻합니다. 하드웨어 뿐만 아니라 통신 프로토콜과 같은 소프트웨어도 버스의 정의에 포함됩니다.",
+      "explanation": "컴퓨터 공학에서 버스(bus)는 넓게 데이터가 이동하는 통로를 뜻합니다. 하드웨어 뿐만 아니라 통신 프로토콜과 같은 소프트웨어도 버스의 정의에 포함됩니다.",
       "references": [
         {"[한] Bus": "https://ko.wikipedia.org/wiki/%EB%B2%84%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85)"},
         {"Bus": "https://en.wikipedia.org/wiki/Bus_(computing)"}
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "question": "문자 장치(Character device)는 데이터를 ___.",
+      "question": "문자 장치(character device)는 데이터를 ___.",
       "choices": [
         "1 비트(bit)씩 전송한다",
         "1 바이트(byte)씩 전송한다",
@@ -117,14 +117,14 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 2,
-      "explanation": "문자 장치(Character device)는 하드웨어 장치에 직접 접근을 제공하는 원시적인 인터페이스입니다. 원시적이라고는 하지만 운영체제 레벨에서 제공하는 인터페이스이고 이름처럼 character 단위이기에 1비트가 아니라 한번에 1바이트씩 읽거나 씁니다.",
+      "explanation": "문자 장치(character device)는 하드웨어 장치에 직접 접근을 제공하는 원시적인 인터페이스입니다. 원시적이라고는 하지만 운영체제 레벨에서 제공하는 인터페이스이고 이름처럼 character 단위이기에 1 비트가 아니라 한번에 1 바이트씩 읽거나 씁니다.",
       "references": [
         {"[한] Character device": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%ED%8C%8C%EC%9D%BC#%EB%AC%B8%EC%9E%90_%EC%9E%A5%EC%B9%98"},
         {"Character device": "https://en.wikipedia.org/wiki/Device_file#Character_devices"}
       ]
     },
     {
-      "question": "블록 장치(Block device)는 데이터를 ___.",
+      "question": "블록 장치(block device)는 데이터를 ___.",
       "choices": [
         "1 비트(bit)씩 전송한다",
         "1 바이트(byte)씩 전송한다",
@@ -132,7 +132,7 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "블록 장치(Block device)는 버퍼링을 지원하여 특정 크기의 블록 단위로 읽고 쓰는 것을 지원하는 인터페이스입니다. 블록의 크기는 프로그래밍 가능하여 1바이트일 수도 있고 수십 바이트 또는 그 이상일 수도 있습니다.",
+      "explanation": "블록 장치(block device)는 버퍼링을 지원하여 특정 크기의 블록 단위로 읽고 쓰는 것을 지원하는 인터페이스입니다. 블록의 크기는 프로그래밍 가능하여 1 바이트일 수도 있고 수십 바이트 또는 그 이상일 수도 있습니다.",
       "references": [
         {"[한] Block device": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98_%ED%8C%8C%EC%9D%BC#%EB%B8%94%EB%A1%9D_%EC%9E%A5%EC%B9%98"},
         {"Block device": "https://en.wikipedia.org/wiki/Device_file#Block_devices"}
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "question": "NMI(Non-maskable interrupt)에 대한 설명으로 틀린 것은?",
+      "question": "NMI(Non-Maskable Interrupt)에 대한 설명으로 틀린 것은?",
       "choices": [
         "Maskable 인터럽트보다 우선순위가 낮다.",
         "마스킹이 불가능한 인터럽트이다.",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "question": "폴링(Polling)은 ___ 방식이다.",
+      "question": "폴링(polling)은 ___ 방식이다.",
       "choices": [
         "Blocking",
         "Interrupt",
@@ -183,7 +183,7 @@
         "Busy waiting"
       ],
       "answer": 4,
-      "explanation": "폴링(Polling)은 주기적으로 상태를 확인하는 행위로 I/O에서 흔히 사용됩니다. 응답이 있을 때까지 계속하여 능동적으로 확인하기 때문에 대기 시간이 길어질수록 오버헤드(overhead)가 커집니다. 주기를 길게 하면 오버헤드가 감소될 수 있으나, 응답이 있었음에도 불구하고 바로 인지하지 못하여 응답 시간이 길어질 수 있습니다.\n폴링은 응답이 올 때까지 CPU를 계속 점유하고 있는 것이 아니므로 블로킹(blocking)이 아닙니다. 또한 폴링을 통해 콜백(callback)을 사용하지 않고 상태를 바로 확인하고 있으므로 동기(synchronous) 방식입니다.",
+      "explanation": "폴링(polling)은 주기적으로 상태를 확인하는 행위로 I/O에서 흔히 사용됩니다. 응답이 있을 때까지 계속하여 능동적으로 확인하기 때문에 대기 시간이 길어질수록 오버헤드(overhead)가 커집니다. 주기를 길게 하면 오버헤드가 감소될 수 있으나, 응답이 있었음에도 불구하고 바로 인지하지 못하여 응답 시간이 길어질 수 있습니다.\n폴링은 응답이 올 때까지 CPU를 계속 점유하고 있는 것이 아니므로 블로킹(blocking)이 아닙니다. 또한 폴링을 통해 콜백(callback)을 사용하지 않고 상태를 바로 확인하고 있으므로 동기(synchronous) 방식입니다.",
       "references": [
         {"[한] Polling": "https://ko.wikipedia.org/wiki/%ED%8F%B4%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Polling": "https://en.wikipedia.org/wiki/Polling_(computer_science)"},
