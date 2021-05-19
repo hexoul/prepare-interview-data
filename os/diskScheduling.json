@@ -9,7 +9,7 @@
         "실린더(cylinder)"
       ],
       "answer": 2,
-      "explanation": "-",
+      "explanation": "HDD(Hard Disk Drive)는 데이터를 저장하는 1개 이상의 플래터(platter)를 가지고 있습니다. 플래터는 논리적으로 수많은 트랙(track)으로 나뉘어지고, 트랙은 다시 여러 개의 섹터(sector)로 나뉘어 집니다. 섹터는 디스크에서 제일 작은 단위의 물리적 저장소로, 크기는 512 바이트와 같이 항상 2의 배수입니다. 실린더(cylinder)는 각 플래터에서 헤드의 위치가 같은 트랙들의 집합으로 수직적으로 위치가 동일하다고 볼 수 있습니다.",
       "references": [
         {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
         {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"},
