@@ -431,6 +431,38 @@
         {"[한] Fragmentation": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%8E%B8%ED%99%94"},
         {"Fragmentation": "https://en.wikipedia.org/wiki/Fragmentation_(computing)"}
       ]
+    },
+    {
+      "question": "스래싱(thrashing)에 대한 설명으로 맞는 것은?",
+      "choices": [
+        "CPU 이용률(utilization)이 높아진다.",
+        "페이지 부재(page fault) 발생률이 낮아진다.",
+        "동시에 하나의 프로세스만 실행하면 발생하지 않는다.",
+        "프로세스 실행 시간보다 페이징(paging)에 더 시간을 많이 소모한다."
+      ],
+      "answer": 4,
+      "explanation": "스래싱(thrashing)은 동시에 접근할 수 있는 페이지의 수가 임계점을 넘어 페이징에 의한 비효율이 높아지는 상황입니다. 페이지 부재(page fault) 발생률이 높아지고, 이에 따라 CPU 이용률은 낮아집니다.\n만약 하나의 프로세스만 실행시킨다 하더라도, 메모리가 충분하지 않거나 페이지 교체 정책(page replacement policy)이 적절하지 않다면 스래싱이 발생할 수 있습니다.",
+      "references": [
+        {"Thrashing": "https://en.wikipedia.org/wiki/Thrashing_(computer_science)"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
+    },
+    {
+      "question": "스래싱(thrashing)의 발생 원인이 아닌 것은?",
+      "choices": [
+        "부적절한 페이지 교체(page replacement) 알고리즘",
+        "부족한 보조기억장치(secondary storage) 크기",
+        "부족한 주기억장치(main memory) 크기",
+        "과도하게 많이 실행되는 프로세스"
+      ],
+      "answer": 2,
+      "explanation": "페이지 교체(page replacement) 알고리즘이 적절하지 않다면 불필요하게 페이징을 자주 해야하는 상황이 될 수 있습니다. 극단적으로 빈번하게 사용되는 페이지가 교체될 페이지로 계속하여 선택될 수도 있습니다.\n페이지 교체 알고리즘이 적절하여도 요구되는 페이지의 수에 비해 주기억장치의 크기가 충분하지 않다면, 유지할 수 있는 페이지의 수가 적으므로 페이지 교체는 발생할 수 밖에 없습니다.\n주기억장치의 크기가 스래싱이 발생하는 임계점 자체에 직접적인 연관이 있다면, 실행되는 프로세스의 수는 사용량과 관련이 있습니다. 따라서 실행되는 프로세스가 많아질 수록 임계점에 가까워집니다.\n\n페이징은 주기억장치를 추상적으로 확장시키는 가상 메모리를 위한 기법이기 때문에, 페이징을 유발시키는 것은 주기억장치 그 자체의 한계 또는 주기억장치를 과하게 사용하게 만드는 요소들입니다. 보조기억장치의 부족한 크기는 페이징을 유발시키지 않으므로 스래싱과 관계없습니다.",
+      "references": [
+        {"Thrashing": "https://en.wikipedia.org/wiki/Thrashing_(computer_science)"},
+        {"[한] Paging": "https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EC%A7%95"},
+        {"Paging": "https://en.wikipedia.org/wiki/Paging"}
+      ]
     }
   ]
 }
