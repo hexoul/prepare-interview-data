@@ -64,6 +64,22 @@
         {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
         {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"}
       ]
+    },
+    {
+      "question": "HDD의 헤드가 플래터의 표면에 충돌하여 영구적 손상을 일으키는 것을 무엇이라 하는가?",
+      "choices": [
+        "플래터 스크래치(platter scratch)",
+        "플래터 크래시(platter crash)",
+        "디스크 크래시(disk crash)",
+        "헤드 크래시(head crash)"
+      ],
+      "answer": 4,
+      "explanation": "플래터와 헤드는 물리적으로 매우 가깝게 위치하고 있기 때문에, 노트북을 떨어트리는 등 충격이 발생할 경우 쉽게 스크래치가 생길 수 있습니다. 특히, 플래터가 회전 중일 경우 헤드와 플래터가 맞닿는 순간이 일순간이더라도 빠르게 회전하고 있기 때문에 손상이 커집니다. 이 경우 표면에 스크래치가 원형으로 남습니다. 완벽하게 해결할 수는 없지만, 손상되기 쉬운 단점을 완화시키고자 스크래치가 다소 남더라도 읽고 쓰기에는 문제가 없도록 플래터를 두껍게 만들어 보호하는 계층을 두기도 합니다.\n플래터는 스핀들 모터에 의해 10,000 RPM 전후의 속도로 회전하기 때문에 헤드가 충돌하면 고열도 발생합니다. 따라서 손상된 부분이 아니더라도 헤드가 냉각될 때까지는 읽고 쓰기를 못하는 경우가 발생할 수도 있습니다.",
+      "references": [
+        {"Head crash": "https://en.wikipedia.org/wiki/Head_crash"},
+        {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
+        {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"}
+      ]
     }
   ]
 }
