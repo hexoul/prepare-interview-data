@@ -134,7 +134,7 @@
       ]
     },
     {
-      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98 183 37 122 14 124 65 67가 들어있다면, 요청을 완수하기 위해 SSTF 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가?",
+      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98, 183, 37, 122, 14, 124, 65, 67가 들어있다면, 요청을 완수하기 위해 SSTF 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가?",
       "choices": [
         "236",
         "240",
@@ -143,6 +143,38 @@
       ],
       "answer": 1,
       "explanation": "SSTF(Shortest Seek Time First)는 현재 헤드의 위치에서 탐색 시간이 제일 짧은 순으로 스케줄링하는 방식입니다. 따라서 헤드는 53, 65, 67, 37, 14, 98, 122, 124, 183 순으로 이동한 거리는 요청 위치 간의 거리들을 합하면 됩니다. (65 - 53) + (67 - 65) + (67 - 37) + (37 - 14) + (98 - 14) + (122 - 98) + (124 - 122) + (183 - 124) = 236",
+      "references": [
+        {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
+    },
+    {
+      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98, 183, 37, 122, 14, 124, 65, 67가 들어있다면, 요청을 완수하기 위해 SCAN 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가? 헤드의 이동 가능 범위는 0 ~ 199라 가정한다.",
+      "choices": [
+        "236",
+        "240",
+        "640",
+        "660"
+      ],
+      "answer": 1,
+      "explanation": "SCAN은 정해진 방향으로 끝까지 이동한 뒤 끝에 도달하면 반대 방향으로 탐색을 진행하는 방식으로 엘리베이터 알고리즘(elevator algorithm)이라고도 불립니다. 따라서 0 쪽으로 먼저 이동한다면 53, 37, 14, 0, 65, 67, 98, 122, 124, 183 순으로 접근하게 되고 199 쪽으로 먼저 이동한다면 53, 65, 67, 98, 122, 124, 183, 199, 37, 14 순으로 접근하게 됩니다. 따라서 236 또는 331이 답이 된다.",
+      "references": [
+        {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
+    },
+    {
+      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98, 183, 37, 122, 14, 124, 65, 67가 들어있다면, 요청을 완수하기 위해 C-SCAN 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가? 헤드의 이동 가능 범위는 0 ~ 199라 가정한다.",
+      "choices": [
+        "236",
+        "240",
+        "382",
+        "400"
+      ],
+      "answer": 1,
+      "explanation": "C-SCAN(Circular-SCAN)은 실린더(cylinder)를 순환 배열로 보는 방식으로, 한 방향에서만 읽기 및 쓰기를 실행합니다. 헤드가 끝에 도착하면 첫 위치로 이동한 뒤에 탐색을 재개합니다. 따라서 53부터 시작하여 199까지 이동하였다가 0으로 되돌아간 뒤, 14와 37에 접근합니다.",
       "references": [
         {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
         {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
