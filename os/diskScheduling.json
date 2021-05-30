@@ -160,7 +160,7 @@
       "answer": 1,
       "explanation": "SCAN은 정해진 방향으로 끝까지 이동한 뒤 끝에 도달하면 반대 방향으로 탐색을 진행하는 방식으로 엘리베이터 알고리즘(elevator algorithm)이라고도 불립니다. 따라서 0 쪽으로 먼저 이동한다면 53, 37, 14, 0, 65, 67, 98, 122, 124, 183 순으로 접근하게 되고 199 쪽으로 먼저 이동한다면 53, 65, 67, 98, 122, 124, 183, 199, 37, 14 순으로 접근하게 됩니다. 따라서 236 또는 331이 답이 된다.",
       "references": [
-        {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
+        {"SCAN": "https://en.wikipedia.org/wiki/Elevator_algorithm"},
         {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
       ]
@@ -176,7 +176,7 @@
       "answer": 1,
       "explanation": "C-SCAN(Circular-SCAN)은 실린더(cylinder)를 순환 배열로 보는 방식으로, 한 방향에서만 읽기 및 쓰기를 실행합니다. 헤드가 끝에 도착하면 첫 위치로 이동한 뒤에 탐색을 재개합니다. 따라서 53부터 시작하여 199까지 이동하였다가 0으로 되돌아간 뒤, 14와 37에 접근합니다.",
       "references": [
-        {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
+        {"SCAN": "https://en.wikipedia.org/wiki/Elevator_algorithm"},
         {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
       ]
