@@ -115,6 +115,39 @@
         {"[한] HDD": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%93%9C_%EB%94%94%EC%8A%A4%ED%81%AC_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C"},
         {"HDD": "https://en.wikipedia.org/wiki/Hard_disk_drive"}
       ]
+    },
+    {
+      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98, 183, 37, 122, 14, 124, 65, 67가 들어있다면, 요청을 완수하기 위해 FCFS 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가?",
+      "choices": [
+        "236",
+        "240",
+        "640",
+        "660"
+      ],
+      "answer": 3,
+      "explanation": "FCFS(First Come First Served)는 처음 온 요청부터 처리하는 방식으로 큐에 있는 순서대로 처리하게 됩니다. 따라서 헤드는 53, 98, 183, 37, 122, 14, 124, 65, 67 순으로 이동하고 이동한 거리는 요청 위치 간의 거리들을 합하면 됩니다. (98 - 53) + (183 - 98) + (183 - 37) + (122 - 37) + (122 - 14) + (124 - 14) + (124 - 65) + (67 - 65) = 640",
+      "references": [
+        {"[한] FCFS": "https://ko.wikipedia.org/wiki/%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B2%98%EB%A6%AC"},
+        {"FCFS": "https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
+    },
+    {
+      "question": "헤드의 현재 위치가 53이고 I/O 요청 큐에 98 183 37 122 14 124 65 67가 들어있다면, 요청을 완수하기 위해 SSTF 스케줄링으로는 헤드를 얼마나 이동시켜야 하는가?",
+      "choices": [
+        "236",
+        "240",
+        "640",
+        "660"
+      ],
+      "answer": 1,
+      "explanation": "SSTF(Shortest Seek Time First)는 현재 헤드의 위치에서 탐색 시간이 제일 짧은 순으로 스케줄링하는 방식입니다. 따라서 헤드는 53, 65, 67, 37, 14, 98, 122, 124, 183 순으로 이동한 거리는 요청 위치 간의 거리들을 합하면 됩니다. (65 - 53) + (67 - 65) + (67 - 37) + (37 - 14) + (98 - 14) + (122 - 98) + (124 - 122) + (183 - 124) = 236",
+      "references": [
+        {"SSTF": "https://en.wikipedia.org/wiki/Shortest_seek_first"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
     }
   ]
 }
