@@ -230,6 +230,54 @@
         {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
         {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
       ]
+    },
+    {
+      "question": "___ 알고리즘은 헤드를 디스크의 끝까지 이동시키며 I/O 요청을 처리한 뒤, 디스크의 처음으로 돌아가 다시 처리하기 시작한다.",
+      "choices": [
+        "SCAN",
+        "C-SCAN",
+        "LOOK",
+        "C-LOOK"
+      ],
+      "answer": 2,
+      "explanation": "SCAN은 헤드를 디스크의 끝에서 끝까지 반복하여 이동시키며 I/O 요청을 처리하는 방식입니다. SCAN의 변형 중 C-SCAN은 한 방향으로 이동할 때만 요청을 처리합니다. 끝에 도달하였을 때 처음으로 되돌아가는 시간이 걸리기에 낭비라고 보일 수 있으나, SCAN보다 요청들을 균등하게 처리하게 만들어 줍니다.",
+      "references": [
+        {"SCAN": "https://en.wikipedia.org/wiki/Elevator_algorithm"},
+        {"LOOK": "https://en.wikipedia.org/wiki/LOOK_algorithm"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
+    },
+    {
+      "question": "___ 알고리즘은 I/O 요청 중 헤드에서 제일 멀리 떨어진 요청까지 처리한 뒤, 반대 방향으로 이동하며 경로에 위치한 요청들을 처리한다.",
+      "choices": [
+        "SCAN",
+        "C-SCAN",
+        "LOOK",
+        "C-LOOK"
+      ],
+      "answer": 3,
+      "explanation": "LOOK은 SCAN과 달리, 무조건 헤드를 디스크의 끝까지 이동시키는 것이 아니라 요청이 있는 위치까지만 갔다가 반대 방향으로 이동시킵니다.",
+      "references": [
+        {"SCAN": "https://en.wikipedia.org/wiki/Elevator_algorithm"},
+        {"LOOK": "https://en.wikipedia.org/wiki/LOOK_algorithm"},
+        {"[한] Disk Scheduling": "https://ko.wikipedia.org/wiki/%EC%9E%85%EC%B6%9C%EB%A0%A5_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81"},
+        {"Disk Scheduling": "https://en.wikipedia.org/wiki/I/O_scheduling"}
+      ]
+    },
+    {
+      "question": "섹터 슬리핑(sector slipping)이란?",
+      "choices": [
+        "섹터를 연속해서 할당하는 기법",
+        "섹터를 연속해서 읽는 기법",
+        "배드 섹터를 복구하는 기법",
+        "배드 섹터를 교체하는 기법"
+      ],
+      "answer": 4,
+      "explanation": "섹터 슬리핑(sector slipping)은 배드 섹터(bad sector)가 감지되었을 때, 여분으로 가지고 있던 스페어 섹터(spare sector)로 대치시키는 기법입니다. 기계 장치인 이상 다양한 물리적 결함에 의해 언제든 손상될 수 있어, 이러한 문제를 극복하고자 섹터 슬리핑 외에도 다양한 장애 대응 기법들이 있습니다.",
+      "references": [
+        {"Sector slipping": "https://en.wikipedia.org/wiki/Sector_slipping"}
+      ]
     }
   ]
 }
