@@ -24,7 +24,7 @@
         "Asynchronous exclusion"
       ],
       "answer": 1,
-      "explanation": "임계 구역(Critical section)은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지 않습니다.",
+      "explanation": "임계 구역(critical section)은 동시에 한 프로세스만 진입할 수 있고 병렬도를 위해 일정시간 이상의 수행은 허용되지 않습니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
@@ -33,10 +33,10 @@
     {
       "question": "다음 중 동기화에 쓰이는 자원은?",
       "choices": [
-        "스레드(Thread)",
-        "파이프(Pipe)",
-        "세마포어(Semaphore)",
-        "소켓(Socket)"
+        "스레드(thread)",
+        "파이프(pipe)",
+        "세마포어(semaphore)",
+        "소켓(socket)"
       ],
       "answer": 3,
       "explanation": "스레드는 작업 실행 단위로 동시성을 높이기 위해 사용될 수 있습니다. 파이프와 소켓은 프로세스 간 통신에 쓰이는 자원입니다.",
@@ -48,15 +48,15 @@
       ]
     },
     {
-      "question": "상호 배제(Mutual exclusion)는 ___을 통해 구현할 수 있다.",
+      "question": "상호 배제(mutual exclusion)는 ___을 통해 구현할 수 있다.",
       "choices": [
-        "뮤텍스(Mutex)",
-        "이진 세마포어(Binary semaphore)",
+        "뮤텍스(mutex)",
+        "이진 세마포어(binary semaphore)",
         "뮤텍스와 이진 세마포어",
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "뮤텍스(mutex)와 이진 세마포어(Binary semaphore)는 동작 방식은 다르지만 둘다 상호 배제를 구현하기 위해 쓰일 수 있습니다. 뮤텍스는 락(lock)을 취득한 태스크(task)만 언락(unlock)을 할 수 있는 것에 반해, 세마포어는 락을 취득했던 태스크와는 다른 태스크가 언락을 할 수도 있습니다.",
+      "explanation": "뮤텍스(mutex)와 이진 세마포어(binary semaphore)는 동작 방식은 다르지만 둘다 상호 배제를 구현하기 위해 쓰일 수 있습니다. 뮤텍스는 락(lock)을 취득한 태스크(task)만 언락(unlock)을 할 수 있는 것에 반해, 세마포어는 락을 취득했던 태스크와는 다른 태스크가 언락을 할 수도 있습니다.",
       "references": [
         {"[한] Mutex": "https://ko.wikipedia.org/wiki/%EB%9D%BD_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)"},
         {"Mutex": "https://en.wikipedia.org/wiki/Lock_(computer_science)"},
@@ -73,7 +73,7 @@
         "Priority modification"
       ],
       "answer": 2,
-      "explanation": "우선순위 역전(Priority inversion)이란 낮은 우선순위의 태스크가 높은 우선순위의 태스크보다 우선되어 실행되는 상황을 일컫습니다. 예를 들어 같은 공유 자원에 대해 낮은 우선순위의 태스크가 먼저 선점했을 때 발생할 수 있습니다. 일반적으로 락(lock)을 한 주체만 언락(unlock)할 수 있으므로 우선순위가 높더라도 언락할 때까지 기다려야 합니다.",
+      "explanation": "우선순위 역전(priority inversion)이란 낮은 우선순위의 태스크가 높은 우선순위의 태스크보다 우선되어 실행되는 상황을 일컫습니다. 예를 들어 같은 공유 자원에 대해 낮은 우선순위의 태스크가 먼저 선점했을 때 발생할 수 있습니다. 일반적으로 락(lock)을 한 주체만 언락(unlock)할 수 있으므로 우선순위가 높더라도 언락할 때까지 기다려야 합니다.",
       "references": [
         {"Prirority inversion": "https://en.wikipedia.org/wiki/Priority_inversion"}
       ]
@@ -87,13 +87,13 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "임계구역(Critical section)을 기반으로 한 프로세스 선점(preemption) 제어는 소프트웨어 레벨과 하드웨어 레벨 모두에서 이루어질 수 있습니다. 소프트웨어 레벨은 OS 스케줄링 기법으로 구현될 수 있습니다. 하드웨어 레벨의 예로는 인터럽트를 일시적으로 disable 시키거나 lock 제어를 위한 compare-and-swap(CAS)을 하드웨어 명령어 레벨(hardware instruction level)로 제공하는 것이 있습니다.",
+      "explanation": "임계구역(critical section)을 기반으로 한 프로세스 선점(preemption) 제어는 소프트웨어 레벨과 하드웨어 레벨 모두에서 이루어질 수 있습니다. 소프트웨어 레벨은 OS 스케줄링 기법으로 구현될 수 있습니다. 하드웨어 레벨의 예로는 인터럽트를 일시적으로 쓰지 못하게 만들거나 락(lock) 제어를 위한 CAS(compare-and-swap)를 하드웨어 명령어 레벨(hardware instruction level)로 제공하는 것이 있습니다.",
       "references": [
         {"Hardware synchronization": "https://en.wikipedia.org/wiki/Synchronization_(computer_science)#Hardware_synchronization"}
       ]
     },
     { 
-      "question": "Inter-process communication(IPC)란?",
+      "question": "IPC(Inter-Process Communication)란?",
       "choices": [
         "같은 주소 공간을 사용할 때 프로세스 간에 행해지는 통신과 동기화",
         "같은 주소 공간을 사용하지 않는 프로세스 간의 통신과 동기화",
@@ -109,7 +109,7 @@
       "visible": false
     },
     {
-      "question": "메시지 패싱(Message passing) 시스템은 프로세스가 ___하는 것을 가능하게 해준다.",
+      "question": "메시지 패싱(message passing) 시스템은 프로세스가 ___하는 것을 가능하게 해준다.",
       "choices": [
         "수신 측의 프로세스 구현을 모르는 채 통신",
         "수신 측의 프로세스 구현에 의존적인 통신",
@@ -117,7 +117,7 @@
         "메시지의 발신자와 수신자의 이름을 기록"
       ],
       "answer": 1,
-      "explanation": "메시지 패싱(Message passing) 시스템은 메시지를 전달하기 위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기(synchronous) 방식과 비동기(asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드(hybrid)라 부르기도 합니다.",
+      "explanation": "메시지 패싱(message passing) 시스템은 메시지를 전달하기 위해 메시지 큐, 채널 등 다양한 기법으로 구현됩니다. 송신 측에서는 수신 측의 구현과 상관없이 사용할 수 있도록 은닉화되어 있습니다.\n크게 동기(synchronous) 방식과 비동기(asynchronous) 방식으로 나뉘는데 계층 별로 구현 방식이 다를 경우 하이브리드(hybrid)라 부르기도 합니다.",
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://en.wikipedia.org/wiki/Message_passing"}
@@ -147,7 +147,7 @@
         "운영체제마다 다르다"
       ],
       "answer": 3,
-      "explanation": "메시지 크기는 고정과 가변 둘 다 가능하며 각각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다.\n\n결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메시지는 고정된 크기의 header와 가변 body를 가집니다. Header에 메시지 제어를 위한 정보와 함께 길이 정보도 있어 이에 기반하여 body 범위를 인지하고 얻어옵니다.",
+      "explanation": "메시지 크기는 고정과 가변 둘 다 가능하며 각각 장단점이 있습니다. 고정일 경우 OS 설계자 입장에서는 구현이 간단해지지만 애플리케이션 개발자 입장에서는 구현이 복잡해질 수 있습니다. 반대로 가변일 경우 OS 설계자 입장에서는 복잡해지지만 애플리케이션 개발자는 보다 쉽게 개발할 수 있는 여지가 생깁니다.\n\n결과적으로 고정과 가변을 모두 제공하기 위해서 표준 메시지는 고정된 길이의 헤더(header)와 가변 길이의 바디(body)를 가집니다. 헤더에 메시지 제어를 위한 정보와 함께 길이 정보도 있어, 운영체제는 이에 기반하여 바디의 범위를 인지하고 얻어올 수 있습니다.",
       "references": [
         {"[한] Message passing": "https://ko.wikipedia.org/wiki/%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%84%EB%8B%AC_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4"},
         {"Message passing": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
@@ -190,16 +190,16 @@
         "프로세스 P와 Q 사이에서 메시지를 받아 전달해주는 프로세스 R이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 별도 머신이 존재한다.",
         "두 프로세스 간의 통신을 돕기위한 메일박스(mailbox)가 존재한다.",
-        "직접 통신(Direct communication)보다 느리다."
+        "직접 통신(direct communication)보다 느리다."
       ],
       "answer": 3,
-      "explanation": "간접 통신(Indirect communication)에서 송신자는 메시지를 메일박스(mailbox)에 저장하고 수신자는 메시지를 메일박스로부터 꺼내가게 됩니다. 속도에 관해서는 통신 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 직접 통신이냐 간접 통신이냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
+      "explanation": "간접 통신(indirect communication)에서 송신자는 메시지를 메일박스(mailbox)에 저장하고 수신자는 메시지를 메일박스로부터 꺼내가게 됩니다. 속도에 관해서는 통신 자체의 구현뿐만 아니라 송수신 측의 구현에도 의존하므로 직접 통신이냐 간접 통신이냐만 가지고 단적으로 속도 비교를 할 수는 없습니다.",
       "references": [
         {"Communication link": "https://www.geeksforgeeks.org/inter-process-communication-ipc"}
       ]
     },
     {
-      "question": "논블로킹(Non-blocking) 프로세스는 ___.",
+      "question": "논블로킹(non-blocking) 프로세스는 ___.",
       "choices": [
         "메시지가 수신될 때까지 계속하여 메시지를 보낸다",
         "메시지를 받을 때까지 계속하여 메지를 보낸다",
@@ -218,11 +218,11 @@
       "choices": [
         "Queue가 적어도 하나의 메시지를 저장할 수 있다.",
         "송신자는 수신자가 메시지를 받아갈 때까지 블록된다.",
-        "송신자는 계속해서 메시지를 보낼 수 있지만 메시지가 queue에 머무르지 않는다.",
+        "송신자는 계속해서 메시지를 보낼 수 있지만 메시지가 큐에 머무르지 않는다.",
         "송신자는 상황에 따라 블록될 수도 안될 수도 있다."
       ],
       "answer": 2,
-      "explanation": "Zero capacity queue란 queue의 크기가 0인 것을 의미하므로, 메시지 전달을 보장하기 위해서 송신자는 수신자가 메시지를 받아갈 때까지 블록되어야 합니다.",
+      "explanation": "Zero capacity queue란 큐의 크기가 0인 것을 의미하므로, 메시지 전달을 보장하기 위해서 송신자는 수신자가 메시지를 받아갈 때까지 블록되어야 합니다.",
       "references": [
         {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
@@ -231,58 +231,58 @@
     {
       "question": "Zero capacity queue는 ___라고도 불린다.",
       "choices": [
-        "무버퍼링 메시지 시스템(No-buffering message system)",
-        "버퍼링 메세지 시스템(Buffering message system)",
-        "유한 메시지 시스템(Bounded message system)",
-        "무한 메시지 시스템(Unbounded message system)"
+        "무버퍼링 메시지 시스템(no-buffering message system)",
+        "버퍼링 메세지 시스템(buffering message system)",
+        "유한 메시지 시스템(bounded message system)",
+        "무한 메시지 시스템(unbounded message system)"
       ],
       "answer": 1,
-      "explanation": "Zero capacity queue란 큐(queue)의 크기가 0인 것을 의미합니다. 따라서 큐에 공간이 없기 때문에 메시지가 쌓여 대기할 수 없고 버퍼링이 존재하지 않게 됩니다.",
+      "explanation": "Zero capacity queue란 큐의 크기가 0인 것을 의미합니다. 따라서 큐에 공간이 없기 때문에 메시지가 쌓여 대기할 수 없고 버퍼링이 존재하지 않게 됩니다.",
       "references": [
         {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
       ]
     },
     {
-      "question": "Bounded 또는 unbounded capacity queue는 ___라고 볼 수 있다.",
+      "question": "bounded 또는 unbounded capacity queue는 ___라고 볼 수 있다.",
       "choices": [
         "프로그램되어진 버퍼링",
         "자동 버퍼링",
         "사용자 정의 버퍼링",
-        "무버퍼링 (No buffering)"
+        "무버퍼링(no buffering)"
       ],
       "answer": 2,
-      "explanation": "Bounded 또는 unbounded capacity queue는 큐(queue)의 길이가 유한(bounded)하거나 무한대(unbounded)인 큐를 의미합니다. 따라서 프로세스를 블록시키도록 프로그래밍한 것이 아니라 큐의 특성과 사용 패턴에 따라 자동으로 버퍼링되는 것이므로 automatic 또는 explicit buffering이라고 합니다.",
+      "explanation": "bounded 또는 unbounded capacity queue는 큐의 길이가 유한(bounded)하거나 무한대(unbounded)인 큐를 의미합니다. 따라서 프로세스를 블록시키도록 프로그래밍한 것이 아니라 큐의 특성과 사용 패턴에 따라 자동으로 버퍼링되는 것이므로 automatic 또는 explicit buffering이라고 합니다.",
       "references": [
         {"[한] Queue": "https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"},
         {"Queue": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"}
       ]
     },
     {
-      "question": "논블로킹(Non-blocking) 알고리즘의 wait-free와 lock-free에 대한 설명으로 틀린 것은?",
+      "question": "논블로킹(non-blocking) 알고리즘의 wait-free와 lock-free에 대한 설명으로 틀린 것은?",
       "choices": [
-        "Wait-free 알고리즘 하에서는 기아 상태(starvation)가 없다.",
-        "Lock-free 알고리즘은 lock이 없어 공유 자원을 위한 경쟁이 필요없다.",
+        "wait-free 알고리즘 하에서는 기아 상태(starvation)가 없다.",
+        "lock-free 알고리즘은 lock이 없어 공유 자원을 위한 경쟁이 필요없다.",
         "모든 wait-free 알고리즘은 lock-free이다.",
-        "Wait-free 알고리즘이 lock-free보다 구현이 어렵다."
+        "wait-free 알고리즘이 lock-free보다 구현이 어렵다."
       ],
       "answer": 2,
-      "explanation": "Wait-free는 논블로킹(non-blocking)에서 가장 강력한 자유도를 보장하는 수준으로 실시간성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다.\nLock-free는 락(lock)이 없다는 것이 아니라 락을 위한 블로킹에서 자유롭다는 의미일 뿐입니다. Wait-free와는 달리 자원 경쟁이 있을 경우 기아가 발생할 수 있으나, 적어도 한 프로세스는 유한한 시간 내에 공유 자원을 획득할 수 있습니다.\nWait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
+      "explanation": "wait-free는 논블로킹(non-blocking)에서 가장 강력한 자유도를 보장하는 수준으로 실시간성이 보장되어야하는 실시간 시스템에서 중요한 특성입니다. 강력한 대신에 구현이 어렵고 제약이 많습니다.\nlock-free는 락(lock)이 없다는 것이 아니라 락을 위한 블로킹에서 자유롭다는 의미일 뿐입니다. wait-free와는 달리 자원 경쟁이 있을 경우 기아가 발생할 수 있으나, 적어도 한 프로세스는 유한한 시간 내에 공유 자원을 획득할 수 있습니다.\nwait-free가 lock-free보다 조건이 엄격하므로 모든 wait-free는 lock-free에도 해당합니다.",
       "references": [
         {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"}
       ]
     },
     {
-      "question": "논블로킹(Non-blocking) 알고리즘의 freedom level에 따른 설명으로 틀린 것은?",
+      "question": "논블로킹(non-blocking) 알고리즘의 자유도(freedom level)에 따른 설명으로 틀린 것은?",
       "choices": [
         "모든 wait-free 알고리즘은 obstruction-free이다.",
         "모든 lock-free 알고리즘은 obstruction-free이다.",
         "모든 obstruction-free 알고리즘은 lock-free이다.",
-        "Obstruction-free 알고리즘이 가장 약한 수준의 자유도를 보장한다."
+        "obstruction-free 알고리즘이 가장 약한 수준의 자유도를 보장한다."
       ],
       "answer": 3,
-      "explanation": "Wait-free에서 lock-free, obstruction-free로 갈수록 자유도를 덜 보장받습니다. 따라서 lock-free는 obstruction-free를 위한 조건도 충족시키지만, 반대로 obstruction-free는 lock-free의 조건을 충족시킬 수 없습니다.",
+      "explanation": "wait-free에서 lock-free, obstruction-free로 갈수록 자유도를 덜 보장받습니다. 따라서 lock-free는 obstruction-free를 위한 조건도 충족시키지만, 반대로 obstruction-free는 lock-free의 조건을 충족시킬 수 없습니다.",
       "references": [
         {"Wait-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"},
         {"Lock-free": "https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"},
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "question": "Remote Procedure Call(RPC)은 ___ 하기 위해 사용된다.",
+      "question": "RPC(Remote Procedure Call)은 ___ 하기 위해 사용된다.",
       "choices": [
         "같은 프로그램 내의 프로시저를 호출",
         "같은 시스템 내의 프로시저를 호출",
@@ -378,18 +378,18 @@
         "Synchronized section"
       ],
       "answer": 2,
-      "explanation": "임계 구역(Critical section)은 복수의 프로세스(process) 또는 스레드(thread)가 동시에 접근할 수 없는 영역입니다. 일관성을 위한 동시성 제어를 통해 의도치않은 동작을 방지합니다.",
+      "explanation": "임계 구역(critical section)은 복수의 프로세스(process) 또는 스레드(thread)가 동시에 접근할 수 없는 영역입니다. 일관성을 위한 동시성 제어를 통해 의도치않은 동작을 방지합니다.",
       "references": [
         {"[한] Critical section": "https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD"},
         {"Critical section": "https://en.wikipedia.org/wiki/Critical_section"}
       ]
     },
     {
-      "question": "다음 중 임계 구역(Critical section) 실행의 전제 조건은?",
+      "question": "다음 중 임계 구역(critical section) 실행의 전제 조건은?",
       "choices": [
-        "상호 배제(Mutual exclusion)",
-        "진행 조건(Progress)",
-        "한계 대기(Bounded waiting)",
+        "상호 배제(mutual exclusion)",
+        "진행 조건(progress)",
+        "한계 대기(bounded waiting)",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "question": "상호 배제(Mutual exclusion) 하에서는 만약 한 프로세스가 자신의 임계 구역을 실행하고 있다면 ___.",
+      "question": "상호 배제(mutual exclusion) 하에서는 만약 한 프로세스가 자신의 임계 구역을 실행하고 있다면 ___.",
       "choices": [
         "다른 프로세스들은 임계 구역을 실행하고 있으면 안된다",
         "다른 프로세스들도 임계 구역을 실행하고 있어야 한다",
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "question": "한계 대기(Bounded waiting)란 어떤 프로세스가 ___ 임계 구역(critical section)에 진입할 때까지의 시간이 유한한 것을 말한다.",
+      "question": "한계 대기(bounded waiting)란 어떤 프로세스가 ___ 임계 구역(critical section)에 진입할 때까지의 시간이 유한한 것을 말한다.",
       "choices": [
         "임계 구역을 수행 중이던 프로세스의 종료 후",
         "임계 구역 요청 진입 후",
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "question": "상호 배제(Mutual exclusion) 문제를 풀기 위해서는 최소 ___ 개의 변수가 공유되어야 한다.",
+      "question": "상호 배제(mutual exclusion) 문제를 풀기 위해서는 최소 ___ 개의 변수가 공유되어야 한다.",
       "choices": [
         "1",
         "2",
@@ -444,7 +444,7 @@
         "4"
       ],
       "answer": 2,
-      "explanation": "상호 배제(Mutual exclusion) 문제를 풀기 위해 상황을 단순화시켜 두 프로세스(process)만 있다고 가정하면 풀이가 간단해집니다. e.g. Dekker's algorithm 또는 Peterson's algorithm.\n각 프로세스는 임계 영역(critical section)에 진입하고 싶은 의사를 표시하고 임계 영역의 수행 후에는 다른 프로세스에게 순서를 넘겨주는 것이 큰 골자입니다. 임계 영역에 진입하고 싶은 의사는 flag 변수로 나타냅니다. 현재 임계 영역을 수행할 수 있는 프로세스는 turn 변수로 나타냅니다. 임계 영역에 진입하기 전에는 다른 프로세스가 순서를 넘겨줄 때 까지 지속적으로 확인하다가 자신의 순서가 되면 임계 영역에 진입합니다. 이를 busy waiting이라 합니다. 결과적으로 turn, flag 두 변수를 사용하여 상호 배제 문제가 해결됩니다.",
+      "explanation": "상호 배제(mutual exclusion) 문제를 풀기 위해 상황을 단순화시켜 두 프로세스(process)만 있다고 가정하면 풀이가 간단해집니다. e.g. 데커의 알고리즘(Dekker's algorithm) 또는 피터슨의 일고리즘(Peterson's algorithm).\n각 프로세스는 임계 영역(critical section)에 진입하고 싶은 의사를 표시하고 임계 영역의 수행 후에는 다른 프로세스에게 순서를 넘겨주는 것이 큰 골자입니다. 임계 영역에 진입하고 싶은 의사는 flag 변수로 나타냅니다. 현재 임계 영역을 수행할 수 있는 프로세스는 turn 변수로 나타냅니다. 임계 영역에 진입하기 전에는 다른 프로세스가 순서를 넘겨줄 때 까지 지속적으로 확인하다가 자신의 순서가 되면 임계 영역에 진입합니다. 이를 busy waiting이라 합니다. 결과적으로 turn, flag 두 변수를 사용하여 상호 배제 문제가 해결됩니다.",
       "references": [
         {"[한] Mutual exclusion": "https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C"},
         {"Mutual exclusion": "https://en.wikipedia.org/wiki/Mutual_exclusion"},
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "question": "베이커리 알고리즘(Bakery algorithm)은 ___.",
+      "question": "베이커리 알고리즘(bakery algorithm)은 ___.",
       "choices": [
         "각 프로세스를 큐에 삽입한 후 순서대로 자원을 할당한다",
         "각 프로세스에 중복될 수도 있는 번호를 주고 제일 작은 번호를 가진 프로세스부터 자원을 할당한다",
@@ -461,13 +461,13 @@
         "각 프로세스에 고유 번호를 주고 제일 작은 번호를 가진 프로세스부터 자원을 할당한다"
       ],
       "answer": 2,
-      "explanation": "베이커리 알고리즘(Bakery algorithm)은 복수의 스레드(thread)가 서로 간섭을 하지 않고 안전하게 공유 자원을 사용할 수 있도록 Lamport에 의해 고안되었습니다. 스레드는 임계 구역에 진입을 시도할 때마다 번호표를 받고 앞서 실행하고 있는 스레드가 없을 때 진입합니다. 진입을 시도할 때 번호표를 받는 부분은 동시성 제어가 없어 같은 번호를 가지는 스레드가 있을 수 있으나, 번호표의 번호가 같을 때에는 스레드 번호가 작은 순대로 실행됨므로 동시 진입이 발생하지는 않습니다.",
+      "explanation": "베이커리 알고리즘(bakery algorithm)은 복수의 스레드(thread)가 서로 간섭을 하지 않고 안전하게 공유 자원을 사용할 수 있도록 램포트(Lamport)에 의해 고안되었습니다. 스레드는 임계 구역에 진입을 시도할 때마다 번호표를 받고 앞서 실행하고 있는 스레드가 없을 때 진입합니다. 진입을 시도할 때 번호표를 받는 부분은 동시성 제어가 없어 같은 번호를 가지는 스레드가 있을 수 있으나, 번호표의 번호가 같을 때에는 스레드 번호가 작은 순대로 실행됨므로 동시 진입이 발생하지는 않습니다.",
       "references": [
         {"Lamport's bakery algorithm": "https://en.wikipedia.org/wiki/Lamport's_bakery_algorithm"}
       ]
     },
     {
-      "question": "동시성 프로그래밍(Concurrent programming)에서 인터럽트에 영향을 받지않는 operation을 ___ operation이라 한다.",
+      "question": "동시성 프로그래밍(concurrent programming)에서 인터럽트에 영향을 받지않는 operation을 ___ operation이라 한다.",
       "choices": [
         "Single",
         "Static",
@@ -482,7 +482,7 @@
       ]
     },
     {
-      "question": "Test-and-set 명령어는 ___ 실행된다.",
+      "question": "test-and-set 명령어는 ___ 실행된다.",
       "choices": [
         "특정 프로세스의 실행 후에",
         "주기적으로",
@@ -490,14 +490,14 @@
         "비동기적으로"
       ],
       "answer": 3,
-      "explanation": "Test-and-set 명령어는 상호 배제 등 동시성을 제어하기 위해 쓰이는 명령어로 인터럽트되지 않습니다. HW 레벨에서 구현될 수도 있고 SW 레벨에서 구현될 수도 있습니다.",
+      "explanation": "test-and-set 명령어는 상호 배제 등 동시성을 제어하기 위해 쓰이는 명령어로 인터럽트되지 않습니다. HW 레벨에서 구현될 수도 있고 SW 레벨에서 구현될 수도 있습니다.",
       "references": [
         {"[한] TestAndSet": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%82%AC%EC%99%80_%EC%A7%80%EC%A0%95"},
         {"TestAndSet": "https://en.wikipedia.org/wiki/Test-and-set"}
       ]
     },
     {
-      "question": "세마포어(Semaphore)는 임계 구역 문제(critical section problem)를 풀기 위한 ___이다.",
+      "question": "세마포어(semaphore)는 임계 구역 문제(critical section problem)를 풀기 위한 ___이다.",
       "choices": [
         "하드웨어",
         "소프트웨어",
@@ -505,22 +505,22 @@
         "위에 언급된 모두 해당 안됨"
       ],
       "answer": 3,
-      "explanation": "세마포어(Semaphore)는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자를 가질 뿐입니다. 단지 직접 접근하면 안되고 P와 V라는 명령어를 통해서만 접근해야 합니다. 나아가 세마포어가 가지는 수에 따라 계수 세마포어 (counting semaphore) 또는 이진 세마포어 (binary semaphore) 라고 불립니다.",
+      "explanation": "세마포어(semaphore)는 멀티프로세싱 환경에서 동시성 제어를 위해 사용되는 변수로 세마포어 자체는 기법이 아니라 숫자를 가질 뿐입니다. 단지 직접 접근하면 안되고 P와 V라는 명령어를 통해서만 접근해야 합니다. 나아가 세마포어가 가지는 수에 따라 계수 세마포어(counting semaphore) 또는 이진 세마포어(binary semaphore)라고 불립니다.",
       "references": [
         {"[한] Semaphore": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4"},
         {"Semaphore": "https://en.wikipedia.org/wiki/Semaphore_(programming)"}
       ]
     },
     {
-      "question": "스핀락(Spinlock)에 대한 맞는 설명은?",
+      "question": "스핀락(spinlock)에 대한 맞는 설명은?",
       "choices": [
-        "임계 구역(Critical section) 진입이 불가할때 CPU를 낭비한다.",
-        "문맥 교환(Context switch) 시간을 절약하기 위해 사용된다.",
+        "임계 구역(critical section) 진입이 불가할때 CPU를 낭비한다.",
+        "문맥 교환(context switch) 시간을 절약하기 위해 사용된다.",
         "싱글 프로세서보다 멀티 프로세서에서 효율적이다.",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "스핀락은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting lock입니다. 따라서 대기시간이 짧다면 문맥 교환없이 임계 구역에 진입할 수 있어 효율적입니다. 멀티 프로세서 환경에서는 스핀락에 의해 한 코어가 점유되고 있더라도 다른 프로세스를 수행할 수 있는 여분의 코어가 있으므로 비효율을 경감시킬 수 있습니다.",
+      "explanation": "스핀락은 진입이 가능할 때까지 진입을 계속하여 시도하는 busy waiting 락(lock)입니다. 따라서 대기시간이 짧다면 문맥 교환없이 임계 구역에 진입할 수 있어 효율적입니다. 멀티 프로세서 환경에서는 스핀락에 의해 한 코어가 점유되고 있더라도 다른 프로세스를 수행할 수 있는 여분의 코어가 있으므로 비효율을 경감시킬 수 있습니다.",
       "references": [
         {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
         {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
@@ -529,15 +529,15 @@
       ]
     },
     {
-      "question": "스핀락(Spinlock)의 단점은?",
+      "question": "스핀락(spinlock)의 단점은?",
       "choices": [
         "동시성이 떨어질 수 있다.",
-        "문맥 교환(Context switch)이 느리다.",
+        "문맥 교환(context switch)이 느리다.",
         "신뢰성이 떨어진다.",
         "구현이 복잡하다."
       ],
       "answer": 1,
-      "explanation": "Busy waiting이 길어질 수록 CPU를 낭비하는 비효율을 발생시켜 동시성이 떨어질 수 있습니다. 하지만 time slice가 만료되는 등의 상황이 아니라면 CPU를 놓지 않고 있으므로, 이 경우에는 문맥 교환이 아예 발생하지 않아 자원을 절약할 수 있습니다.\n프로세스 혹은 스레드를 잠들게 하고 깨우기 위한 작업들이 필요없으므로 구현은 다른 락에 비해 복잡하지 않습니다.",
+      "explanation": "busy waiting이 길어질 수록 CPU를 낭비하는 비효율을 발생시켜 동시성이 떨어질 수 있습니다. 하지만 time slice가 만료되는 등의 상황이 아니라면 CPU를 놓지 않고 있으므로, 이 경우에는 문맥 교환이 아예 발생하지 않아 자원을 절약할 수 있습니다.\n프로세스 혹은 스레드를 잠들게 하고 깨우기 위한 작업들이 필요없으므로 구현은 다른 락에 비해 복잡하지 않습니다.",
       "references": [
         {"[한] Spinlock": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%95%80%EB%9D%BD"},
         {"Spinlock": "https://en.wikipedia.org/wiki/Spinlock"},
@@ -546,7 +546,7 @@
       ]
     },
     {
-      "question": "큐(queue)를 사용하는 계수 세마포어(Counting semaphore)의 P operation은 ___ 시스템 콜을 이용해 구현된다.",
+      "question": "큐(queue)를 사용하는 계수 세마포어(counting semaphore)의 P operation은 ___ 시스템 콜을 이용해 구현된다.",
       "choices": [
         "stop",
         "block",
@@ -579,13 +579,13 @@
     {
       "question": "프로세스의 교착 상태(deadlock) 조건에 해당하지 않는 경우는?",
       "choices": [
-        "상호배제(Mutual exclusion)",
-        "점유대기(Hold and wait)",
-        "선점(Preemption)",
-        "순환대기(Circular wait)"
+        "상호배제(mutual exclusion)",
+        "점유대기(hold and wait)",
+        "선점(preemption)",
+        "순환대기(circular wait)"
       ],
       "answer": 3,
-      "explanation": "교착 상태(Deadlock)의 조건에 해당하는 것은 선점이 아니라 비선점(no preemption)입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
+      "explanation": "교착 상태(deadlock)의 조건에 해당하는 것은 선점이 아니라 비선점(no preemption)입니다. 비선점일 경우 자원 소유자 외에는 자원을 해제할 수 없습니다.\n네 개의 교착 상태 조건은 필요충분조건으로 조건을 모두 만족할 때 교착 상태가 발생합니다. 참고로 발의자의 이름을 따서 코프먼 조건이라고도 합니다.",
       "references": [
         {"[한] Deadlock": "https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A9_%EC%83%81%ED%83%9C"},
         {"Deadlock" : "https://en.wikipedia.org/wiki/Deadlock"}
