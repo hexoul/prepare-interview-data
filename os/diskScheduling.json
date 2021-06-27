@@ -278,6 +278,35 @@
       "references": [
         {"Sector slipping": "https://en.wikipedia.org/wiki/Sector_slipping"}
       ]
+    },
+    {
+      "question": "다음 중 SSD의 셀(cell)에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "SLC(Single-Level Cell) 보다 TLC(Triple-Level Cell)가 더 많은 정보를 저장한다.",
+        "SLC 보다 MLC(Multi-Level Cell)를 읽고 쓰는 속도가 더 느리다.",
+        "같은 저장 용량을 확보하려면 MLC보다 TLC가 더 비싸다.",
+        "TLC를 SLC처럼 사용하기도 한다."
+      ],
+      "answer": 3,
+      "explanation": "SLC(Single-Level Cell), MLC(Multi-Level Cell), TLC(Triple-Level Cell)은 각각 한 셀에 1, 2, 3 비트를 저장할 수 있습니다. 한 셀에 저장하는 데이터의 크기가 클수록 읽고 쓰는 속도가 느려지기 때문에 SLC가 제일 빠릅니다. 하지만 MLC 및 TLC와 비교했을 때 같은 크기를 저장하기 위해 더 많은 수의 셀이 필요하므로, 같은 크기의 저장 공간을 제공하기 위해서는 더 큰 비용이 요구됩니다.\n가격을 낮추면서도 속도가 요구되는 상황에서는 속도를 더 내기 위해 MLC를 SLC처럼 사용하기도 합니다. SLC 캐시 혹은 SLC 모드(mode)가 이에 속합니다.",
+      "references": [
+        {"[한] MLC": "https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B0_%EB%A0%88%EB%B2%A8_%EC%85%80"},
+        {"MLC": "https://en.wikipedia.org/wiki/Multi-level_cell"}
+      ]
+    },
+    {
+      "question": "웨어 레벨링(wear leveling)은 ___위해 사용되는 기법이다.",
+      "choices": [
+        "셀의 데이터를 더 빠르게 읽기",
+        "셀에 데이터를 더 빠르게 쓰기",
+        "블록의 데이터 삭제 횟수를 최소화하기",
+        "SSD의 수명을 늘리기"
+      ],
+      "answer": 4,
+      "explanation": "만약 같은 셀(cell)을 계속하여 사용한다면 금방 수명이 다하여 더 이상 사용할 수 없게 되며 장치 오류 또는 데이터 손실이 발생하기도 합니다. 따라서 SSD의 컨트롤러가 특정 셀이 과도하게 사용되지 않고 모든 셀이 균등하게 사용될 수 있도록 조절하는데, 이를 웨어 레벨링(wear leveling)이라 합니다. 기술적으로 SSD의 쓰기 단위는 셀의 집합인 페이지(page)이기 때문에, 위의 웨어 레벨링에 대한 설명에서 ‘셀’을 ‘페이지’로 치환하는 것이 더 정확한 표현이 될 수 있습니다.",
+      "references": [
+        {"Wear leveling": "https://en.wikipedia.org/wiki/Wear_leveling"}
+      ]
     }
   ]
 }
