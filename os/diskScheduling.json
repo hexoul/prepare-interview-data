@@ -307,6 +307,21 @@
       "references": [
         {"Wear leveling": "https://en.wikipedia.org/wiki/Wear_leveling"}
       ]
+    },
+    {
+      "question": "SSD의 가비지 컬렉션(garbage collection)에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "페이지 단위의 지우기 작업이 실행된다.",
+        "쓰기가 증폭될 수 있다.",
+        "시간이 오래 걸리는 작업이다.",
+        "능동적으로 수행될 수도 있다."
+      ],
+      "answer": 1,
+      "explanation": "-",
+      "references": [
+        {"[한] GC": "https://kr.transcend-info.com/embedded/Essay-21"},
+        {"GC": "https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection"}
+      ]
     }
   ]
 }
