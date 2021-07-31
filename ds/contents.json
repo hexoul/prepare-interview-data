@@ -1,6 +1,0 @@
-[
-  {"content": "일반", "link": "/ds/basics.json", "num": 10},
-  {"content": "Array / List", "link": "/ds/list.json", "num": 29},
-  {"content": "Stack / Queue", "link": "/ds/queue.json", "num": 27},
-  {"content": "Tree / Graph", "link": "/ds/graph.json", "num": 25}
-]
