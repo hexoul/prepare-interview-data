@@ -8,7 +8,7 @@ import {
   theme
 } from '@chakra-ui/react'
 import { ColorModeSwitcher } from './ColorModeSwitcher'
-import { Logo } from './Logo'
+import { Main } from './components/Main'
 import { Subject } from './components/Subject'
 
 function App () {
@@ -20,7 +20,7 @@ function App () {
           <VStack spacing={8}>
             <BrowserRouter>
               <Switch>
-                <Route exact path='/' render={() => <Logo h='40vmin' pointerEvents='none' />} />
+                <Route exact path='/' component={Main} />
                 <Route exact path='/:id' component={Subject} />
               </Switch>
             </BrowserRouter>
