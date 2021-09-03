@@ -20,8 +20,8 @@ function App () {
           <VStack spacing={8}>
             <BrowserRouter>
               <Switch>
-                <Route exact path='/' component={Main} />
-                <Route exact path='/:id' component={Subject} />
+                <Route exact path='/prepare-interview-data/' component={Main} />
+                <Route exact path='/prepare-interview-data/:id' component={Subject} />
               </Switch>
             </BrowserRouter>
           </VStack>
