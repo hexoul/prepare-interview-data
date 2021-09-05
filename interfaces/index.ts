@@ -3,3 +3,16 @@ export type Content = {
   link: string,
   num: number
 }
+
+type Question = {
+  question: string,
+  choices: string[],
+  answer: number,
+  explanation: string,
+  references: Record<string, string>[],
+  visible?: boolean
+}
+
+export type Questions = {
+  questions: Question[]
+}
