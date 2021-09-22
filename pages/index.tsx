@@ -1,9 +1,9 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { Box, VStack, Grid } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
-import { ColorModeSwitcher } from '../components/ColorModeSwitcher'
+import { Header } from '../components/Header'
 
 type Props = {
   contents: Content[]
@@ -11,19 +11,17 @@ type Props = {
 
 const IndexPage = ({ contents }: Props) => (
   <Box textAlign='center' fontSize='xl'>
-    <Grid minH='100vh' p={3}>
-      <ColorModeSwitcher justifySelf='flex-end' />
-      <VStack spacing={8}>
-        {contents.filter(i => i.link).map(i => (
-          <Link 
-            key={i.content}
-            href={`/${i.link.split('/')[1]}`}
-          >
-            {i.content}
-          </Link>
-        ))}
-      </VStack>
-    </Grid>
+    <Header />
+    <VStack spacing={8}>
+      {contents.filter(i => i.link).map(i => (
+        <Link 
+          key={i.content}
+          href={`/${i.link.split('/')[1]}`}
+        >
+          {i.content}
+        </Link>
+      ))}
+    </VStack>
   </Box>
 )
 

@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { Box, VStack, Grid } from '@chakra-ui/react'
 import { Questions } from '../interfaces'
 import { getContents, getQuestions } from '../utils/fetch'
-import { ColorModeSwitcher } from '../components/ColorModeSwitcher'
+import { Header } from '../components/Header'
 
 type Props = {
   q: Questions
@@ -10,14 +10,12 @@ type Props = {
 
 const QuestionPage = ({ q }: Props) => (
   <Box textAlign='center' fontSize='xl'>
-    <Grid minH='100vh' p={3}>
-      <ColorModeSwitcher justifySelf='flex-end' />
-      <VStack spacing={8}>
-        {q.questions.filter(i => !i?.visible).map((i, idx) => (
-          <h1 key={idx}>{i.question}</h1>
-        ))}
-      </VStack>
-    </Grid>
+    <Header />
+    <VStack spacing={8}>
+      {q.questions.filter(i => !i?.visible).map((i, idx) => (
+        <h1 key={idx}>{i.question}</h1>
+      ))}
+    </VStack>
   </Box>
 )
 
