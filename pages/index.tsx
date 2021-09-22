@@ -15,7 +15,12 @@ const IndexPage = ({ contents }: Props) => (
       <ColorModeSwitcher justifySelf='flex-end' />
       <VStack spacing={8}>
         {contents.filter(i => i.link).map(i => (
-          <Link href={i.link.split('/')[1]}>{i.content}</Link>
+          <Link 
+            key={i.content}
+            href={`/${i.link.split('/')[1]}`}
+          >
+            {i.content}
+          </Link>
         ))}
       </VStack>
     </Grid>

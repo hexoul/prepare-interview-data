@@ -13,8 +13,8 @@ const QuestionPage = ({ q }: Props) => (
     <Grid minH='100vh' p={3}>
       <ColorModeSwitcher justifySelf='flex-end' />
       <VStack spacing={8}>
-        {q.questions.filter(i => !i?.visible).map((i) => (
-          <h1>{i.question}</h1>
+        {q.questions.filter(i => !i?.visible).map((i, idx) => (
+          <h1 key={idx}>{i.question}</h1>
         ))}
       </VStack>
     </Grid>
