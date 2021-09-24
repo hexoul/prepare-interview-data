@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Flex, Grid, HStack, Image, Link, Spacer } from '@chakra-ui/react'
+import { Box, Flex, Grid, HStack, Link, Spacer } from '@chakra-ui/react'
 import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 export const Header = () => (
@@ -14,22 +13,22 @@ export const Header = () => (
       alignItems='center'
     >
       <Flex>
-        <Link href='/' _focus={{ boxShadow: "none" }}>
-          <Image
-            boxSize='60px'
+        <Link href='/prepare-interview-data' _focus={{ boxShadow: "none" }}>
+          <img
+            width={60}
             src='https://raw.githubusercontent.com/hexoul/prepare-interview-data/master/logo.png'
             alt=''
           />
         </Link>
         <Spacer />
         <HStack>
-          <Image
-            maxWidth='110px'
+          <img
+            width={110}
             src='https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg'
             alt=''
           />
-          <Image
-            maxWidth='140px'
+          <img
+            width={140}
             src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
             alt=''
           />

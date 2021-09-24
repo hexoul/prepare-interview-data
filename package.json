@@ -1,11 +1,13 @@
 {
-  "private": true,
+  "private": false,
+  "license": "UNLICENSED",
+  "homepage": "https://hexoul.github.io/prepare-interview-data",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next export",
+    "predeploy": "next build && next export && touch out/.nojekyll",
     "deploy": "gh-pages -d out",
     "type-check": "tsc"
   },
@@ -26,6 +28,6 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "gh-pages": "^3.2.3",
-    "typescript": "4.0"
+    "typescript": "^4.3.2"
   }
 }
