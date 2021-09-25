@@ -3,15 +3,13 @@ import Link from 'next/link'
 import { Box, VStack } from '@chakra-ui/react'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
-import { Header } from '../components/Header'
 
 type Props = {
   contents: Content[]
 }
 
 const IndexPage = ({ contents }: Props) => (
-  <Box textAlign='center' fontSize='xl'>
-    <Header />
+  <Box h='100vh' textAlign='center' fontSize='xl'>
     <VStack spacing={8}>
       {contents.filter(i => i.link).map(i => (
         <Link

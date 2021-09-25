@@ -1,8 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Box, VStack, Grid } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 import { Questions } from '../interfaces'
 import { getContents, getQuestions } from '../utils/fetch'
-import { Header } from '../components/Header'
 
 type Props = {
   q: Questions
@@ -10,7 +9,6 @@ type Props = {
 
 const QuestionPage = ({ q }: Props) => (
   <Box textAlign='center' fontSize='xl'>
-    <Header />
     <VStack spacing={8}>
       {q.questions.filter(i => !i?.visible).map((i, idx) => (
         <h1 key={idx}>{i.question}</h1>

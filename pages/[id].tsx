@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Box, VStack } from '@chakra-ui/react'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
-import { Header } from '../components/Header'
 
 type Props = {
   id: string,
@@ -12,7 +11,6 @@ type Props = {
 
 const ContentPage = ({ id, contents }: Props) => (
   <Box textAlign='center' fontSize='xl'>
-    <Header />
     <VStack spacing={8}>
       {contents.filter(i => i.link).map((i, idx) => (
         <Link
