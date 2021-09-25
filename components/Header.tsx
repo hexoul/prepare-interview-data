@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, HStack, Link, Spacer } from '@chakra-ui/react'
+import { Box, Flex, Grid, HStack, Image, Link, Spacer } from '@chakra-ui/react'
 import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 export const Header = () => (
@@ -13,25 +13,17 @@ export const Header = () => (
       alignItems='center'
     >
       <Flex>
-        <Link href='/prepare-interview-data' _focus={{ boxShadow: "none" }}>
-          <img
-            width={60}
-            src='https://raw.githubusercontent.com/hexoul/prepare-interview-data/master/logo.png'
-            alt=''
-          />
+        <Link href={process.env.basePath} _focus={{ boxShadow: "none" }}>
+          <Image minW='60px' boxSize='60px' src={process.env.logoImg} alt='' />
         </Link>
         <Spacer />
         <HStack>
-          <img
-            width={110}
-            src='https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg'
-            alt=''
-          />
-          <img
-            width={140}
-            src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-            alt=''
-          />
+          <a href={process.env.appstoreUrl} target='_blank' rel='noreferrer'>
+            <Image maxW='110px' src={process.env.appstoreImg} alt='' />
+          </a>
+          <a href={process.env.playstoreUrl} target='_blank' rel='noreferrer'>
+            <Image maxW='140px' src={process.env.playstoreImg} alt='' />
+          </a>
         </HStack>
       </Flex>
     </Box>
