@@ -9,7 +9,7 @@ type Props = {
 }
 
 const IndexPage = ({ contents }: Props) => (
-  <Box h='100vh' textAlign='center' fontSize='xl'>
+  <Box textAlign='center' fontSize='xl'>
     <VStack spacing={8}>
       {contents.filter(i => i.link).map(i => (
         <Link

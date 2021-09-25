@@ -1,5 +1,6 @@
 import { Box, ChakraProvider, Container, extendTheme } from '@chakra-ui/react'
 import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 const customTheme = extendTheme({
   components: {
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Container>
       </Box>
+      <Footer />
     </ChakraProvider>
   )
 }
