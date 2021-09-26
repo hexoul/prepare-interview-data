@@ -16,7 +16,7 @@ export const Footer = () => (
   <Box w='100vw' bg={useColorModeValue('gray.100', 'gray.600')}>
     <Container>
       <Flex p={2} alignItems='center'>
-        <Text fontSize='md'>© Seunggon Kim</Text>
+        <Text fontSize='md' mr='4'>© Seunggon Kim</Text>
         <Spacer />
         <HStack spacing='4'>
           <Link href='/terms' passHref>

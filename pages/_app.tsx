@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={customTheme}>
       <Header />
-      <Box as='main' pt={{ base: 16, md: 32 }} pb={{ base: 24, md: 16 }}>
+      <Box as='main' pt={{ base: 32, md: 32 }} pb={{ base: 16, md: 16 }}>
         <Container>
           <Component {...pageProps} />
         </Container>
