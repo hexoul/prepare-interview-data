@@ -1,12 +1,12 @@
+import Link from 'next/link'
 import {
-  chakra,
   Box,
   Container,
   Flex,
   Heading,
   HStack,
   Image,
-  Link,
+  Link as ChakraLink,
   Spacer,
   useColorModeValue,
 } from '@chakra-ui/react'
@@ -24,17 +24,19 @@ export const Header = () => (
     <Box minH='40px' bg='teal.400' alignItems='center'>
       <Container>
         <Flex px={2}>
-          <Link href={process.env.basePath} _focus={{ boxShadow: 'none' }}>
-            <Image minW='60px' boxSize='60px' src={process.env.logoImg} alt='' />
+          <Link href='/' passHref>
+            <ChakraLink _focus={{ boxShadow: 'none' }}>
+              <Image minW='60px' boxSize='60px' src={process.env.logoImg} alt='' />
+            </ChakraLink>
           </Link>
           <Spacer />
           <HStack pl={2}>
-            <chakra.a href={process.env.appstoreUrl} target='_blank' rel='noreferrer'>
+            <ChakraLink href={process.env.appstoreUrl} isExternal>
               <Image maxW='110px' src={process.env.appstoreImg} alt='' />
-            </chakra.a>
-            <chakra.a href={process.env.playstoreUrl} target='_blank' rel='noreferrer'>
+            </ChakraLink>
+            <ChakraLink href={process.env.playstoreUrl} isExternal>
               <Image maxW='135px' src={process.env.playstoreImg} alt='' />
-            </chakra.a>
+            </ChakraLink>
           </HStack>
         </Flex>
       </Container>

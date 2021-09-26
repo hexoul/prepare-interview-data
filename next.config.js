@@ -19,7 +19,6 @@ module.exports = (phase, { defaultConfig }) => {
             /* development only config options here */
             env: {
                 ...commonConfig.env,
-                basePath: '/',
             },
         }
     }
@@ -31,7 +30,6 @@ module.exports = (phase, { defaultConfig }) => {
         basePath,
         env: {
             ...commonConfig.env,
-            basePath,
         },
     }
 }
