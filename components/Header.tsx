@@ -31,10 +31,10 @@ export const Header = () => (
           </Link>
           <Spacer />
           <HStack pl={2}>
-            <ChakraLink href={process.env.appstoreUrl} isExternal>
+            <ChakraLink href={process.env.appstoreUrl} _focus={{ boxShadow: 'none' }} isExternal>
               <Image maxW='110px' src={process.env.appstoreImg} alt='' />
             </ChakraLink>
-            <ChakraLink href={process.env.playstoreUrl} isExternal>
+            <ChakraLink href={process.env.playstoreUrl} _focus={{ boxShadow: 'none' }} isExternal>
               <Image maxW='135px' src={process.env.playstoreImg} alt='' />
             </ChakraLink>
           </HStack>
