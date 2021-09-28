@@ -9,19 +9,21 @@ import {
 import * as randomColor from 'randomcolor'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
+import { ContentList } from '../components/ContentList'
 
 type Props = {
-  contents: Content[]
+  subjects: Content[],
+  contents: Record<string, Content[]>,
 }
 
 const brightColors = randomColor({ count: 10, luminosity: 'dark', hue: '#00FFFF', format: 'rgb' })
 const darkColors = randomColor({ count: 10, luminosity: 'dark', hue: 'red', format: 'rgb' })
 
-const IndexPage = ({ contents }: Props) => {
+const IndexPage = ({ subjects, contents }: Props) => {
   return (
     <Box textAlign='center' fontSize='xl' px='10'>
-      <SimpleGrid columns={[1, 2, 3]} spacing={4}>
-        {contents.filter(i => i.link).map((i, idx) => (
+      <SimpleGrid columns={[1, 2, 3]} spacing={4} pb={12}>
+        {subjects.map((i, idx) => (
           <Link
             key={i.content}
             href={`/${i.link.split('/')[1]}`}
@@ -40,13 +42,22 @@ const IndexPage = ({ contents }: Props) => {
           </Link>
         ))}
       </SimpleGrid>
+      {Object.entries(contents).map(([k, v]) => (
+        <ContentList key={k} subject={k} contents={v} />
+      ))}
     </Box>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const contents = await getContents()
-  return { props: { contents } }
+  const rawSubjects = await getContents()
+  const subjects = rawSubjects.filter(i => i.link)
+  const contents = {}
+  for (const subject of subjects) {
+    const path = `/${subject.link.split('/')[1]}`
+    contents[subject.content] = await getContents(path)
+  }
+  return { props: { subjects, contents } }
 }
 
 export default IndexPage
