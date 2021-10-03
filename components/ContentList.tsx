@@ -45,6 +45,7 @@ export const ContentList = (props: Props) => {
                 color: colorModeValue('blue.600', 'blue.100'),
                 transform: 'translateX(10px)',
               }}
+              transition='200ms'
               isTruncated
             >
               {content.content}
