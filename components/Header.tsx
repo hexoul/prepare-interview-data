@@ -13,7 +13,13 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher'
 
 export const Header = () => (
-  <Box position='fixed' w='100vw' bg={useColorModeValue('white', 'gray.800')} alignItems='center'>
+  <Box
+    position='fixed'
+    w='100vw'
+    bg={useColorModeValue('white', 'gray.800')}
+    alignItems='center'
+    zIndex={99}
+  >
     <Container>
       <Flex p={2}>
         <Heading size='md'>오늘부터 전공면접 IT</Heading>
@@ -26,16 +32,16 @@ export const Header = () => (
         <Flex px={2}>
           <Link href='/' passHref>
             <ChakraLink _focus={{ boxShadow: 'none' }}>
-              <Image minW='60px' boxSize='60px' src={process.env.logoImg} alt='' />
+              <Image minW='60px' boxSize='60px' src={process.env.logoImg} alt='logo' />
             </ChakraLink>
           </Link>
           <Spacer />
           <HStack pl={2}>
             <ChakraLink href={process.env.appstoreUrl} _focus={{ boxShadow: 'none' }} isExternal>
-              <Image maxW='110px' src={process.env.appstoreImg} alt='' />
+              <Image maxW='110px' src={process.env.appstoreImg} alt='appstore' />
             </ChakraLink>
             <ChakraLink href={process.env.playstoreUrl} _focus={{ boxShadow: 'none' }} isExternal>
-              <Image maxW='135px' src={process.env.playstoreImg} alt='' />
+              <Image maxW='135px' src={process.env.playstoreImg} alt='playstore' />
             </ChakraLink>
           </HStack>
         </Flex>

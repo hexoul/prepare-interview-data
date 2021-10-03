@@ -13,7 +13,7 @@ import { ContentList } from '../components/ContentList'
 
 type Props = {
   subjects: Content[],
-  contents: Record<string, Content[]>,
+  contents: Record<string, Record<string, Content[] | string>>,
 }
 
 const brightColors = randomColor({ count: 10, luminosity: 'dark', hue: '#00FFFF', format: 'rgb' })
@@ -37,13 +37,20 @@ const IndexPage = ({ subjects, contents }: Props) => {
               rounded='16'
               boxShadow='xl'
             >
-              <Text as='b' color='white' textShadow='1px 2px black'>{i.content}</Text>
+              <Text as='b' color='white' textShadow='1px 2px black' isTruncated>
+                {i.content}
+              </Text>
             </Box>
           </Link>
         ))}
       </SimpleGrid>
       {Object.entries(contents).map(([k, v]) => (
-        <ContentList key={k} subject={k} contents={v} />
+        <ContentList
+          key={k}
+          subjectId={k}
+          subject={v.subject as string}
+          contents={v.contents as Content[]}
+        />
       ))}
     </Box>
   );
@@ -54,8 +61,12 @@ export const getStaticProps: GetStaticProps = async () => {
   const subjects = rawSubjects.filter(i => i.link)
   const contents = {}
   for (const subject of subjects) {
-    const path = `/${subject.link.split('/')[1]}`
-    contents[subject.content] = await getContents(path)
+    const subjectId = subject.link.split('/')[1] 
+    const path = `/${subjectId}`
+    contents[subjectId] = {
+      subject: subject.content,
+      contents: await getContents(path),
+    }
   }
   return { props: { subjects, contents } }
 }

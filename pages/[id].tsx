@@ -3,24 +3,21 @@ import Link from 'next/link'
 import { Box, VStack } from '@chakra-ui/react'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
+import { ContentList } from '../components/ContentList'
 
 type Props = {
   id: string,
+  subjectName: string,
   contents: Content[]
 }
 
-const ContentPage = ({ id, contents }: Props) => (
+const ContentPage = ({ id, subjectName, contents }: Props) => (
   <Box textAlign='center' fontSize='xl'>
-    <VStack spacing={8}>
-      {contents.filter(i => i.link).map((i, idx) => (
-        <Link
-          key={i.content}
-          href={`/${id}/${idx}`}
-        >
-          {i.content}
-        </Link>
-      ))}
-    </VStack>
+    <ContentList
+      subjectId={id}
+      subject={subjectName}
+      contents={contents}
+    />
   </Box>
 )
 
@@ -33,8 +30,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const contents = await getContents(`/${params.id}`)
-  return { props: { id: params.id, contents } }
+  const subjects = await getContents()
+  let subjectName: string;
+  for (const subject of subjects) {
+    if (subject.link.startsWith(`/${params.id}`)) {
+      subjectName = subject.content
+      break
+    }
+  }
+  const rawContents = await getContents(`/${params.id}`)
+  const contents = rawContents.filter(i => i.link)
+  return { props: { id: params.id, subjectName, contents } }
 }
 
 export default ContentPage
