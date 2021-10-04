@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Button,
   Link,
   Radio,
   RadioGroup,
@@ -21,6 +22,7 @@ type Props = {
 
 export const QuestionAccordion = (props: Props) => {
   const [value, setValue] = useState('0')
+  const [check, setCheck] = useState(false)
 
   return (
     <AccordionItem pb={2} {...props}>
@@ -37,14 +39,20 @@ export const QuestionAccordion = (props: Props) => {
         >
           <Stack direction='column'>
             {props.q.choices.map((c, idx) =>
-              <Radio key={idx} value={`${idx}`}>{c}</Radio>
+              <Radio key={idx} value={`${idx}`}>
+                <Text textAlign='left'>{c}</Text>
+              </Radio>
             )}
           </Stack>
         </RadioGroup>
-        <VStack alignItems='flex-start' spacing={1}>
-          <Text fontSize='md' textAlign='left'>[정답] {props.q.answer}</Text>
-          <Text fontSize='md' textAlign='left'>[설명] {props.q.explanation}</Text>
-        </VStack>
+        {check ?
+          <VStack alignItems='flex-start' spacing={1}>
+            <Text fontSize='md' textAlign='left'>[정답] {props.q.answer}</Text>
+            <Text fontSize='md' textAlign='left'>[설명] {props.q.explanation}</Text>
+          </VStack>
+          :
+          <Button onClick={() => setCheck(true)}>정답 확인</Button>
+        }        
       </AccordionPanel>
     </AccordionItem>
   )
