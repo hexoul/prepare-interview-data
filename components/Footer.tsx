@@ -20,7 +20,7 @@ export const Footer = () => (
         <HStack spacing='4'>
           <Link href={process.env.termsUrl} isExternal>Terms</Link>
           <Link href={process.env.privacyUrl} isExternal>Privacy</Link>
-          <Link href='https://github.com/hexoul/prepare-interview-data' isExternal>
+          <Link href={process.env.githubUrl} isExternal>
             <IconButton
               aria-label='Open the Github'
               variant='ghost'
@@ -28,7 +28,7 @@ export const Footer = () => (
               icon={<GoMarkGithub />}
             />
           </Link>
-          <Link href='https://open.kakao.com/me/prepare_interview' isExternal>
+          <Link href={process.env.openKakaoUrl} isExternal>
             <IconButton
               aria-label='Open the Kakao Openchat'
               variant='ghost'

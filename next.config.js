@@ -11,6 +11,8 @@ module.exports = (phase, { defaultConfig }) => {
             playstoreImg: 'https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png',
             termsUrl: 'https://github.com/hexoul/privacy-policy/wiki/Terms-&-Conditions-for-%EC%98%A4%EB%8A%98%EB%B6%80%ED%84%B0-%EC%A0%84%EA%B3%B5%EB%A9%B4%EC%A0%91',
             privacyUrl: 'https://github.com/hexoul/privacy-policy/wiki/Privacy-Policy-for-%EC%98%A4%EB%8A%98%EB%B6%80%ED%84%B0-%EC%A0%84%EA%B3%B5%EB%A9%B4%EC%A0%91',
+            githubUrl: 'https://github.com/hexoul/prepare-interview-data',
+            openKakaoUrl: 'https://open.kakao.com/me/prepare_interview',
         },
     }
     // console.log(commonConfig)

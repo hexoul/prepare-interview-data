@@ -4,7 +4,7 @@ export type Content = {
   num: number
 }
 
-type Question = {
+export type Question = {
   question: string,
   choices: string[],
   answer: number,

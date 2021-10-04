@@ -1,21 +1,26 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Box, VStack } from '@chakra-ui/react'
-import { Questions } from '../interfaces'
+import { Accordion, Box, Container } from '@chakra-ui/react'
+import { Question } from '../interfaces'
 import { getContents, getQuestions } from '../utils/fetch'
+import { QuestionAccordion } from '../components/QuestionAccordion'
 
 type Props = {
-  q: Questions
+  q: Question[]
 }
 
-const QuestionPage = ({ q }: Props) => (
-  <Box textAlign='center' fontSize='xl'>
-    <VStack spacing={8}>
-      {q.questions.filter(i => !i?.visible).map((i, idx) => (
-        <h1 key={idx}>{i.question}</h1>
-      ))}
-    </VStack>
-  </Box>
-)
+const QuestionPage = ({ q }: Props) => {
+  const defaultIndex: number[] = Array.from(Array(q.length).keys())
+
+  return (
+    <Box textAlign='center' fontSize='xl'>
+      <Container>
+        <Accordion allowMultiple defaultIndex={defaultIndex}>
+          {q.map((i, idx) => <QuestionAccordion key={idx} q={i} />)}
+        </Accordion>
+      </Container>
+    </Box>
+  )
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const contents = await getContents()
@@ -33,7 +38,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const [id, idx] = params.slug as string[]
   const subjects = await getContents(`/${id}`)
-  const q = await getQuestions(subjects[+idx].link)
+  const rawQ = await getQuestions(subjects[+idx].link)
+  const q = rawQ.questions.filter(i => !(i.hasOwnProperty('visible') && !i.visible))
   return { props: { q } }
 }
 
