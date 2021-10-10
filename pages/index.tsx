@@ -23,7 +23,7 @@ const darkColors = randomColor({ count: 10, luminosity: 'dark', hue: 'red', form
 
 const IndexPage = ({ subjects, contents }: Props) => {
   useEffect(() => {
-    currentScreen('main')
+    currentScreen('WebMain')
   }, [])
 
   return (
