@@ -25,7 +25,7 @@ export const QuestionAccordion = (props: Props) => {
   const [value, setValue] = useState('0')
   const [check, setCheck] = useState(false)
   const answerTextColor = colorModeValue('green.500', 'green.300')
-  const correctRadioTextColor = colorModeValue('green', 'green.200')
+  const correctRadioTextColor = colorModeValue('green.500', 'green.200')
   const wrongRadioTextColor = colorModeValue('red', 'red.300')
   const [radioTextColor, setRadioTextColor] = useState([])
 
@@ -62,7 +62,7 @@ export const QuestionAccordion = (props: Props) => {
               )}
             </Box>
             <Text fontSize='md' textAlign='left' pt={2}>[참고자료]</Text>
-            {props.q.references.map((kv, idx) =>
+            {props.q.references?.map((kv, idx) =>
               <Link
                 key={`ref${idx}`}
                 href={kv[Object.keys(kv)[0]]}
@@ -80,8 +80,9 @@ export const QuestionAccordion = (props: Props) => {
               setCheck(true)
               const selected: number = +value
               let newRadioTextColor = [...radioTextColor]
-              newRadioTextColor[3] = correctRadioTextColor
-              if (props.q.answer - 1 !== selected) {
+              const answerIdx = props.q.answer - 1
+              newRadioTextColor[answerIdx] = correctRadioTextColor
+              if (answerIdx !== selected) {
                 newRadioTextColor[selected] = wrongRadioTextColor
               }
               setRadioTextColor(newRadioTextColor)
