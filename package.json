@@ -16,6 +16,7 @@
     "@chakra-ui/react": "^1.6.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "firebase": "^9.1.2",
     "framer-motion": "^4",
     "next": "latest",
     "randomcolor": "^0.6.2",

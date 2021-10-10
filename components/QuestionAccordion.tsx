@@ -70,7 +70,7 @@ export const QuestionAccordion = (props: Props) => {
                 color='teal.400'
                 isExternal
               >
-                - {Object.keys(kv)[0]} <ExternalLinkIcon mx="2px" />
+                - {Object.keys(kv)[0]}<ExternalLinkIcon mx="2px" />
               </Link>
             )}
           </VStack>

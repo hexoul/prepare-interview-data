@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import {
@@ -9,6 +10,7 @@ import {
 import * as randomColor from 'randomcolor'
 import { Content } from '../interfaces'
 import { getContents } from '../utils/fetch'
+import { currentScreen } from '../utils/firebase'
 import { ContentList } from '../components/ContentList'
 
 type Props = {
@@ -20,6 +22,10 @@ const brightColors = randomColor({ count: 10, luminosity: 'dark', hue: '#00FFFF'
 const darkColors = randomColor({ count: 10, luminosity: 'dark', hue: 'red', format: 'rgb' })
 
 const IndexPage = ({ subjects, contents }: Props) => {
+  useEffect(() => {
+    currentScreen('main')
+  }, [])
+
   return (
     <Box textAlign='center' fontSize='xl' px='10'>
       <SimpleGrid columns={[1, 2, 3]} spacing={4} pb={12}>
