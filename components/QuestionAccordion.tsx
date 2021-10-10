@@ -1,5 +1,4 @@
 import {
-  chakra,
   AccordionButton,
   AccordionIcon,
   AccordionItem,
@@ -14,6 +13,7 @@ import {
   VStack,
   useColorModeValue as colorModeValue,
 } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import { Question } from '../interfaces'
 
@@ -52,14 +52,26 @@ export const QuestionAccordion = (props: Props) => {
         </RadioGroup>
         {check ?
           <VStack alignItems='flex-start' spacing={1}>
-            <Text fontSize='md' textAlign='left' textColor={answerTextColor}>
+            <Text fontSize='md' textAlign='left' textColor={answerTextColor} pb={2}>
               [정답] {props.q.answer}
             </Text>
-            <Text fontSize='md' textAlign='left'>
-              [설명]
-            </Text>
-            {props.q.explanation.split('\n').map(explain =>
-              <Text fontSize='md' textAlign='left'>{explain}</Text>
+            <Text fontSize='md' textAlign='left'>[설명]</Text>
+            <Box w='100%' borderWidth='1px' borderRadius='lg' overflow='hidden' p={4}>
+              {props.q.explanation.split('\n').map((e, idx) =>
+                <Text key={`explain${idx}`} fontSize='md' textAlign='left'>{e}</Text>
+              )}
+            </Box>
+            <Text fontSize='md' textAlign='left' pt={2}>[참고자료]</Text>
+            {props.q.references.map((kv, idx) =>
+              <Link
+                key={`ref${idx}`}
+                href={kv[Object.keys(kv)[0]]}
+                fontSize='md'
+                color='teal.400'
+                isExternal
+              >
+                - {Object.keys(kv)[0]} <ExternalLinkIcon mx="2px" />
+              </Link>
             )}
           </VStack>
           :
