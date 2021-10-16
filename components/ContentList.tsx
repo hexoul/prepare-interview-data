@@ -13,7 +13,7 @@ import { Content } from '../interfaces'
 
 type Props = {
   subjectId: string,
-  subject: string,
+  subject: Content,
   contents: Content[],
 }
 
@@ -22,7 +22,8 @@ export const ContentList = (props: Props) => {
     <VStack alignItems='flex-start' pb={16}>
       <HStack>
         <FaBook />
-        <Heading size='md' isTruncated> {props.subject}</Heading>
+        <Heading size='md' isTruncated>{props.subject.content}</Heading>
+        <Text fontSize='lg'>{props.subject.num}문제</Text>
       </HStack>
       <Divider />
       <VStack

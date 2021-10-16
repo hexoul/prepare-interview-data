@@ -15,7 +15,7 @@ import { ContentList } from '../components/ContentList'
 
 type Props = {
   subjects: Content[],
-  contents: Record<string, Record<string, Content[] | string>>,
+  contents: Record<string, Record<string, Content | Content[]>>,
 }
 
 const brightColors = randomColor({ count: 10, luminosity: 'dark', hue: '#00FFFF', format: 'rgb' })
@@ -54,7 +54,7 @@ const IndexPage = ({ subjects, contents }: Props) => {
         <ContentList
           key={k}
           subjectId={k}
-          subject={v.subject as string}
+          subject={v.subject as Content}
           contents={v.contents as Content[]}
         />
       ))}
@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const subjectId = subject.link.split('/')[1] 
     const path = `/${subjectId}`
     contents[subjectId] = {
-      subject: subject.content,
+      subject: subject,
       contents: await getContents(path),
     }
   }
