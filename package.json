@@ -8,7 +8,7 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build && next export && touch out/.nojekyll",
+    "predeploy": "next build && next-sitemap && next export && touch out/.nojekyll",
     "deploy": "gh-pages -d out --dotfiles",
     "type-check": "tsc"
   },
@@ -20,6 +20,7 @@
     "firebase": "^9.1.2",
     "framer-motion": "^4",
     "next": "latest",
+    "next-seo": "^4.28.1",
     "randomcolor": "^0.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
