@@ -1,0 +1,5 @@
+.next/
+.vscode/
+out/
+public/
+node_modules/
