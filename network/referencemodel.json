@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Internet protocol stack (TCP/IP 모델) 에는 몇 개의 계층이 존재하는가?",
+      "question": "Internet protocol stack(TCP/IP 모델)에는 몇 개의 계층이 존재하는가?",
       "choices": [
         "5",
         "6",
@@ -9,7 +9,7 @@
         "10"
       ],
       "answer": 1,
-      "explanation": "Internet protocol stack은 Internet protocl suite의 구현체로 제안자에 따라 일부 계층의 이름이 다를 때도 있으나, 일반적으로는 OSI 모델을 고려해 Physical, Data link, Internet (Network), Transport, Application의 다섯 레이어로 생각됩니다.",
+      "explanation": "Internet protocol stack은 Internet protocl suite의 구현체로 제안자에 따라 일부 계층의 이름이 다를 때도 있으나, 일반적으로는 OSI 모델을 고려해 물리 계층(physical layer), 데이터 링크 계층(data link layer), 인터넷 계층(internet 혹은 network layer), 전송 계층(transport layer), 응용 계층(application layer)의 다섯 레이어로 생각됩니다.",
       "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
     },
     {
@@ -21,7 +21,7 @@
         "10"
       ],
       "answer": 3,
-      "explanation": "Application, Presentation, Session, Transport, Network, Data link and Physical layer",
+      "explanation": "물리 계층(physical layer), 데이터 링크 계층(data link layer), 네트워크 계층(network layer), 전송 계층(transport layer), 세션 계층(session layer), 표현 계층(presentation layer) 그리고 응용 계층(application layer)으로 총 7계층입니다.",
       "references": [
         {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
@@ -30,17 +30,17 @@
     {
       "question": "다음 중 TCP/IP 모델에는 없고 OSI 모델에만 존재하는 계층은 무엇인가?",
       "choices": [
-        "Application layer",
-        "Presentation layer",
-        "Session layer",
-        "Presentation과 Session layer"
+        "응용 계층(application layer)",
+        "표현 계층(presentation layer)",
+        "세션 계층(session layer)",
+        "표현 계층과 세션 계층"
       ],
       "answer": 4,
-      "explanation": "TCP/IP 모델에서는 Presentation layer와 Session layer는 Application layer에 포함됩니다.",
+      "explanation": "TCP/IP 모델에서는 표현 계층(presentation layer)과 세션 계층(session layer)은 응용 계층(application layer)에 포함됩니다.",
       "references": [{"모델 비교": "https://en.wikipedia.org/wiki/Internet_protocol_suite#Comparison_of_TCP/IP_and_OSI_layering"}]
     },
     {
-      "question": "다음 중 Presentation layer가 포함하는 기능은?",
+      "question": "다음 중 표현 계층(presentation layer)이 포함하는 기능은?",
       "choices": [
         "데이터 압축",
         "데이터 암호화",
@@ -48,7 +48,7 @@
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "Presentation layer는 application이 네트워크마다 다를 수 있는 데이터 포맷이나 전송 방식 등을 신경쓰지않고 작업할 수 있도록 독립성을 제공하는 계층입니다. 따라서 송수신 시에 하위 레이어에 따라 application에서 받거나 application에 보낼 데이터를 압축 또는 해제하거나 변환하는 등의 작업을 합니다.",
+      "explanation": "표현 계층(presentation layer)은 애플리케이션이 네트워크마다 다를 수 있는 데이터 포맷이나 전송 방식 등을 신경쓰지않고 작업할 수 있도록 독립성을 제공하는 계층입니다. 따라서 송수신 시에 하위 레이어에 따라 애플리케이션에서 받거나 애플리케이션에 보낼 데이터를 압축 또는 해제하거나 변환하는 등의 작업을 합니다.",
       "references": [
         {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
@@ -57,13 +57,13 @@
     {
       "question": "다음 중 교환되는 메세지 스트림의 동기화를 제공하는 계층은?",
       "choices": [
-        "Application layer",
-        "Session layer",
-        "Transport layer",
-        "Data link layer"
+        "응용 계층(application layer)",
+        "세션 계층(session layer)",
+        "전송 계층(transport layer)",
+        "데이터 링크 계층(data link layer)"
       ],
       "answer": 2,
-      "explanation": "Session layer는 종단 프로세스 간에 세션의 확립, 유지 및 중단을 위한 메커니즘을 제공하는 계층입니다. 세션을 직접 관리함으로써 전이중 (full-duplex) 및 반이중 (half-duplex) 통신 위에서의 동기화를 가능하게 합니다. Session layer의 대표적인 예로는 TCP/IP가 있습니다.",
+      "explanation": "세션 계층(session layer)은 종단 프로세스 간에 세션의 확립, 유지 및 중단을 위한 메커니즘을 제공하는 계층입니다. 세션을 직접 관리함으로써 전이중 (full-duplex) 및 반이중 (half-duplex) 통신 위에서의 동기화를 가능하게 합니다. 세션 계층의 대표적인 예로는 TCP/IP가 있습니다.",
       "references": [
         {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
@@ -72,13 +72,13 @@
     {
       "question": "OSI 모델에서 종단 A로부터 종단 B로 데이터를 보낼 때, B에서 데이터가 5번째로 거치는 계층은?",
       "choices": [
-        "Application layer",
-        "Session layer",
-        "Transport layer",
-        "Network layer"
+        "응용 계층(application layer)",
+        "세션 계층(session layer)",
+        "전송 계층(transport layer)",
+        "네트워크 계층(network layer)"
       ],
       "answer": 2,
-      "explanation": "수신 측에서 데이터는 하위 계층에서 상위 계층으로 가는 흐름이므로, Physical layer부터 시작하여 5번째는 Session layer가 됩니다.",
+      "explanation": "수신 측에서 데이터는 하위 계층에서 상위 계층으로 가는 흐름이므로, 물리 계층(physical layer)부터 시작하여 5번째는 세션 계층(session layer)가 됩니다.",
       "references": [
         {"[한] OSI model": "https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95"},
         {"OSI model": "https://en.wikipedia.org/wiki/OSI_model"}
@@ -87,13 +87,13 @@
     {
       "question": "TCP/IP 모델에서 종단 A로부터 종단 B로 데이터를 보낼 때, A에서 데이터가 5번째로 거치는 계층은?",
       "choices": [
-        "Application layer",
-        "Session layer",
-        "Network layer",
-        "Physical layer"
+        "응용 계층(application layer)",
+        "세션(session layer)",
+        "네트워크(network layer)",
+        "물리 계층(physical layer)"
       ],
       "answer": 4,
-      "explanation": "송신 측에서 데이터는 상위 계층에서 하위 계층으로 가는 흐름이므로, Application layer부터 시작하여 5번째는 Physical layer가 됩니다. 만약 OSI 모델에서의 통신이었다면 Network layer가 정답이 되었을 것입니다.",
+      "explanation": "송신 측에서 데이터는 상위 계층에서 하위 계층으로 가는 흐름이므로, 응용 계층(application layer)부터 시작하여 5번째는 물리 계층(physical layer)이 됩니다. 만약 OSI 모델에서의 통신이었다면 네트워크 계층(network layer)이 정답이 되었을 것입니다.",
       "references": [{"Internet protocol suite": "https://en.wikipedia.org/wiki/Internet_protocol_suite"}]
     },
     {
@@ -112,26 +112,26 @@
       ]
     },
     {
-      "question": "OSI 모델에서 네트워크 지원 계층 (network support layer) 와 사용자 지원 계층 (user support layer) 를 잇는 계층은?",
+      "question": "OSI 모델에서 네트워크 지원 계층(network support layer)과 사용자 지원 계층(user support layer)을 잇는 계층은?",
       "choices": [
-        "Session layer",
-        "Transport layer",
-        "Network layer",
-        "Data link layer"
+        "세션 계층(session layer)",
+        "전송 계층(transport layer)",
+        "네트워크 계층(network layer)",
+        "데이터 링크 계층(data link layer)"
       ],
       "answer": 2,
-      "explanation": "Layer 1, 2, 3인 physical, data link, network layer의 네트워크 지원 계층과 Layer 5, 6, 7인 session, presentation, application layer의 사용자 지원 계층을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 Transport layer입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
+      "explanation": "Layer 1, 2, 3인 물리(physical), 데이터 링크(data link), 네트워크(network) 계층의 네트워크 지원 계층(network support layer)과 Layer 5, 6, 7인 세션(session), 표현(presentation), 응용(application) 계층의 사용자 지원 계층(user support layer)을 데이터를 분할하고 재정렬함으로써 연동시키는 계층은 전송 계층(transport layer)입니다. 프로토콜로 TCP 또는 UDP가 일반적으로 사용됩니다. 참고로 네트워크 지원 계층이란 노드 간에 물리적으로 데이터를 보내는 기능에 관련된 계층들입니다. 반면 사용자 지원 계층은 기반 시스템과 상관없이 논리적으로 데이터를 주고받는 기능과 관련된 계층들을 말합니다."
     },
     {
       "question": "TCP/IP 프로토콜에서 사용되는 주소는?",
       "choices": [
-        "Physical address",
-        "Logical address",
-        "Port address",
+        "물리 주소(physical address)",
+        "논리 주소(logical address)",
+        "포트 주소(port address)",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "TCP/IP 프로토콜은 네트워크 지원 계층뿐만 아니라 application layer까지 포함하므로 물리적 주소 (MAC), 논리적 주소 및 포트 모두 사용됩니다. 포트의 사용 예로 한 public IP에 여러 private IP가 매핑되어있을 때 구별하기위해 사용되기도 합니다.",
+      "explanation": "TCP/IP 프로토콜은 네트워크 지원 계층(network support layer)뿐만 아니라 응용 계층(application layer)까지 포함하므로 물리 주소, 논리적 주소 및 포트 모두 사용됩니다. 포트의 사용 예로 한 공인(public) IP에 여러 사설(private) IP가 매핑되어 있을 때 구별하기위해 사용되기도 합니다.",
       "references": [{"Network address translation": "https://en.wikipedia.org/wiki/Network_address_translation"}]
     },
     {
