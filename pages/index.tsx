@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import {
   Box,
+  Link as ChakraLink,
   SimpleGrid,
   Text,
   useColorModeValue as colorModeValue
@@ -36,7 +37,9 @@ const IndexPage = ({ subjects, contents }: Props) => {
             passHref
           >
             <Box
+              _focus={{ boxShadow: 'none' }}
               _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }}
+              as={ChakraLink}
               bg={colorModeValue(brightColors[idx], darkColors[idx])}
               color='white'
               p='4'

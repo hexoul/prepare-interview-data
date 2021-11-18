@@ -3,6 +3,7 @@ import {
   Divider,
   Heading,
   HStack,
+  Link as ChakraLink,
   StackDivider,
   Text,
   VStack,
@@ -38,14 +39,16 @@ export const ContentList = (props: Props) => {
             passHref
           >
             <Text
-              w='100%'
-              textAlign='left'
-              alignSelf='flex-start'
+              _focus={{ boxShadow: 'none' }}
               _hover={{
                 textDecoration: 'none',
                 color: colorModeValue('blue.600', 'blue.100'),
                 transform: 'translateX(10px)',
               }}
+              as={ChakraLink}
+              alignSelf='flex-start'
+              w='100%'
+              textAlign='left'
               transition='200ms'
               isTruncated
             >
