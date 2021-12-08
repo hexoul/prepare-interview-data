@@ -203,10 +203,10 @@
     {
       "question": "네트워크에서 물리적 또는 논리적으로 연결된 방식을 뜻하는 용어는?",
       "choices": [
-        "라우팅(Routing)",
-        "네트워킹(Networking)",
-        "토폴로지(Topology)",
-        "노드(Node)"
+        "라우팅(routing)",
+        "네트워킹(networking)",
+        "토폴로지(topology)",
+        "노드(node)"
       ],
       "answer": 3,
       "explanation": "네트워크의 요소인 링크나 노드 등이 그래프 이론을 기반으로 물리적이나 논리적으로 연결된 것으로 다양한 종류가 있습니다.",
@@ -218,10 +218,10 @@
     {
       "question": "중앙 제어장치 또는 허브가 요구되는 네트워크 토폴로지는?",
       "choices": [
-        "Star",
-        "Mesh",
-        "Ring",
-        "Bus"
+        "스타(star)",
+        "메쉬(mesh)",
+        "링(ring)",
+        "버스(bus)"
       ],
       "answer": 1,
       "explanation": "스타 네트워크(star network)에서는 다른 노드와 직접 연결을 맺지 않고 중앙 허브를 통해 통신을 합니다. 따라서 모든 트래픽은 허브를 거치게 됩니다.",
@@ -235,13 +235,13 @@
     {
       "question": "___ 네트워크 토폴로지는 모든 노드가 공통된 채널을 사용한다.",
       "choices": [
-        "Star",
-        "Mesh",
-        "Ring",
-        "Bus"
+        "스타(star)",
+        "메쉬(mesh)",
+        "링(ring)",
+        "버스(bus)"
       ],
       "answer": 4,
-      "explanation": "버스 네트워크(bus network)에서는 bus라 불리는 half-duplex 링크를 공유하여 전송이 있을 때 모든 노드가 트래픽을 받습니다. 노드를 추가 연결시키기 쉬운 반면 보안에 취약할 수 있고 fault를 격리 또는 전파를 막기 어렵습니다. 채널을 공유하기 때문에 채널에 문제가 생기면 전체 장애가 될 수 있습니다.",
+      "explanation": "버스 네트워크(bus network)에서는 버스라 불리는 반이중(half-duplex) 링크를 공유하여 전송이 있을 때 모든 노드가 트래픽을 받습니다. 노드를 추가 연결시키기 쉬운 반면 보안에 취약할 수 있고 fault를 격리 또는 전파를 막기 어렵습니다. 채널을 공유하기 때문에 채널에 문제가 생기면 전체 장애가 될 수 있습니다.",
       "references": [
         {"Star": "https://en.wikipedia.org/wiki/Star_network"},
         {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
@@ -252,13 +252,13 @@
     {
       "question": "네트워크에 노드를 추가하거나 변경하려고 할 때 전체 네트워크에 영향을 줄 수 있는 네트워크 토폴로지는?",
       "choices": [
-        "Star",
-        "Mesh",
-        "Ring",
-        "Bus"
+        "스타(star)",
+        "메쉬(mesh)",
+        "링(ring)",
+        "버스(bus)"
       ],
       "answer": 3,
-      "explanation": "Ring 네트워크는 경로가 원형으로 형성되도록 각 노드가 두 노드와 연결이 되어있기 때문에 변경할 때 연결이 끊어져야하는 부분이 생기기 때문에 네트워크에 영향을 줄 수 있습니다. 네트워크 중 한 노드가 비정상 동작을 할 때도 유사한 영향이 있을 수 있기 때문에 dual ring 등의 보완하는 방법들이 있습니다.",
+      "explanation": "링 네트워크(ring network)는 경로가 원형으로 형성되도록 각 노드가 두 노드와 연결이 되어있기 때문에 변경할 때 연결이 끊어져야하는 부분이 생기기 때문에 네트워크에 영향을 줄 수 있습니다. 네트워크 중 한 노드가 비정상 동작을 할 때도 유사한 영향이 있을 수 있기 때문에, 듀얼 링(dual ring) 등으로 보완하는 방법들이 있습니다.",
       "references": [
         {"Star": "https://en.wikipedia.org/wiki/Star_network"},
         {"Mesh": "https://en.wikipedia.org/wiki/Mesh_networking"},
@@ -286,13 +286,13 @@
     {
       "question": "TDM은 채널을 ___으로 나누어 사용한다.",
       "choices": [
-        "Seconds",
-        "Frames",
-        "Packets",
-        "Bits"
+        "초(seconds)",
+        "프레임(frames)",
+        "패킷(packets)",
+        "비트(bits)"
       ],
       "answer": 2,
-      "explanation": "TDM은 Time-division multiplexing의 약어로 2개 이상의 신호를 결합해 공통된 채널에 시간축 기반으로 보내는 기술입니다. 시간축은 고정된 시간으로 나뉘어지지만 디지털 또는 아날로그 신호에 의존적이기 때문에 초 단위가 아닙니다. 나뉘어진 단위는 time slot 또는 프레임(frame)이라 불립니다. 각 프레임은 대역폭(bandwidth)에 따라 포함하는 데이터 크기가 달라집니다.",
+      "explanation": "TDM은 Time-division multiplexing의 약어로 2개 이상의 신호를 결합해 공통된 채널에 시간축 기반으로 보내는 기술입니다. 시간축은 고정된 시간으로 나뉘어지지만 디지털 또는 아날로그 신호에 의존적이기 때문에 초 단위가 아닙니다. 나뉘어진 단위는 타임 슬롯(time slot) 또는 프레임(frame)이라 부릅니다. 각 프레임은 대역폭(bandwidth)에 따라 포함하는 데이터 크기가 달라집니다.",
       "references": [
         {"[한] TDM": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%B6%84%ED%95%A0_%EB%8B%A4%EC%A4%91%ED%99%94"},
         {"TDM": "https://en.wikipedia.org/wiki/Time-division_multiplexing"}
@@ -318,10 +318,10 @@
     {
       "question": "하나의 공유되는 채널에 두 개 이상의 신호를 결합하여 전송하는 방식을 ___라 한다.",
       "choices": [
-        "Duplexing",
-        "Fully duplexing",
-        "Multiplexing",
-        "Switching"
+        "이중화(duplexing)",
+        "전이중화(fully duplexing)",
+        "멀티플렉싱(multiplexing)",
+        "스위칭(switching)"
       ],
       "answer": 3,
       "explanation": "멀티플레싱(multiplexing)은 muxing이라고도 부르며 멀티플렉싱을 수행하는 장치를 MUX(multiplexer)라 합니다.",
@@ -331,7 +331,7 @@
       ]
     },
     {
-      "question": "TDM에서 초당 4000 프레임(frame)을 보내고 각 프레임은 8 bits를 표현한다면 전송률은 어떻게 되는가?",
+      "question": "TDM에서 초당 4000 프레임(frame)을 보내고 각 프레임은 8 비트(bit)를 표현한다면 전송률은 어떻게 되는가?",
       "choices": [
         "32bps",
         "32Kbps",
