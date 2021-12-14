@@ -286,51 +286,59 @@
     {
       "question": "다음 중 목적이 다른 하나는?",
       "choices": [
-        "Packet switching",
-        "Message switching",
-        "Circuit switching",
-        "Context switching"
+        "패킷 교환(packet switching)",
+        "메시지 교환(message switching)",
+        "회선 교환(circuit switching)",
+        "문맥 교환(context switching)"
       ],
       "answer": 4,
-      "explanation": "앞선 세 개는 모두 네트워크 통신에서 여러 노드를 걸쳐 어떻게 경로를 설정하고 어떻게 데이터를 보낼 것인지에 대한 방법론들입니다. 반면, context switching은 OS에서 프로세스 또는 쓰레드의 상태를 관리하기 위한 방법론입니다.",
+      "explanation": "앞선 세 개는 모두 네트워크 통신에서 여러 노드를 걸쳐 어떻게 경로를 설정하고 어떻게 데이터를 보낼 것인지에 대한 방법론들입니다. 반면, 문맥 교환(context switching)은 OS에서 프로세스 또는 스레드의 상태를 관리하기 위한 방법론입니다.",
       "references": [
+        {"[한] Packet switching": "https://terms.naver.com/entry.naver?docId=2271819"},
         {"Packet switching": "https://en.wikipedia.org/wiki/Packet_switching"},
+        {"[한] Message switching": "https://terms.naver.com/entry.naver?docId=829195"},
         {"Message switching": "https://en.wikipedia.org/wiki/Message_switching"},
+        {"[한] Circuit switching": "https://terms.naver.com/entry.naver?docId=869840"},
         {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"},
+        {"[한] Context switching": "https://terms.naver.com/entry.naver?docId=818893"},
         {"Context switching": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
     },
     {
-      "question": "회로 전환(circuit switching)에서는 통신을 위한 자원들이 예약되므로 ___을 얻을 수 있다.",
+      "question": "회선 교환(circuit switching)에서는 통신을 위한 자원들이 예약되므로 ___을 얻을 수 있다.",
       "choices": [
         "인증(authentication) 기능",
-        "보장된 전송률",
+        "보장된 전송률(transmission rate)",
         "신뢰성(reliability)",
         "재사용성(reusability)"
       ],
       "answer": 2,
-      "explanation": "회로 전환(circuit switching)은 물리 계층(physical layer)에서 자원 간 경쟁이 없도록 고정된 물리적 경로를 구현하므로 보장된 전송률을 보장할 수 있습니다.",
+      "explanation": "회선 교환(circuit switching)은 물리 계층(physical layer)에서 자원 간 경쟁이 없도록 고정된 물리적 경로를 구현하므로 보장된 전송률을 보장할 수 있습니다.",
       "references": [
         {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"}
       ]
     },
     {
-      "question": "___ 시스템에서 자원은 on-demand로 할당된다.",
+      "question": "___ 시스템에서 자원은 온디맨드(on-demand)로 할당된다.",
       "choices": [
-        "Packet switching",
-        "Circuit switching",
-        "Line switching",
-        "Frequency switching"
+        "패킷 교환(packet switching)",
+        "회선 교환(circuit switching)",
+        "문맥 교환(context switching)",
+        "주파수 교환(frequency switching)"
       ],
       "answer": 1,
-      "explanation": "네트워크 자원을 미리 할당하여 경로가 고정된 circuit switching과는 달리, packet switching에서는 각 노드에서 네트워크의 상황에 따라 패킷의 경로가 계속하여 변할 수 있습니다. 실제 전송이 있을 때, 즉 요구가 있을 때 동적으로 정해진 경로에 해당하는 네트워크 자원이 할당됩니다.",
+      "explanation": "네트워크 자원을 미리 할당하여 경로가 고정된 회선 교환(circuit switching)과는 달리, 패킷 교환(packet switching)에서는 각 노드에서 네트워크의 상황에 따라 패킷의 경로가 계속하여 변할 수 있습니다. 실제 전송이 있을 때, 즉 요구가 있을 때 동적으로 정해진 경로에 해당하는 네트워크 자원이 할당됩니다.",
       "references": [
+        {"[한] Packet switching": "https://terms.naver.com/entry.naver?docId=2271819"},
         {"Packet switching": "https://en.wikipedia.org/wiki/Packet_switching"},
-        {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"}
+        {"[한] Circuit switching": "https://terms.naver.com/entry.naver?docId=869840"},
+        {"Circuit switching": "https://en.wikipedia.org/wiki/Circuit_switching"},
+        {"[한] Context switching": "https://terms.naver.com/entry.naver?docId=818893"},
+        {"Context switching": "https://en.wikipedia.org/wiki/Context_switch"}
       ]
     },
     {
-      "question": "다음 중 application layer의 서비스가 아닌 것은?",
+      "question": "다음 중 응용 계층(application layer)의 서비스가 아닌 것은?",
       "choices": [
         "가상 터미널(virtual terminal)",
         "파일 전송 및 관리",
