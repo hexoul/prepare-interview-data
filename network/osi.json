@@ -1,24 +1,29 @@
 {
   "questions": [
     {
-      "question": "Physical layer는 ___ 전달이 고려되는 계층이다.",
+      "question": "물리 계층(physical layer)은 ___ 전달이 고려되는 계층이다.",
       "choices": [
-        "bit by bit",
-        "process to process",
-        "port to port",
-        "application to application"
+        "비트 단위(bit by bit)",
+        "프로세스 간(process to process)",
+        "포트 간(port to port)",
+        "애플리케이션 간(application to application)"
       ],
       "answer": 1,
-      "explanation": "Physical layer는 첫 번째 계층으로써 네트워크에서 물리적으로 bit를 보내는 방법을 다룹니다. Process 간 또는 port 간은 transport layer에서 다뤄집니다.",
-      "references": [{"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"}]
+      "explanation": "물리 계층(physical layer)는 첫 번째 계층으로써 네트워크에서 물리적으로 비트(bit)를 보내는 방법을 다룹니다. 프로세스(process) 간 또는 포트(port) 간의 전달은 전송 계층(transport layer)에서 다뤄집니다.",
+      "references": [
+        {"[한] Physical layer": "https://ko.wikipedia.org/wiki/%EB%AC%BC%EB%A6%AC_%EA%B3%84%EC%B8%B5"},
+        {"Physical layer": "https://en.wikipedia.org/wiki/Physical_layer"},
+        {"[한] Transport layer": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EA%B3%84%EC%B8%B5"},
+        {"Transport layer": "https://en.wikipedia.org/wiki/Transport_layer"}
+      ]
     },
     {
       "question": "다음 중 어느 전송 매체가 제일 빠른 전송 속도를 가지는가?",
       "choices": [
-        "동축 케이블 (coaxial cable)",
-        "연선 혹은 꼬임 쌍선 (twisted pair cable)",
-        "광학 섬유 (optical fibor)",
-        "전력 케이블 (electrical cable)"
+        "동축 케이블(coaxial cable)",
+        "연선 혹은 꼬임 쌍선(twisted pair cable)",
+        "광학 섬유(optical fibor)",
+        "전력 케이블(electrical cable)"
       ],
       "answer": 3,
       "explanation": "-",
@@ -30,16 +35,19 @@
       ]
     },
     {
-      "question": "Bit는 ___에 의해 유도 매체 (guided media) 또는 비유도 매체 (unguided media)를 거쳐 아날로그 신호로 보내질 수 있다.",
+      "question": "비트(bit)는 ___에 의해 유도 매체(guided media) 또는 비유도 매체(unguided media)를 거쳐 아날로그 신호로 보내질 수 있다.",
       "choices": [
-        "Digital modulation",
-        "Amplitude modulation",
-        "Frequency modulation",
-        "Phase modulation"
+        "디지털 변조(digital modulation)",
+        "진폭 변조(amplitude modulation)",
+        "주팟수 변조(frequency modulation)",
+        "위상 변조(phase modulation)"
       ],
       "answer": 1,
-      "explanation": "Digital modulation은 bit의 1과 0을 표현하기위해 high 또는 low로 구별할 수 있도록 digital 신호를 analog 신호로 변환하는 기술입니다. Amplitude, frequency, phase modulation (AM/FM/PM)은 각각 진폭, 주기, 페이즈를 위한 modulation으로 역할이 다릅니다. 참고로 유도 매체는 케이블과 같은 물리적 도체를 이용해 신호를 유도하는 매체로 유선 통신에 쓰이고 비유도 매체는 무선 통신에 쓰입니다.",
-      "references": [{"Modulation": "https://en.wikipedia.org/wiki/Modulation"}]
+      "explanation": "디지털 변조(digital modulation)은 비트(bit)의 1 또는 0을 나타내는 디지털 신호를 high 또는 low로 구별할 수 있는 아날로그 신호로 변환하는 기술입니다. 진폭(amplitude), 주파수(frequency), 위상(phase) 변조는 말그대로 각각 진폭, 주파수, 위상을 변조함으로써 어떤 아날로그 신호를 변조된 아날로그 신호로 만드는 아날로그 변조입니다. AM/FM/PM으로도 불립니다. 참고로 유도 매체는 케이블과 같은 물리적 도체를 이용해 신호를 유도하는 매체로 유선 통신에 쓰이고 비유도 매체는 무선 통신에 쓰입니다.",
+      "references": [
+        {"[한] Modulation": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A1%B0"},
+        {"Modulation": "https://en.wikipedia.org/wiki/Modulation"}
+      ]
     },
     {
       "question": "Physical layer 안에서 media access control (MAC) sublayer와 연계하는 sublayer는?",
