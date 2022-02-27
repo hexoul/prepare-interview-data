@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "전제 조건 (precondition) 에 대한 설명으로 틀린 것은?",
+      "choices": [
+        "코드의 특정 구간이 실행되기 전에 반드시 true여야 하는 조건이다.",
+        "Assertion이 쓰이기도 한다.",
+        "한번 코드로 작성되면 수정되는 일은 거의 없다.",
+        "정의되지않는 경우도 있다."
+      ],
+      "answer": 3,
+      "explanation": "전제 조건을 검사하는 부분도 프로그래머에 의해 개발되는 부분이므로 잘못 작성되는 경우도 많습니다. 정의보다 느슨한 기준으로 구현되면 에러가 발생하거나 보장안된 결과가 도출될 수 있고, 정의보다 엄격한 조건으로 구현되면 assertion에 의해 의도치않게 프로그램이 정지되거나 결과를 얻지 못할 수도 있습니다.\n입력이 필요없는 stateless한 동작은 정의되지않기도 합니다. 예) 상수를 stdout에 출력",
+      "references": [
+        {"Precondition": "https://en.wikipedia.org/wiki/Precondition"},
+        {"Assertion": "https://en.wikipedia.org/wiki/Assertion_(software_development)"}
+      ]
+    }
+  ]
+}
