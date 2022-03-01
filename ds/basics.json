@@ -39,7 +39,7 @@
         "은닉화(encapsulation)을 제공한다는 장점이 있다."
       ],
       "answer": 1,
-      "explanation": "ADT는 프로그래밍 언어와는 상관없이 데이터와 데이터를 조작하는 함수들을 포함하는 수학적 모델입니다. 일반적으로 ADT 인스턴스 별로 데이터와 상태 (state) 를 가진다고도 볼 수 있습니다.\nADT는 자료구조와는 다릅니다. 자료구조가 사용자 입장에서의 정의라면 ADT는 자료구조를 구현자 관점에서 실현시키기위한 모델로, 자료와 조작을 위한 함수를 갖는다는 점은 공통적이지만 목적이 다릅니다.",
+      "explanation": "ADT(Abstract Data Type)는 프로그래밍 언어와는 상관없이 데이터와 데이터를 조작하는 함수들을 포함하는 수학적 모델입니다. 일반적으로 ADT 인스턴스 별로 데이터와 상태(state)를 가진다고도 볼 수 있습니다.\nADT는 자료구조와는 다릅니다. 자료구조가 사용자 입장에서의 정의라면 ADT는 자료구조를 구현자 관점에서 실현시키기위한 모델로, 자료와 조작을 위한 함수를 갖는다는 점은 공통적이지만 목적이 다릅니다.",
       "references": [
         {"ADT": "https://en.wikipedia.org/wiki/Abstract_data_type"},
         {"Data structure": "https://en.wikipedia.org/wiki/Data_structure"},
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "question": "다음 Big O 표기법 중 가장 작은 값을 나타내는 것은?",
+      "question": "다음 빅 오 표기법(big-O notation) 중 가장 작은 값을 나타내는 것은?",
       "choices": [
         "O(n)",
         "O(n / 100)",
@@ -55,14 +55,14 @@
         "O(log n)"
       ],
       "answer": 4,
-      "explanation": "Big O 표기법에서 계수 (coefficient) 나 상수는 그 정의에 따라 1로 수렴됩니다. 따라서 O(n / 100)도 O(2n)도 모두 O(n)가 됩니다.\n로그함수는 일차함수보다 발산하는 정도가 약하므로 O(log n) < O(n)입니다.",
+      "explanation": "빅 오 표기법(big-O notation)에서 계수(coefficient)나 상수는 그 정의에 따라 1로 수렴됩니다. 따라서 O(n / 100)도 O(2n)도 모두 O(n)가 됩니다.\n로그함수는 일차함수보다 발산하는 정도가 약하므로 O(log n) < O(n)입니다.",
       "references": [
         {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
         {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
       ]
     },
     {
-      "question": "다음 Big O 표기법 간의 비교로 틀린 것은?",
+      "question": "다음 빅 오 표기법(big-O notation) 간의 비교로 틀린 것은?",
       "choices": [
         "O(n) = O(n + 50)",
         "O(n) = O(10n + 100)",
@@ -70,7 +70,7 @@
         "O(n) = O(n + log n)"
       ],
       "answer": 3,
-      "explanation": "Big O 표기법에서 계수 (coefficient) 나 상수는 그 정의에 따라 1로 수렴됩니다. 또한 상한 점근이기 때문에 최고차수에 대한 표현만 남고 나머지는 무시됩니다. 따라서 O(n + log n)도 O(n)이 됩니다. O(n^2 + n)의 경우에도 O(n^2)이 됩니다.",
+      "explanation": "빅 오 표기법(big-O notation)에서 계수(coefficient)나 상수는 그 정의에 따라 1로 수렴됩니다. 또한 상한 점근이기 때문에 최고차수에 대한 표현만 남고 나머지는 무시됩니다. 따라서 O(n + log n)도 O(n)이 됩니다. O(n^2 + n)의 경우에도 O(n^2)이 됩니다.",
       "references": [
         {"점근 표기법": "https://ko.wikipedia.org/wiki/%EC%A0%90%EA%B7%BC_%ED%91%9C%EA%B8%B0%EB%B2%95"},
         {"Big O notation": "https://en.wikipedia.org/wiki/Big_O_notation"}
@@ -79,28 +79,28 @@
     {
       "question": "문자열을 반전시키기에 적절한 자료구조는?",
       "choices": [
-        "Stack",
-        "Queue",
-        "Tree",
-        "Graph"
+        "스택(stack)",
+        "큐(queue)",
+        "트리(tree)",
+        "그래프(graph)"
       ],
       "answer": 1,
-      "explanation": "문자열 반전을 위해서는 마지막이 처음으로 올 필요가 있으므로 stack의 특성은 LIFO가 적절합니다.",
+      "explanation": "문자열 반전을 위해서는 마지막이 처음으로 올 필요가 있으므로 스택(stack)의 특성인 LIFO(Last-In First-Out)가 적절합니다.",
       "references": [
         {"[한] Stack": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"},
         {"Stack": "https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"}
       ]
     },
     {
-      "question": "회문 (palindrome) 을 찾기 적절한 자료구조는?",
+      "question": "회문(palindrome)을 찾기 적절한 자료구조는?",
       "choices": [
-        "Stack",
-        "Queue",
-        "Tree",
-        "Graph"
+        "스택(stack)",
+        "큐(queue)",
+        "트리(tree)",
+        "그래프(graph)"
       ],
       "answer": 1,
-      "explanation": "회문 (palindrome) 이란 낱말이나 문장이 그대로 읽든 거꾸로 읽든 같은 것을 말합니다. 예를 들어 'madam', 'refer' 등이 있습니다. 따라서 회문 판멸을 위해서는 문자열을 반전시킬 필요가 있으므로 보기 중에서는 stack이 적절합니다. 문자열을 새롭게 구성안해도 비교만 하면 되므로 역으로 탐색이 가능한 array나 list가 쓰일 수도 있습니다.",
+      "explanation": "회문(palindrome)이란 낱말이나 문장이 그대로 읽든 거꾸로 읽든 같은 것을 말합니다. 예를 들어 'madam', 'refer' 등이 있습니다. 따라서 회문 판멸을 위해서는 문자열을 반전시킬 필요가 있으므로 보기 중에서는 스택(stack)이 적절합니다. 문자열을 새롭게 구성안해도 비교만 하면 되므로 역으로 탐색이 가능한 배열(array)나 리스트(list)가 쓰일 수도 있습니다.",
       "references": [
         {"[한] Palindrome": "https://ko.wikipedia.org/wiki/%ED%9A%8C%EB%AC%B8"},
         {"Palindrome": "https://en.wikipedia.org/wiki/Palindrome"},
@@ -109,15 +109,15 @@
       ]
     },
     {
-      "question": "하노이의 탑 (Tower of Hanoi) 문제를 풀기 위해 적절한 자료구조는?",
+      "question": "하노이의 탑(Tower of Hanoi) 문제를 풀기 위해 적절한 자료구조는?",
       "choices": [
-        "Stack",
-        "Queue",
-        "Tree",
-        "Graph"
+        "스택(stack)",
+        "큐(queue)",
+        "트리(tree)",
+        "그래프(graph)"
       ],
       "answer": 1,
-      "explanation": "기둥에 꽂혀있는 원판은 제일 위에 위치한 것만 옮길 수 있으므로 stack이 적절합니다.",
+      "explanation": "기둥에 꽂혀있는 원판은 제일 위에 위치한 것만 옮길 수 있으므로 스택(stack)이 적절합니다.",
       "references": [
         {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
         {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"},
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "question": "하노이의 탑 (Tower of Hanoi) 문제에서 n개의 원판을 옮기는 데 최소 몇 번의 이동이 필요한가?",
+      "question": "하노이의 탑(Tower of Hanoi) 문제에서 n개의 원판을 옮기는 데 최소 몇 번의 이동이 필요한가?",
       "choices": [
         "2n - 1",
         "2n + 1",
@@ -134,7 +134,7 @@
         "2^n + 1"
       ],
       "answer": 3,
-      "explanation": "수학적 귀납법을 통해 증명할 수 있으며, 2^n -1은 메르센 수 (Mersenne number) 라고도 불립니다.",
+      "explanation": "수학적 귀납법을 통해 증명할 수 있으며, 2^n -1은 메르센 수(Mersenne number) 라고도 불립니다.",
       "references": [
         {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
         {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"},
@@ -143,15 +143,15 @@
       ]
     },
     {
-      "question": "다음 중 하노이의 탑 (Tower of Hanoi) 문제를 푸는 방법은?",
+      "question": "다음 중 하노이의 탑(Tower of Hanoi) 문제를 푸는 방법은?",
       "choices": [
-        "Iterative solution",
-        "Recursive solution",
-        "Binary solution",
+        "반복 알고리즘(iterative algorithm)",
+        "재귀 알고리즘(recursive algorithm)",
+        "이진 해법(binary solution)",
         "위에 언급된 모두 해당"
       ],
       "answer": 4,
-      "explanation": "일반적으로 ToH를 푸는 방법으로 재귀 (recursive) 가 많이 알려져 있지만 이외에도 iteration, binary, grey-code 등 많은 풀이 방법이 있습니다.",
+      "explanation": "일반적으로 ToH(Tower of Hanoi)를 푸는 방법으로 재귀(recursive)가 많이 알려져 있지만 이외에도 반복(iteration), 이진(binary), 그레이 코드(grey-code) 등 많은 풀이 방법이 있습니다.",
       "references": [
         {"[한] Tower of Hanoi": "https://ko.wikipedia.org/wiki/%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98_%ED%83%91"},
         {"Tower of Hanoi": "https://en.wikipedia.org/wiki/Tower_of_Hanoi"}
