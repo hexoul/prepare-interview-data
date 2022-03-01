@@ -1,15 +1,15 @@
 {
   "questions": [
     {
-      "question": "Array에 대한 적절한 설명은?",
+      "question": "배열(array)에 대한 적절한 설명은?",
       "choices": [
         "계층적인 구조를 가진다.",
         "일반적으로 같은 타입으로만 이루어진다.",
-        "불변성 (immutability) 을 가진다.",
+        "불변성(immutability)을 가진다.",
         "위에 언급된 모두 해당"
       ],
       "answer": 2,
-      "explanation": "Array는 선형 구조이며, 변경이 가능하므로 immutable이 아니라 mutable입니다.",
+      "explanation": "배열(array)은 선형 구조이며, 변경이 가능하므로 불변(immutable)이 아니라 이변(mutable, 易變)입니다.",
       "references": [
         {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "question": "Array 첫번째 요소의 인덱스는?",
+      "question": "배열(array) 첫번째 요소의 인덱스는?",
       "choices": [
         "-1",
         "0",
@@ -25,22 +25,22 @@
         "2"
       ],
       "answer": 2,
-      "explanation": "Array뿐만 아니라 컴퓨터에서 인덱스는 일반적으로 0으로 시작합니다.",
+      "explanation": "배열(array)뿐만 아니라 컴퓨터에서 인덱스는 일반적으로 0으로 시작합니다.",
       "references": [
         {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"}
       ]
     },
     {
-      "question": "Array에서 IndexOutOfBoundsException은 언제 발생할 수 있는가?",
+      "question": "배열(array)에서 IndexOutOfBoundsException은 언제 발생할 수 있는가?",
       "choices": [
-        "Compile time",
-        "Runtime",
+        "컴파일 타임(compile time)",
+        "런타임(runtime)",
         "비정상 종료 시",
         "발생하지 않는다."
       ],
       "answer": 2,
-      "explanation": "Array의 범위를 벗어나는 인덱스에 실제로 접근하려할 때 발생하므로, 컴파일과는 관계없이 프로그램 실행 중인 런타임에 발생할 수 있습니다.",
+      "explanation": "배열(array)의 범위를 벗어나는 인덱스에 실제로 접근하려할 때 발생하므로, 컴파일과는 관계없이 프로그램 실행 중인 런타임에 발생할 수 있습니다.",
       "references": [
         {"[한] Array": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4"},
         {"Array": "https://en.wikipedia.org/wiki/Array_data_structure"},
