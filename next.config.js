@@ -16,7 +16,7 @@ module.exports = (phase, { defaultConfig }) => {
         },
     }
 
-    if (phase === PHASE_DEVELOPMENT_SERVER || process.env.NODE_ENV === 'vercel') {
+    if (phase === PHASE_DEVELOPMENT_SERVER || process.env.VERCEL) {
         return {
             ...commonConfig,
             /* development only config options here */

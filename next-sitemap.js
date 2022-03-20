@@ -1,5 +1,5 @@
 let siteUrl = 'https://hexoul.github.io/prepare-interview-data'
-if (process.env.NODE_ENV === 'vercel') {
+if (process.env.VERCEL) {
   siteUrl = 'https://it-interview.vercel.app'
 }
 
