@@ -8,6 +8,7 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
+    "vercel": "NODE_ENV=vercel yarn predeploy",
     "predeploy": "next build && next-sitemap && next export && touch out/.nojekyll",
     "deploy": "gh-pages -d out --dotfiles",
     "type-check": "tsc"

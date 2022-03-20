@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://hexoul.github.io/prepare-interview-data
+Host: https://it-interview.vercel.app
 
 # Sitemaps
-Sitemap: https://hexoul.github.io/prepare-interview-data/sitemap.xml
+Sitemap: https://it-interview.vercel.app/sitemap.xml

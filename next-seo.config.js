@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'vercel') {
   url = 'https://it-interview.vercel.app'
 }
 
-export default {
+const seoConfig = {
   title,
   description,
   canonical: url,
@@ -31,3 +31,5 @@ export default {
     cardType: 'summary_large_image',
   },
 };
+
+export default seoConfig;
