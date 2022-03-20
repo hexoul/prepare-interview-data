@@ -30,6 +30,12 @@ const seoConfig = {
     site: '@site',
     cardType: 'summary_large_image',
   },
+  additionalMetaTags: [
+    {
+      name: 'google-site-verification',
+      content: 'oY8SmcLii0Fnha_NejoojF0aPb4oddbPM-LYYnP4wtU',
+    },
+  ],
 };
 
 export default seoConfig;
