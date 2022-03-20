@@ -15,9 +15,8 @@ module.exports = (phase, { defaultConfig }) => {
             openKakaoUrl: 'https://open.kakao.com/me/prepare_interview',
         },
     }
-    // console.log(commonConfig)
 
-    if (phase === PHASE_DEVELOPMENT_SERVER) {
+    if (phase === PHASE_DEVELOPMENT_SERVER || process.env.NODE_ENV === 'vercel') {
         return {
             ...commonConfig,
             /* development only config options here */

@@ -1,6 +1,10 @@
 const title = '오늘부터 전공면접 IT'
 const description = '면접준비 하루 한 문제'
-const url = 'https://hexoul.github.io/prepare-interview-data'
+
+let url = 'https://hexoul.github.io/prepare-interview-data'
+if (process.env.NODE_ENV === 'vercel') {
+  url = 'https://it-interview.vercel.app'
+}
 
 export default {
   title,
