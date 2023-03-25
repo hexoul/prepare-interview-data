@@ -1,6 +1,6 @@
 [
-  {"title":"더 글로리 파트 2", "indexRating": 96.91, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/drama_poster_images/280x400/drama_117299_1675907194.jpg"},
-  {"title":"너의 이름은.", "indexRating": 86.3, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/movie_poster_images/280x400/movie_1836_1624521438.jpg"},
-  {"title":"날씨의 아이", "indexRating": 75.18, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/movie_poster_images/280x400/movie_71110_1590470664.jpg"},
-  {"title":"모범택시 2", "indexRating": 94.74, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/drama_poster_images/280x400/drama_105988_1675393848.jpeg"}
+  {"title":"더 글로리 파트 2", "indexRating": 96.91, "diff": 0, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/drama_poster_images/280x400/drama_117299_1675907194.jpg"},
+  {"title":"너의 이름은.", "indexRating": 86.3, "diff": 5, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/movie_poster_images/280x400/movie_1836_1624521438.jpg"},
+  {"title":"날씨의 아이", "indexRating": 75.18, "diff": -1, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/movie_poster_images/280x400/movie_71110_1590470664.jpg"},
+  {"title":"모범택시 2", "indexRating": 94.74, "diff": 1, "thumbnail":"https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/drama_poster_images/280x400/drama_105988_1675393848.jpeg"}
 ]
